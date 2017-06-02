@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  Licensed under the LICENSE.
+  Copyright 2017, Sony Mobile Communications Inc.
+-->
+<resources xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="no_cost_mobile_data_text">הטלפון חייב להיות מחובר לרשת WLAN.</string>
+    <string name="settings_auto_wifi_msg">הפעל WLAN במהלך התרומה</string>
+    <string name="connect_to_wifi">הטלפון צריך להיות מחובר לרשת WLAN</string>
+    <string name="data_usage_text">תוכל לחבר את ההתקן שלך לרשת WLAN.\nאם אתה משתמש בחיבור מדוד או בתשלום לרשת WLAN, ייתכן שתידרש לשלם בעבור השימוש בנתונים.\n\nלקבלת מידע נוסף, בדוק עם ספק שירותי האינטרנט שלך.</string>
+    <string name="whats_new_conditions_indicator">מציין כי יש רשת WLAN מוכנה, אך יש לחבר את הטלפון למטען ולהגיע לקיבולת טעינה של 100% בסוללה.</string>
+    <string name="no_wifi_tile">אין חיבור WLAN</string>
+    <string name="no_wifi_text">התחבר לרשת WLAN כדי להתחיל בתרומה.</string>
+</resources>

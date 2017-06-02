@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  Licensed under the LICENSE.
+  Copyright 2017, Sony Mobile Communications Inc.
+-->
+<resources xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="no_cost_mobile_data_text">Telefon WLAN ağına bağlı olmalı.</string>
+    <string name="settings_auto_wifi_msg">Katkı yaparken WLAN bağlantısını etkinleştir</string>
+    <string name="connect_to_wifi">Telefonun WLAN ağına bağlı olması gerekiyor</string>
+    <string name="data_usage_text">Cihazınızın WLAN ağına bağlı olması gerekir.\nÖlçülü veya ücretli bir WLAN bağlantısı kullanıyorsanız, veri kullanımınız ücretlendirilebilir.\n\nDaha fazla bilgi için İnternet servis sağlayıcınıza başvurun.</string>
+    <string name="whats_new_conditions_indicator">WLAN bağlantısının hazır olduğunu, ancak telefonun şarj ünitesine bağlı ve pilin %100 şarj edilmiş olması gerektiğini gösterir.</string>
+    <string name="no_wifi_tile">WLAN yok</string>
+    <string name="no_wifi_text">Katkıyı başlatmak için bir WLAN ağına bağlanın.</string>
+</resources>

@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  Licensed under the LICENSE.
+  Copyright 2017, Sony Mobile Communications Inc.
+-->
+<resources xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="notification_service_finished_job_executed">Siz elmə dəstək verdiniz</string>
+    <string name="notification_service_finished_failed">Bütün başlama şərtlərinə əməl edilməyib</string>
+    <string name="contributed_time">Dəstək müddəti</string>
+    <string name="people_helping">Kömək edənlər</string>
+    <string name="research_type">Araşdırma tipi</string>
+    <string name="research_type_unavailable">Mümkün deyil</string>
+    <string name="setup_guide">Təlimatlar</string>
+    <string name="legal">Hüquq</string>
+    <string name="share">Paylaş</string>
+    <string name="welcome">Folding@Home-a xoş gəlmisiniz</string>
+    <string name="read_more">Ətraflı oxu</string>
+    <string name="more_info">Ətraflı məlumat</string>
+    <string name="finish">Son</string>
+    <string name="wizard_welcome_to_folding_subtitle">Alzaymer, Parkinson və xərçəngin çarəsini tapmağa kömək edək?</string>
+    <string name="wizard_welcome_to_folding_text">Szi yatarkən telefonunuz elmi hesablamalar apararaq Stanford Universitetinin alimlərinə xəstəliklərə çarə tapmaqda kömək edə bilər.</string>
+    <string-array name="help_find_cure">
+        <item>Folding@Home-da qeydiyyatdan keçərək, özünüz istifadə etmədikdə telefonunuzun hesablama gücündən istifadə imkanı verməklə Stanford Universitetinin alimlərinə yayılmış bir çox xəstəliklərə çarə tapmaqda kömək edə bilərsiniz.</item>
+        <item>Toplanma (folding) bədənimizdə zülal fəaliyyətinə deyilir. Zülal toplanması araşdırması üçün çox hesablama lazımdır və Stanford Universiteti insanlardan telefonlarını istifadə etmədikləri zaman onun hesablama gücündən istifadə etməyə icazə vermələrini xahiş edir. Siz yatarkən Stanford Universiteti telefonunuza həll üçün toplama məsələsi göndərəcək. Hesablama nəticələri Stanford-a qaytarılacaq.</item>
+        <item>Folding@Home barədə ətraflı məlumatı baş səhifədə oxuya bilərsiniz:\nfolding.stanford.edu</item>
+    </string-array>
+    <string name="powered_by">dəstək</string>
+    <string name="private_date_safe_title">Şəxsi məlumat qorunur.</string>
+    <string name="private_date_safe_text">Bu proqramın şəxsi məlumatlara girişi yoxdur.</string>
+    <string name="no_cost_mobile_data_title">Mobil məlumat xərci yoxdur</string>
+    <string name="no_cost_mobile_data_text">Telefon Wi-Fi şəbəkəyə qoşulmalıdır.</string>
+    <string name="battery_not_drained_title">Batareya boşalmayacaq</string>
+    <string name="battery_not_drained_text">Telefon adapterə qoşulub tam doldurulmalıdır (100%)</string>
+    <string name="time_string_weeks">%1$dh %2$dg %3$ds</string>
+    <string name="time_string_days">%1$dg %2$ds %3$dd</string>
+    <string name="time_string_hours">%1$ds %2$dd</string>
+    <string name="share_facebook_success">Facebook-da uğurla paylaşılıb</string>
+    <string name="share_facebook_error">Facebook-da paylaşılmadı</string>
+    <string name="waiting">Paylaşılır…</string>
+    <string name="share_object_message">Mən kömək edən %1$d nəfərdən biriyəm və %2$s hesablama vaxtı vermişəm!</string>
+    <string name="notification_service_executing_job">Folding@Home işləyir.\nElmi araşdırmaya dəstək verirsiniz.</string>
+    <string name="notification_service_not_executing">Folding@Home işləmir.\nBütün başlama şərtlərinə əməl edilmədi.</string>
+    <string name="settings">Param</string>
+    <string name="start_contribute">Paylaşma vxt</string>
+    <string name="start_contribute_text">Hesab üçün baş. vxt qur</string>
+    <string name="settings_auto_wifi_msg">Dəstək zamanı Wi-Fi aktivləşdir</string>
+    <string name="notifications">Bildirişlər</string>
+    <string name="settings_display_notification">Hesab bitəndə bildiriş göndər</string>
+    <string name="contribution_interval_time">Dəstək vaxtı</string>
+    <string name="wizard_step">Addım %1$d/%2$d</string>
+    <string name="no_opencl">Bu cihaz OpenCL dəstəkləmir. İşlərin icrası üçün bu kitabxana vacibdir. Davam edək?</string>
+    <string name="connect_to_wifi">Telefon Wi-Fi şəbəkəyə qoşulmalıdır</string>
+    <string name="processing_time_title">Hesablama müddəti %1$s - %2$s</string>
+    <string name="processing_time_text">Başl. vaxtını param. dəyişə bilərsən.</string>
+    <string name="will_start_when">Başlama şərtləri</string>
+    <string name="share_facebook_contribution">Facebook-da paylaş</string>
+    <string name="app_disabled_title">Proqram söndürülüb</string>
+    <string name="app_disabled_message">Bu proqram söndürülüb və artıq istifadə edilə bilməz.</string>
+    <string name="stand_by">Gözləmə</string>
+    <string name="helping_out">Kömək</string>
+    <string name="disabled">Qeyri-aktiv</string>
+    <string name="data_usage">Verilənlərin istifadəsi</string>
+    <string name="data_usage_text">Cihazınız Wi-Fi şəbəkəsinə qoşulmalıdır.\nÖlçülən və ya ödənişli Wi-Fi qoşulması istifadə edirsinizsə, verilənlərin istifadəsinə görə sizdən ödəniş tutula bilər.\n\nƏtraflı məlumat üçün İnternet xidməti provayderinizlə əlaqə saxlayın.</string>
+    <string name="whats_new">Yeniliklər</string>
+    <string name="whats_new_contribution_status">Siz indi Folding@Home icra etmək üçün tələb olunan şərtləri görə bilərsiniz.</string>
+    <string name="whats_new_disable_indicator">Proqramın söndürüldüyünü göstərir.</string>
+    <string name="whats_new_conditions_indicator">Wi-Fi hazır olduğunu, lakin telefonun adapterə qoşulmalı və batareyanın 100% dolu olmalı olduğunu göstərir.</string>
+    <string name="whats_new_enable_indicator">Bütün tələblərin hazır olduğunu göstərir.</string>
+    <string name="whats_new_power_button">İndi proqramı aktivləşdirmək və ya söndürmək asandır. Həmçinin Folding@Home cari statusuna baxa bilərsiniz.</string>
+    <string name="whats_new_login">İndi siz daxil ola və dəstək elementlərini yükləyə bilərsiniz.</string>
+    <string name="whats_new_contribution_indicators">Dəstək statusunuzu asan izləmək üçün təkmilləşdirilmiş işarələr.</string>
+    <string name="whats_new_research_type">Dəstək verdiyiniz araşdırmanı göstərir.</string>
+    <string name="whats_new_people_helping">Folding@Home istifadə edənlərin sayını göstərir.</string>
+    <string name="whats_new_contributed_time">Dəstək elementlərinin cəmi vaxtını göstərir.</string>
+    <string name="skip">Ötür</string>
+    <string name="turn_on">İşə sal</string>
+    <string name="turn_off">Söndür</string>
+    <string name="active_research">Aktiv araşdırma</string>
+    <string name="notification_contribution_time">Təşəkkür edirik. Bu cihaz son 24s ərzində %1$s dəstək verib.</string>
+    <string name="action_login">Daxil ol</string>
+    <string name="action_logout">%1$s (Çıx)</string>
+    <string name="action_leaderboards">Afişalar</string>
+    <string name="action_achievements">Nailiyyətlər</string>
+    <string name="action_invite_friends">Dostları dəvət et</string>
+    <string name="notification_service_turn_on">Dəstəyə davam etmək üçün işə sal</string>
+    <string name="toast_logout">Çıxılıb</string>
+    <string name="toast_network_unavailable">Şəbəkə mövcud deyil</string>
+    <string name="paused">Pauza</string>
+    <string name="action_enable">Aktivləşdir</string>
+    <string name="action_disable">Deaktiv et</string>
+    <string name="pause">Pauza</string>
+    <string name="new_indicators">Yeni göstəricilər</string>
+    <string name="new_power_button">Yeni enerji düyməsi</string>
+    <string name="sign_in_google_game_service">Google Play™ Oyun Xidmətlərinə daxil ol</string>
+    <string name="view_more">Ətraflı bax</string>
+    <string name="toast_achievements_disabled">Yeni nailiyyətləri görmək üçün daxil ol!</string>
+    <string name="toast_leaderboards_disabled">Afişaları görmək üçün daxil ol!</string>
+    <string name="contribution_details">Töhfə təfərrüatları</string>
+    <string name="project_description">Layihənin təsviri</string>
+    <string name="week">Həftə</string>
+    <string name="month">Ay</string>
+    <string name="all_time">Cəmi vaxt</string>
+    <string name="time_string_hours_only">%1$ds</string>
+    <string name="chart_week_label">Həftə %1$d</string>
+    <string name="hours_contributed_label_plural">%1$d saat töhfə verildi</string>
+    <string name="hours_contributed_label_singular">1 saat töhfə verildi</string>
+    <string name="contributed_no_data">Seçilən mərhələdə heç bir töhfə verilmədi</string>
+    <string name="no_charger_tile">Enerji doldurucusuna qoşulmayıb</string>
+    <string name="low_battery_tile">Bat zəifdir</string>
+    <string name="no_wifi_tile">Wi-Fi yoxdur</string>
+    <string name="no_charger_text">Cihaz enerji doldurucusuna qoşulmalıdır</string>
+    <string name="low_battery_text">Töhfə verməyə başlamaq üçün batareya ən azı 98% dolu olmalıdır</string>
+    <string name="no_wifi_text">Töhfə verməyə başlamaq üçün Wi-Fi şəbəkəsinə qoşulun.</string>
+</resources>

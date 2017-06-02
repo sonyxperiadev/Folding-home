@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  Licensed under the LICENSE.
+  Copyright 2017, Sony Mobile Communications Inc.
+-->
+<resources xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="no_cost_mobile_data_text">Telepon kudu disambungkeun ka jaringan WLAN.</string>
+    <string name="settings_auto_wifi_msg">Aktipkan WLAN salila kontribusi</string>
+    <string name="connect_to_wifi">Telepon perlu disambungkeun ka jaringan WLAN</string>
+    <string name="data_usage_text">Alat anjeun kudu nyambung ka jaringan WLAN.\nLamun anjeun make sambungan WLAN nu kaukur atawa mayar, Ajeun bakal kena beaya pikeun pamakean data.\n\nPikeun inpo leuwih lanjut, kontak propaider laden Internet anjeun.</string>
+    <string name="whats_new_conditions_indicator">Nunjukkeun yen WLAN siap, tapi telepon kudu disambungkeun ka carjer jeung batre kudu dieusi 100%.</string>
+    <string name="no_wifi_tile">Teu aya WLAN</string>
+    <string name="no_wifi_text">Sambung ka jaringan WLAN keur mimitian kontribusi.</string>
+</resources>

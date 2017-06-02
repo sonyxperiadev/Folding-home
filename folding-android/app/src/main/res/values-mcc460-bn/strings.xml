@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  Licensed under the LICENSE.
+  Copyright 2017, Sony Mobile Communications Inc.
+-->
+<resources xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="no_cost_mobile_data_text">ফোনকে অবশ্যই WLAN নেটওয়ার্কে সংযুক্ত থাকতে হবে।</string>
+    <string name="settings_auto_wifi_msg">অংশগ্রহণের সময় WLAN সক্ষম করুন</string>
+    <string name="connect_to_wifi">ফোনকে একটি WLAN নেটওয়ার্কে সংযুক্ত থাকতে হবে</string>
+    <string name="data_usage_text">আপনার যন্ত্র কোনো WLAN নেটওয়ার্কে সংযুক্ত থাকতে হবে।\nআপনি মিটার বিশিষ্ট বা অর্থের বিনিময়ে নেওয়া কোনো WLAN সংযোগ ব্যবহার করলে, ডেটার ব্যবহার বাবদ আপনাকে অর্থ দিতে হতে পারে।\n\nআরো জানতে, আপনার ইন্টারনেট পরিষেবা সরবরাহকারীর সঙ্গে কথা বলে নিন।</string>
+    <string name="whats_new_conditions_indicator">সূচিত করে যে, WLAN প্রস্তুত কিন্তু ফোনটি অবশ্যই কোনো চার্জারে সংযুক্ত থাকতে হবে এবং ব্যাটারিতে অবশ্যই 100% চার্জ থাকতে হবে।</string>
+    <string name="no_wifi_tile">WLAN নেই</string>
+    <string name="no_wifi_text">সহযোগিতা শুরু করতে কোনো WLAN নেটওয়ার্কে সংযোগ করুন।</string>
+</resources>

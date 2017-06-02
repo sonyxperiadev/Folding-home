@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  Licensed under the LICENSE.
+  Copyright 2017, Sony Mobile Communications Inc.
+-->
+<resources xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="notification_service_finished_job_executed">您已為科學做貢獻</string>
+    <string name="notification_service_finished_failed">未滿足所有初始條件。</string>
+    <string name="contributed_time">已貢獻時間</string>
+    <string name="people_helping">貢獻者數量</string>
+    <string name="research_type">研究類型</string>
+    <string name="research_type_unavailable">不可用</string>
+    <string name="setup_guide">設定指南</string>
+    <string name="legal">法律</string>
+    <string name="share">分享</string>
+    <string name="welcome">歡迎使用Folding@Home</string>
+    <string name="read_more">閱讀詳細資訊</string>
+    <string name="more_info">更多資訊</string>
+    <string name="finish">完成</string>
+    <string name="wizard_welcome_to_folding_subtitle">您是否希望協助尋找阿爾茨海默氏症、帕金森氏症以及癌症的治療方法？</string>
+    <string name="wizard_welcome_to_folding_text">您的手機可以在您睡眠時進行科學計算，協助史丹佛大學的科學家尋找許多疾病的治療方法。</string>
+    <string-array name="help_find_cure">
+        <item>註冊Folding@Home之後，你即可藉由在不使用手機時分享你手機的處理能力，為史丹佛大學科學家研究大部分常見疾病的治療方式上貢獻一己之力。</item>
+        <item>折疊指的是我們體內的蛋白質活動。對蛋白質折疊的研究需要大量計算，因此史丹佛大學要求人們貢獻不使用的手機處理能力，以便處理其中一些數字。在您睡眠時，史丹佛大學會向您的手機傳送一個折疊問題進行處理。計算完成後，結果將傳回史丹佛大學。</item>
+        <item>您可以在以下首頁找到有關Folding@Home的更多資訊︰\nfolding.stanford.edu</item>
+    </string-array>
+    <string name="powered_by">支援提供者</string>
+    <string name="private_date_safe_title">您的私人資料處於安全狀態。</string>
+    <string name="private_date_safe_text">此應用程式未存取您的私人資料。</string>
+    <string name="no_cost_mobile_data_title">行動資料無需付費</string>
+    <string name="no_cost_mobile_data_text">手機必須連線至Wi-Fi網路。</string>
+    <string name="battery_not_drained_title">電池不會耗盡</string>
+    <string name="battery_not_drained_text">手機必須連線至充電器並充滿電(100%)</string>
+    <string name="time_string_weeks">%1$d週%2$d天%3$d小時</string>
+    <string name="time_string_days">%1$d天%2$d小時%3$d分鐘</string>
+    <string name="time_string_hours">%1$d小時%2$d分鐘</string>
+    <string name="share_facebook_success">已成功在Facebook上分享</string>
+    <string name="share_facebook_error">無法在Facebook上分享</string>
+    <string name="waiting">正在共享…</string>
+    <string name="share_object_message">我是%1$d位貢獻者中的一員，我已貢獻了%2$s 的計算時間！</string>
+    <string name="notification_service_executing_job">Folding@Home正在執行。\n您正在為科學研究做貢獻。</string>
+    <string name="notification_service_not_executing">Folding@Home目前未執行。\n未滿足所有前提條件。</string>
+    <string name="settings">設定</string>
+    <string name="start_contribute">開始時間</string>
+    <string name="start_contribute_text">設定計算的開始時間</string>
+    <string name="wifi">Wi-Fi</string>
+    <string name="settings_auto_wifi_msg">做貢獻期間啟用Wi-Fi</string>
+    <string name="notifications">通知</string>
+    <string name="settings_display_notification">計算結束時傳送通知</string>
+    <string name="contribution_interval_time">貢獻持續時間</string>
+    <string name="wizard_step">步驟%1$d/%2$d</string>
+    <string name="no_opencl">此裝置不支援OpenCL。此庫是執行作業所必需的。您要繼續嗎？</string>
+    <string name="connect_to_wifi">手機需要連線至Wi-Fi網路</string>
+    <string name="processing_time_title">計算時間為︰%1$s – %2$s</string>
+    <string name="processing_time_text">您可以在設定中變更開始時間。</string>
+    <string name="will_start_when">前提條件</string>
+    <string name="share_facebook_contribution">在Facebook上分享</string>
+    <string name="app_disabled_title">應用程式已停用</string>
+    <string name="app_disabled_message">此應用程式已停用，無法繼續使用。</string>
+    <string name="stand_by">待機</string>
+    <string name="helping_out">協助</string>
+    <string name="disabled">已停用</string>
+    <string name="data_usage">資料使用量</string>
+    <string name="data_usage_text">您的裝置必須連線至Wi-Fi網路。\n若您使用計量或付費Wi-Fi連線，可能會向您收取資料使用費。\n\n有關更多資訊，請諮詢您的網際網路服務供應商。</string>
+    <string name="whats_new">新功能</string>
+    <string name="whats_new_contribution_status">現在您可以看到執行Folding@Home所需的條件狀態。</string>
+    <string name="whats_new_disable_indicator">表示應用程式已停用。</string>
+    <string name="whats_new_conditions_indicator">表示Wi-Fi已準備就緒，但手機必須連線充電器並充滿電。</string>
+    <string name="whats_new_enable_indicator">表示所有條件均已滿足。</string>
+    <string name="whats_new_power_button">現在可以更方便地啟用或停用應用程式。您還可以看到Folding@Home的目前狀態。</string>
+    <string name="whats_new_login">現在您可以登入並上傳您的貢獻資料。</string>
+    <string name="whats_new_contribution_indicators">對圖示做了改進，可輕鬆追蹤您的貢獻狀態。</string>
+    <string name="whats_new_research_type">表示您正在專注進行的研究。</string>
+    <string name="whats_new_people_helping">表示使用Folding@Home的人數。</string>
+    <string name="whats_new_contributed_time">表示您的總貢獻時間。</string>
+    <string name="skip">跳過</string>
+    <string name="turn_on">開啟</string>
+    <string name="turn_off">關閉</string>
+    <string name="active_research">目前研究</string>
+    <string name="notification_contribution_time">謝謝。此裝置在最近24小時內已貢獻了%1$s。</string>
+    <string name="action_login">登入</string>
+    <string name="action_logout">%1$s(登出)</string>
+    <string name="action_leaderboards">排行榜</string>
+    <string name="action_achievements">成就</string>
+    <string name="action_invite_friends">邀請好友</string>
+    <string name="notification_service_turn_on">開啟以繼續貢獻</string>
+    <string name="toast_logout">已登出</string>
+    <string name="toast_network_unavailable">網路無法使用</string>
+    <string name="paused">已暫停</string>
+    <string name="action_enable">啟用</string>
+    <string name="action_disable">停用</string>
+    <string name="pause">暫停</string>
+    <string name="new_indicators">新指標</string>
+    <string name="new_power_button">新電源按鈕</string>
+    <string name="sign_in_google_game_service">登入Google Play™遊戲服務</string>
+    <string name="view_more">檢視更多</string>
+    <string name="toast_achievements_disabled">登入以檢視成就！</string>
+    <string name="toast_leaderboards_disabled">登入以檢視排行榜！</string>
+    <string name="contribution_details">比重詳細資料</string>
+    <string name="project_description">專案說明</string>
+    <string name="week">週</string>
+    <string name="month">月</string>
+    <string name="all_time">總時間</string>
+    <string name="time_string_hours_only">%1$d小時</string>
+    <string name="chart_week_label">第%1$d週</string>
+    <string name="hours_contributed_label_plural">佔有%1$d小時</string>
+    <string name="hours_contributed_label_singular">佔有1小時</string>
+    <string name="contributed_no_data">所選期間無比重</string>
+    <string name="no_charger_tile">無充電器</string>
+    <string name="low_battery_tile">電池電量過低</string>
+    <string name="no_wifi_tile">無Wi-Fi</string>
+    <string name="no_charger_text">裝置必須接上充電器</string>
+    <string name="low_battery_text">電池充電量必須至少達98%，才開始佔有比重</string>
+    <string name="no_wifi_text">與Wi-Fi網路連線以開始佔有比重。</string>
+</resources>

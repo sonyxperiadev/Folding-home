@@ -1,0 +1,3 @@
+rootProject.name = 'Folding@Home'
+include ':app'
+include ':libraries:google-games'

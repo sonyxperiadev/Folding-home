@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  Licensed under the LICENSE.
+  Copyright 2017, Sony Mobile Communications Inc.
+-->
+<resources xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="notification_service_finished_job_executed">لقد ساهمت في العلوم</string>
+    <string name="notification_service_finished_failed">لم يتم تحقيق كل شروط البدء</string>
+    <string name="contributed_time">وقت المساهمة</string>
+    <string name="people_helping">عدد الأشخاص المشاركين</string>
+    <string name="research_type">نوع البحث</string>
+    <string name="research_type_unavailable">غير متوفر</string>
+    <string name="setup_guide">دليل الإعداد</string>
+    <string name="legal">المعلومات القانونية</string>
+    <string name="share">مشاركة</string>
+    <string name="welcome">مرحبًا بك في Folding@Home</string>
+    <string name="read_more">قراءة المزيد</string>
+    <string name="more_info">معلومات إضافية</string>
+    <string name="finish">إنهاء</string>
+    <string name="wizard_welcome_to_folding_subtitle">هل تريد المساعدة في إيجاد علاج لأمراض الزهايمر وباركنسون والسرطان؟</string>
+    <string name="wizard_welcome_to_folding_text">يمكن لهاتفك إجراء حسابات علمية أثناء نومك، كما يساعد علماء جامعة ستانفورد في العثور على العلاج للعديد من الأمراض.</string>
+    <string-array name="help_find_cure">
+        <item>عند التسجيل في Folding@Home، فإنك بذلك تساعد العلماء في جامعة ستانفورد في بحثهم لإيجاد علاج للعديد من الأمراض الأكثر انتشارًا لدينا، وذلك بالتبرع بطاقة المعالجة بهاتفك عندما لا تستخدمه بنفسك.</item>
+        <item>تشير كلمة Folding في التطبيق إلى أنشطة البروتين التي تتم في أجسامنا. ويتطلب التفاف البروتين العديد من العمليات الحسابية التي تطالب جامعة ستانفورد الأشخاص بها من خلال التبرع بطاقة المعالجة غير المستخدمة في هواتفهم جمع الكثير من الحسابات الرقمية. فأثناء النوم، سترسل جامعة ستانفورد إحدى مشكلات الالتفاف إلى هاتفك لحلها. وبمجرد اكتمال العمليات الحسابية، سيتم إرسال النتائج مرة أخرى إلى ستانفورد.</item>
+        <item>يمكنك العثور على المزيد من المعلومات حول Folding@Home في الصفحة الرئيسية:\u0020\nfolding.stanford.edu</item>
+    </string-array>
+    <string name="powered_by">مشغّل بواسطة</string>
+    <string name="private_date_safe_title">بياناتك الخاصة آمنة.</string>
+    <string name="private_date_safe_text">لا يمكن لهذا التطبيق الوصول إلى بياناتك الخاصة.</string>
+    <string name="no_cost_mobile_data_title">لا توجد تكاليف مقابل بيانات النقال</string>
+    <string name="no_cost_mobile_data_text">يجب توصيل الهاتف بشبكة Wi-Fi.</string>
+    <string name="battery_not_drained_title">لن تنفد طاقة البطارية.</string>
+    <string name="battery_not_drained_text">يجب توصيل الهاتف بشاحن وشحنه بالكامل (100%)</string>
+    <string name="time_string_weeks">%1$dأسبوع %2$dيوم %3$dساعة</string>
+    <string name="time_string_days">%1$dيوم %2$dساعة %3$dدقيقة</string>
+    <string name="time_string_hours">%1$dساعة %2$dدقيقة</string>
+    <string name="share_facebook_success">تمت المشاركة بنجاح على Facebook</string>
+    <string name="share_facebook_error">تتعذر المشاركة على Facebook</string>
+    <string name="waiting">جارٍ المشاركة...</string>
+    <string name="share_object_message">أعد واحدًا من %1$d شخصًا شاركوا في هذا التطبيق، ولقد ساهمت بمدة تبلغ %2$s من وقت العمليات الحسابية!</string>
+    <string name="notification_service_executing_job">تطبيق Folding@Home قيد التشغيل حاليًا.\nأنت الآن تساهم في الأبحاث العلمية.</string>
+    <string name="notification_service_not_executing">تطبيق Folding@Home ليس قيد التشغيل.\nلم يتم استيفاء كل شروط التشغيل.</string>
+    <string name="settings">الإعدادات</string>
+    <string name="start_contribute">وقت البدء</string>
+    <string name="start_contribute_text">تعيين وقت البدء لإجراء العمليات الحسابية</string>
+    <string name="settings_auto_wifi_msg">تفعيل اتصال Wi-Fi أثناء المساهمة</string>
+    <string name="notifications">الإشعارات</string>
+    <string name="settings_display_notification">إرسال إشعارات عند الانتهاء من العمليات الحسابية</string>
+    <string name="contribution_interval_time">مدة المساهمة</string>
+    <string name="wizard_step">خطوة %1$d/%2$d</string>
+    <string name="no_opencl">الجهاز لا يدعم OpenCL. تعتير هذه المكتبة أساسية لتنفيذ المهام. هل تريد الاستمرار؟</string>
+    <string name="connect_to_wifi">يلزم توصيل الهاتف بشبكة Wi-Fi</string>
+    <string name="processing_time_title">وقت العمليات الحسابية بين %1$s و %2$s</string>
+    <string name="processing_time_text">يمكنك تغيير وقت البدء من الإعدادات.</string>
+    <string name="will_start_when">شروط البدء</string>
+    <string name="share_facebook_contribution">مشاركة على Facebook</string>
+    <string name="app_disabled_title">التطبيق معطل</string>
+    <string name="app_disabled_message">تم تعطيل التطبيق ولا يمكن استخدامه بعد الآن.</string>
+    <string name="stand_by">وضع الاستعداد</string>
+    <string name="helping_out">قيد التشغيل</string>
+    <string name="disabled">معطل</string>
+    <string name="data_usage">استخدام البيانات</string>
+    <string name="data_usage_text">يجب توصيل جهازك بشبكة Wi-Fi.\nإذا كنت تستخدم اتصالاً محدودًا أو مدفوعًا بشبكة Wi-Fi، فقد يتم فرض رسوم عليك لاستخدام البيانات.\n\nلمزيد من المعلومات، تحقق من مزوّد خدمة الإنترنت لديك.</string>
+    <string name="whats_new">الميزات الجديدة</string>
+    <string name="whats_new_contribution_status">يمكنك الآن الاطلاع على الشروط اللازمة لتشغيل Folding@Home.</string>
+    <string name="whats_new_disable_indicator">الإشارة إلى أن التطبيق معطل.</string>
+    <string name="whats_new_conditions_indicator">الإشارة إلى أن Wi-Fi متصل، ولكن يجب توصيل الهاتف بالشاحن ويجب أن تكون البطارية مشحونة بالكامل.</string>
+    <string name="whats_new_enable_indicator">الإشارة إلى استيفاء جميع المتطلبات.</string>
+    <string name="whats_new_power_button">من السهل الآن تفعيل التطبيق أو تعطيله. يمكنك أيضًا مشاهدة حالة Folding@Home الحالية.</string>
+    <string name="whats_new_login">يمكنك الآن تسجيل الدخول وتحميل مساهماتك.</string>
+    <string name="whats_new_contribution_indicators">أيقونات مُحسّنة ليسهل تتبع حالة مساهماتك.</string>
+    <string name="whats_new_research_type">الإشارة إلى البحث الذي تساهم به.</string>
+    <string name="whats_new_people_helping">الإشارة إلى عدد الأشخاص الذين يستخدمون Folding@Home.</string>
+    <string name="whats_new_contributed_time">الإشارة إلى إجمالي وقت مساهماتك.</string>
+    <string name="skip">تخطي</string>
+    <string name="turn_on">تشغيل</string>
+    <string name="turn_off">إيقاف تشغيل</string>
+    <string name="active_research">البحث النشط</string>
+    <string name="notification_contribution_time">شكرًا لك. ساهم هذا الجهاز بـ %1$s أثناء الأربع وعشرين ساعة الأخيرة.</string>
+    <string name="action_login">تسجيل الدخول</string>
+    <string name="action_logout">%1$s (تسجيل الخروج)</string>
+    <string name="action_leaderboards">لوحات تسجيل أعلى النقاط</string>
+    <string name="action_achievements">الإنجازات</string>
+    <string name="action_invite_friends">دعوة الأصدقاء</string>
+    <string name="notification_service_turn_on">تشغيل للاستمرار في المساهمة</string>
+    <string name="toast_logout">تم تسجيل الخروج</string>
+    <string name="toast_network_unavailable">الشبكة غير متوفرة</string>
+    <string name="paused">موقوف مؤقتًا</string>
+    <string name="action_enable">تمكين</string>
+    <string name="action_disable">تعطيل</string>
+    <string name="pause">إيقاف مؤقت</string>
+    <string name="new_indicators">مؤشرات جديدة</string>
+    <string name="new_power_button">زر تشغيل جديد</string>
+    <string name="sign_in_google_game_service">تسجيل في Google Play™ Games Services</string>
+    <string name="view_more">عرض المزيد</string>
+    <string name="toast_achievements_disabled">قم بتسجيل الدخول لعرض الإنجازات!</string>
+    <string name="toast_leaderboards_disabled">قم بتسجيل الدخول لعرض لوحات تسجيل أعلى النقاط!</string>
+    <string name="contribution_details">تفاصيل المساهمة</string>
+    <string name="project_description">وصف المشروع</string>
+    <string name="week">أسبوع</string>
+    <string name="month">الشهر</string>
+    <string name="all_time">الوقت الإجمالي</string>
+    <string name="time_string_hours_only">%1$d س</string>
+    <string name="chart_week_label">الأسبوع %1$d</string>
+    <string name="hours_contributed_label_plural">%1$d من ساعات المساهمة</string>
+    <string name="hours_contributed_label_singular">ساعة مساهمة واحدة</string>
+    <string name="contributed_no_data">لا توجد مساهمات للمدة المحددة</string>
+    <string name="no_charger_tile">لا يوجد شاحن</string>
+    <string name="low_battery_tile">طاقة البطارية منخفضة</string>
+    <string name="no_wifi_tile">لا توجد Wi-Fi</string>
+    <string name="no_charger_text">يجب توصيل الجهاز بشاحن</string>
+    <string name="low_battery_text">تحتاج البطارية إلى شحن لا يقل عن 98% لبدء المساهمة</string>
+    <string name="no_wifi_text">اتصل بشبكة Wi-Fi لبدء المساهمة.</string>
+</resources>

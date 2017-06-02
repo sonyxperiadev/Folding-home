@@ -1,0 +1,35 @@
+diff --git a/common.gypi b/common.gypi
+index 5b8b2c0..3378b43 100644
+--- a/common.gypi
++++ b/common.gypi
+@@ -68,6 +68,10 @@
+             'cflags': [ '-gxcoff' ],
+             'ldflags': [ '-Wl,-bbigtoc' ],
+           }],
++          ['OS == "android"', {
++            'cflags': [ '-fPIE' ],
++            'ldflags': [ '-fPIE', '-pie' ]
++          }],
+         ],
+         'msvs_settings': {
+           'VCCLCompilerTool': {
+@@ -101,6 +105,10 @@
+           ['OS!="mac" and OS!="win"', {
+             'cflags': [ '-fno-omit-frame-pointer' ],
+           }],
++          ['OS == "android"', {
++            'cflags': [ '-fPIE' ],
++            'ldflags': [ '-fPIE', '-pie' ]
++          }],
+         ],
+         'msvs_settings': {
+           'VCCLCompilerTool': {
+@@ -277,6 +285,8 @@
+       [ 'OS=="android"', {
+         'defines': ['_GLIBCXX_USE_C99_MATH'],
+         'libraries': [ '-llog' ],
++        'cflags': [ '-fPIE' ],
++        'ldflags': [ '-fPIE', '-pie' ],
+       }],
+       ['OS=="mac"', {
+         'defines': ['_DARWIN_USE_64_BIT_INODE=1'],

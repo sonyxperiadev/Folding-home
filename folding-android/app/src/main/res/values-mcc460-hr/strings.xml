@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  Licensed under the LICENSE.
+  Copyright 2017, Sony Mobile Communications Inc.
+-->
+<resources xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="no_cost_mobile_data_text">Telefon mora biti povezan na WLAN mrežu.</string>
+    <string name="settings_auto_wifi_msg">Omogućite WLAN za vrijeme sudjelovanja</string>
+    <string name="connect_to_wifi">Telefon mora biti povezan na WLAN mrežu</string>
+    <string name="data_usage_text">Uređaj mora biti povezan s WLAN mrežom.\nAko koristite WLAN vezu s plaćanjem ili mjerenjem podataka, promet podacima mogao bi vam se naplatiti.\n\nViše pojedinosti zatražite od svojega davatelja internetskih usluga.</string>
+    <string name="whats_new_conditions_indicator">Prikazuje da je WLAN spreman, ali se telefon mora spojiti na punjač i baterija mora biti 100% puna.</string>
+    <string name="no_wifi_tile">Nema WLAN signala</string>
+    <string name="no_wifi_text">Povežite se s WLAN mrežom da biste pokrenuli doprinos.</string>
+</resources>

@@ -1,0 +1,76 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+    <script src="../../src/renderer-process/base-renderer.js"></script>
+
+    <link rel="stylesheet" type="text/css" bind-href="{{dirs.css}}/app.css">
+    <link rel="stylesheet" type="text/css" bind-href="{{dirs.css}}/custom-app.css">
+    <link rel="stylesheet" type="text/css" bind-href="{{dirs.css}}/circle.css">
+    <link rel="stylesheet" type="text/css" bind-href="{{dirs.css}}/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" bind-href="{{dirs.modules}}/bootstrap/dist/css/bootstrap.min.css">
+
+    <link rel="import" href="home.html">
+    <link rel="import" href="leaderboards.html">
+    <link rel="import" href="achievements.html">
+    <link rel="import" href="contribution-time.html">
+    <link rel="import" href="legal.html">
+    <link rel="import" href="setup-guide.html">
+</head>
+<body>
+<div class="main noselect">
+    <div class="sidebar">
+        <header id="button-login-google" class="login">
+            <h2 id="button-login-google-name">Login</h2>
+            <button class="menu-login"></button>
+        </header>
+        <!-- fim da header login -->
+
+        <section class="logo">
+            <img bind-src="{{dirs.assets}}/img/img_logo.png" alt="Folding at Home">
+        </section>
+
+        <ul class="menu sidebar-nav">
+            <li class="home active" data-toggle="tab" href="#home">
+                <a>{{home|translate}}</a>
+            </li>
+            <li id="achievements-menu-item" class="achie" data-toggle="tab" href="#archievements">
+                <a>{{achievements|translate}}</a>
+            </li>
+            <li id="leaderboards-menu-item" class="leade" data-toggle="tab" href="#leaderboards">
+                <a>{{leaderboards|translate}}</a>
+            </li>
+            <li id="contribution-menu-item" class="contrib" data-toggle="tab" href="#contribution-time">
+                <a>{{contribution_time|translate}}</a>
+            </li>
+            <li class="legal" data-toggle="tab" href="#legal">
+                <a>{{legal|translate}}</a>
+            </li>
+            <li class="setup" data-toggle="tab" href="#setup-guide">
+                <a>{{setup_guide|translate}}</a>
+            </li>
+
+            <br/>
+            <br/>
+
+            <div id="fb-share" class="facebook">
+                <div class="icon-div">
+                    <i class="fa fa-facebook-square icon"></i>
+                </div>
+                <b class="facebook-text">{{share|translate}}</b>
+            </div>
+
+        </ul>
+    </div>
+    <div class="tab-content">
+    </div>
+</div>
+</body>
+
+<script>
+    //specific files
+    require(dirs.source + '/renderer-process/imports.js');
+    require(dirs.source + '/renderer-process/main-renderer.js');
+    window.$ = window.jQuery = require(dirs.modules + '/jquery/dist/jquery.min.js');
+    require(dirs.modules + '/bootstrap/dist/js/bootstrap.min.js');
+</script>
+</html>

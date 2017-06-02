@@ -1,0 +1,23 @@
+{
+  "processing": "Processando",
+  "not_processing": "Não está processando",
+  "time_string_weeks": "%sw %sd %sh",
+  "time_string_days": "%sd %sh %sm",
+  "time_string_hours": "%sh %sm",
+  "achievement_unlocked": "Nova conquista desbloqueada",
+  "welcome": "Bem vindo",
+  "signed_in_as": "Você está logado como %s",
+  "sign_in_ggs": "Entrar no Google Game Services",
+
+  "login_to_view_achievements": "Faça o login para ver suas conquistas",
+  "login_to_view_leaderboards": "Faça o login para ver o placar",
+  "no_internet": "Sem conexão com a internet",
+  "there_was_an_error": "Ocorreu um error, tente novamente em instantes",
+
+  "text_1": "Mussum",
+  "text_2": "Ipsum",
+  "text_3": "cacilds",
+  "text_4": "vidis",
+  "text_5": "litro",
+  "text_6": "abertis"
+}

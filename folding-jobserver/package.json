@@ -1,0 +1,46 @@
+{
+  "config": {
+    "blanket": {
+      "pattern": "src",
+      "data-cover-never": "node_modules"
+    }
+  },
+  "scripts": {
+    "preinstall": "scripts/preinstall.sh",
+    "postinstall": "scripts/postinstall.sh",
+    "preuninstall": "scripts/preuninstall.sh",
+    "test": "./test.sh"
+  },
+  "name": "jobserver",
+  "version": "1.00.35",
+  "description": "SOMC server maintaining the queue of jobs, to which the client reports once the pre-requisites are fulfilled.",
+  "main": "src/server.js",
+  "keywords": [
+    "sony",
+    "grid",
+    "nodejs"
+  ],
+  "author": "Sony Mobile Communications Inc",
+  "dependencies": {
+    "redis": "*",
+    "hiredis": "*",
+    "node-schedule": "*",
+    "aws-sdk": "1.13.0",
+    "router": "git://github.com/gett/router.git",
+    "redis-lua": "*",
+    "x509": "*",
+    "loggly": "*",
+    "newrelic": "*",
+    "moment": "*"
+  },
+  "devDependencies": {
+    "nock": "*",
+    "jshint": "*",
+    "mocha": "*",
+    "blanket": "*",
+    "mocha-cobertura-reporter": "*"
+  },
+  "private": true,
+  "preferGlobal": true,
+  "license": "Copyright (c) 2017 Sony Mobile Communications Inc. https://github.com/sonyxperiadev/Folding-home/LICENSE"
+}

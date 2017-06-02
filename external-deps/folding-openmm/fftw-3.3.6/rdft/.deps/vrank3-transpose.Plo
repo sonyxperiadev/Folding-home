@@ -1,0 +1,125 @@
+vrank3-transpose.lo: vrank3-transpose.c rdft.h ../kernel/ifftw.h \
+ ../config.h \
+ /home/paulo/Desktop/folding-openmm/android-toolchain/sysroot/usr/include/stdlib.h \
+ /home/paulo/Desktop/folding-openmm/android-toolchain/sysroot/usr/include/sys/cdefs.h \
+ /home/paulo/Desktop/folding-openmm/android-toolchain/sysroot/usr/include/sys/cdefs_elf.h \
+ /home/paulo/Desktop/folding-openmm/android-toolchain/sysroot/usr/include/android/api-level.h \
+ /home/paulo/Desktop/folding-openmm/android-toolchain/lib/gcc/aarch64-linux-android/4.9.x/include/stddef.h \
+ /home/paulo/Desktop/folding-openmm/android-toolchain/sysroot/usr/include/string.h \
+ /home/paulo/Desktop/folding-openmm/android-toolchain/sysroot/usr/include/malloc.h \
+ /home/paulo/Desktop/folding-openmm/android-toolchain/sysroot/usr/include/xlocale.h \
+ /home/paulo/Desktop/folding-openmm/android-toolchain/sysroot/usr/include/alloca.h \
+ /home/paulo/Desktop/folding-openmm/android-toolchain/sysroot/usr/include/strings.h \
+ /home/paulo/Desktop/folding-openmm/android-toolchain/sysroot/usr/include/sys/types.h \
+ /home/paulo/Desktop/folding-openmm/android-toolchain/lib/gcc/aarch64-linux-android/4.9.x/include/stdint.h \
+ /home/paulo/Desktop/folding-openmm/android-toolchain/sysroot/usr/include/stdint.h \
+ /home/paulo/Desktop/folding-openmm/android-toolchain/sysroot/usr/include/machine/wchar_limits.h \
+ /home/paulo/Desktop/folding-openmm/android-toolchain/sysroot/usr/include/linux/types.h \
+ /home/paulo/Desktop/folding-openmm/android-toolchain/sysroot/usr/include/asm/types.h \
+ /home/paulo/Desktop/folding-openmm/android-toolchain/sysroot/usr/include/asm-generic/types.h \
+ /home/paulo/Desktop/folding-openmm/android-toolchain/sysroot/usr/include/asm-generic/int-ll64.h \
+ /home/paulo/Desktop/folding-openmm/android-toolchain/sysroot/usr/include/asm/bitsperlong.h \
+ /home/paulo/Desktop/folding-openmm/android-toolchain/sysroot/usr/include/asm-generic/bitsperlong.h \
+ /home/paulo/Desktop/folding-openmm/android-toolchain/sysroot/usr/include/linux/posix_types.h \
+ /home/paulo/Desktop/folding-openmm/android-toolchain/sysroot/usr/include/linux/stddef.h \
+ /home/paulo/Desktop/folding-openmm/android-toolchain/sysroot/usr/include/linux/compiler.h \
+ /home/paulo/Desktop/folding-openmm/android-toolchain/sysroot/usr/include/asm/posix_types.h \
+ /home/paulo/Desktop/folding-openmm/android-toolchain/sysroot/usr/include/asm-generic/posix_types.h \
+ /home/paulo/Desktop/folding-openmm/android-toolchain/sysroot/usr/include/sys/sysmacros.h \
+ /home/paulo/Desktop/folding-openmm/android-toolchain/sysroot/usr/include/memory.h \
+ /home/paulo/Desktop/folding-openmm/android-toolchain/lib/gcc/aarch64-linux-android/4.9.x/include/stdarg.h \
+ /home/paulo/Desktop/folding-openmm/android-toolchain/lib/gcc/aarch64-linux-android/4.9.x/include-fixed/limits.h \
+ /home/paulo/Desktop/folding-openmm/android-toolchain/lib/gcc/aarch64-linux-android/4.9.x/include-fixed/syslimits.h \
+ /home/paulo/Desktop/folding-openmm/android-toolchain/sysroot/usr/include/limits.h \
+ /home/paulo/Desktop/folding-openmm/android-toolchain/sysroot/usr/include/sys/limits.h \
+ /home/paulo/Desktop/folding-openmm/android-toolchain/sysroot/usr/include/linux/limits.h \
+ /home/paulo/Desktop/folding-openmm/android-toolchain/sysroot/usr/include/sys/syslimits.h \
+ /home/paulo/Desktop/folding-openmm/android-toolchain/sysroot/usr/include/inttypes.h \
+ /home/paulo/Desktop/folding-openmm/android-toolchain/sysroot/usr/include/sys/time.h \
+ /home/paulo/Desktop/folding-openmm/android-toolchain/sysroot/usr/include/linux/time.h \
+ /home/paulo/Desktop/folding-openmm/android-toolchain/sysroot/usr/include/time.h \
+ codelet-rdft.h
+
+rdft.h:
+
+../kernel/ifftw.h:
+
+../config.h:
+
+/home/paulo/Desktop/folding-openmm/android-toolchain/sysroot/usr/include/stdlib.h:
+
+/home/paulo/Desktop/folding-openmm/android-toolchain/sysroot/usr/include/sys/cdefs.h:
+
+/home/paulo/Desktop/folding-openmm/android-toolchain/sysroot/usr/include/sys/cdefs_elf.h:
+
+/home/paulo/Desktop/folding-openmm/android-toolchain/sysroot/usr/include/android/api-level.h:
+
+/home/paulo/Desktop/folding-openmm/android-toolchain/lib/gcc/aarch64-linux-android/4.9.x/include/stddef.h:
+
+/home/paulo/Desktop/folding-openmm/android-toolchain/sysroot/usr/include/string.h:
+
+/home/paulo/Desktop/folding-openmm/android-toolchain/sysroot/usr/include/malloc.h:
+
+/home/paulo/Desktop/folding-openmm/android-toolchain/sysroot/usr/include/xlocale.h:
+
+/home/paulo/Desktop/folding-openmm/android-toolchain/sysroot/usr/include/alloca.h:
+
+/home/paulo/Desktop/folding-openmm/android-toolchain/sysroot/usr/include/strings.h:
+
+/home/paulo/Desktop/folding-openmm/android-toolchain/sysroot/usr/include/sys/types.h:
+
+/home/paulo/Desktop/folding-openmm/android-toolchain/lib/gcc/aarch64-linux-android/4.9.x/include/stdint.h:
+
+/home/paulo/Desktop/folding-openmm/android-toolchain/sysroot/usr/include/stdint.h:
+
+/home/paulo/Desktop/folding-openmm/android-toolchain/sysroot/usr/include/machine/wchar_limits.h:
+
+/home/paulo/Desktop/folding-openmm/android-toolchain/sysroot/usr/include/linux/types.h:
+
+/home/paulo/Desktop/folding-openmm/android-toolchain/sysroot/usr/include/asm/types.h:
+
+/home/paulo/Desktop/folding-openmm/android-toolchain/sysroot/usr/include/asm-generic/types.h:
+
+/home/paulo/Desktop/folding-openmm/android-toolchain/sysroot/usr/include/asm-generic/int-ll64.h:
+
+/home/paulo/Desktop/folding-openmm/android-toolchain/sysroot/usr/include/asm/bitsperlong.h:
+
+/home/paulo/Desktop/folding-openmm/android-toolchain/sysroot/usr/include/asm-generic/bitsperlong.h:
+
+/home/paulo/Desktop/folding-openmm/android-toolchain/sysroot/usr/include/linux/posix_types.h:
+
+/home/paulo/Desktop/folding-openmm/android-toolchain/sysroot/usr/include/linux/stddef.h:
+
+/home/paulo/Desktop/folding-openmm/android-toolchain/sysroot/usr/include/linux/compiler.h:
+
+/home/paulo/Desktop/folding-openmm/android-toolchain/sysroot/usr/include/asm/posix_types.h:
+
+/home/paulo/Desktop/folding-openmm/android-toolchain/sysroot/usr/include/asm-generic/posix_types.h:
+
+/home/paulo/Desktop/folding-openmm/android-toolchain/sysroot/usr/include/sys/sysmacros.h:
+
+/home/paulo/Desktop/folding-openmm/android-toolchain/sysroot/usr/include/memory.h:
+
+/home/paulo/Desktop/folding-openmm/android-toolchain/lib/gcc/aarch64-linux-android/4.9.x/include/stdarg.h:
+
+/home/paulo/Desktop/folding-openmm/android-toolchain/lib/gcc/aarch64-linux-android/4.9.x/include-fixed/limits.h:
+
+/home/paulo/Desktop/folding-openmm/android-toolchain/lib/gcc/aarch64-linux-android/4.9.x/include-fixed/syslimits.h:
+
+/home/paulo/Desktop/folding-openmm/android-toolchain/sysroot/usr/include/limits.h:
+
+/home/paulo/Desktop/folding-openmm/android-toolchain/sysroot/usr/include/sys/limits.h:
+
+/home/paulo/Desktop/folding-openmm/android-toolchain/sysroot/usr/include/linux/limits.h:
+
+/home/paulo/Desktop/folding-openmm/android-toolchain/sysroot/usr/include/sys/syslimits.h:
+
+/home/paulo/Desktop/folding-openmm/android-toolchain/sysroot/usr/include/inttypes.h:
+
+/home/paulo/Desktop/folding-openmm/android-toolchain/sysroot/usr/include/sys/time.h:
+
+/home/paulo/Desktop/folding-openmm/android-toolchain/sysroot/usr/include/linux/time.h:
+
+/home/paulo/Desktop/folding-openmm/android-toolchain/sysroot/usr/include/time.h:
+
+codelet-rdft.h:

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  Licensed under the LICENSE.
+  Copyright 2017, Sony Mobile Communications Inc.
+-->
+<!--
+Google Play game services IDs.
+Save this file as res/values/games-ids.xml in your project.
+-->
+<resources>
+    <string name="app_id">PLACE_YOUR_GOOGLE_GAME_CLIENT_ID_HERE</string>
+    <string name="achievement_share_on_facebook">PLACE_YOUR_SHARE_ON_FACEBOOK_ACHIEVEMENT_ID_HERE</string>
+    <string name="achievement_start_folding">PLACE_YOUR_START_FOLDING_ACHIEVEMENT_ID_HERE</string>
+    <string name="achievement_aminoacid">PLACE_YOUR_AMINOACID_ACHIEVEMENT_ID_HERE</string>
+    <string name="achievement_peptide">PLACE_YOUR_PEPTIDE_ACHIEVEMENT_ID_HERE</string>
+    <string name="achievement_polypeptide">PLACE_YOUR_POLYPEPTIDE_ACHIEVEMENT_ID_HERE</string>
+    <string name="achievement_protein">PLACE_YOUR_PROTEIN_ACHIEVEMENT_ID_HERE</string>
+    <string name="achievement_enzyme">PLACE_YOUR_ENZYME_ACHIEVEMENT_ID_HERE</string>
+    <string name="achievement_open_the_breast_cancer_details">PLACE_YOUR_OPEN_BREAST_CANCER_DETAILS_ACHIEVEMENT_ID_HERE</string>
+    <string name="achievement_6_hours_straight_breast_cancer">PLACE_YOUR_6_HOURS_STRAIGHT_BREAST_CANCER_ACHIEVEMENT_ID_HERE</string>
+    <string name="achievement_12_hours_straight_breast_cancer">PLACE_YOUR_12_HOURS_STRAIGHT_BREAST_CANCER_ACHIEVEMENT_ID_HERE</string>
+    <string name="achievement_18_hours_straight_breast_cancer">PLACE_YOUR_18_HOURS_STRAIGHT_BREAST_CANCER_ACHIEVEMENT_ID_HERE</string>
+    <string name="achievement_24_hours_straight_breast_cancer">PLACE_YOUR_24_HOURS_STRAIGHT_BREAST_CANCER_ACHIEVEMENT_ID_HERE</string>
+    <string name="leaderboard_leaderboards">PLACE_YOUR_LEADERBOARD_ID_HERE</string>
+</resources>

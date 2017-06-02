@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  Licensed under the LICENSE.
+  Copyright 2017, Sony Mobile Communications Inc.
+-->
+<resources xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="no_cost_mobile_data_text">ต้องเชื่อมต่อโทรศัพท์เข้ากับเครือข่าย WLAN</string>
+    <string name="settings_auto_wifi_msg">เปิดใช้ WLAN ระหว่างการช่วยเหลือ</string>
+    <string name="connect_to_wifi">โทรศัพท์จำเป็นต้องเชื่อมต่อกับเครือข่าย WLAN</string>
+    <string name="data_usage_text">เครื่องของคุณต้องเชื่อมต่อกับเครือข่าย WLAN\nหากใช้การเชื่อมต่อแบบวัดปริมาณการใช้งานหรือ WLAN แบบจ่ายเงิน คุณต้องเสียค่าใช้จ่ายสำหรับข้อมูลการใช้งาน\n\nตรวจสอบข้อมูลเพิ่มเติมจากผู้ให้บริการอินเตอร์เน็ตของคุณ</string>
+    <string name="whats_new_conditions_indicator">แสดงว่า WLAN พร้อม แต่ต้องเชื่อมต่อโทรศัพท์กับที่ชาร์จและต้องชาร์จแบตเตอรี่ให้เต็ม 100%</string>
+    <string name="no_wifi_tile">ไม่ได้เชื่อมต่อ WLAN</string>
+    <string name="no_wifi_text">เชื่อมต่อเครือข่าย WLAN เพื่อเริ่มมีส่วนร่วม</string>
+</resources>

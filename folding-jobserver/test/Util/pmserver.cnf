@@ -1,0 +1,14 @@
+oid_section   = new_oids
+
+[ new_oids ]
+projectAttributes = 1.2.3.4.5
+
+[req]
+distinguished_name = dn
+
+[dn]
+commonName = supplied
+
+[ssl_client]
+basicConstraints = CA:FALSE
+extendedKeyUsage=clientAuth,serverAuth

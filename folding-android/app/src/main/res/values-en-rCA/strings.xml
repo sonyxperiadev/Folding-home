@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  Licensed under the LICENSE.
+  Copyright 2017, Sony Mobile Communications Inc.
+-->
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="wizard_welcome_to_folding_text">Your phone can perform scientific calculations while you sleep, and help Stanford University scientists find the cure for many diseases.</string>
+    <string name="app_disabled_title">Application disabled </string>
+    <string name="app_disabled_message">This application is disabled and cannot be used any longer.</string>
+    <string name="stand_by">Stand by </string>
+    <string name="whats_new">What\'s New</string>
+    <string name="whats_new_research_type">Indicates the research which you are contributing to.</string>
+    <string name="sign_in_google_game_service">Sign in Google Play™ Games Services</string>
+    <string name="time_string_hours_only" >%1$dh</string>
+</resources>

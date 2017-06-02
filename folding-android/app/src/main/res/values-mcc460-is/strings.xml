@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  Licensed under the LICENSE.
+  Copyright 2017, Sony Mobile Communications Inc.
+-->
+<resources xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="no_cost_mobile_data_text">Síminn verður að vera tengdur við WLAN net.</string>
+    <string name="settings_auto_wifi_msg">Kveikja á WLAN á meðan á framlagi stendur</string>
+    <string name="connect_to_wifi">Síminn þarf að vera tengdur við WLAN net.</string>
+    <string name="data_usage_text">Tækið þitt verður að vera tengt við WLAN net.\nEf þú notar mælda eða gjaldskylda WLAN tengingu kann að vera innheimt fyrir gagnanotkun.\n\nFrekari upplýsingar færðu hjá netþjónustuveitunni þinni.</string>
+    <string name="whats_new_conditions_indicator">Gefur til kynna að WLAN sé til reiðu, en að síminn verði að vera tengdur við hleðslutæki og rafhlaðan 100% hlaðin.</string>
+    <string name="no_wifi_tile">Ekkert WLAN</string>
+    <string name="no_wifi_text">Tengja við WLAN-netkerfi til að hefja framlagið.</string>
+</resources>

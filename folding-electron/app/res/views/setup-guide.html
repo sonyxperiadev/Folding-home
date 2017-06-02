@@ -1,0 +1,65 @@
+<template class="task-template">
+    <div id="setup-guide" class="tab-pane fade">
+
+        <section class="content">
+            <section class="content-setup">
+
+                <article class="wizard-1">
+                    <img bind-src="{{dirs.assets}}/img/img_wizard_01.png" alt="">
+                    <h2>{{welcome_to_folding|translate}}</h2>
+                    <h3>{{do_you_want_to_help|translate}}</h3>
+                    <p>{{your_computer_can_perform|translate}}</p>
+                    <p class="alert">{{this_application_doesnt|translate}}</p>
+                    <p id="setup-read-more" class="read-more"><a >{{read_more|translate}}</a></p>
+                    <section class="powered">
+                        <p>{{powered_by|translate}}</p>
+                        <ul>
+                            <li><img bind-src="{{dirs.assets}}/img/sony.png" alt=""></li>
+                            <li><img bind-src="{{dirs.assets}}/img/stanford.png" alt=""></li>
+                        </ul>
+                    </section>
+                    <div class="clear"></div>
+                </article> <!-- fim do wizard 01 -->
+
+                <article class="wizard-2">
+                    <h2>{{whats_new|translate}}</h2>
+                    <img bind-src="{{dirs.assets}}/img/img_wizard_04.png" alt="">
+                    <h2>{{new_power_button|translate}}</h2>
+
+                    <p>{{now_its_easier_to_enable|translate}}</p>
+
+                    <div class="clear"></div>
+                </article> <!-- fim do wizard 02 -->
+
+
+                <article class="wizard-3">
+                    <h2>{{whats_new|translate}}</h2>
+                    <img bind-src="{{dirs.assets}}/img/img_wizard_03.png" alt="">
+
+                    <p>{{you_can_login_and_upload|translate}}</p>
+                    <button id="setup-guide-signin" class="google-play">{{sign_in_ggs|translate}}</button>
+
+                    <div class="clear"></div>
+                </article> <!-- fim do wizard 02 -->
+
+
+            </section><!-- fim da content-setup -->
+
+            <section class="setup-nav">
+                <button id="bt-prev" class="bt-default bt-2 pull-left">{{prev|translate}}</button>
+                <button id="bt-next" class="bt-default bt-1 pull-right">{{next|translate}}</button>
+
+                <ul id="setup-indicators" class="text-center">
+                    <li class="nav-active"></li>
+                    <li></li>
+                    <li></li>
+                </ul>
+                <div class="clear"></div>
+            </section>
+        </section> <!-- fim da content -->
+    </div>
+
+    <script>
+        require(dirs.source + '/renderer-process/setup-guide-renderer.js');
+    </script>
+</template>

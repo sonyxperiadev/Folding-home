@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  Licensed under the LICENSE.
+  Copyright 2017, Sony Mobile Communications Inc.
+-->
+<resources xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="notification_service_finished_job_executed">Anjeun tos nyumbang ka elmu pangaweruh</string>
+    <string name="notification_service_finished_failed">Kabeh kondisi ngamimitian teu kapinuhan</string>
+    <string name="contributed_time">Waktos kontribusi</string>
+    <string name="people_helping">Jelema nu mantuan</string>
+    <string name="research_type">Jinis panalitian</string>
+    <string name="research_type_unavailable">Teu sadia</string>
+    <string name="setup_guide">Panungtun setelan</string>
+    <string name="legal">Hukum</string>
+    <string name="share">Bagikeun</string>
+    <string name="welcome">Wilujeng sumping ka Folding@Home</string>
+    <string name="read_more">Baca salengkepna</string>
+    <string name="more_info">Inpormasi salengkepna</string>
+    <string name="finish">Rengse</string>
+    <string name="wizard_welcome_to_folding_subtitle">Anjeun hayang mantuan manggihan ubar jang Alzheimer, Parkinson jeung kanker?</string>
+    <string name="wizard_welcome_to_folding_text">Telepon anjeun tiasa milampah itungan élmu sains salila anjeun sare, jeung mantuan elmuwan Universitas Stanford manggihan ubar jang loba panyakit.</string>
+    <string-array name="help_find_cure">
+        <item>Ku cara ngadaptar jang Folding@Home, anjeun mantuan elmuwan Universitas Stanford dina usaha manggihan ubar jang rupa-rupa panyawat nu umum ku cara nyumbang kakuatan proses telepon anjeun upami anjeun teu make telepon.</item>
+        <item>Nilep ngacu kana aktipitas protein dina awak. Panalitian tilepan protein merluken loba itungan nu Stanford University penta batur jang nyumbang daya proses telepon maranehanana jang ngitung sababaraha angka. Waktos anjeun sare, Stanford University bakal ngirim polder nu ditilep jang diitung telepon anjeun. Saenggeus itungan rengse, hasilna bakal dikirim deui ka Stanford.</item>
+        <item>Anjeun tiasa manggihan inpormasi salengkepna ngeunaan Folding@Home dina kaca utama:\nfolding.stanford.edu</item>
+    </string-array>
+    <string name="powered_by">ditanagaan ku</string>
+    <string name="private_date_safe_title">Data pribadi anjeun aman.</string>
+    <string name="private_date_safe_text">Aplikasi ieu teu ngakses data pribadi anjeun.</string>
+    <string name="no_cost_mobile_data_title">Taya beaya jang data seluler</string>
+    <string name="no_cost_mobile_data_text">Telepon kudu disambungkeun ka jaringan Wi-Fi.</string>
+    <string name="battery_not_drained_title">Batre moal dibeakkeun</string>
+    <string name="battery_not_drained_text">Telepon kudu disambungkeun ka carjer jeung dieusi batre pinuh (100%)</string>
+    <string name="time_string_weeks">%1$dm %2$dp %3$dj</string>
+    <string name="time_string_days">%1$dp %2$dj %3$dm</string>
+    <string name="time_string_hours">%1$dj %2$dm</string>
+    <string name="share_facebook_success">Sukses dibagikeun dina Facebook</string>
+    <string name="share_facebook_error">Teu tiasa ngabagikeun di Facebook</string>
+    <string name="waiting">Ngabagikeun…</string>
+    <string name="share_object_message">Abdi salah sahiji jelema %1$d nu mantuan jeung abdi tos nyumang jeung %2$s waktu itungan!</string>
+    <string name="notification_service_executing_job">Folding@Home jalan.\nAnjeun tos nyu. ka pa. elm.</string>
+    <string name="notification_service_not_executing">Folding@Home teu jalan.\nKabeh kondisi teu minuhan sarat.</string>
+    <string name="settings">Setelan</string>
+    <string name="start_contribute">Ngamimitian waktos</string>
+    <string name="start_contribute_text">Setel waktu mimiti jang ngitung</string>
+    <string name="settings_auto_wifi_msg">Aktipkan Wi-Fi salila kontribusi</string>
+    <string name="notifications">Bewara</string>
+    <string name="settings_display_notification">Kirim bewara dina ahir itungan</string>
+    <string name="contribution_interval_time">Dangka waktu kontribusi</string>
+    <string name="wizard_step">Lengkah %1$d/%2$d</string>
+    <string name="no_opencl">Alat ieu teu ngarojong OpenCL. Pustaka ieu perlu jang milampah pagawaean. Anjeun hayang neruskeun?</string>
+    <string name="connect_to_wifi">Telepon perlu disambungkeun ka jaringan Wi-Fi</string>
+    <string name="processing_time_title">Waktos ngitung diantawis %1$s – %2$s</string>
+    <string name="processing_time_text">Anjeun tiasa ngarobah waktu mimiti dina setelan.</string>
+    <string name="will_start_when">Ngamimitian kondisi</string>
+    <string name="share_facebook_contribution">Bagikeun dina Facebook</string>
+    <string name="app_disabled_title">Aplikasi dinonaktipkeun</string>
+    <string name="app_disabled_message">Aplikasi ieu dinonaktipkeun jeung moal dipake deui.</string>
+    <string name="stand_by">Sayaga</string>
+    <string name="helping_out">Mantuan</string>
+    <string name="disabled">Dinonaktipkeun</string>
+    <string name="data_usage">Pamakean data</string>
+    <string name="data_usage_text">Alat anjeun kudu nyambung ka jaringan Wi-Fi.\nLamun anjeun make sambungan Wi-Fi nu kaukur atawa mayar, Ajeun bakal kena beaya pikeun pamakean data.\n\nPikeun inpo leuwih lanjut, kontak propaider laden Internet anjeun.</string>
+    <string name="whats_new">Naon nu anyar</string>
+    <string name="whats_new_contribution_status">Anjeun ayeuna tiasa nempo status kondisi nu diperlukeun pikeun milampah Folding@Home.</string>
+    <string name="whats_new_disable_indicator">Nunjukkeun yen aplikasi dinonaktipkeun.</string>
+    <string name="whats_new_conditions_indicator">Nunjukkeun yen Wi-Fi siap, tapi telepon kudu disambungkeun ka carjer jeung batre kudu dieusi 100%.</string>
+    <string name="whats_new_enable_indicator">Nunjukkeun yen kabeh sarat tos siap.</string>
+    <string name="whats_new_power_button">Anjeun leuwih gampang ngaktipkeun atawa nonaktipkeun aplikasi ieu. Anjeun oge tiasa nempo status Folding@Home nu ayeuna.</string>
+    <string name="whats_new_login">Anjeun ayeuna tiasa asup jeung munggah kontribusi anjeun.</string>
+    <string name="whats_new_contribution_indicators">Ikon nu disampurnakeun pikeun ku cara gampang ngalacak status kontribusi anjeun.</string>
+    <string name="whats_new_research_type">Nunjukkeun panalitian nu aya kontribusi anjeun.</string>
+    <string name="whats_new_people_helping">Nunjukkeun jumlah jelema nu make Folding@Home.</string>
+    <string name="whats_new_contributed_time">Nunjukkeun jumlah waktu ti kontribusi anjeun.</string>
+    <string name="skip">Liw.</string>
+    <string name="turn_on">Aktipkeun</string>
+    <string name="turn_off">Pareuman</string>
+    <string name="active_research">Panalitian aktip</string>
+    <string name="notification_contribution_time">Nuhun. Alat ieu tos dikontribusi %1$s salila 24 terahir.</string>
+    <string name="action_login">Asup</string>
+    <string name="action_logout">%1$s (Kaluar)</string>
+    <string name="action_leaderboards">Papan rengking</string>
+    <string name="action_achievements">Pancapaian</string>
+    <string name="action_invite_friends">Ondang babaturan</string>
+    <string name="notification_service_turn_on">Aktipkeun pikeun te. me. ko.</string>
+    <string name="toast_logout">Kaluar</string>
+    <string name="toast_network_unavailable">Jaringan teu sadia</string>
+    <string name="paused">Direureuhkeun</string>
+    <string name="action_enable">Aktipkeun</string>
+    <string name="action_disable">Nonaktipkeun</string>
+    <string name="pause">Reur.</string>
+    <string name="new_indicators">Indikator anyar</string>
+    <string name="new_power_button">Kenop daya anyar</string>
+    <string name="sign_in_google_game_service">Asup ka Laden Kaulian Google Play™</string>
+    <string name="view_more">Tempo le. lo.</string>
+    <string name="toast_achievements_disabled">Asup pikeun nempo prestasi!</string>
+    <string name="toast_leaderboards_disabled">Asup pikeun nempo papan rengking!</string>
+    <string name="contribution_details">Wincik kontribusi</string>
+    <string name="project_description">Katerangan proyek</string>
+    <string name="week">Minggu</string>
+    <string name="month">Bulan</string>
+    <string name="all_time">Total waktos</string>
+    <string name="time_string_hours_only">%1$dj</string>
+    <string name="chart_week_label">Minggon %1$d</string>
+    <string name="hours_contributed_label_plural">%1$d jam dikontribusikeun</string>
+    <string name="hours_contributed_label_singular">1 jam dikontribusikeun</string>
+    <string name="contributed_no_data">Teu aya kontribusi keur waktos anu dipilih</string>
+    <string name="no_charger_tile">Teu ngecas</string>
+    <string name="low_battery_tile">Batre soak</string>
+    <string name="no_wifi_tile">Teu aya Wi-Fi</string>
+    <string name="no_charger_text">Alat ieu kudu kasambung kana carjer</string>
+    <string name="low_battery_text">Batré kudu sahenteuna 98% dieusi batré keur mimitian kontribusi</string>
+    <string name="no_wifi_text">Sambung ka jaringan Wi-Fi keur mimitian kontribusi.</string>
+</resources>

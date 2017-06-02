@@ -1,0 +1,14 @@
+diff --git a/lib/dns.js b/lib/dns.js
+index 8bd61ca..ac38966 100644
+--- a/lib/dns.js
++++ b/lib/dns.js
+@@ -128,6 +128,9 @@ exports.lookup = function lookup(hostname, options, callback) {
+         hints !== (exports.ADDRCONFIG | exports.V4MAPPED)) {
+       throw new TypeError('invalid argument: hints must use valid flags');
+     }
++    if (process.platform === 'android') {
++        hints &= ~exports.V4MAPPED;
++    }
+   } else {
+     family = options >>> 0;
+   }

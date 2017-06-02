@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  Licensed under the LICENSE.
+  Copyright 2017, Sony Mobile Communications Inc.
+-->
+<resources xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="notification_service_finished_job_executed">Anda telah menyumbang kepada sains</string>
+    <string name="notification_service_finished_failed">Tidak semua syarat permulaan dipenuhi</string>
+    <string name="contributed_time">Masa disumbangkan</string>
+    <string name="people_helping">Orang ramai membantu</string>
+    <string name="research_type">Jenis penyelidikan</string>
+    <string name="research_type_unavailable">Tidak boleh digunakan</string>
+    <string name="setup_guide">Panduan persediaan</string>
+    <string name="legal">Perundangan</string>
+    <string name="share">Kongsi</string>
+    <string name="welcome">Selamat datang ke Folding@Home</string>
+    <string name="read_more">Baca selanjutnya</string>
+    <string name="more_info">Maklumat selanjutnya</string>
+    <string name="finish">Selesai</string>
+    <string name="wizard_welcome_to_folding_subtitle">Ingin membantu mencari penawar Alzheimer, Parkinson dan kanser?</string>
+    <string name="wizard_welcome_to_folding_text">Telefon anda boleh menjalankan pengiraan saintifik semasa anda tidur dan membantu saintis Stanford University mencari penawar untuk banyak penyakit.</string>
+    <string-array name="help_find_cure">
+        <item>Anda membantu saintis Stanford University dalam perjuangan mereka mencari penawar untuk pelbagai penyakit biasa apabila anda mendaftar untuk Folding@Home dengan cara menyumbangkan kuasa pemprosesan telefon anda semasa anda tidak menggunakannya.</item>
+        <item>Gandaan merujuk kepada aktiviti protein di dalam badan kita. Penyelidikan gandaan protein memerlukan banyak pengiraan maka Stanford University meminta orang ramai untuk menyumbangkan kuasa pemprosesan telefon mereka yang tidak diguna untuk menyelesaikan kiraan ini. Apabila anda tidur, Stanford University akan menghantar masalah gandaan untuk diselesaikan telefon anda. Sebaik sahaja pengiraan selesai, keputusan akan dihantar kembali kepada Stanford.</item>
+        <item>Anda boleh menemui maklumat selanjutnya berkenaan Folding@Home di laman:\nfolding.stanford.edu</item>
+    </string-array>
+    <string name="powered_by">dikuasakan oleh</string>
+    <string name="private_date_safe_title">Data peribadi anda selamat.</string>
+    <string name="private_date_safe_text">Aplikasi ini tidak mengakses data peribadi anda.</string>
+    <string name="no_cost_mobile_data_title">Data mudah alih adalah percuma</string>
+    <string name="no_cost_mobile_data_text">Telefon perlu bersambung ke rangkaian Wi-Fi.</string>
+    <string name="battery_not_drained_title">Bateri tidak akan habis</string>
+    <string name="battery_not_drained_text">Telefon perlu bersambung ke pengecas dan dicas sepenuhnya (100%)</string>
+    <string name="time_string_weeks">%1$dm %2$dh %3$dj</string>
+    <string name="time_string_days">%1$dh %2$dj %3$dm</string>
+    <string name="time_string_hours">%1$dj %2$dm</string>
+    <string name="share_facebook_success">Berjaya dikongsikan di Facebook</string>
+    <string name="share_facebook_error">Tidak dapat dikongsikan di Facebook</string>
+    <string name="waiting">Berkongsi…</string>
+    <string name="share_object_message">Saya salah seorang %1$d yang membantu dan saya telah menyumbang dengan %2$s masa pengiraan!</string>
+    <string name="notification_service_executing_job">Folding@Home sedang berjalan.\nAnda menyumbang kepada pen. sai.</string>
+    <string name="notification_service_not_executing">Folding@Home tidak berjalan.\nSemua keadaan permulaan tidak dipenuhi.</string>
+    <string name="settings">Tetapan</string>
+    <string name="start_contribute">Masa bermula</string>
+    <string name="start_contribute_text">Tetapkan masa mula untuk pengiraan</string>
+    <string name="settings_auto_wifi_msg">Dayakan Wi-Fi semasa menyumbang</string>
+    <string name="notifications">Pemberitahuan</string>
+    <string name="settings_display_notification">Hantar pemberitahuan pada akhir pengiraan</string>
+    <string name="contribution_interval_time">Tempoh sumbangan</string>
+    <string name="wizard_step">Langkah %1$d/%2$d</string>
+    <string name="no_opencl">Peranti ini tidak menyokong OpenCL. Pustaka ini penting untuk melaksanakan tugas. Anda ingin teruskan?</string>
+    <string name="connect_to_wifi">Telefon perlu bersambung ke rangkaian Wi-Fi</string>
+    <string name="processing_time_title">Masa pen. ad. an. %1$s – %2$s</string>
+    <string name="processing_time_text">Anda boleh menukar masa mula dalam tetapan.</string>
+    <string name="will_start_when">Keadaan permulaan</string>
+    <string name="share_facebook_contribution">Kongsi di Facebook</string>
+    <string name="app_disabled_title">Aplikasi dinyahdayakan</string>
+    <string name="app_disabled_message">Aplikasi ini dinyahdayakan dan tidak boleh lagi digunakan.</string>
+    <string name="stand_by">Bersedia</string>
+    <string name="helping_out">Membantu</string>
+    <string name="disabled">Dinyahdayakan</string>
+    <string name="data_usage">Penggunaan data</string>
+    <string name="data_usage_text">Peranti anda perlu disambungkan ke rangkaian Wi-Fi.\nJika anda menggunakan sambungan Wi-Fi bermeter atau berbayar, anda mungkin dicaj untuk penggunaan data.\n\nUntuk mendapatkan maklumat selanjutnya, rujuk pembekal khidmat Internet anda.</string>
+    <string name="whats_new">Yang terbaru</string>
+    <string name="whats_new_contribution_status">Kini anda boleh melihat status syarat yang diperlukan untuk menjalankan Folding@Home.</string>
+    <string name="whats_new_disable_indicator">Menunjukkan bahawa aplikasi dinyahdayakan.</string>
+    <string name="whats_new_conditions_indicator">Menunjukkan bahawa Wi-Fi bersedia, tetapi telefon perlu disambungkan ke pengecas dan bateri hendaklah dicas 100%.</string>
+    <string name="whats_new_enable_indicator">Menunjukkan bahawa semua keperluan sudah sedia.</string>
+    <string name="whats_new_power_button">Kini lebih mudah untuk mendayakan atau menyahdayakan aplikasi. Anda juga boleh melihat status semasa Folding@Home.</string>
+    <string name="whats_new_login">Kini anda boleh melog masuk dan memuat naik sumbangan anda.</string>
+    <string name="whats_new_contribution_indicators">Ikon dipertingkat untuk mengikuti status sumbangan anda dengan lebih mudah.</string>
+    <string name="whats_new_research_type">Menunjukkan penyelidikan yang anda sumbangkan.</string>
+    <string name="whats_new_people_helping">Menunjukkan bilangan individu yang menggunakan Folding@Home.</string>
+    <string name="whats_new_contributed_time">Menunjukkan jumlah masa sumbangan anda.</string>
+    <string name="skip">Langkau</string>
+    <string name="turn_on">Hidupkan</string>
+    <string name="turn_off">Matikan</string>
+    <string name="active_research">Penyelidikan aktif</string>
+    <string name="notification_contribution_time">Terima kasih. Peranti ini telah menyumbang %1$s sepanjang 24j lepas.</string>
+    <string name="action_login">Daftar masuk</string>
+    <string name="action_logout">%1$s (Daftar keluar)</string>
+    <string name="action_leaderboards">Papan pendahulu</string>
+    <string name="action_achievements">Pencapaian</string>
+    <string name="action_invite_friends">Jemput rakan</string>
+    <string name="notification_service_turn_on">Hidupkan untuk terus menyumbang</string>
+    <string name="toast_logout">Mengelog keluar</string>
+    <string name="toast_network_unavailable">Rangkaian tidak tersedia</string>
+    <string name="paused">Dijeda</string>
+    <string name="action_enable">Dayakan</string>
+    <string name="action_disable">Nyahdayakan</string>
+    <string name="pause">Jeda</string>
+    <string name="new_indicators">Penunjuk baharu</string>
+    <string name="new_power_button">Butang kuasa baharu</string>
+    <string name="sign_in_google_game_service">Dftr msk Pkh. Pma. Google Play™</string>
+    <string name="view_more">Li. sel.</string>
+    <string name="toast_achievements_disabled">Daftar masuk untuk melihat pencapaian!</string>
+    <string name="toast_leaderboards_disabled">Daftar masuk untuk melihat papan markah!</string>
+    <string name="contribution_details">Butiran sumbangan</string>
+    <string name="project_description">Perihal projek</string>
+    <string name="week">Minggu</string>
+    <string name="month">Bulan</string>
+    <string name="all_time">Jumlah masa</string>
+    <string name="time_string_hours_only">%1$dj</string>
+    <string name="chart_week_label">Minggu %1$d</string>
+    <string name="hours_contributed_label_plural">%1$d jam disumbangkan</string>
+    <string name="hours_contributed_label_singular">1 jam disumbangkan</string>
+    <string name="contributed_no_data">Tiada sumbangan untuk tempoh yang dipilih</string>
+    <string name="no_charger_tile">Tiada pengecas</string>
+    <string name="low_battery_tile">Bateri lemah</string>
+    <string name="no_wifi_tile">Tiada Wi-Fi</string>
+    <string name="no_charger_text">Peranti mesti disambungkan ke pengecas</string>
+    <string name="low_battery_text">Bateri perlu berada sekurang-kurangnya 98% dicas untuk memulakan sumbangan</string>
+    <string name="no_wifi_text">Sambung ke rangkaian Wi-Fi untuk memulakan sumbangan.</string>
+</resources>

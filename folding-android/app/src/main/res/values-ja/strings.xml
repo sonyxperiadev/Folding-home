@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  Licensed under the LICENSE.
+  Copyright 2017, Sony Mobile Communications Inc.
+-->
+<resources xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="notification_service_finished_job_executed">科学研究に貢献しました</string>
+    <string name="notification_service_finished_failed">一部の開始条件を満たしていません</string>
+    <string name="contributed_time">貢献した時間</string>
+    <string name="people_helping">支援者</string>
+    <string name="research_type">研究のタイプ</string>
+    <string name="research_type_unavailable">不明</string>
+    <string name="setup_guide">セットアップガイド</string>
+    <string name="legal">利用規約</string>
+    <string name="share">共有</string>
+    <string name="welcome">Folding@Homeへようこそ</string>
+    <string name="read_more">詳細を確認</string>
+    <string name="more_info">詳細情報</string>
+    <string name="finish">完了</string>
+    <string name="wizard_welcome_to_folding_subtitle">アルツハイマー病やパーキンソン病、がん等の治療法の発見に役立つ方法があります。</string>
+    <string name="wizard_welcome_to_folding_text">あなたが眠っている間に、携帯電話が科学的な計算を行います。それは、スタンフォード大学の研究者が、多くの病気の治療法を発見することに役立ちます。</string>
+    <string-array name="help_find_cure">
+        <item>Folding@Homeにサインアップして、携帯電話を使用していないときの処理能力を提供します。そうすることで、スタンフォード大学の研究者が追究している、多くの一般的な病気の治療法の発見に役立てることができます。</item>
+        <item>フォールディングとは、体内のタンパク質が特定の立体構造に折りたたまれる現象をいいます。タンパク質の折りたたみ構造の研究は膨大な計算を必要とするため、スタンフォード大学の研究者は、使用していない携帯電話の処理能力をその膨大な計算のために提供してもらうよう協力を依頼しています。あなたが眠っている間に、スタンフォード大学から、解決すべき折りたたみ構造の問題が携帯電話に送信されます。計算が終了すると、結果はスタンフォードへ送信されます。</item>
+        <item>Folding@Homeに関する詳細な情報は、次のホームページで確認できます\nfolding.stanford.edu</item>
+    </string-array>
+    <string name="private_date_safe_title">個人データは保護されています</string>
+    <string name="private_date_safe_text">このアプリケーションは個人データにアクセスしません。</string>
+    <string name="no_cost_mobile_data_title">データ通信料は発生しません</string>
+    <string name="no_cost_mobile_data_text">携帯電話をWi-Fiネットワークに接続する必要があります。</string>
+    <string name="battery_not_drained_title">電力は消費されません</string>
+    <string name="battery_not_drained_text">携帯電話を充電器に接続し、充電完了(100%)している必要があります</string>
+    <string name="time_string_weeks">%1$d週間%2$d日%3$d時間</string>
+    <string name="time_string_days">%1$d日%2$d時間%3$d分</string>
+    <string name="time_string_hours">%1$d時間%2$d分</string>
+    <string name="share_facebook_success">Facebookで共有しました</string>
+    <string name="share_facebook_error">Facebookで共有できませんでした</string>
+    <string name="waiting">共有中…</string>
+    <string name="share_object_message">私は%1$d人の支援者のうちの一人です。計算に要した時間、%2$sを提供しました。</string>
+    <string name="notification_service_executing_job">Folding@Homeは実行中です。\n科学研究に貢献しています。</string>
+    <string name="notification_service_not_executing">Folding@Homeは実行していません。\n一部、開始条件を満たしていません。</string>
+    <string name="settings">設定</string>
+    <string name="start_contribute">開始時刻</string>
+    <string name="start_contribute_text">計算の開始時刻を設定</string>
+    <string name="settings_auto_wifi_msg">貢献中にWi-Fiを有効</string>
+    <string name="notifications">通知</string>
+    <string name="settings_display_notification">計算終了時に通知を送信する</string>
+    <string name="contribution_interval_time">貢献する時間</string>
+    <string name="wizard_step">ステップ %1$d/%2$d</string>
+    <string name="no_opencl">この機器はOpenCLをサポートしていません。このライブラリーはジョブの実行に不可欠です。続行しますか?</string>
+    <string name="connect_to_wifi">携帯電話をWi-Fiネットワークに接続する必要があります</string>
+    <string name="processing_time_title">計算時間は%1$sから%2$sの間です</string>
+    <string name="processing_time_text">設定で開始時刻を変更できます。</string>
+    <string name="will_start_when">開始条件</string>
+    <string name="share_facebook_contribution">Facebookで共有</string>
+    <string name="app_disabled_title">アプリケーションが無効です</string>
+    <string name="app_disabled_message">アプリケーションが無効のため使用できません。</string>
+    <string name="stand_by">スタンバイ</string>
+    <string name="helping_out">貢献しています…</string>
+    <string name="disabled">無効になりました</string>
+    <string name="data_usage">データ使用</string>
+    <string name="data_usage_text">機器をWi-Fiネットワークに接続する必要があります。\n従量制またはプリペイド型のWi-Fi接続を使用する場合は、データ使用料が発生する場合があります。\n\n詳しくはインターネットサービスプロバイダーにお問い合わせください。</string>
+    <string name="whats_new">最新情報</string>
+    <string name="whats_new_contribution_status">Folding@Homeを実行するために必要な条件のステータスを確認できるようになりました。</string>
+    <string name="whats_new_disable_indicator">アプリが無効であることを示します。</string>
+    <string name="whats_new_conditions_indicator">Wi-Fiが使用可能であることを示しますが、携帯電話を充電器に接続し、充電完了(100%)している必要があります。</string>
+    <string name="whats_new_enable_indicator">すべての条件が整ったことを示します。</string>
+    <string name="whats_new_power_button">簡単にアプリを有効/無効にすることができるようになりました。また、現在のFolding@Homeのステータスも確認できます。</string>
+    <string name="whats_new_login">ログインして、貢献した結果をアップロードできます。</string>
+    <string name="whats_new_contribution_indicators">改善されたアイコンで、貢献のステータスを簡単に把握できます。</string>
+    <string name="whats_new_research_type">貢献している科学研究を示します。</string>
+    <string name="whats_new_people_helping">Folding@Homeを使用している人数を示します。</string>
+    <string name="whats_new_contributed_time">貢献した合計の時間を示します。</string>
+    <string name="skip">スキップ</string>
+    <string name="turn_on">ONにしてください</string>
+    <string name="turn_off">OFFにしてください</string>
+    <string name="active_research">有効な研究</string>
+    <string name="notification_contribution_time">ありがとうございます。この機器はこの24時間で%1$s貢献しました。</string>
+    <string name="action_login">サインイン</string>
+    <string name="action_logout">%1$s (サインアウト)</string>
+    <string name="action_leaderboards">リーダーボード</string>
+    <string name="action_achievements">成果</string>
+    <string name="action_invite_friends">友達を招待</string>
+    <string name="notification_service_turn_on">貢献を継続するにはONにして下さい</string>
+    <string name="toast_logout">ログアウトしました</string>
+    <string name="toast_network_unavailable">ネットワーク利用不可</string>
+    <string name="paused">一時停止中</string>
+    <string name="action_enable">有効にする</string>
+    <string name="action_disable">無効にする</string>
+    <string name="pause">一時停止</string>
+    <string name="new_indicators">新しいインジケーター</string>
+    <string name="new_power_button">新しい電源ボタン</string>
+    <string name="sign_in_google_game_service">Google Play™ｹﾞｰﾑｻｰﾋﾞｽにｻｲﾝｲﾝ</string>
+    <string name="view_more">さらに表示</string>
+    <string name="toast_achievements_disabled">成果を表示するにはサインインしてください!</string>
+    <string name="toast_leaderboards_disabled">リーダーボードを表示するにはサインインしてください!</string>
+    <string name="contribution_details">貢献の詳細</string>
+    <string name="project_description">プロジェクトの説明</string>
+    <string name="week">週</string>
+    <string name="month">月</string>
+    <string name="all_time">合計時間</string>
+    <string name="time_string_hours_only">%1$d時間</string>
+    <string name="chart_week_label">第%1$d週</string>
+    <string name="hours_contributed_label_plural">%1$d時間貢献しました</string>
+    <string name="hours_contributed_label_singular">1時間貢献しました</string>
+    <string name="contributed_no_data">指定された期間内の貢献はありません</string>
+    <string name="no_charger_tile">充電器に接続されていません</string>
+    <string name="low_battery_tile">電池残量少</string>
+    <string name="no_wifi_tile">Wi-Fiネットワークがありません</string>
+    <string name="no_charger_text">機器を充電器に接続してください</string>
+    <string name="low_battery_text">貢献を開始するには、少なくとも98%充電されている必要があります</string>
+    <string name="no_wifi_text">貢献を開始するには、Wi-Fiネットワークに接続してください。</string>
+</resources>

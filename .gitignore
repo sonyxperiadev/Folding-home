@@ -1,0 +1,17 @@
+debug.keystore
+fabric.properties
+folding-android/.gradle
+folding-android/app/build/
+folding-android/app/build/*
+folding-android/build/
+folding-android/build/*
+folding-jobserver/test/Util/index.txt
+folding-jobserver/test/Util/index.txt.attr
+folding-jobserver/test/Util/index.txt.attr.old
+folding-jobserver/test/Util/index.txt.old
+folding-jobserver/test/Util/newcerts/
+folding-jobserver/test/Util/serial
+folding-jobserver/test/Util/serial.old
+node_modules
+testReports
+*.log

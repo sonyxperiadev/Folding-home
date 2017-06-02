@@ -1,0 +1,302 @@
+/*
+ * Licensed under the LICENSE.
+ * Copyright 2017, Sony Mobile Communications Inc.
+ */
+
+img {
+    user-drag: none;
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-drag: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+}
+
+.main {
+    /* max-width: 825px; */
+    border-radius: 0 0 0 0;
+    overflow: hidden;
+    height: auto;
+    max-width: unset;
+}
+
+.tab-content {
+    float: none; /* not needed, just for clarification */
+    width: auto;
+    overflow: hidden;
+    height: 100%;
+}
+
+.sidebar {
+    width: 285px;
+    float: left;
+    height: 100%;
+}
+
+.main, .sidebar, .content {
+    height: 100%;
+}
+
+.sidebar .login h2 {
+    margin-top: 0;
+}
+
+.menu a:hover {
+    text-decoration: none;
+    color: #fff;
+}
+
+.menu .active {
+    pointer-events: none;
+}
+.menu .active a:hover {
+    text-decoration: none;
+    color: #279fe9;
+}
+
+.content {
+    max-width: unset;
+    max-height: unset;
+    width: unset;
+    overflow-y: scroll;
+}
+
+.content .content-list {
+    height: 100%;
+}
+
+.content .content-list, .content .content-archi, .content-legal {
+    height: 100%;
+    width: 100%;
+    overflow: unset;
+    list-style: none;
+}
+
+.power-button {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: -65px;
+}
+
+.power-button:hover {
+    cursor: pointer;
+}
+
+.people-image {
+    margin-left: 15px;
+    width: 95%;
+}
+
+.blank-row {
+    background-color: white;
+    height: 28px;
+    border-radius: 20px;
+    width: 95%;
+    margin-left: 13px;
+}
+
+.proc-text {
+    padding-top: 4px;
+}
+
+.desc-icon {
+    max-width: 55px;
+}
+
+.desc-title {
+    color: darkgray;
+    margin-top: -5px;
+}
+
+#read-more {
+    margin-top: 8px;
+}
+
+.uppercase{
+    text-transform: uppercase;
+}
+
+hr {
+    width: 425px !important;
+    margin-left: 106px;
+    border-top: 1px solid darkgray !important;
+}
+
+#row-full-desc {
+    margin-left: 78px;
+    margin-top: -10px;
+}
+
+#row-research-title {
+    cursor: pointer;
+}
+
+.noselect {
+    -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Chrome/Safari/Opera */
+    --khtml-user-select: none; /* Konqueror */
+    -moz-user-select: none; /* Firefox */
+    -ms-user-select: none; /* Internet Explorer/Edge */
+    user-select: none; /* Non-prefixed version, currently not supported by any browser */
+    cursor: default;
+}
+
+.achievements-list li img {
+    width: 80px;
+    height: 80px;
+}
+
+.bt-default .bt-1 {
+    position: absolute;
+    right: 0;
+}
+
+.wizard-1 .powered {
+    margin-top: 0;
+}
+
+.setup-nav .bt-default {
+    transition: linear all 0s;
+    -webkit-transition: linear all 0s;
+    -moz-transition: linear all 0s;
+    -ms-transition: linear all 0s;
+}
+
+.wizard-3 .google-play {
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    padding-left: 65px;
+    text-align: left;
+}
+
+.content .fist-places h2 {
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+.center-horizontal span, .center-horizontal img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.center-horizontal span {
+    text-align: center;
+    color: #737373;
+    font-weight: 700;
+    font-size: 26px;
+}
+
+.content-setup .alert {
+    padding-left: 0;
+    font-style: italic;
+    font-weight: bold
+}
+
+.wizard-1 .powered p {
+    font-style: normal;
+}
+
+.wizard-1 .read-more a {
+    font-weight: bold
+}
+
+.wizard-1 p {
+    color: #737373;
+}
+
+.center-crop {
+    object-fit: cover
+}
+
+.facebook {
+    background: #3b5998;
+    color: white;
+    width: 150px;
+    height: 30px;
+    display: flex;
+    margin: 0 auto;
+    border-radius: 5px;
+}
+
+.facebook:hover {
+    background: #354f87
+}
+
+.facebook .icon-div {
+    width: 30px;
+    height: 30px;
+    position: relative;
+    float: left;
+}
+
+.facebook .icon {
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%)
+}
+
+.facebook-text {
+    align-self: center;
+}
+
+.buttonPrevious {
+    background-color: #4b4b48;
+    border: none;
+    color: #f2f2f2;
+    padding: 5px 15px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 12px;
+    position:absolute;
+    transition: .5s ease;
+    top: 8%;
+    left: 40%;
+}
+
+.buttonLater {
+    background-color: #4b4b48;
+    border: none;
+    color: #f2f2f2;
+    padding: 5px 15px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 12px;
+    position:absolute;
+    transition: .5s ease;
+    top: 8%;
+    right: 10%;
+}
+
+
+ul.topnav {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #4b4b48;
+}
+
+ul.topnav li {float: left;}
+
+ul.topnav li a {
+  display: inline-block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 10.5px 16px;
+  text-decoration: none;
+  transition: 0.3s;
+  font-size: 17px;
+}
+
+ul.topnav li a:hover {background-color: #555;}
+
+ul.topnav li.icon {display: none;}

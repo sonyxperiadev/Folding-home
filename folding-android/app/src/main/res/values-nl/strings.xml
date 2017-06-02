@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  Licensed under the LICENSE.
+  Copyright 2017, Sony Mobile Communications Inc.
+-->
+<resources xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="notification_service_finished_job_executed">Je hebt bijgedragen aan de wetenschap</string>
+    <string name="notification_service_finished_failed">Er is niet aan alle startvoorwaarden voldaan.</string>
+    <string name="contributed_time">Bijgedragen tijd</string>
+    <string name="people_helping">Mensen die helpen</string>
+    <string name="research_type">Type onderzoek</string>
+    <string name="research_type_unavailable">Niet beschikbaar</string>
+    <string name="setup_guide">Installatiegids</string>
+    <string name="legal">Juridisch</string>
+    <string name="share">Delen</string>
+    <string name="welcome">Welkom bij Folding@Home</string>
+    <string name="read_more">Meer informatie</string>
+    <string name="more_info">Meer informatie</string>
+    <string name="finish">Voltooien</string>
+    <string name="wizard_welcome_to_folding_subtitle">Wil je helpen bij het genezen van Alzheimer, Parkinson en kanker?</string>
+    <string name="wizard_welcome_to_folding_text">Je telefoon kan wetenschappelijke berekeningen uitvoeren terwijl je slaapt en zo kun je de wetenschappers van Stanford University helpen veel ziektes te genezen.</string>
+    <string-array name="help_find_cure">
+        <item>Als je je aanmeldt voor Folding@Home, help je de wetenschappers van Stanford University bij hun missie veel van onze meest voorkomende ziektes te genezen. Je stelt namelijk de rekenkracht van je telefoon beschikbaar wanneer je deze niet zelf gebruikt.</item>
+        <item>Folding (eiwitvouwing in het Nederlands) verwijst naar eiwitprocessen in het menselijk lichaam. Voor het onderzoek naar eiwitvouwing zijn zo veel berekeningen nodig dat Stanford University mensen vraagt de ongebruikte rekenkracht van hun telefoons beschikbaar te stellen om een aantal berekeningen uit te voeren. Wanneer je slaapt, stuurt Stanford University een probleem voor eiwitvouwing dat je telefoon helpt op te lossen. Zodra de berekeningen zijn voltooid, worden de resultaten teruggestuurd naar Stanford.</item>
+        <item>Je vindt meer informatie over Folding@Home op de startpagina:\nfolding.stanford.edu</item>
+    </string-array>
+    <string name="powered_by">mogelijk gemaakt door</string>
+    <string name="private_date_safe_title">Je privégegevens zijn veilig.</string>
+    <string name="private_date_safe_text">Deze applicatie heeft geen toegang tot je privégegevens.</string>
+    <string name="no_cost_mobile_data_title">Geen kosten voor mobiele data</string>
+    <string name="no_cost_mobile_data_text">Telefoon moet zijn verbonden met Wi-Fi-netwerk.</string>
+    <string name="battery_not_drained_title">De batterij raakt niet volledig op</string>
+    <string name="battery_not_drained_text">De telefoon moet aangesloten op een lader en volledig opgeladen (100%) zijn</string>
+    <string name="time_string_weeks">%1$dw %2$dd %3$du</string>
+    <string name="time_string_days">%1$dd %2$du %3$dm</string>
+    <string name="time_string_hours">%1$du %2$dm</string>
+    <string name="share_facebook_success">Gedeeld op Facebook</string>
+    <string name="share_facebook_error">Kan niet delen op Facebook</string>
+    <string name="waiting">Delen…</string>
+    <string name="share_object_message">Ik ben een van de %1$d mensen die helpen en ik heb een berekeningstijd van %2$s bijgedragen.</string>
+    <string name="notification_service_executing_job">Folding@Home is actief.\nJe helpt bij wetenschappelijk onderzoek.</string>
+    <string name="notification_service_not_executing">Folding@Home is niet actief.\nNiet voldaan aan alle startvoorwaarden.</string>
+    <string name="settings">Instellingen</string>
+    <string name="start_contribute">Starttijd</string>
+    <string name="start_contribute_text">Starttijd voor berekening instellen</string>
+    <string name="settings_auto_wifi_msg">Wi-Fi inschakelen tijdens bijdrage</string>
+    <string name="notifications">Meldingen</string>
+    <string name="settings_display_notification">Meldingen verzenden aan einde van berekening</string>
+    <string name="contribution_interval_time">Duur van bijdrage</string>
+    <string name="wizard_step">Stap %1$d/%2$d</string>
+    <string name="no_opencl">Dit apparaat biedt geen ondersteuning voor OpenCL. Deze bibliotheek is vereist voor het uitvoeren van taken. Wil je doorgaan?</string>
+    <string name="connect_to_wifi">De telefoon moet zijn verbonden met een Wi-Fi-netwerk</string>
+    <string name="processing_time_title">Berekeningstijd is tussen %1$s – %2$s</string>
+    <string name="processing_time_text">Je kunt de startijd wijzigen in de instellingen.</string>
+    <string name="will_start_when">Startvoorwaarden</string>
+    <string name="share_facebook_contribution">Delen op Facebook</string>
+    <string name="app_disabled_title">Applicatie uitgeschakeld</string>
+    <string name="app_disabled_message">Deze applicatie is uitgeschakeld en kan niet meer worden gebruikt.</string>
+    <string name="stand_by">Stand-by</string>
+    <string name="helping_out">Verwerken</string>
+    <string name="disabled">Uitgeschakeld</string>
+    <string name="data_usage">Dataverbruik</string>
+    <string name="data_usage_text">Je apparaat moet zijn verbonden met een Wi-Fi-netwerk.\nAls je een betaalde Wi-Fi-verbinding of een verbinding met datalimiet gebruikt, worden er mogelijk kosten voor dataverbruik in rekening gebracht.\n\nNeem contact op met je Internet Service Provider voor meer informatie.</string>
+    <string name="whats_new">Nieuw</string>
+    <string name="whats_new_contribution_status">Je kunt nu de status bekijken van de vereisten voor het uitvoeren van Folding@Home.</string>
+    <string name="whats_new_disable_indicator">Geeft aan dat de app is uitgeschakeld.</string>
+    <string name="whats_new_conditions_indicator">Geeft aan dat Wi-Fi gereed is, maar dat de telefoon moet worden aangesloten op een lader en dat de batterij voor 100% moet zijn opgeladen.</string>
+    <string name="whats_new_enable_indicator">Geeft aan dat aan alle vereisten is voldaan.</string>
+    <string name="whats_new_power_button">Je kunt de app nu makkelijker in- en uitschakelen. Ook kun je nu de huidige status van Folding@Home bekijken.</string>
+    <string name="whats_new_login">Je kunt je nu aanmelden en je bijdragen uploaden.</string>
+    <string name="whats_new_contribution_indicators">Verbeterde pictogrammen waarmee je eenvoudig de status van je bijdragen kunt bijhouden.</string>
+    <string name="whats_new_research_type">Geeft het onderzoek aan waaraan je bijdraagt.</string>
+    <string name="whats_new_people_helping">Geeft het aantal personen aan dat Folding@Home gebruikt.</string>
+    <string name="whats_new_contributed_time">Geeft de totale tijd van je bijdragen aan.</string>
+    <string name="skip">Overslaan</string>
+    <string name="turn_on">Inschakelen</string>
+    <string name="turn_off">Uitschakelen</string>
+    <string name="active_research">Actief onderzoek</string>
+    <string name="notification_contribution_time">Hartelijk dank. Dit apparaat heeft %1$s bijgedragen in de afgelopen 24 uur.</string>
+    <string name="action_login">Aanmelden</string>
+    <string name="action_logout">%1$s (Afmelden)</string>
+    <string name="action_achievements">Prestaties</string>
+    <string name="action_invite_friends">Vrienden uitnodigen</string>
+    <string name="notification_service_turn_on">Schakel in om te blijven bijdragen</string>
+    <string name="toast_logout">Afgemeld</string>
+    <string name="toast_network_unavailable">Netwerk niet beschikbaar</string>
+    <string name="paused">Onderbroken</string>
+    <string name="action_enable">Inschakelen</string>
+    <string name="action_disable">Uitschakelen</string>
+    <string name="pause">Onderbreken</string>
+    <string name="new_indicators">Nieuwe aanduidingen</string>
+    <string name="new_power_button">Nieuwe aan-uitknop</string>
+    <string name="sign_in_google_game_service">Aanm. bij Google Play™ Games Services</string>
+    <string name="view_more">Meer wrg.</string>
+    <string name="toast_achievements_disabled">Meld je aan om je prestaties weer te geven.</string>
+    <string name="toast_leaderboards_disabled">Meld je aan om de ranglijsten weer te geven.</string>
+    <string name="contribution_details">Bijdragedetails</string>
+    <string name="project_description">Projectbeschrijving</string>
+    <string name="month">Maand</string>
+    <string name="all_time">Totale tijd</string>
+    <string name="time_string_hours_only">%1$du</string>
+    <string name="hours_contributed_label_plural">%1$d uur bijgedragen</string>
+    <string name="hours_contributed_label_singular">1 uur bijgedragen</string>
+    <string name="contributed_no_data">Geen bijdrage voor de geselecteerde periode</string>
+    <string name="no_charger_tile">Geen lader</string>
+    <string name="low_battery_tile">Batterij bijna leeg</string>
+    <string name="no_wifi_tile">Geen Wi-Fi</string>
+    <string name="no_charger_text">Het apparaat moet zijn verbonden met een lader</string>
+    <string name="low_battery_text">De batterij moet minstens 98% zijn opgeladen om de bijdrage te starten</string>
+    <string name="no_wifi_text">Maak verbinding met een Wi-Fi-netwerk om de bijdrage te starten</string>
+</resources>

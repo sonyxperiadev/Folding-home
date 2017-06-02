@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  Licensed under the LICENSE.
+  Copyright 2017, Sony Mobile Communications Inc.
+-->
+<resources xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="no_cost_mobile_data_text">携帯電話をWLANネットワークに接続する必要があります。</string>
+    <string name="settings_auto_wifi_msg">貢献中にWLANを有効</string>
+    <string name="connect_to_wifi">携帯電話をWLANネットワークに接続する必要があります</string>
+    <string name="data_usage_text">機器をWLANネットワークに接続する必要があります。\n従量制またはプリペイド型のWLAN接続を使用する場合は、データ使用料が発生する場合があります。\n\n詳しくはインターネットサービスプロバイダーにお問い合わせください。</string>
+    <string name="whats_new_conditions_indicator">WLANが使用可能であることを示しますが、携帯電話を充電器に接続し、充電完了(100%)している必要があります。</string>
+    <string name="no_wifi_tile">WLANネットワークがありません</string>
+    <string name="no_wifi_text">貢献を開始するには、WLANネットワークに接続してください。</string>
+</resources>

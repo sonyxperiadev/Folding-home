@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  Licensed under the LICENSE.
+  Copyright 2017, Sony Mobile Communications Inc.
+-->
+<resources xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="no_cost_mobile_data_text">Telefonil peab olema ühendus WLAN-võrguga.</string>
+    <string name="settings_auto_wifi_msg">WLAN-ühenduse lubamine osalemise ajal</string>
+    <string name="connect_to_wifi">Telefonil peab olema ühendus WLAN-võrguga</string>
+    <string name="data_usage_text">Teie seadmel peab olema ühendus WLAN-võrguga.\nKui kasutate mahupõhist või tasulist WLAN-ühendust, võidakse teilt andmesidekasutuse eest tasu küsida.\n\nLisateabe saamiseks pöörduge oma Interneti-teenuse pakkuja poole.</string>
+    <string name="whats_new_conditions_indicator">Näitab, et WLAN-ühendus on olemas, kuid telefon tuleb ühendada laadijaga ja aku peab olema 100% laetud.</string>
+    <string name="no_wifi_tile">WLAN-t pole</string>
+    <string name="no_wifi_text">Panustamise alustamiseks looge ühendus WLAN-võrguga.</string>
+</resources>

@@ -1,0 +1,27 @@
+<!--
+  Licensed under the LICENSE.
+  Copyright 2017, Sony Mobile Communications Inc.
+-->
+
+<resources>
+
+    <color name="sony_gray_text">#808080</color>
+    <color name="sony_black">#222222</color>
+    <color name="sony_gray">#777777</color>
+    <color name="sony_gray_line">#22000000</color>
+    <color name="footer_gray">#EEECEB</color>
+    <color name="green">#4AB04D</color>
+    <color name="orange">#ff7100</color>
+    <color name="gray_disabled">#bfbfbf</color>
+    <color name="colorPrimary">#27a0e9</color>
+    <color name="colorPrimaryDark">#2d7cac</color>
+    <color name="colorAccent">#fb7d16</color>
+    <color name="textColorPrimary">#ffffff</color>
+
+    <color name="achievement_screen_background">#DD01476e</color>
+    <color name="achievement_item_background">#ffffff</color>
+
+    <color name="tab_text_inactive">#f1f1f1</color>
+    <color name="tab_text_active">#ffffff</color>
+
+</resources>

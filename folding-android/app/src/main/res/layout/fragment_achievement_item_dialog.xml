@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  Licensed under the LICENSE.
+  Copyright 2017, Sony Mobile Communications Inc.
+-->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:background="@android:color/white"
+              android:orientation="vertical">
+
+    <include
+        layout="@layout/achievement_list_item"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end"
+        android:orientation="horizontal">
+
+    <ImageButton
+        android:id="@+id/achievement_bt_share_facebook"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@null"
+        android:contentDescription="@string/facebook"
+        android:padding="@dimen/padding_small"
+        android:layout_gravity="center"
+        android:src="@drawable/ic_facebook_share"/>
+
+    <ImageButton
+        android:id="@+id/achievement_bt_share_twitter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@null"
+        android:contentDescription="@string/twitter"
+        android:padding="@dimen/padding_small"
+        android:src="@drawable/ic_twitter_share"/>
+    </LinearLayout>
+
+
+</LinearLayout>

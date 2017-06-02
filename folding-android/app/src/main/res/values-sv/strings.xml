@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  Licensed under the LICENSE.
+  Copyright 2017, Sony Mobile Communications Inc.
+-->
+<resources xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="notification_service_finished_job_executed">Du har bidragit till vetenskapen</string>
+    <string name="notification_service_finished_failed">Alla startvillkor uppfylldes inte.</string>
+    <string name="contributed_time">Upplåten tid</string>
+    <string name="people_helping">Personer som hjälper till</string>
+    <string name="research_type">Forskningstyp</string>
+    <string name="research_type_unavailable">Inte tillgänglig</string>
+    <string name="setup_guide">Installationsguide</string>
+    <string name="legal">Juridisk information</string>
+    <string name="share">Dela</string>
+    <string name="welcome">Välkommen till Folding@Home!</string>
+    <string name="read_more">Läs mer</string>
+    <string name="more_info">Mer information</string>
+    <string name="finish">Slutför</string>
+    <string name="wizard_welcome_to_folding_subtitle">Vill du hjälpa till att hitta ett botemedel mot Alzheimers, Parkinsons och cancer?</string>
+    <string name="wizard_welcome_to_folding_text">Din mobil kan utföra vetenskapliga beräkningar medan du sover, och hjälpa forskarna på Stanford University att hitta botemedel mot flera olika sjukdomar.</string>
+    <string-array name="help_find_cure">
+        <item>När du anmäler dig till Folding@Home och upplåter din mobils kapacitet när du inte själv använder den hjälper du forskarna på Stanford University i deras strävan att hitta botemedel mot flera vanliga sjukdomar.</item>
+        <item>Veckning (folding) handlar om den proteinaktivitet som pågår i kroppen. Forskningen om proteinveckning kräver så omfattande beräkningar att forskarna på Stanford University ber att få låna kapaciteten hos enskilda individers mobiler när de inte själva använder den för att göra vissa av dessa beräkningar. Medan du sover skickas ett veckningsproblem från Stanford University till din mobil som den löser och sedan skickar tillbaka till Stanford.</item>
+        <item>Du hittar mer information om Folding@Home på deras webbplats:\u0020\nfolding.stanford.edu</item>
+    </string-array>
+    <string name="powered_by">i samarbete med</string>
+    <string name="private_date_safe_title">Dina personliga data är säkra.</string>
+    <string name="private_date_safe_text">Det här programmet kommer inte åt dina personliga data.</string>
+    <string name="no_cost_mobile_data_title">Ingen avgift för mobildata</string>
+    <string name="no_cost_mobile_data_text">Mobilen måste vara ansluten till ett Wi-Fi-nätverk.</string>
+    <string name="battery_not_drained_title">Batteriet laddas inte ur</string>
+    <string name="battery_not_drained_text">Mobilen måste vara ansluten till en laddare och batteriet måste vara fulladdat (100 %)</string>
+    <string name="time_string_weeks">%1$dv %2$dd %3$dt</string>
+    <string name="time_string_days">%1$ddgr %2$dtim %3$dmin</string>
+    <string name="time_string_hours">%1$dtim %2$dmin</string>
+    <string name="share_facebook_success">Du har nu delat det på Facebook</string>
+    <string name="share_facebook_error">Det gick inte att dela det på Facebook</string>
+    <string name="waiting">Delar ...</string>
+    <string name="share_object_message">Jag är en av de %1$d personer som har hjälpt till – jag har bidragit med %2$s beräkningstid!</string>
+    <string name="notification_service_executing_job">Folding@Home körs.\nDu bidrar till vetenskaplig forskning.</string>
+    <string name="notification_service_not_executing">Folding@Home körs inte.\nVissa startvillkor har inte uppfyllts.</string>
+    <string name="settings">Inställningar</string>
+    <string name="start_contribute">Starttid</string>
+    <string name="start_contribute_text">Ange starttid för beräkning</string>
+    <string name="settings_auto_wifi_msg">Aktivera Wi-Fi när appen körs</string>
+    <string name="notifications">Aviseringar</string>
+    <string name="settings_display_notification">Skicka avisering när beräkningen är klar</string>
+    <string name="contribution_interval_time">Bidragandets varaktighet</string>
+    <string name="wizard_step">Steg %1$d/%2$d</string>
+    <string name="no_opencl">Den här enheten har inte stöd för OpenCL. Det här biblioteket krävs för att jobben ska kunna köras. Vill du fortsätta?</string>
+    <string name="connect_to_wifi">Mobilen måste vara ansluten till ett Wi-Fi-nätverk</string>
+    <string name="processing_time_title">Beräkningstiden är kl. %1$s–%2$s</string>
+    <string name="processing_time_text">Det går att ändra starttiden i inställningarna.</string>
+    <string name="will_start_when">Startvillkor</string>
+    <string name="share_facebook_contribution">Dela på Facebook</string>
+    <string name="app_disabled_title">Appen är inaktiverad</string>
+    <string name="app_disabled_message">Den här appen är inaktiverad och går inte längre att använda.</string>
+    <string name="stand_by">Vänteläge</string>
+    <string name="helping_out">Hjälper till</string>
+    <string name="disabled">Inaktiverad</string>
+    <string name="data_usage">Dataanvändning</string>
+    <string name="data_usage_text">Enheten måste vara ansluten till ett trådlöst nätverk.\nOm du använder en avgiftsbelagd Wi-Fi-anslutning kan du behöva betala för dataanvändningen.\n\nKontakta Internetleverantören om du vill ha mer information.</string>
+    <string name="whats_new">Nyheter</string>
+    <string name="whats_new_contribution_status">Nu kan du se om villkoren för att köra Folding@Home är uppfyllda.</string>
+    <string name="whats_new_disable_indicator">Visar att appen är inaktiverad.</string>
+    <string name="whats_new_conditions_indicator">Visar att Wi-Fi är anslutet, men att mobilen måste vara ansluten till en laddare och att batteriet måste vara fulladdat.</string>
+    <string name="whats_new_enable_indicator">Visar att alla villkor är uppfyllda.</string>
+    <string name="whats_new_power_button">Nu är det enklare att aktivera och inaktivera appen. Du kan även se den aktuella statusen för Folding@Home.</string>
+    <string name="whats_new_login">Nu kan du logga in och överföra dina bidrag.</string>
+    <string name="whats_new_contribution_indicators">Förbättrade ikoner som gör det enkelt att hålla koll på bidragsstatusen.</string>
+    <string name="whats_new_research_type">Visar vilken forskning som du bidrar till.</string>
+    <string name="whats_new_people_helping">Visar antalet personer som använder Folding@Home.</string>
+    <string name="whats_new_contributed_time">Visar den sammanlagda tiden för dina bidrag.</string>
+    <string name="skip">Hoppa över</string>
+    <string name="turn_on">Aktivera</string>
+    <string name="turn_off">Inaktivera</string>
+    <string name="active_research">Aktiv forskning</string>
+    <string name="notification_contribution_time">Tack! Den här enheten har bidragit i %1$s under de senaste 24 timmarna.</string>
+    <string name="action_login">Logga in</string>
+    <string name="action_logout">%1$s (Logga ut)</string>
+    <string name="action_leaderboards">Topplistor</string>
+    <string name="action_achievements">Utmärkelser</string>
+    <string name="action_invite_friends">Bjud in vänner</string>
+    <string name="notification_service_turn_on">Slå på om du vill fortsätta bidra</string>
+    <string name="toast_logout">Utloggad</string>
+    <string name="toast_network_unavailable">Nätverket är inte tillgängligt</string>
+    <string name="paused">Pausad</string>
+    <string name="action_enable">Aktivera</string>
+    <string name="action_disable">Inaktivera</string>
+    <string name="pause">Pausa</string>
+    <string name="new_indicators">Nya indikatorer</string>
+    <string name="new_power_button">Ny strömbrytare</string>
+    <string name="sign_in_google_game_service">Logga in på Google Play™ Speltjänster</string>
+    <string name="view_more">Visa mer</string>
+    <string name="toast_achievements_disabled">Logga in för att se utmärkelserna!</string>
+    <string name="toast_leaderboards_disabled">Logga in för att se topplistorna!</string>
+    <string name="contribution_details">Bidragsdetaljer</string>
+    <string name="project_description">Projektbeskrivning</string>
+    <string name="week">Vecka</string>
+    <string name="month">Månad</string>
+    <string name="all_time">Total tid</string>
+    <string name="time_string_hours_only">%1$d h</string>
+    <string name="chart_week_label">Vecka %1$d</string>
+    <string name="hours_contributed_label_plural">%1$d timmar bidragna</string>
+    <string name="hours_contributed_label_singular">1 timme bidragen</string>
+    <string name="contributed_no_data">Inga bidrag under den valda perioden</string>
+    <string name="no_charger_tile">Ingen laddare</string>
+    <string name="low_battery_tile">Låg batterinivå</string>
+    <string name="no_wifi_tile">Inget Wi-Fi</string>
+    <string name="no_charger_text">Enheten måste vara ansluten till en laddare</string>
+    <string name="low_battery_text">Batteriet måste laddas till minst 98 % innan bidraget startas</string>
+    <string name="no_wifi_text">Anslut till ett Wi-Fi-nätverk för att starta bidraget.</string>
+</resources>

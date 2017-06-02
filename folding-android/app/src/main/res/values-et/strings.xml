@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+   Licensed under the LICENSE.
+   Copyright 2017, Sony Mobile Communications Inc.
+-->
+<resources xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="notification_service_finished_job_executed">Olete andud teadusse oma panuse</string>
+    <string name="notification_service_finished_failed">Kõik käivitustingimused pole täidetud</string>
+    <string name="contributed_time">Panustatud aeg</string>
+    <string name="people_helping">Osalejad</string>
+    <string name="research_type">Uuringu tüüp</string>
+    <string name="research_type_unavailable">Pole saadaval</string>
+    <string name="setup_guide">Häälestusjuhend</string>
+    <string name="legal">Juriidiline teave</string>
+    <string name="share">Jaga</string>
+    <string name="welcome">Tere tulemast Folding@Home\'i</string>
+    <string name="read_more">Veel teavet</string>
+    <string name="more_info">Lisateave</string>
+    <string name="finish">Valmis</string>
+    <string name="wizard_welcome_to_folding_subtitle">Kas soovite kaasa aidata Alzheimeri tõve, Parkinsoni tõve ja vähktõve ravi väljatöötamisele?</string>
+    <string name="wizard_welcome_to_folding_text">Sel ajal, kui teie magate, võib teie telefon teha teaduslikke arvutusi ning aidata Stanfordi ülikooli teadlastel otsida ravi mitmesuguste haiguste vastu.</string>
+    <string-array name="help_find_cure">
+        <item>Kui liitute projektiga Folding@Home, aitate Stanfordi ülikooli teadlastel otsida abi mitmesuguste levinud haiguste vastu. Selleks saate teadlastele annetada oma telefoni töötlemisvõimsuse, kui te seda ise ei kasuta.</item>
+        <item>Voltimine viitab meie kehas toimuvale proteiini töötlemisele. Proteiini voltimise uurimiseks on vaja teha nii palju arvutusi, et Stanfordi ülikool on palunud inimestel andmete töötlemiseks annetada oma mobiiltelefonide kasutamata töötlemisvõimsust. Samal ajal, kui teie magate, saadavad Stanfordi ülikooli teadlased teie telefoni lahendamiseks voltimisega seotud probleemi. Kui arvutused on valmis, saadetakse tulemused tagasi Stanfordi.</item>
+        <item>Lisateavet projekti Folding@Home kohta leiate veebilehelt\nfolding.stanford.edu</item>
+    </string-array>
+    <string name="powered_by">pakkuja</string>
+    <string name="private_date_safe_title">Teie priv. andmed on kaitstud.</string>
+    <string name="private_date_safe_text">See rakendus ei pääse juurde teie privaatsetele andmetele.</string>
+    <string name="no_cost_mobile_data_title">Mob-andmes. kulusid ei kaasne</string>
+    <string name="no_cost_mobile_data_text">Telefonil peab olema ühendus WiFi-võrguga.</string>
+    <string name="battery_not_drained_title">Akut ei kulutata</string>
+    <string name="battery_not_drained_text">Telefon peab olema ühendatud laadijaga ja täis laetud (100%)</string>
+    <string name="time_string_weeks">%1$dn %2$dp %3$dh</string>
+    <string name="time_string_days">%1$dp %2$dt %3$dm</string>
+    <string name="time_string_hours">%1$dt %2$dm</string>
+    <string name="share_facebook_success">Facebookis jagamine õnnestus</string>
+    <string name="share_facebook_error">Facebookis ei saa jagada</string>
+    <string name="waiting">Jagamine...</string>
+    <string name="share_object_message">Olen üks %1$d-st inimesest, kes annab oma panuse, ning olen panustanud %2$s arvutamisaega!</string>
+    <string name="notification_service_executing_job">Folding@Home töötab.\nPanustate teadustöösse.</string>
+    <string name="notification_service_not_executing">Folding@Home ei tööta.\nKõik käivitustingimused pole täidetud.</string>
+    <string name="settings">Seaded</string>
+    <string name="start_contribute">Algusaeg</string>
+    <string name="start_contribute_text">Arvutamise algusaja määramine</string>
+    <string name="settings_auto_wifi_msg">WiFi-ühenduse lubamine osalemise ajal</string>
+    <string name="notifications">Teatised</string>
+    <string name="settings_display_notification">Saada arvutamise lõpus teatis</string>
+    <string name="contribution_interval_time">Osalemise aeg</string>
+    <string name="wizard_step">Etapp %1$d/%2$d</string>
+    <string name="no_opencl">See seade ei toeta OpenCL-i. See teek on vajalik tööde käivitamiseks. Kas soovite jätkata?</string>
+    <string name="connect_to_wifi">Telefonil peab olema ühendus WiFi-võrguga</string>
+    <string name="processing_time_title">Arvutamine toimub %1$s – %2$s</string>
+    <string name="processing_time_text">Algusaega saate seadetes muuta.</string>
+    <string name="will_start_when">Käivitustingimused</string>
+    <string name="share_facebook_contribution">Jaga Facebookis</string>
+    <string name="app_disabled_title">Rakendus on keelatud</string>
+    <string name="app_disabled_message">See rakendus on keelatud ja seda ei saa enam kasutada.</string>
+    <string name="stand_by">Ooterežiimis</string>
+    <string name="helping_out">Arvutamine on pooleli</string>
+    <string name="disabled">Keelatud</string>
+    <string name="data_usage">Andmesidekasutus</string>
+    <string name="data_usage_text">Teie seadmel peab olema ühendus Wi-Fi-võrguga.\nKui kasutate mahupõhist või tasulist Wi-Fi-ühendust, võidakse teilt andmesidekasutuse eest tasu küsida.\n\nLisateabe saamiseks pöörduge oma Interneti-teenuse pakkuja poole.</string>
+    <string name="whats_new">Uued funktsioonid</string>
+    <string name="whats_new_contribution_status">Nüüd saate vaadata rakenduse Folding@Home kasutamiseks nõutavate tingimuste olekut.</string>
+    <string name="whats_new_disable_indicator">Näitab, et rakendus on keelatud.</string>
+    <string name="whats_new_conditions_indicator">Näitab, et Wi-Fi-ühendus on olemas, kuid telefon tuleb ühendada laadijaga ja aku peab olema 100% laetud.</string>
+    <string name="whats_new_enable_indicator">Näitab, et kõik tingimused on täidetud.</string>
+    <string name="whats_new_power_button">Nüüd on rakendust lubada ja keelata lihtsam. Samuti saate vaadata rakenduse Folding@Home praegust olekut.</string>
+    <string name="whats_new_login">Nüüd saate sisse logida ja oma panuse üles laadida.</string>
+    <string name="whats_new_contribution_indicators">Täiustatud ikoonide abil on hõlbus jälgida oma panuse olekut.</string>
+    <string name="whats_new_research_type">Näitab, millisesse uurimistöösse annate oma panuse.</string>
+    <string name="whats_new_people_helping">Näitab, mitu inimest kasutavad rakendust Folding@Home.</string>
+    <string name="whats_new_contributed_time">Näitab, kui palju aega olete kokku panustanud.</string>
+    <string name="skip">Jäta vahele</string>
+    <string name="turn_on">Lülita sisse</string>
+    <string name="turn_off">Lülita välja</string>
+    <string name="active_research">Aktiivne uuring</string>
+    <string name="notification_contribution_time">Täname! See seade on viimase 24 tunni jooksul panustanud %1$s.</string>
+    <string name="action_login">Logi sisse</string>
+    <string name="action_logout">%1$s (Logi välja)</string>
+    <string name="action_leaderboards">Edetabelid</string>
+    <string name="action_achievements">Saavutused</string>
+    <string name="action_invite_friends">Kutsu sõpru</string>
+    <string name="notification_service_turn_on">Jätkamiseks lülitage teenus sisse</string>
+    <string name="toast_logout">Välja logitud</string>
+    <string name="toast_network_unavailable">Võrk pole saadaval</string>
+    <string name="paused">Peatatud</string>
+    <string name="action_enable">Luba</string>
+    <string name="action_disable">Keela</string>
+    <string name="pause">Peata</string>
+    <string name="new_indicators">Uued märgutuled</string>
+    <string name="new_power_button">Uus toitenupp</string>
+    <string name="sign_in_google_game_service">Logi Google Play™ mänguteenusse</string>
+    <string name="view_more">Kuva rohkem</string>
+    <string name="toast_achievements_disabled">Saavutuste kuvamiseks logige sisse.</string>
+    <string name="toast_leaderboards_disabled">Edetabelite kuvamiseks logige sisse.</string>
+    <string name="contribution_details">Panustamise üksikasjad</string>
+    <string name="project_description">Projekti kirjeldus</string>
+    <string name="week">Nädal</string>
+    <string name="month">Kuu</string>
+    <string name="all_time">Koguaeg</string>
+    <string name="time_string_hours_only">%1$d h</string>
+    <string name="chart_week_label">%1$d. nädal</string>
+    <string name="hours_contributed_label_plural">%1$d tundi panustatud</string>
+    <string name="hours_contributed_label_singular">1 tund panustatud</string>
+    <string name="contributed_no_data">Valitud perioodil pole panustamisi</string>
+    <string name="no_charger_tile">Laadijat pole</string>
+    <string name="low_battery_tile">Aku on peaaegu tühi</string>
+    <string name="no_wifi_tile">Wi-Fi-t pole</string>
+    <string name="no_charger_text">Seade peab olema laadijaga ühendatud</string>
+    <string name="low_battery_text">Panustamise alustamiseks peab aku olema vähemalt 98% laetud</string>
+    <string name="no_wifi_text">Panustamise alustamiseks looge ühendus Wi-Fi-võrguga.</string>
+</resources>

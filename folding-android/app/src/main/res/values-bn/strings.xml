@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  Licensed under the LICENSE.
+  Copyright 2017, Sony Mobile Communications Inc.
+-->
+<resources xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="notification_service_finished_job_executed">আপনি বিজ্ঞানে অবদান রেখেছেন</string>
+    <string name="notification_service_finished_failed">প্রারম্ভিক সমস্ত শর্তাদি পূরণ করা হয়নি</string>
+    <string name="contributed_time">অংশগ্রহণের সময়</string>
+    <string name="people_helping">লোকে সহায়তা করছেন</string>
+    <string name="research_type">গবেষণার ধরণ</string>
+    <string name="research_type_unavailable">অনুপলভ্য</string>
+    <string name="setup_guide">সেটআপ নির্দেশিকা</string>
+    <string name="legal">আইনি</string>
+    <string name="share">অংশীদারি করুন</string>
+    <string name="welcome">Folding@Home এ স্বাগতম</string>
+    <string name="read_more">আরো পড়ুন</string>
+    <string name="more_info">আরো তথ্য</string>
+    <string name="finish">সমাপ্ত করুন</string>
+    <string name="wizard_welcome_to_folding_subtitle">আপনি কি অ্যালঝাইমার, পার্কিনসন ও ক্যান্সারের নিরাময় সন্ধান করতে সাহায্য করতে চান?</string>
+    <string name="wizard_welcome_to_folding_text">আপনি ঘুমনোর সময় আপনার ফোন বৈজ্ঞানিক গণনা করতে পারে এবং স্ট্যানফোর্ড বিশ্ববিদ্যালয়ের বিজ্ঞানীদের অনেক রোগের নিরাময় সন্ধান করতে সাহায্য করে।</string>
+    <string-array name="help_find_cure">
+        <item>Folding@Home এর জন্য সাইন আপ করার মাধ্যমে আপনি স্ট্যানফোর্ড বিশ্ববিদ্যালয়ের বিজ্ঞানীদের আমাদের বেশির ভাগ সাধারণ রোগের মধ্যে অনেকগুলির নিরাময় খোঁজার অনুসন্ধানে সাহায্য করেন, আপনি যখন আপনার ফোনের প্রসেসিং ক্ষমতা নিজের জন্য ব্যবহার করেন না তখন সেটা দান করে এটা করতে পারেন।</item>
+        <item>ফোল্ডিং আমাদের শরীরে প্রোটিনের কার্যকলাপের প্রতি নির্দেশ করে। প্রোটিন ফোল্ডিং এর গবেষণার জন্য এত বেশি গণনা প্রয়োজন হয় যে স্ট্যানফোর্ড বিশ্ববিদ্যালয় কিছু সংখ্যা গণনায় সাহায্য করার জন্য মানুষকে তাদের ফোনের অব্যবহৃত প্রসেসিং এর ক্ষমতা দান করতে অনুরোধ করে। আপনি ঘুমনোর সময়, স্ট্যানফোর্ড বিশ্ববিদ্যালয় ফোল্ডিং এর একটা অঙ্ক সমাধান করার জন্য আপনার ফোনে পাঠাবে। গণনা সম্পূর্ণ হওয়ার পরে, ফলাফল স্ট্যানফোর্ডে ফেরত পাঠানো হয়।</item>
+        <item>আপনি Folding@Home সম্বন্ধে আরো তথ্য পেতে পারেন হোমপেজে:\nfolding.stanford.edu</item>
+    </string-array>
+    <string name="powered_by">চালনাকারী</string>
+    <string name="private_date_safe_title">আপনার ব্যক্তিগত ডেটা নিরাপদ।</string>
+    <string name="private_date_safe_text">এই অ্যাপ্লিকেশনটি আপনার ব্যক্তিগত ডেটা অ্যাক্সেস করে না।</string>
+    <string name="no_cost_mobile_data_title">মোবাইল ডেটার জন্য ক. খ. হ. না</string>
+    <string name="no_cost_mobile_data_text">ফোনকে অবশ্যই Wi-Fi নেটওয়ার্কে সংযুক্ত থাকতে হবে।</string>
+    <string name="battery_not_drained_title">ব্যাটারি নিঃশেষ করা হবে না</string>
+    <string name="battery_not_drained_text">ফোনকে অবশ্যই একটি চার্জারের সঙ্গে সংযুক্ত করতে হবে এবং পূর্ণ চার্জ (100%) থাকতে হবে</string>
+    <string name="time_string_weeks">%1$dসপ্তাহ %2$dদিন %3$dঘঃ</string>
+    <string name="time_string_days">%1$dদিন %2$dঘঃ %3$dমিঃ</string>
+    <string name="time_string_hours">%1$dঘঃ %2$dমিঃ</string>
+    <string name="share_facebook_success">Facebook এ সফলভাবে বন্টন করা হয়েছে</string>
+    <string name="share_facebook_error">Facebook এ বন্টন করা যায় নি</string>
+    <string name="waiting">ভাগ করা হচ্ছে...</string>
+    <string name="share_object_message">আমি সাহায্যকারী %1$d মানুষদের মধ্যে একজন, আর আমি গণনার সময়ের %2$s সহ অংশ নিয়েছি!</string>
+    <string name="notification_service_executing_job">Folding@Home চালু আছে।\nআপনি বৈজ্ঞানিক গবেষণায় অংশ নিচ্ছেন।</string>
+    <string name="notification_service_not_executing">Folding@Home চালু নেই।\nসূচনার সমস্ত শর্ত পূরণ করা হয় নি।</string>
+    <string name="settings">সেটিং</string>
+    <string name="start_contribute">আরম্ভের সময়</string>
+    <string name="start_contribute_text">গণনার জন্য আরম্ভ সময় সেট করুন</string>
+    <string name="settings_auto_wifi_msg">অংশগ্রহণের সময় Wi-Fi সক্ষম করুন</string>
+    <string name="notifications">বিজ্ঞপ্তি</string>
+    <string name="settings_display_notification">গণনার শেষে ঘোষণা প্রেরণ করুন</string>
+    <string name="contribution_interval_time">অংশগ্রহণের স্থায়িত্ব</string>
+    <string name="wizard_step">ধাপ %1$d/%2$d</string>
+    <string name="no_opencl">এই যন্ত্রটি OpenCL সমর্থন করে না। কার্য সম্পাদন করার জন্য এই লাইব্রেরীটি অত্যাবশ্যক। আপনি কি চালিয়ে যেতে চান?</string>
+    <string name="connect_to_wifi">ফোনকে একটি Wi-Fi নেটওয়ার্কে সংযুক্ত থাকতে হবে</string>
+    <string name="processing_time_title">গণনার সময় %1$s – এর মাঝামাঝি %2$s</string>
+    <string name="processing_time_text">আপনি সেটিং এ আরম্ভ সময় পরিবর্তন করতে পারেন।</string>
+    <string name="will_start_when">আরম্ভের শর্তাবলী</string>
+    <string name="share_facebook_contribution">Facebook এ বন্টন করুন</string>
+    <string name="app_disabled_title">নিস্ক্রিয় অ্যাপ্লিকেশন</string>
+    <string name="app_disabled_message">এই অ্যাপ্লিকেশনটি নিস্ক্রিয় আছে এবং আর ব্যবহার করা সম্ভব নয়।</string>
+    <string name="stand_by">স্ট্যান্ড বাই</string>
+    <string name="helping_out">প্রক্রিয়ারত</string>
+    <string name="disabled">নিস্ক্রিয় করা আছে</string>
+    <string name="data_usage">ডেটার ব্যবহার</string>
+    <string name="data_usage_text">আপনার যন্ত্র কোনো Wi-Fi নেটওয়ার্কে সংযুক্ত থাকতে হবে।\nআপনি মিটার বিশিষ্ট বা অর্থের বিনিময়ে নেওয়া কোনো Wi-Fi সংযোগ ব্যবহার করলে, ডেটার ব্যবহার বাবদ আপনাকে অর্থ দিতে হতে পারে।\n\nআরো জানতে, আপনার ইন্টারনেট পরিষেবা সরবরাহকারীর সঙ্গে কথা বলে নিন।</string>
+    <string name="whats_new">নতুন কী আছে</string>
+    <string name="whats_new_contribution_status">আপনি এখন Folding@Home চালানোর প্রয়োজনীয় অবস্থান স্থিতি দেখতে পাবেন।</string>
+    <string name="whats_new_disable_indicator">সূচিত করে যে, অ্যাপটি নিস্ক্রিয় আছে।</string>
+    <string name="whats_new_conditions_indicator">সূচিত করে যে, Wi-Fi প্রস্তুত কিন্তু ফোনটি অবশ্যই কোনো চার্জারে সংযুক্ত থাকতে হবে এবং ব্যাটারিতে অবশ্যই 100% চার্জ থাকতে হবে।</string>
+    <string name="whats_new_enable_indicator">সূচিত করে যে সমস্ত প্রয়োজনীয়তা পূরণ হয়েছে।</string>
+    <string name="whats_new_power_button">এখন অ্যাপ সক্ষম বা অক্ষম করা আরো সহজ। আপনি Folding@Home -এর বর্তমান স্থিতিও দেখতে পারবেন।</string>
+    <string name="whats_new_login">এখন আপনি লগ ইন করে আপনার অবদান আপলোড করতে পারবেন।</string>
+    <string name="whats_new_contribution_indicators">আপনার অবদানের স্থিতির উপরে সহজেই নজর রাখতে উন্নত আইকনগুলি।</string>
+    <string name="whats_new_research_type">আপনি যে গবেষণায় অবদান রাখছেন তা সূচিত করে।</string>
+    <string name="whats_new_people_helping">Folding@Home কতজন ব্যবহার করছেন তা সূচিত করে।</string>
+    <string name="whats_new_contributed_time">আপনার অবদানের মোট সময় সূচিত করে।</string>
+    <string name="skip">ছেড়ে যান</string>
+    <string name="turn_on">চালু করুন</string>
+    <string name="turn_off">বন্ধ করুন</string>
+    <string name="active_research">গবেষণা সক্রিয় করুন</string>
+    <string name="notification_contribution_time">ধন্যবাদ। এই যন্ত্রটি বিগত 24 ঘণ্টায় %1$s অবদান রেখেছে।</string>
+    <string name="action_login">সাইন ইন করুন</string>
+    <string name="action_logout">%1$s (সাইন আউট করুন)</string>
+    <string name="action_leaderboards">লিডারবোর্ডগুলি</string>
+    <string name="action_achievements">প্রাপ্তিগুলি</string>
+    <string name="action_invite_friends">বন্ধুদের আমন্ত্রণ জানান</string>
+    <string name="notification_service_turn_on">অবদান রাখা চালিয়ে যেতে চালু করুন</string>
+    <string name="toast_logout">লগ আউট হয়েছেন</string>
+    <string name="toast_network_unavailable">নেটওয়ার্ক অনুপলভ্য</string>
+    <string name="paused">বিরাম দেওয়া হয়েছে</string>
+    <string name="action_enable">সক্ষম করুন</string>
+    <string name="action_disable">অক্ষম করুন</string>
+    <string name="pause">বিরাম দিন</string>
+    <string name="new_indicators">নতুন সূচকগুলি</string>
+    <string name="new_power_button">নতুন পাওয়ার বোতাম</string>
+    <string name="sign_in_google_game_service">Google Play™ গেম পরিষেবায় সাইন ইন</string>
+    <string name="view_more">আরো দেখুন</string>
+    <string name="toast_achievements_disabled">প্রাপ্তিগুলি দেখতে সাইন ইন করুন!</string>
+    <string name="toast_leaderboards_disabled">লিডারবোর্ডগুলি দেখতে সাইন ইন করুন!</string>
+    <string name="contribution_details">সহযোগিতার বিশদ বিবরণ</string>
+    <string name="project_description">প্রোজেক্টের বর্ণনা</string>
+    <string name="week">সপ্তাহ</string>
+    <string name="month">মাস</string>
+    <string name="all_time">মোট সময়</string>
+    <string name="time_string_hours_only">%1$dঘ</string>
+    <string name="chart_week_label">সপ্তাহ %1$d</string>
+    <string name="hours_contributed_label_plural">%1$d ঘন্টার সহযোগিতা</string>
+    <string name="hours_contributed_label_singular">1 ঘন্টার সহযোগিতা</string>
+    <string name="contributed_no_data">নির্বাচিত সময়ে কোনো সহযোগিতা নেই</string>
+    <string name="no_charger_tile">চার্জার নেই</string>
+    <string name="low_battery_tile">কম ব্যাটারি</string>
+    <string name="no_wifi_tile">Wi-Fi নেই</string>
+    <string name="no_charger_text">যন্ত্রটি কোনো চার্জারে সাথে সংযোগ করা আবশ্যক</string>
+    <string name="low_battery_text">সহযোগিতা শুরু করার জন্য ব্যাটারি অন্তত 98% চার্জ করতে হবে</string>
+    <string name="no_wifi_text">সহযোগিতা শুরু করতে কোনো Wi-Fi নেটওয়ার্কে সংযোগ করুন।</string>
+</resources>

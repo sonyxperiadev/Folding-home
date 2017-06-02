@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  Licensed under the LICENSE.
+  Copyright 2017, Sony Mobile Communications Inc.
+-->
+<resources xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="notification_service_finished_job_executed">Prisidėjote prie mokslo</string>
+    <string name="notification_service_finished_failed">Įvykdytos ne visos pradinės sąlygos</string>
+    <string name="contributed_time">Bendradarbiavimo laikas</string>
+    <string name="people_helping">Žmonės padeda</string>
+    <string name="research_type">Tyrimo tipas</string>
+    <string name="research_type_unavailable">Nepasiekiami</string>
+    <string name="setup_guide">Sąrankos vadovas</string>
+    <string name="legal">Teisinė informacija</string>
+    <string name="share">Dalintis</string>
+    <string name="welcome">Sveiki! Čia „Folding@Home“!</string>
+    <string name="read_more">Skaityti daugiau</string>
+    <string name="more_info">Daugiau informacijos</string>
+    <string name="finish">Baigti</string>
+    <string name="wizard_welcome_to_folding_subtitle">Ar norite padėti atrasti vaistus nuo Alzheimerio, Parkinsono ligų ir vėžio?</string>
+    <string name="wizard_welcome_to_folding_text">Kol jūs miegate, jūsų telefonas gali atlikti mokslinius skaičiavimus ir padėti Stanfordo universiteto mokslininkams atrasti vaistus nuo daugelio ligų.</string>
+    <string-array name="help_find_cure">
+        <item>Užsiregistruodami „Folding@Home“ ir paaukodami savo telefono apdorojimo galimybes, kai jomis nesinaudojate patys, padedate Stanfordo universiteto mokslininkams ieškoti gydymo priemonių daugeliui paplitusių ligų.</item>
+        <item>Lankstymo (angl. „folding“) sąvoka apibūdina baltymų veiklą mūsų kūnuose. Baltymų lankstymo tyrimams reikalingi didžiuliai skaičiavimo ištekliai, todėl Stanfordo universitetas prašo žmonių paaukoti dalį savo telefonų duomenų apdorojimo išteklių. Jums miegant Stanfordo universitetas atsiųs į jūsų telefoną lankstymo užduotį, kurią reikia išspręsti. Baigus skaičiavimus, rezultatai išsiunčiami atgal į Stanfordą.</item>
+        <item>Daugiau informacijos apie „Folding@Home“ rasite pagrindiniame puslapyje:\u0020\nfolding.stanford.edu</item>
+    </string-array>
+    <string name="powered_by">sukūrė</string>
+    <string name="private_date_safe_title">Jūsų asmens duomenys saugūs.</string>
+    <string name="private_date_safe_text">Ši programa nenaudoja jūsų asmeninių duomenų.</string>
+    <string name="no_cost_mobile_data_title">Mobiliųjų duom. mokesčio nėra</string>
+    <string name="no_cost_mobile_data_text">Telefonas turi būti prijungtas prie „Wi-Fi“ tinklo.</string>
+    <string name="battery_not_drained_title">Akumuliatorius neišsieikvos</string>
+    <string name="battery_not_drained_text">Telefonas turi būti prijungtas prie kroviklio ir visiškai įkrautas (100 %)</string>
+    <string name="time_string_weeks">%1$dsav. %2$dd. %3$dval.</string>
+    <string name="time_string_days">%1$dd. %2$dval. %3$dmin.</string>
+    <string name="time_string_hours">%1$dval. %2$dmin.</string>
+    <string name="share_facebook_success">Sėkmingai pasidalinote „Facebook“</string>
+    <string name="share_facebook_error">Nepavyko pasidalinti „Facebook“</string>
+    <string name="waiting">Bendrinama…</string>
+    <string name="share_object_message">Esu vienas iš „%1$d“ padedančių žmonių ir dalinuosi su „%2$s “skaičiavimo laiku!</string>
+    <string name="notification_service_executing_job">„Folding@Home“ veikia.\nJūs prisidedate prie mokslinių tyrimų.</string>
+    <string name="notification_service_not_executing">„Folding@Home“ neveikia.\nVykdomos ne visos paleidimo sąlygos.</string>
+    <string name="settings">Nustatymai</string>
+    <string name="start_contribute">Pradžios laikas</string>
+    <string name="start_contribute_text">Nustatyti skaičiavimo pradžios laiką</string>
+    <string name="settings_auto_wifi_msg">Įgalinti „Wi-Fi“ bendradarbiaujant</string>
+    <string name="notifications">Pranešimai</string>
+    <string name="settings_display_notification">Baigus skaičiuoti, siųsti pranešimą</string>
+    <string name="contribution_interval_time">Bendradarbiavimo trukmė</string>
+    <string name="wizard_step">Žingsnis %1$d/%2$d</string>
+    <string name="no_opencl">Prietaisas nepalaiko „OpenCL“. Ši biblioteka būtina norint atlikti darbus. Ar norite tęsti?</string>
+    <string name="connect_to_wifi">Telefonas turi būti prijungtas prie „Wi-Fi“ tinklo</string>
+    <string name="processing_time_title">Skaičiavimo laikas nuo %1$s iki %2$s</string>
+    <string name="processing_time_text">Nustatymuose galite keisti pradžios laiką.</string>
+    <string name="will_start_when">Pradinės sąlygos</string>
+    <string name="share_facebook_contribution">Dalintis „Facebook“</string>
+    <string name="app_disabled_title">Programa pasyvinta</string>
+    <string name="app_disabled_message">Ši programa pasyvinta ir jos nebegalima naudoti.</string>
+    <string name="stand_by">Budėjimo režimas</string>
+    <string name="helping_out">Veikia</string>
+    <string name="disabled">Pasyvinta</string>
+    <string name="data_usage">Duomenų naudojimas</string>
+    <string name="data_usage_text">Prietaisas turi būti prijungtas prie „Wi-Fi“ tinklo.\nJei naudojate apskaičiuotų duomenų arba mokamą „Wi-Fi“ ryšį, galbūt reikės mokėti už duomenų naudojimą.\n\nDaugiau informacijos teiraukitės interneto paslaugų teikėjo.</string>
+    <string name="whats_new">Naujienos</string>
+    <string name="whats_new_contribution_status">Dabar galite matyti „Folding@Home“ paleidimo būtinųjų sąlygų būseną.</string>
+    <string name="whats_new_disable_indicator">Nurodo, kad programa pasyvinta.</string>
+    <string name="whats_new_conditions_indicator">Nurodo, kad „Wi-Fi“ parengtas, bet telefonas turi būti prijungtas prie įkroviklio ir akumuliatorius turi būti 100 % įkrautas.</string>
+    <string name="whats_new_enable_indicator">Nurodo, kad visi reikalavimai įvykdyti.</string>
+    <string name="whats_new_power_button">Dabar lengviau aktyvinti arba pasyvinti programą. Taip pat galite matyti esamą „Folding@Home“ būseną.</string>
+    <string name="whats_new_login">Dabar galite prisiregistruoti ir nusiųsti bendradarbiavimo indėlį.</string>
+    <string name="whats_new_contribution_indicators">Patobulintos piktogramos padės sekti bendradarbiavimo būseną.</string>
+    <string name="whats_new_research_type">Nurodo tyrimą, kurį padedate atlikti.</string>
+    <string name="whats_new_people_helping">Nurodo, kiek žmonių naudoja „Folding@Home“.</string>
+    <string name="whats_new_contributed_time">Nurodo bendrą jūsų bendradarbiavimo indėlių trukmę.</string>
+    <string name="skip">Praleisti</string>
+    <string name="turn_on">Įjungti</string>
+    <string name="turn_off">Išjungti</string>
+    <string name="active_research">Aktyvus tyrimas</string>
+    <string name="notification_contribution_time">Ačiū. Šis įrenginys prisidėjo %1$s per pastarąsias 24 val.</string>
+    <string name="action_login">Prisijungti</string>
+    <string name="action_logout">%1$s (Atsijungti)</string>
+    <string name="action_leaderboards">Lyderių sąrašai</string>
+    <string name="action_achievements">Pasiekimai</string>
+    <string name="action_invite_friends">Kviesti draugų</string>
+    <string name="notification_service_turn_on">Įjunkite, kad galėtumėte dar prisidėti</string>
+    <string name="toast_logout">Atsijungęs</string>
+    <string name="toast_network_unavailable">Tinklas negalimas</string>
+    <string name="paused">Pristabdyta</string>
+    <string name="action_enable">Įjungti</string>
+    <string name="action_disable">Pasyvinti</string>
+    <string name="pause">Pristabdyti</string>
+    <string name="new_indicators">Nauji indikatoriai</string>
+    <string name="new_power_button">Naujas maitinimo mygtukas</string>
+    <string name="sign_in_google_game_service">Prisij. prie „Google Play™“ žaidimų pasl.</string>
+    <string name="view_more">Žr. daugiau</string>
+    <string name="toast_achievements_disabled">Prisijunkite, kad galėtumėte peržiūrėti laimėjimus!</string>
+    <string name="toast_leaderboards_disabled">Prisijunkite, kad galėtumėte peržiūrėti turnyrines lenteles!</string>
+    <string name="contribution_details">Sąveikos informacija</string>
+    <string name="project_description">Projekto aprašas</string>
+    <string name="week">Savaitė</string>
+    <string name="month">Mėnuo</string>
+    <string name="all_time">Bendras laikas</string>
+    <string name="time_string_hours_only">%1$d val.</string>
+    <string name="chart_week_label">%1$d sav.</string>
+    <string name="hours_contributed_label_plural">Sąveika truko %1$d val.</string>
+    <string name="hours_contributed_label_singular">Sąveika truko 1 val.</string>
+    <string name="contributed_no_data">Per pasirinktą laikotarpį sąveikos nebuvo</string>
+    <string name="no_charger_tile">Nėra kroviklio</string>
+    <string name="low_battery_tile">Akumuliatorius senka</string>
+    <string name="no_wifi_tile">Nėra „Wi-Fi“</string>
+    <string name="no_charger_text">Įrenginys turi būti prijungtas prie kroviklio</string>
+    <string name="low_battery_text">Norint pradėti sąveiką akumuliatorius turi būti įkrautas bent 98 %</string>
+    <string name="no_wifi_text">Norint pradėti sąveiką reikia prisijungti prie „Wi-Fi“ tinklo.</string>
+</resources>

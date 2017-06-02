@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  Licensed under the LICENSE.
+  Copyright 2017, Sony Mobile Communications Inc.
+-->
+<resources xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="notification_service_finished_job_executed">您已为科学做了贡献</string>
+    <string name="notification_service_finished_failed">未满足所有启动条件</string>
+    <string name="contributed_time">已贡献时间</string>
+    <string name="people_helping">贡献者数量</string>
+    <string name="research_type">研究类型</string>
+    <string name="research_type_unavailable">不可用</string>
+    <string name="setup_guide">设置向导</string>
+    <string name="legal">法律</string>
+    <string name="share">共享</string>
+    <string name="welcome">欢迎使用Folding@Home</string>
+    <string name="read_more">了解详细信息</string>
+    <string name="more_info">更多信息</string>
+    <string name="finish">完成</string>
+    <string name="wizard_welcome_to_folding_subtitle">想要帮忙寻找阿兹海默症、帕金森氏症和癌症的治疗方法吗？</string>
+    <string name="wizard_welcome_to_folding_text">您的手机可以在您睡眠时进行科学计算，帮助斯坦福大学的科学家们寻找许多疾病的治疗方法。</string>
+    <string-array name="help_find_cure">
+        <item>通过注册Folding@Home，您可以在自己不使用时将手机的处理能力贡献出来，从而帮助斯坦福大学的科学家们寻找许多常见疾病的治疗方法。</item>
+        <item>折叠是指我们体内的蛋白质活动。对蛋白质折叠的研究需要进行大量的计算，因此斯坦福大学请求人们将手机中不使用的处理能力贡献出来以处理一些数字。在您睡眠时，斯坦福大学会向您的手机发送一个折叠问题以进行处理。计算完后成，结果会发送回斯坦福大学。</item>
+        <item>您可以在以下主页上找到有关Folding@Home的更多信息：\nfolding.stanford.edu</item>
+    </string-array>
+    <string name="powered_by">技术支持提供者：</string>
+    <string name="private_date_safe_title">您的私人数据处于安全状态。</string>
+    <string name="private_date_safe_text">此应用程序未访问您的私人数据。</string>
+    <string name="no_cost_mobile_data_title">移动数据无需付费</string>
+    <string name="no_cost_mobile_data_text">手机必须连接到Wi-Fi网络。</string>
+    <string name="battery_not_drained_title">电池不会耗尽</string>
+    <string name="battery_not_drained_text">手机必须连接充电器并充满电(100%)</string>
+    <string name="time_string_weeks">%1$d周%2$d天%3$d小时</string>
+    <string name="time_string_days">%1$d天%2$d小时%3$d分钟</string>
+    <string name="time_string_hours">%1$d小时%2$d分钟</string>
+    <string name="share_facebook_success">已成功在Facebook上分享</string>
+    <string name="share_facebook_error">无法在Facebook上分享</string>
+    <string name="waiting">正在共享…</string>
+    <string name="share_object_message">我是%1$d个贡献者之一，我已经贡献了%2$s的计算时间。</string>
+    <string name="notification_service_executing_job">Folding@Home正在运行。\n您正在为科学研究做贡献。</string>
+    <string name="notification_service_not_executing">Folding@Home未运行。\n所有启动条件均未满足。</string>
+    <string name="settings">设置</string>
+    <string name="start_contribute">开始时间</string>
+    <string name="start_contribute_text">设定计算的开始时间</string>
+    <string name="wifi">WLAN</string>
+    <string name="settings_auto_wifi_msg">做贡献期间启用Wi-Fi</string>
+    <string name="notifications">通知</string>
+    <string name="settings_display_notification">在计算结束时发送通知</string>
+    <string name="contribution_interval_time">贡献持续时间</string>
+    <string name="wizard_step">步骤%1$d/%2$d</string>
+    <string name="no_opencl">此设备不支持OpenCL。此库对执行作业十分重要。您要继续吗？</string>
+    <string name="connect_to_wifi">手机需要连接到Wi-Fi网络</string>
+    <string name="processing_time_title">计算时间为：%1$s – %2$s</string>
+    <string name="processing_time_text">您可以在设定中更改开始时间。</string>
+    <string name="will_start_when">启动条件</string>
+    <string name="share_facebook_contribution">在Facebook上分享</string>
+    <string name="app_disabled_title">应用程序已禁用</string>
+    <string name="app_disabled_message">此应用程序已禁用，无法再继续使用。</string>
+    <string name="stand_by">待机</string>
+    <string name="helping_out">帮助</string>
+    <string name="disabled">已禁用</string>
+    <string name="data_usage">数据使用</string>
+    <string name="data_usage_text">您的设备必须连接到WLAN网络。\n如果您使用计量或付费WLAN连接，可能会向您收取数据使用费。\n\n有关更多信息，请咨询互联网服务提供商。</string>
+    <string name="whats_new">新功能</string>
+    <string name="whats_new_contribution_status">现在您可以看到运行Folding@Home所需的条件状态。</string>
+    <string name="whats_new_disable_indicator">表示应用程序已禁用。</string>
+    <string name="whats_new_conditions_indicator">表示WLAN已准备就绪，但手机必须连接充电器并充满电。</string>
+    <string name="whats_new_enable_indicator">表示所有条件均已满足。</string>
+    <string name="whats_new_power_button">现在可以更方便地启用或禁用应用程序。您还可以查看Folding@Home的当前状态。</string>
+    <string name="whats_new_login">现在您可以登录并上传您的贡献数据。</string>
+    <string name="whats_new_contribution_indicators">改进了图标，可轻松跟踪您的贡献状态。</string>
+    <string name="whats_new_research_type">表示您正在专注进行的研究。</string>
+    <string name="whats_new_people_helping">表示使用Folding@Home的人数。</string>
+    <string name="whats_new_contributed_time">表示您的总贡献时间。</string>
+    <string name="skip">跳过</string>
+    <string name="turn_on">开启</string>
+    <string name="turn_off">关闭</string>
+    <string name="active_research">当前研究</string>
+    <string name="notification_contribution_time">谢谢。此设备在最近24小时内已贡献了%1$s。</string>
+    <string name="action_login">登录</string>
+    <string name="action_logout">%1$s（退出）</string>
+    <string name="action_leaderboards">高分榜</string>
+    <string name="action_achievements">成就</string>
+    <string name="action_invite_friends">邀请好友</string>
+    <string name="notification_service_turn_on">开启以继续贡献</string>
+    <string name="toast_logout">已退出</string>
+    <string name="toast_network_unavailable">网络不可用</string>
+    <string name="paused">已暂停</string>
+    <string name="action_enable">启用</string>
+    <string name="action_disable">停用</string>
+    <string name="pause">暂停</string>
+    <string name="new_indicators">新指示符</string>
+    <string name="new_power_button">新电源按钮</string>
+    <string name="sign_in_google_game_service">登录Google Play™游戏服务</string>
+    <string name="view_more">查看更多</string>
+    <string name="toast_achievements_disabled">登录即可查看成绩！</string>
+    <string name="toast_leaderboards_disabled">登录即可查看高分榜！</string>
+    <string name="contribution_details">贡献的详细信息</string>
+    <string name="project_description">项目描述</string>
+    <string name="week">周</string>
+    <string name="month">月</string>
+    <string name="all_time">总时间</string>
+    <string name="time_string_hours_only">%1$d个小时</string>
+    <string name="chart_week_label">第%1$d周</string>
+    <string name="hours_contributed_label_plural">已贡献%1$d个小时</string>
+    <string name="hours_contributed_label_singular">已贡献1个小时</string>
+    <string name="contributed_no_data">选定期间中没有贡献</string>
+    <string name="no_charger_tile">无充电器</string>
+    <string name="low_battery_tile">电池电量低</string>
+    <string name="no_wifi_tile">无WLAN</string>
+    <string name="no_charger_text">设备必须连接充电器</string>
+    <string name="low_battery_text">电池需要至少充到98%才可以启动贡献</string>
+    <string name="no_wifi_text">连接WLAN网络以启动贡献。</string>
+</resources>

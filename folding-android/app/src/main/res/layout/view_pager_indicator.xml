@@ -1,0 +1,11 @@
+<!--
+ Licensed under the LICENSE.
+ Copyright 2017, Sony Mobile Communications Inc.
+-->
+
+<View xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/view_pager_indicator"
+    android:layout_width="@dimen/page_indicator_size"
+    android:layout_height="@dimen/page_indicator_size"
+    android:background="@drawable/pager_indicator_selector"
+    android:layout_margin="@dimen/margin_x_small"/>

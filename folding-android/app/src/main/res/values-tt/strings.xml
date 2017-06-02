@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  Licensed under the LICENSE.
+  Copyright 2017, Sony Mobile Communications Inc.
+-->
+<resources xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="notification_service_finished_job_executed">Сез фәнгә өлеш керттегез</string>
+    <string name="notification_service_finished_failed">Кайбер чыгыш шартлар үтәлмәгән</string>
+    <string name="contributed_time">Иганә итү вакыты</string>
+    <string name="people_helping">Ярдәм күрсәткән кешеләр</string>
+    <string name="research_type">Эзләнү төре</string>
+    <string name="research_type_unavailable">Мөмкин түгел</string>
+    <string name="setup_guide">Урнаштыру кулланмасы</string>
+    <string name="legal">Хокукый мәгълүмат</string>
+    <string name="share">Уртаклашу</string>
+    <string name="welcome">Folding@Home\'га рәхим итегез</string>
+    <string name="read_more">Тулырак мәглүмат</string>
+    <string name="more_info">Күбрәк мәгълүмат</string>
+    <string name="finish">Әзер</string>
+    <string name="wizard_welcome_to_folding_subtitle">Альцгеймер, Паркинсон һәм яман шеш авыруларына каршы дәва табуда ярдәм итәргә телисезме?</string>
+    <string name="wizard_welcome_to_folding_text">Телефоныгыз, сез йоклаган вакытта фәнни хисаплар башкарып, Стэнфорд Университеты галимнәренә күпсанлы чирләргә каршы дәва табуда ярдәм итә.</string>
+    <string-array name="help_find_cure">
+        <item>Folding@Home\'да теркәлеп, сез, үзегез кулланмаганда, телефоныгызның башкару көчен биреп, Стенфорд Университеты галимнәренә еш таралган авыруларның күбесенә каршы дару табарга ярдәм итәсез.</item>
+        <item>Тезү тәнебездәге аксымнар эшчәнлегенә кагыла. Аксымнар тезелүен өйрәнү өчен, купсанлы хисаплар башкару кирәк, шуңа күрә Стэнфорд Университеты, кайбер исәпләрне санап чыгару өчен, кешеләрдән телефоннарының хисаплау көчен иганә итүне сорый. Сез йоклаган вакытта, Сэнфорд Университеты телефоныгызга тезү проблемасын җибәрәчәк. Хисаплар тәмамлангач, нәтиҗәләр кире Стэнфордка җибәреләләр.</item>
+        <item>Folding@Home турында тулырак мәгълүматны өй битендә таба аласыз:\nfolding.stanford.edu</item>
+    </string-array>
+    <string name="powered_by">Булдыручы</string>
+    <string name="private_date_safe_title">Мәгълүматыгыз имин урында.</string>
+    <string name="private_date_safe_text">Әлеге кушымта конфиденциаль мәгълүматыгызга керми.</string>
+    <string name="no_cost_mobile_data_title">Мобиль мәгълүмат бушлай</string>
+    <string name="no_cost_mobile_data_text">Телефон Wi-Fi челтәренә тоташкан булырга тиеш.</string>
+    <string name="battery_not_drained_title">Батарейка бетмәячәк</string>
+    <string name="battery_not_drained_text">Телефон коруга тоташырылып, батарейкасы тулысынча корылырга тиеш (100%)</string>
+    <string name="time_string_weeks">%1$dатна %2$dкөн %3$dсәгать</string>
+    <string name="time_string_days">%1$dкөн%2$dсәг %3$dмин</string>
+    <string name="time_string_hours">%1$dсәг %2$dмин</string>
+    <string name="share_facebook_success">Facebook аша уңышлы уртаклашылды</string>
+    <string name="share_facebook_error">Facebook аша уртаклашу мөмкин түгел</string>
+    <string name="waiting">Уртаклашыла…</string>
+    <string name="share_object_message">Мин ярдәм итүче %1$d кешенең берсе, һәм мин хисаплау вакытының %2$s өлешен иганә иттем!</string>
+    <string name="notification_service_executing_job">Folding@Home кабызылган.\nСез фәнни эзләнүләргә өлеш кертәсез.</string>
+    <string name="notification_service_not_executing">Folding@Home сүндерелгән.\nКайбер чыгыш таләпләр үтәлмәгән.</string>
+    <string name="settings">Параметрлар</string>
+    <string name="start_contribute">Башлану вакыты</string>
+    <string name="start_contribute_text">Хисаплауның башлану вакытын көйләү</string>
+    <string name="settings_auto_wifi_msg">Иганә итү вакытында Wi-Fi эшләтеп җибәрү</string>
+    <string name="notifications">Искәртүләр</string>
+    <string name="settings_display_notification">Хисап тәмамлангач, искәртүләр җибәрү</string>
+    <string name="contribution_interval_time">Иганә итү вакыты</string>
+    <string name="wizard_step">Адым %1$d/%2$d</string>
+    <string name="no_opencl">Әлеге җайланма OpenCL\'ны хупламый. Бу библиотека мәсьәләләр башкару өчен мөһим. Дәвам итәргәме?</string>
+    <string name="connect_to_wifi">Телефонны Wi-Fi челтәренә тоташтыру сорала</string>
+    <string name="processing_time_title">Хисаплау арасы %1$s - %2$s</string>
+    <string name="processing_time_text">Башлану вакытын параметрлар аша үзгәртә аласыз.</string>
+    <string name="will_start_when">Башлау шартлары</string>
+    <string name="share_facebook_contribution">Facebook аша уртаклашу</string>
+    <string name="app_disabled_title">Кушымта сүндерелгән</string>
+    <string name="app_disabled_message">Кушымта сүндерелгән һәм аның белән башка кулланып булмый.</string>
+    <string name="stand_by">Көтү режимы</string>
+    <string name="helping_out">Ярдәм итү</string>
+    <string name="disabled">Өзелгән</string>
+    <string name="data_usage">Мәгълүматны куллану</string>
+    <string name="data_usage_text">Җайланмагыз Wi-Fi челтәренә тоташкан булырга тиеш.\nИсәпләнүче яки түләнүче Wi-Fi тоташмасын куллансагыз, мәгълуматны куллану өчен түләү алынырга мөмикн.\n\nӨстәмә мәгълүматны Интернет хезмәтен тәэмин итүчесеннән алыгыз.</string>
+    <string name="whats_new">Яңалыклар</string>
+    <string name="whats_new_contribution_status">Эшләү өчен таләп ителгән шартлар халәтен Folding@Home\'да карый аласыз.</string>
+    <string name="whats_new_disable_indicator">Кушымта сүндерелгәнне күрсәтә.</string>
+    <string name="whats_new_conditions_indicator">Wi-Fi\'ның әзер булуын күрсәтә, ләкин телефон коруга тоташкан һәм батарейка 100% кадәр корылган булырга тиеш.</string>
+    <string name="whats_new_enable_indicator">Бөтен таләпләрнең әзер булуларын күрсәтә.</string>
+    <string name="whats_new_power_button">Хәзер кушымтаны кабызу һәм сүндерү җиңелрәк. Шулай ук, Folding@Home\'да гамәлдәге халәтен карый аласыз.</string>
+    <string name="whats_new_login">Хәзер сез, теркәлеп, кертемнәрегезне йөкли аласыз.</string>
+    <string name="whats_new_contribution_indicators">Кертемнең халәтен җиңел күзәтү өчен яхшыртылган тамгалар.</string>
+    <string name="whats_new_research_type">Сез кертем ясаган тикшерүне күрсәтә.</string>
+    <string name="whats_new_people_helping">Folding@Home кулланучы кешеләр санын күрсәтә.</string>
+    <string name="whats_new_contributed_time">Кертемнәрегезнең гомуми вакытын күрсәтә.</string>
+    <string name="skip">Узып китү</string>
+    <string name="turn_on">Кабызу</string>
+    <string name="turn_off">Сүндерү</string>
+    <string name="active_research">Актив эзләнү</string>
+    <string name="notification_contribution_time">Рәхмәт. Әлеге җайланма соңгы 24 сәгать %1$s өлеш кертте.</string>
+    <string name="action_login">Керү</string>
+    <string name="action_logout">%1$s (Чыгу)</string>
+    <string name="action_leaderboards">Лидерлар таблицасы</string>
+    <string name="action_achievements">Казанышлар</string>
+    <string name="action_invite_friends">Дусларны чакыру</string>
+    <string name="notification_service_turn_on">Өлеш керт. дәвам итү өчен, кабызу</string>
+    <string name="toast_logout">Чыккан</string>
+    <string name="toast_network_unavailable">Челтәр белән куллану мөмкин түгел</string>
+    <string name="paused">Туктатылган</string>
+    <string name="action_enable">Кабызу</string>
+    <string name="action_disable">Өзү</string>
+    <string name="pause">Туктатып тору</string>
+    <string name="new_indicators">Яңа индикаторлар</string>
+    <string name="new_power_button">Яңа кабызу төймәсе</string>
+    <string name="sign_in_google_game_service">Google Play™ уеннар хезмәтенә керү</string>
+    <string name="view_more">Күбрәк</string>
+    <string name="toast_achievements_disabled">Казанышларны карау өчен керегез!</string>
+    <string name="toast_leaderboards_disabled">Әйдәүчеләрне карау өчен керегез!</string>
+    <string name="contribution_details">Өлеш кертү үзлекләре</string>
+    <string name="project_description">Проект тасвирламасы</string>
+    <string name="week">Атна</string>
+    <string name="month">Ай</string>
+    <string name="all_time">Барлык вакыт</string>
+    <string name="time_string_hours_only">%1$dсәг.</string>
+    <string name="chart_week_label">Атна %1$d</string>
+    <string name="hours_contributed_label_plural">%1$d сәгать өлеш кертелде</string>
+    <string name="hours_contributed_label_singular">1 сәгать өлеш кертелде</string>
+    <string name="contributed_no_data">Сайланган вакытта өлеш кертелмәгән</string>
+    <string name="no_charger_tile">Кору җиһазы юк</string>
+    <string name="low_battery_tile">Батареяның корылмасы түбән</string>
+    <string name="no_wifi_tile">Wi-Fi юк</string>
+    <string name="no_charger_text">Җайланма кору җиһазына тоташкан булырга тиеш</string>
+    <string name="low_battery_text">Өлеш кертә башлау өчен батарея кимендә 98%ка корылган булырга тиеш</string>
+    <string name="no_wifi_text">Өлеш кертә башлау өчен Wi-Fi челтәренә тоташу.</string>
+</resources>

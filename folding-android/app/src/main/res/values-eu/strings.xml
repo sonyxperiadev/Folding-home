@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+   Licensed under the LICENSE.
+   Copyright 2017, Sony Mobile Communications Inc.
+-->
+<resources xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="notification_service_finished_job_executed">Zientziari lagundu diozu</string>
+    <string name="notification_service_finished_failed">Ez dira abiarazte baldintza guztiak bete.</string>
+    <string name="contributed_time">Lagundutako denbora</string>
+    <string name="people_helping">Laguntzaile kopurua</string>
+    <string name="research_type">Ikerketa mota</string>
+    <string name="research_type_unavailable">Ez erabilgarri</string>
+    <string name="setup_guide">Konfigurazio gida</string>
+    <string name="legal">Lege oharra</string>
+    <string name="share">Partekatu</string>
+    <string name="welcome">Ongi etorri Folding@Home aplikaziora</string>
+    <string name="read_more">Irakurri gehiago</string>
+    <string name="more_info">Informazio gehiago</string>
+    <string name="finish">Amaitu</string>
+    <string name="wizard_welcome_to_folding_subtitle">Alzheimerraren, Parkinsonaren eta minbiziaren sendabideak aurkitzen lagundu nahi?</string>
+    <string name="wizard_welcome_to_folding_text">Lo zaudenean, telefonoak kalkulu zientifikoak egin eta Stanfordeko Unibertsitateko zientzialariei gaixotasun askotarako sendabidea aurkitzen lagun diezaieke.</string>
+    <string-array name="help_find_cure">
+        <item>Folding@Home aplikazioan erregistratuz gero, gaixotasun arruntenetarako sendabideak aurkitzen lagunduko diezu Stanfordeko unibertsitateko zientzialariei. Horrela, telefonoa erabiltzen ez duzunean, aplikazioak telefonoaren prozesatze energia ematen die zientzialariei.</item>
+        <item>Folding ingelesezko hitzak (tolestura, euskaraz) gure gorputzeko proteinen jarduerari egiten dio erreferentzia. Proteinen tolestura ikertzeko hainbeste kalkulu behar dira, ezen Standfordeko Unibertsitateak jendeari eskatzen dion telefonoen erabili gabeko prozesatze energia utz diezaion zenbaki batzuk prozesatzeko. Lo zaudenean, Standfordeko Unibertsitateak ebatzi beharreko tolestura problema bat bidaliko du telefonora. Kalkuluak burutu ondoren, emaitzak Standfordera bueltan bidaliko dira.</item>
+        <item>Folding@Home aplikazioari buruzko informazio gehiago aurki dezakezu orri honetan:\nfolding.stanford.edu</item>
+    </string-array>
+    <string name="powered_by">honen teknologiarekin:</string>
+    <string name="private_date_safe_title">Zure datu pribatuak salbu daude.</string>
+    <string name="private_date_safe_text">Aplikazio honek ezin ditzake zure datu pribatuak atzitu.</string>
+    <string name="no_cost_mobile_data_title">Datu mugikorreng. kosturik ez</string>
+    <string name="no_cost_mobile_data_text">Telefonoak Wi-Fi sarera konektatuta egon behar du.</string>
+    <string name="battery_not_drained_title">Bateria ez da agortuko</string>
+    <string name="battery_not_drained_text">Telefonoak kargagailu batekin konektatuta eta erabat kargatuta (% 100) egon behar du</string>
+    <string name="time_string_weeks">%1$das %2$deg %3$dh</string>
+    <string name="time_string_days">%1$deg %2$d h %3$d min</string>
+    <string name="time_string_hours">%1$dh %2$d min</string>
+    <string name="share_facebook_success">Behar bezala partekatu da Facebook-en</string>
+    <string name="share_facebook_error">Ezin izan da Facebook-en partekatu</string>
+    <string name="waiting">Partekatzen…</string>
+    <string name="share_object_message">%1$d laguntzaileetako bat naiz eta kalkulu denbora honekin lagundu dut: %2$s!</string>
+    <string name="notification_service_executing_job">Folding@Home exekutatzen ari da.\nIkerketa zientifikoari laguntzen ari zara.</string>
+    <string name="notification_service_not_executing">Folding@Home ez da exekutatzen ari.\nEz dira abiarazte baldintza guztiak bete.</string>
+    <string name="settings">Ezarpenak</string>
+    <string name="start_contribute">Abiarazte ordua</string>
+    <string name="start_contribute_text">Ezarri kalkuluak egiteko hasiera ordua</string>
+    <string name="wifi">Wi-Fia</string>
+    <string name="settings_auto_wifi_msg">Gaitu Wi-Fi konexioa laguntzak dirauen bitartean</string>
+    <string name="notifications">Jakinarazpenak</string>
+    <string name="settings_display_notification">Bidali jakinarazpenak kalkuluak amaitu ondoren</string>
+    <string name="contribution_interval_time">Laguntzaren iraupena</string>
+    <string name="wizard_step">%1$d/%2$d urratsa</string>
+    <string name="no_opencl">Gailu honek ez du OpenCL onartzen. Lanak exekutatzeko, liburutegi hori nahitaezkoa da. Jarraitu nahi duzu?</string>
+    <string name="connect_to_wifi">Telefonoak Wi-Fi sare batera konektatuta egon behar du</string>
+    <string name="processing_time_title">Kalkuluen ordu tartea: %1$s -%2$s</string>
+    <string name="processing_time_text">Hasiera ordua ezarpenetan alda dezakezu.</string>
+    <string name="will_start_when">Abiarazte baldintzak</string>
+    <string name="share_facebook_contribution">Partekatu Facebook-en</string>
+    <string name="app_disabled_title">Aplikazioa desgaituta</string>
+    <string name="app_disabled_message">Aplikazio hau desgaituta dago eta ezin daiteke gehiago erabili.</string>
+    <string name="stand_by">Egonean</string>
+    <string name="helping_out">Datuak kalkulatzen</string>
+    <string name="disabled">Desgaituta</string>
+    <string name="data_usage">Datuen erabilera</string>
+    <string name="data_usage_text">Gailuak Wi-Fi sare batera konektatuta egon behar du.\nMugatutako edo ordainpeko Wi-Fi konexioa erabiltzen baduzu, baliteke datuen erabileragatik ordaindu behar izatea.\n\nInformazio gehiago lortzeko, galdetu Interneteko zerbitzu hornitzaileari.</string>
+    <string name="whats_new">Zer berri</string>
+    <string name="whats_new_contribution_status">Orain Folding@Home exekutatzeko behar diren baldintzak ikusiko dituzu .</string>
+    <string name="whats_new_disable_indicator">Aplikazioa desgaituta dagoela adierazten du.</string>
+    <string name="whats_new_conditions_indicator">Wi-Fia prest dagoela baina telefonoak kargagailu batera konektatuta eta bateria guztiz kargatuta egon behar dutela adierazten du.</string>
+    <string name="whats_new_enable_indicator">Baldintza guztiak betetzen direla adierazten du.</string>
+    <string name="whats_new_power_button">Orain errazagoa da aplikazioa gaitzea edo desgaitzea. Horrez gain, Folding@Home aplikazioaren uneko egoera ikus dezakezu.</string>
+    <string name="whats_new_login">Orain saioa hasi eta ekarpenak karga ditzakezu.</string>
+    <string name="whats_new_contribution_indicators">Ikonoak hobetu dira, zure ekarpenen egoeraren jarraipena errazteko.</string>
+    <string name="whats_new_research_type">Ekarpena zein ikerketari egiten diozun adierazten du.</string>
+    <string name="whats_new_people_helping">Folding@Home aplikazioa erabiltzen ari den pertsona kopurua adierazten du.</string>
+    <string name="whats_new_contributed_time">Zure ekarpenen guztizko iraupena adierazten du.</string>
+    <string name="skip">Saltatu</string>
+    <string name="turn_on">Aktibatu</string>
+    <string name="turn_off">Desaktibatu</string>
+    <string name="active_research">Bilaketa aktiboa</string>
+    <string name="notification_contribution_time">Eskerrik asko. Gailu honek ekarpen hau egin du azken 24 orduetan: %1$s ,</string>
+    <string name="action_login">Hasi saioa</string>
+    <string name="action_logout">%1$s (Amaitu saioa)</string>
+    <string name="action_leaderboards">Emaitza taulak</string>
+    <string name="action_achievements">Lorpenak</string>
+    <string name="action_invite_friends">Gonbidatu lagunak</string>
+    <string name="notification_service_turn_on">Ekarpena egiten jarraitzeko, aktibatu</string>
+    <string name="toast_logout">Amaitu da saioa</string>
+    <string name="toast_network_unavailable">Sarea ez erabilgarri</string>
+    <string name="paused">Pausatuta</string>
+    <string name="action_enable">Gaitu</string>
+    <string name="action_disable">Desgaitu</string>
+    <string name="pause">Pausatu</string>
+    <string name="new_indicators">Adierazle berriak</string>
+    <string name="new_power_button">Pizteko eta itzaltzeko botoi berria</string>
+    <string name="sign_in_google_game_service">Hasi saioa Google Play™ jokoetan</string>
+    <string name="view_more">Ikusi gehiago</string>
+    <string name="toast_achievements_disabled">Hasi saioa lorpenak ikusteko!</string>
+    <string name="toast_leaderboards_disabled">Hasi saioa sailkapenak ikusteko!</string>
+    <string name="contribution_details">Ekarpenaren xehetasunak</string>
+    <string name="project_description">Proiektuaren deskribapena</string>
+    <string name="week">Astea</string>
+    <string name="month">Hilabetea</string>
+    <string name="all_time">Guztizko denbora</string>
+    <string name="time_string_hours_only">%1$d h</string>
+    <string name="chart_week_label">%1$d. astea</string>
+    <string name="hours_contributed_label_plural">Ekarpena: %1$d ordu</string>
+    <string name="hours_contributed_label_singular">Ekarpena: 1 ordu</string>
+    <string name="contributed_no_data">Ez dago ekarpenik hautatutako denbora tarterako</string>
+    <string name="no_charger_tile">Kargagailurik ez</string>
+    <string name="low_battery_tile">Bateria gutxi</string>
+    <string name="no_wifi_tile">Wi-Fi konexiorik ez</string>
+    <string name="no_charger_text">Kargagailu batera konektatuta egon behar du gailuak</string>
+    <string name="low_battery_text">Bateriak %98an kargatuta egon behar du gutxienez, ekarpena abiarazteko</string>
+    <string name="no_wifi_text">Konektatu Wi-Fi sare batera, ekarpena abiarazteko.</string>
+</resources>

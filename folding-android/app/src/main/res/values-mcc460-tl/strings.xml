@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  Licensed under the LICENSE.
+  Copyright 2017, Sony Mobile Communications Inc.
+-->
+<resources xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="no_cost_mobile_data_text">Dapat konektado ang telepono sa WLAN network.</string>
+    <string name="settings_auto_wifi_msg">Paganahin ang WLAN sa oras ng kontribusyon</string>
+    <string name="connect_to_wifi">Kailangang konektado ang telepono sa WLAN network.</string>
+    <string name="data_usage_text">Konektado dapat ang device mo sa isang WLAN network.\nKung gumagamit ka ng nakametro o bayad na WLAN connection, maaaring singilin ka para sa paggamit ng data.\n\nPara sa karagdagang impormasyon, magtanong sa iyong Internet service provider.</string>
+    <string name="whats_new_conditions_indicator">Tinutukoy na handa na ang WLAN, ngunit dapat konektado ang telepono sa isang charger at ang baterya ay dapat naka-charge nang 100%.</string>
+    <string name="no_wifi_tile">Walang WLAN</string>
+    <string name="no_wifi_text">Kumonekta sa isang WLAN network para simulan ang pag-ambag.</string>
+</resources>

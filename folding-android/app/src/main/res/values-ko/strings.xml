@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  Licensed under the LICENSE.
+  Copyright 2017, Sony Mobile Communications Inc.
+-->
+<resources xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="notification_service_finished_job_executed">과학 연구 참여 완료</string>
+    <string name="notification_service_finished_failed">일부 시작 조건이 충족되지 않았습니다.</string>
+    <string name="contributed_time">참여한 시간</string>
+    <string name="people_helping">참여 사용자 수</string>
+    <string name="research_type">연구 유형</string>
+    <string name="research_type_unavailable">사용할 수 없음</string>
+    <string name="setup_guide">설정 안내</string>
+    <string name="legal">법적 정보</string>
+    <string name="share">공유</string>
+    <string name="welcome">Folding@Home 시작</string>
+    <string name="read_more">자세히 보기</string>
+    <string name="more_info">추가 정보</string>
+    <string name="finish">완료</string>
+    <string name="wizard_welcome_to_folding_subtitle">알츠하이머, 파킨슨병 및 암에 대한 치료법을 찾고 싶으신가요?</string>
+    <string name="wizard_welcome_to_folding_text">사용자가 자는 동안 휴대폰에서 과학적 계산을 수행하여 스탠포드 대학의 과학자들이 다양한 질병에 대한 치료법을 찾도록 도울 수 있습니다.</string>
+    <string-array name="help_find_cure">
+        <item>Folding@Home에 가입하면 휴대폰을 사용하지 않을 때 휴대폰의 프로세싱 파워을 기부하여 스탠포드 대학의 과학자들이 가장 일반적인 여러 질병에 대한 치료법을 찾도록 도울 수 있습니다.</item>
+        <item>폴딩이란 우리 몸의 단백질 활동을 말합니다. 단백질 폴딩 연구를 위해서는 많은 양의 데이터를 처리해야 하기 때문에 스탠포드 대학에서는 휴대폰의 사용되지 않는 처리 기능을 기부해 줄 것을 요청하고 있습니다. 사용자가 잘 때 스탠포드 대학에서 해결해야 하는 폴딩 문제를 휴대폰으로 보내게 됩니다. 계산이 완료되면 그 결과가 스탠포드 대학으로 다시 전송됩니다.</item>
+        <item>홈페이지:\nfolding.stanford.edu에서 Folding@Home에 대해 자세히 알아볼 수 있습니다.</item>
+    </string-array>
+    <string name="powered_by">제공</string>
+    <string name="private_date_safe_title">개인 데이터는 안전함</string>
+    <string name="private_date_safe_text">이 응용 프로그램은 개인 데이터에 액세스하지 않습니다.</string>
+    <string name="no_cost_mobile_data_title">모바일 데이터 비용 부과 안 됨</string>
+    <string name="no_cost_mobile_data_text">휴대폰이 Wi-Fi 네트워크에 연결되어 있어야 합니다.</string>
+    <string name="battery_not_drained_title">배터리가 방전되지 않음</string>
+    <string name="battery_not_drained_text">휴대폰은 충전기에 연결되어 있고 완전히 충전(100%)되어 있어야 합니다.</string>
+    <string name="time_string_weeks">%1$d주%2$d일%3$d시간</string>
+    <string name="time_string_days">%1$d일%2$d시간%3$d분</string>
+    <string name="time_string_hours">%1$d시간%2$d분</string>
+    <string name="share_facebook_success">Facebook에 공유 완료</string>
+    <string name="share_facebook_error">Facebook에 공유할 수 없음</string>
+    <string name="waiting">공유 중</string>
+    <string name="share_object_message">저는 참여하고 있는%1$d명 중 한 명이며%2$s의 계산 시간을 기부했습니다.</string>
+    <string name="notification_service_executing_job">Folding@Home이 실행 중입니다.\n귀하는 과학 연구에 참여하고 있습니다.</string>
+    <string name="notification_service_not_executing">Folding@Home이 실행 중입니다.\n일부 시작 조건이 충족되지 않습니다.</string>
+    <string name="settings">설정</string>
+    <string name="start_contribute">시작 시간</string>
+    <string name="start_contribute_text">계산을 위한 시작 시간 설정</string>
+    <string name="settings_auto_wifi_msg">참여하는 동안 Wi-Fi를 사용하도록 설정</string>
+    <string name="notifications">알림</string>
+    <string name="settings_display_notification">계산 종료 시 알림 전송</string>
+    <string name="contribution_interval_time">참여 기간</string>
+    <string name="wizard_step">%1$d/%2$d단계</string>
+    <string name="no_opencl">이 기기는 OpenCL을 지원하지 않습니다. 이 라이브러리는 작업을 실행하는 데 꼭 필요합니다. 계속하시겠습니까?</string>
+    <string name="connect_to_wifi">휴대폰이 Wi-Fi 네트워크에 연결되어 있어야 합니다.</string>
+    <string name="processing_time_title">계산 시간: %1$s – %2$s</string>
+    <string name="processing_time_text">설정에서 시작 시간을 변경할 수 있습니다.</string>
+    <string name="will_start_when">시작 조건</string>
+    <string name="share_facebook_contribution">Facebook에 공유</string>
+    <string name="app_disabled_title">응용프로그램이 사용 중지됨</string>
+    <string name="app_disabled_message">응용프로그램이 사용 중지되어 더 이상 사용할 수 없습니다.</string>
+    <string name="stand_by">대기 중</string>
+    <string name="helping_out">처리 중</string>
+    <string name="disabled">사용하지 않도록 설정됨</string>
+    <string name="data_usage">데이터 사용</string>
+    <string name="data_usage_text">기기가 Wi-Fi 네트워크에 연결되어 있어야 합니다.\n사용량이 제한되었거나 유료 Wi-Fi 연결을 사용하는 경우 데이터 사용 시 요금이 부과될 수 있습니다.\n\n자세한 내용은 ISP(인터넷 서비스 공급자)에 문의하시기 바랍니다.</string>
+    <string name="whats_new">새로운 기능</string>
+    <string name="whats_new_contribution_status">이제 Folding@Home을 실행하기 위해 필요한 조건 상태를 확인할 수 있습니다.</string>
+    <string name="whats_new_disable_indicator">앱이 사용 중지되었음을 나타냅니다.</string>
+    <string name="whats_new_conditions_indicator">Wi-Fi가 준비되었지만 휴대폰을 충전기에 연결하고 배터리가 100% 충전되어야 함을 나타냅니다.</string>
+    <string name="whats_new_enable_indicator">모든 요구 사항이 준비되었음을 나타냅니다.</string>
+    <string name="whats_new_power_button">이제 앱을 사용하도록 설정하거나 사용 중지하는 과정이 더욱 쉬워졌습니다. 또한 Folding@Home의 현재 상태도 확인할 수 있습니다.</string>
+    <string name="whats_new_login">이제 로그인하고 기부 내역을 업로드할 수 있습니다.</string>
+    <string name="whats_new_contribution_indicators">개선된 아이콘을 사용하여 기부 상태를 쉽게 추적할 수 있습니다.</string>
+    <string name="whats_new_research_type">참여하고 있는 연구를 나타냅니다.</string>
+    <string name="whats_new_people_helping">Folding@Home을 사용하는 사용자 수를 나타냅니다.</string>
+    <string name="whats_new_contributed_time">기부한 총 시간을 나타냅니다.</string>
+    <string name="skip">건너뛰기</string>
+    <string name="turn_on">켜기</string>
+    <string name="turn_off">끄기</string>
+    <string name="active_research">활성 중인 연구</string>
+    <string name="notification_contribution_time">감사합니다. 이 기기는 지난 24시간 동안 %1$s을(를) 기부했습니다.</string>
+    <string name="action_login">로그인</string>
+    <string name="action_logout">%1$s(로그아웃)</string>
+    <string name="action_leaderboards">리더보드</string>
+    <string name="action_achievements">성과</string>
+    <string name="action_invite_friends">친구 초대</string>
+    <string name="notification_service_turn_on">계속 참여하려면 기능을 켜세요.</string>
+    <string name="toast_logout">로그아웃됨</string>
+    <string name="toast_network_unavailable">네트워크를 사용할 수 없음</string>
+    <string name="paused">일시 중지</string>
+    <string name="action_enable">사용</string>
+    <string name="action_disable">사용하지 않도록 설정</string>
+    <string name="pause">일시 중지</string>
+    <string name="new_indicators">새 표시기</string>
+    <string name="new_power_button">새 전원 버튼</string>
+    <string name="sign_in_google_game_service">Google Play™ 게임 서비스에 로그인</string>
+    <string name="view_more">더 보기</string>
+    <string name="toast_achievements_disabled">성과를 보려면 로그인하세요!</string>
+    <string name="toast_leaderboards_disabled">리더보드를 보려면 로그인하세요!</string>
+    <string name="contribution_details">참여도 상세 정보</string>
+    <string name="project_description">프로젝트 설명</string>
+    <string name="week">주</string>
+    <string name="month">월</string>
+    <string name="all_time">총 시간</string>
+    <string name="time_string_hours_only">%1$d시간</string>
+    <string name="chart_week_label">주 %1$d</string>
+    <string name="hours_contributed_label_plural">%1$d시간 참여</string>
+    <string name="hours_contributed_label_singular">1시간 참여</string>
+    <string name="contributed_no_data">선택한 기간에 참여 없음</string>
+    <string name="no_charger_tile">충전기에 연결되지 않음</string>
+    <string name="low_battery_tile">배터리 부족</string>
+    <string name="no_wifi_tile">Wi-Fi에 연결되지 않음</string>
+    <string name="no_charger_text">기기가 충전기에 연결되어 있어야 함</string>
+    <string name="low_battery_text">참여를 시작하려면 배터리가 98% 이상 충전되어 있어야 함</string>
+    <string name="no_wifi_text">참여를 시작하려면 Wi-Fi 네트워크에 연결되어 있어야 함</string>
+</resources>

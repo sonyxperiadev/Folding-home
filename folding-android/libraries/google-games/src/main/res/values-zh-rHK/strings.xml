@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?><resources>
+    <string name="games_achievement_list_title">成就</string>
+    <string name="games_achievement_hidden_name">非公開</string>
+    <string name="games_achievement_hidden_desc">繼續玩即可瞭解更多。</string>
+</resources>

@@ -1,0 +1,12 @@
+<!--
+  Licensed under the LICENSE.
+  Copyright 2017, Sony Mobile Communications Inc.
+-->
+
+<resources>
+
+    <declare-styleable name="customFont">
+        <attr name="fontName" format="string" />
+    </declare-styleable>
+
+</resources>

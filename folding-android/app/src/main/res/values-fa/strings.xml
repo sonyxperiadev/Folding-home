@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  Licensed under the LICENSE.
+  Copyright 2017, Sony Mobile Communications Inc.
+-->
+<resources xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="notification_service_finished_job_executed">شما در زمینه علم همکاری کردید</string>
+    <string name="notification_service_finished_failed">تمام شرایط برای شروع محقق نشدند</string>
+    <string name="contributed_time">زمان همکاری</string>
+    <string name="people_helping">مردم کمک می کنند</string>
+    <string name="research_type">نوع تحقیق</string>
+    <string name="research_type_unavailable">در دسترس نیست</string>
+    <string name="setup_guide">راهنمای تنظیم و راه اندازی</string>
+    <string name="legal">حقوقی</string>
+    <string name="share">اشتراک گذاری</string>
+    <string name="welcome">به Folding@Home خوش آمدید</string>
+    <string name="read_more">بیشتر بخوانید</string>
+    <string name="more_info">اطلاعات بیشتر</string>
+    <string name="finish">پایان</string>
+    <string name="wizard_welcome_to_folding_subtitle">آیا می خواهید در زمینه یافتن راه حل هایی برای درمان بیماری آلزایمر، پارکینسون و سرطان کمک کنید؟</string>
+    <string name="wizard_welcome_to_folding_text">تلفن شما می تواند محاسبات علمی را در حین خوابیدن شما انجام دهد و به دانشمندان دانشگاه استنفورد کمک کند تا راه درمان بسیاری از بیماری ها را پیدا کنند.</string>
+    <string-array name="help_find_cure">
+        <item>با ثبت‌نام در Folding@Home به دانشمندان دانشگاه استنفورد کمک می‌کنید تا راه درمان بسیاری از بیماری‌های شناخته‌شده را پیدا کنند، برای این کار می‌توانید هنگامی که خودتان از تلفنتان استفاده نمی‌کنید، توان پردازشی آن را در اختیار آن‌ها قرار دهید.</item>
+        <item>\"تاشدگی پروتئین\" (Folding) به فعالیت های پروتئینی در بدن ما اشاره دارد. تحقیق در زمینه protein folding به محاسبات بسیار زیادی نیاز دارد که دانشگاه استنفورد از افراد خواسته است با اهدای توان پردازشی بلااستفاده تلفن هایشان تا حدی به آنها کمک کنند. هنگامی که شما خواب هستید، دانشگاه استنفورد یک مسئله مربوط به \"تاشدگی\" را برای تلفن شما ارسال می کند تا آن را حل کند. بعد از تکمیل محاسبات، نتایج برای استنفورد ارسال می شود.</item>
+        <item>اطلاعات بیشتر درباره Folding@Home را می توانید در صفحه اصلی مشاهده کنید:\nfolding.stanford.edu</item>
+    </string-array>
+    <string name="powered_by">ارائه شده توسط</string>
+    <string name="private_date_safe_title">حفظ داده های شخصی بطور ایمن.</string>
+    <string name="private_date_safe_text">این برنامه به داده های خصوصی شما دسترسی ندارد.</string>
+    <string name="no_cost_mobile_data_title">داده همراه هزینه ای ندارد</string>
+    <string name="no_cost_mobile_data_text">تلفن باید به شبکه Wi-Fi وصل باشد.</string>
+    <string name="battery_not_drained_title">باتری خالی نمی شود</string>
+    <string name="battery_not_drained_text">تلفن باید به شارژر متصل باشد و به طور کامل (100%) شارژ شود</string>
+    <string name="time_string_weeks">%1$dهفته %2$dروز %3$dساعت</string>
+    <string name="time_string_days">%1$dروز %2$dساعت %3$dدقیقه</string>
+    <string name="time_string_hours">%1$dساعت %2$dدقیقه</string>
+    <string name="share_facebook_success">با موفقیت در Facebook به اشتراک گذاشته شد</string>
+    <string name="share_facebook_error">در Facebook به اشتراک گذاشته نشد</string>
+    <string name="waiting">در حال اشتراک گذاری...</string>
+    <string name="share_object_message">من یکی از افراد %1$d هستم که در حال کمک و همکاری با %2$s در زمینه زمان محاسبه هستم!</string>
+    <string name="notification_service_executing_job">Folding@Home در حال اجرا است.\nشما در حال همکاری در تحقیق علمی هستید.</string>
+    <string name="notification_service_not_executing">Folding@Home در حال اجرا نیست.\nشرایط لازم برای شروع به کار موجود نیست.</string>
+    <string name="settings">تنظیمات</string>
+    <string name="start_contribute">زمان شروع</string>
+    <string name="start_contribute_text">تنظیم زمان شروع برای محاسبه</string>
+    <string name="settings_auto_wifi_msg">فعال کردن Wi-Fi در حین همکاری</string>
+    <string name="notifications">اعلان ها</string>
+    <string name="settings_display_notification">ارسال اعلان در پایان محاسبه</string>
+    <string name="contribution_interval_time">مدت زمان همکاری</string>
+    <string name="wizard_step">گام %1$d/%2$d</string>
+    <string name="no_opencl">این دستگاه از OpenCL پشتیبانی نمی کند. برای اجرای کارها، وجود این مجموعه لازم است. می خواهید ادامه دهید؟</string>
+    <string name="connect_to_wifi">لازم است که تلفن به شبکه Wi-Fi متصل باشد</string>
+    <string name="processing_time_title">زمان محاسبه بین %1$s – %2$s است</string>
+    <string name="processing_time_text">در قسمت تنظیمات می توانید زمان شروع را تغییر دهید.</string>
+    <string name="will_start_when">شرایط لازم برای شروع به کار</string>
+    <string name="share_facebook_contribution">اشتراک گذاری در Facebook</string>
+    <string name="app_disabled_title">برنامه غیرفعال شد</string>
+    <string name="app_disabled_message">این برنامه غیرفعال شده است و دیگر نمی توانید از آن استفاده کنید.</string>
+    <string name="stand_by">آماده به کار</string>
+    <string name="helping_out">در حال انجام کار</string>
+    <string name="disabled">غیرفعال شد</string>
+    <string name="data_usage">میزان مصرف داده</string>
+    <string name="data_usage_text">دستگاهتان باید به شبکه Wi-Fi وصل باشد.\nاگر از یک اتصال Wi-Fi اندازه گیری شده یا پولی استفاده می کنید، ممکن است هزینه مصرف داده برایتان محاسبه شود.\n\nبرای کسب اطلاعات بیشتر، با ارائه دهنده خدمات اینترنتیتان صحبت کنید.</string>
+    <string name="whats_new">موارد جدید</string>
+    <string name="whats_new_contribution_status">اکنون می توانید وضعیت شرایط مورد نیاز را برای اجرای Folding@Home مشاهده کنید.</string>
+    <string name="whats_new_disable_indicator">نشان می دهد که برنامه غیرفعال شده است.</string>
+    <string name="whats_new_conditions_indicator">نشان می دهد که Wi-Fi آماده است اما تلفن باید به شارژر وصل باشد و باتری باید 100% شارژ شده باشد.</string>
+    <string name="whats_new_enable_indicator">نشان می دهد که همه شرایط مورد نیاز آماده هستند.</string>
+    <string name="whats_new_power_button">اکنون راحت تر می توانید برنامه را فعال یا غیرفعال کنید. همچنین می توانید وضعیت فعلی Folding@Home را مشاهده کنید.</string>
+    <string name="whats_new_login">اکنون می توانید وارد سیستم شده و کارهایتان را آپلود کنید.</string>
+    <string name="whats_new_contribution_indicators">نمادهای بهبودیافته برای اینکه به راحتی وضعیت کارهایتان را دنبال کنید.</string>
+    <string name="whats_new_research_type">تحقیقی را نشان می دهد که در آن شرکت می کنید.</string>
+    <string name="whats_new_people_helping">تعداد افرادی را نشان می دهد که از Folding@Home استفاده می کنند.</string>
+    <string name="whats_new_contributed_time">مدت زمان کلی کارتان را نشان می دهد.</string>
+    <string name="skip">پرش</string>
+    <string name="turn_on">فعال کردن</string>
+    <string name="turn_off">غیرفعال کردن</string>
+    <string name="active_research">تحقیق فعال</string>
+    <string name="notification_contribution_time">متشکریم. این دستگاه %1$s در 24 ساعت قبل همکاری داشته است.</string>
+    <string name="action_login">ورود به سیستم</string>
+    <string name="action_logout">%1$s (خروج از سیستم)</string>
+    <string name="action_leaderboards">صفحه های مدیریت</string>
+    <string name="action_achievements">موفقیت ها</string>
+    <string name="action_invite_friends">دعوت از دوستان</string>
+    <string name="notification_service_turn_on">برای ادامه مشارکت، فعال کنید</string>
+    <string name="toast_logout">از سیستم خارج شدید</string>
+    <string name="toast_network_unavailable">شبكه موجود نيست</string>
+    <string name="paused">موقتاً متوقف شد</string>
+    <string name="action_enable">فعال کردن</string>
+    <string name="action_disable">غیرفعال کردن</string>
+    <string name="pause">توقف موقت</string>
+    <string name="new_indicators">نشانگرهای جدید</string>
+    <string name="new_power_button">دکمه روشن/خاموش جدید</string>
+    <string name="sign_in_google_game_service">ورود به سرویس‌های بازی‌های Google Play™‎</string>
+    <string name="view_more">مشاهده بیشتر</string>
+    <string name="toast_achievements_disabled">برای مشاهده دستاوردها، به سیستم وارد شوید!</string>
+    <string name="toast_leaderboards_disabled">برای مشاهده تابلوهای امتیازات، به سیستم وارد شوید!</string>
+    <string name="contribution_details">جزئیات مشارکت</string>
+    <string name="project_description">توصیف پروژه</string>
+    <string name="week">هفته</string>
+    <string name="month">ماه</string>
+    <string name="all_time">مجموع زمان</string>
+    <string name="time_string_hours_only">%1$d ساعت</string>
+    <string name="chart_week_label">هفته %1$d</string>
+    <string name="hours_contributed_label_plural">%1$d ساعت مشارکت</string>
+    <string name="hours_contributed_label_singular">۱ ساعت مشارکت</string>
+    <string name="contributed_no_data">مشارکتی برای دوره انتخابی وجود ندارد</string>
+    <string name="no_charger_tile">شارژر وجود ندارد</string>
+    <string name="low_battery_tile">باتری کم است</string>
+    <string name="no_wifi_tile">Wi-Fi وجود ندارد</string>
+    <string name="no_charger_text">دستگاه باید به یک شارژر متصل باشد</string>
+    <string name="low_battery_text">باتری باید حداقل دارای ۹۸٪ شارژ برای شروع مشارکت باشد</string>
+    <string name="no_wifi_text">برای شروع مشارکت، به شبکه Wi-Fi متصل شوید.</string>
+</resources>

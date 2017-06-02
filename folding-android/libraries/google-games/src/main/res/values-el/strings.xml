@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?><resources>
+    <string name="games_achievement_list_title">Επιτεύγματα</string>
+    <string name="games_achievement_hidden_name">Μυστικό</string>
+    <string name="games_achievement_hidden_desc">Συνεχίστε το παιχνίδι για να μάθετε περισσότερα.</string>
+</resources>

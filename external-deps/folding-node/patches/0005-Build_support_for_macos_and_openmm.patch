@@ -1,0 +1,20 @@
+diff --git a/common.gypi b/common.gypi
+index 5b8b2c0..05ddbfd 100644
+--- a/common.gypi
++++ b/common.gypi
+@@ -285,12 +285,12 @@
+           'GCC_CW_ASM_SYNTAX': 'NO',                # No -fasm-blocks
+           'GCC_DYNAMIC_NO_PIC': 'NO',               # No -mdynamic-no-pic
+                                                     # (Equivalent to -fPIC)
+-          'GCC_ENABLE_CPP_EXCEPTIONS': 'NO',        # -fno-exceptions
+-          'GCC_ENABLE_CPP_RTTI': 'NO',              # -fno-rtti
++          'GCC_ENABLE_CPP_EXCEPTIONS': 'YES',        # -fno-exceptions
++          'GCC_ENABLE_CPP_RTTI': 'YES',              # -fno-rtti
+           'GCC_ENABLE_PASCAL_STRINGS': 'NO',        # No -mpascal-strings
+           'GCC_THREADSAFE_STATICS': 'NO',           # -fno-threadsafe-statics
+           'PREBINDING': 'NO',                       # No -Wl,-prebind
+-          'MACOSX_DEPLOYMENT_TARGET': '10.5',       # -mmacosx-version-min=10.5
++          'MACOSX_DEPLOYMENT_TARGET': '10.11',       # -mmacosx-version-min=10.5
+           'USE_HEADERMAP': 'NO',
+           'OTHER_CFLAGS': [
+             '-fno-strict-aliasing',

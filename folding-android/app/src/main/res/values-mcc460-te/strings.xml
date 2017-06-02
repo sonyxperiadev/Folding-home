@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  Licensed under the LICENSE.
+  Copyright 2017, Sony Mobile Communications Inc.
+-->
+<resources xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="no_cost_mobile_data_text">ఫోన్ ఖచ్చితంగా WLAN నెట్‌వర్క్‌కు కనెక్ట్ చేయబడాలి.</string>
+    <string name="settings_auto_wifi_msg">సహాయం చేస్తున్న సమయంలో WLAN ఎనేబుల్ చేయండి</string>
+    <string name="connect_to_wifi">ఫోన్‌ను WLAN నెట్‌వర్క్‌కు కనెక్ట్ చేయాలి</string>
+    <string name="data_usage_text">మీ డేటాను తప్పనిసరిగా WLAN నెట్‌వర్క్‌కు అనుసంధానం చేయండి.\nఒకవేళ మీరు మీటర్డ్ లేదా పెయిడ్ WLAN కనెక్షన్ మీరు ఉపయోగిస్తున్నట్లయితే, డేటా వినియోగం కొరకు మీరు ఛార్జ్ చేయబడవచ్చు.\n\nమరింత సమాచారం కొరకు, మీ ఇంటర్నెట్ సర్వీస్ ప్రొవైడర్‌తో దయచేసి చెక్ చేసుకోండి.</string>
+    <string name="whats_new_conditions_indicator">WLAN సిద్ధంగా ఉన్నదని సూచిస్తుంది, అయితే ఫోన్ తప్పనిసరిగా ఛార్జర్కు కనెక్ట్ చేయాలి మరియు బ్యాటరీ తప్పనిసరిగా 100% ఛార్జ్ అయి ఉండాలి.</string>
+    <string name="no_wifi_tile">WLAN లేదు</string>
+    <string name="no_wifi_text">తోడ్పాటును ప్రారంభించడానికి WLAN నెట్‌వర్క్‌కు కనెక్ట్ చేయండి.</string>
+</resources>

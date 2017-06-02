@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  Licensed under the LICENSE.
+  Copyright 2017, Sony Mobile Communications Inc.
+-->
+<resources xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="no_cost_mobile_data_text">Telefonoak WLAN sarera konektatuta egon behar du.</string>
+    <string name="wifi">WLANa</string>
+    <string name="settings_auto_wifi_msg">Gaitu WLAN konexioa laguntzak dirauen bitartean</string>
+    <string name="connect_to_wifi">Telefonoak WLAN sare batera konektatuta egon behar du</string>
+    <string name="data_usage_text">Gailuak WLAN sare batera konektatuta egon behar du.\nMugatutako edo ordainpeko WLAN konexioa erabiltzen baduzu, baliteke datuen erabileragatik ordaindu behar izatea.\n\nInformazio gehiago lortzeko, galdetu Interneteko zerbitzu hornitzaileari.</string>
+    <string name="whats_new_conditions_indicator">WLANa prest dagoela baina telefonoak kargagailu batera konektatuta eta bateria guztiz kargatuta egon behar dutela adierazten du.</string>
+    <string name="no_wifi_tile">WLAN konexiorik ez</string>
+    <string name="no_wifi_text">Konektatu WLAN sare batera, ekarpena abiarazteko.</string>
+</resources>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  Licensed under the LICENSE.
+  Copyright 2017, Sony Mobile Communications Inc.
+-->
+<resources xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="no_cost_mobile_data_text">A telefont WLAN hálózathoz kell csatlakoztatni</string>
+    <string name="settings_auto_wifi_msg">WLAN bekapcsolása a hozzájáruláskor</string>
+    <string name="connect_to_wifi">A telefont WLAN hálózathoz kell csatlakoztatni</string>
+    <string name="data_usage_text">A készüléknek WLAN-hálózathoz kell kapcsolódnia.\nHa mérős vagy fizetős WLAN-kapcsolatot használ, akkor lehetséges, hogy fizetnie kell az adatforgalomért.\n\nTovábbi tájékoztatásért forduljon az internetszolgáltatóhoz.</string>
+    <string name="whats_new_conditions_indicator">Azt jelzi, hogy a WLAN készen áll, de a telefont töltőhöz kell csatlakoztatni, és az akkumulátornak 100%-on kell lennie.</string>
+    <string name="no_wifi_tile">Nincs WLAN</string>
+    <string name="no_wifi_text">Az együttműködés elkezdéséhez csatlakozzon WLAN-hálózathoz.</string>
+</resources>

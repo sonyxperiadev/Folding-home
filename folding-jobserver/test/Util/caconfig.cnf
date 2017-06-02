@@ -1,0 +1,67 @@
+oid_section   = new_oids
+
+[ new_oids ]
+projectAttributes = 1.2.3.4.5
+
+# Sample caconfig.cnf file.
+#
+# Default configuration to use when one is not provided on the command line.
+#
+[ ca ]
+default_ca      = local_ca
+#
+#
+# Default location of directories and files needed to generate certificates.
+#
+[ local_ca ]
+dir             = ./test/Util
+certificate     = $dir/pmserver-cacert.pem
+database        = $dir/index.txt
+new_certs_dir   = $dir/newcerts
+private_key     = $dir/pmserver-cakey.pem
+serial          = $dir/serial
+#
+# Default expiration and encryption policies for certificates.
+#
+default_crl_days        = 3650
+default_days            = 18250
+default_md              = sha1
+#
+policy          = local_ca_policy
+x509_extensions = local_ca_extensions
+#
+# Default policy to use when generating server certificates.  The following
+# fields must be defined in the server certificate.
+#
+[ local_ca_policy ]
+commonName              = supplied
+projectAttributes       = supplied
+#
+# x509 extensions to use when generating server certificates.
+#
+[ local_ca_extensions ]
+basicConstraints        = CA:false
+nsCertType              = client, server
+extendedKeyUsage        = serverAuth,clientAuth
+#
+# The default root certificate generation policy.
+#
+[ req ]
+dir = ./test/Util
+default_bits    = 2048
+default_keyfile = $dir/pmserver-cakey.pem
+default_md      = sha1
+#
+prompt                  = no
+distinguished_name      = root_ca_distinguished_name
+x509_extensions         = root_ca_extensions
+#
+#
+# Root Certificate Authority distinguished name.  Change these fields to match
+# your local environment!
+#
+[ root_ca_distinguished_name ]
+commonName              = PM CA
+#
+[ root_ca_extensions ]
+basicConstraints        = CA:true

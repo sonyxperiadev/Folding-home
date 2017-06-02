@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<lint>
+    <issue id="MissingRegistered">
+        <ignore path="AndroidManifest.xml" />
+        <ignore path="res/layout/fragment_facebook.xml" />
+    </issue>
+    <issue id="MissingTranslation">
+        <ignore path="*" />
+    </issue>
+    <issue id="OldTargetApi">
+        <ignore path="AndroidManifest.xml" />
+    </issue>
+</lint>

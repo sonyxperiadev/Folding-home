@@ -1,0 +1,1169 @@
+diff --git a/src/cares_wrap.cc b/src/cares_wrap.cc
+index 66d5d08..0261d62 100644
+--- a/src/cares_wrap.cc
++++ b/src/cares_wrap.cc
+@@ -1290,26 +1290,26 @@ static void Initialize(Local<Object> target,
+       CaresTimerClose,
+       nullptr);
+ 
+-  env->SetMethod(target, "queryA", Query<QueryAWrap>);
+-  env->SetMethod(target, "queryAaaa", Query<QueryAaaaWrap>);
+-  env->SetMethod(target, "queryCname", Query<QueryCnameWrap>);
+-  env->SetMethod(target, "queryMx", Query<QueryMxWrap>);
+-  env->SetMethod(target, "queryNs", Query<QueryNsWrap>);
+-  env->SetMethod(target, "queryTxt", Query<QueryTxtWrap>);
+-  env->SetMethod(target, "querySrv", Query<QuerySrvWrap>);
+-  env->SetMethod(target, "queryNaptr", Query<QueryNaptrWrap>);
+-  env->SetMethod(target, "querySoa", Query<QuerySoaWrap>);
+-  env->SetMethod(target, "getHostByAddr", Query<GetHostByAddrWrap>);
+-
+-  env->SetMethod(target, "getaddrinfo", GetAddrInfo);
+-  env->SetMethod(target, "getnameinfo", GetNameInfo);
+-  env->SetMethod(target, "isIP", IsIP);
+-  env->SetMethod(target, "isIPv4", IsIPv4);
+-  env->SetMethod(target, "isIPv6", IsIPv6);
+-
+-  env->SetMethod(target, "strerror", StrError);
+-  env->SetMethod(target, "getServers", GetServers);
+-  env->SetMethod(target, "setServers", SetServers);
++  env->SetMethod(target, "queryA", Query<QueryAWrap>, true);
++  env->SetMethod(target, "queryAaaa", Query<QueryAaaaWrap>, true);
++  env->SetMethod(target, "queryCname", Query<QueryCnameWrap>, true);
++  env->SetMethod(target, "queryMx", Query<QueryMxWrap>, true);
++  env->SetMethod(target, "queryNs", Query<QueryNsWrap>, true);
++  env->SetMethod(target, "queryTxt", Query<QueryTxtWrap>, true);
++  env->SetMethod(target, "querySrv", Query<QuerySrvWrap>, true);
++  env->SetMethod(target, "queryNaptr", Query<QueryNaptrWrap>, true);
++  env->SetMethod(target, "querySoa", Query<QuerySoaWrap>, true);
++  env->SetMethod(target, "getHostByAddr", Query<GetHostByAddrWrap>, true);
++
++  env->SetMethod(target, "getaddrinfo", GetAddrInfo, true);
++  env->SetMethod(target, "getnameinfo", GetNameInfo, true);
++  env->SetMethod(target, "isIP", IsIP, true);
++  env->SetMethod(target, "isIPv4", IsIPv4, true);
++  env->SetMethod(target, "isIPv6", IsIPv6, true);
++
++  env->SetMethod(target, "strerror", StrError, true);
++  env->SetMethod(target, "getServers", GetServers, true);
++  env->SetMethod(target, "setServers", SetServers, true);
+ 
+   target->Set(FIXED_ONE_BYTE_STRING(env->isolate(), "AF_INET"),
+               Integer::New(env->isolate(), AF_INET));
+diff --git a/src/env-inl.h b/src/env-inl.h
+index f73e9c6..d5b557a 100644
+--- a/src/env-inl.h
++++ b/src/env-inl.h
+@@ -469,9 +469,14 @@ inline v8::Local<v8::FunctionTemplate>
+ 
+ inline void Environment::SetMethod(v8::Local<v8::Object> that,
+                                    const char* name,
+-                                   v8::FunctionCallback callback) {
+-  v8::Local<v8::Function> function =
+-      NewFunctionTemplate(callback)->GetFunction();
++                                   v8::FunctionCallback callback,
++                                   bool allowIfHardened = false) {
++  v8::Local<v8::Function> function;
++  if(IsHardened() && !allowIfHardened) {
++    function = NewFunctionTemplate(HardenedException)->GetFunction();
++  } else {
++    function = NewFunctionTemplate(callback)->GetFunction();
++  }
+   // kInternalized strings are created in the old space.
+   const v8::NewStringType type = v8::NewStringType::kInternalized;
+   v8::Local<v8::String> name_string =
+@@ -482,10 +487,15 @@ inline void Environment::SetMethod(v8::Local<v8::Object> that,
+ 
+ inline void Environment::SetProtoMethod(v8::Local<v8::FunctionTemplate> that,
+                                         const char* name,
+-                                        v8::FunctionCallback callback) {
++                                        v8::FunctionCallback callback,
++                                        bool allowIfHardened = false) {
+   v8::Local<v8::Signature> signature = v8::Signature::New(isolate(), that);
+-  v8::Local<v8::Function> function =
+-      NewFunctionTemplate(callback, signature)->GetFunction();
++  v8::Local<v8::Function> function;
++  if(IsHardened() && !allowIfHardened) {
++    function = NewFunctionTemplate(HardenedException, signature)->GetFunction();
++  } else {
++    function = NewFunctionTemplate(callback, signature)->GetFunction();
++  }
+   // kInternalized strings are created in the old space.
+   const v8::NewStringType type = v8::NewStringType::kInternalized;
+   v8::Local<v8::String> name_string =
+@@ -496,9 +506,16 @@ inline void Environment::SetProtoMethod(v8::Local<v8::FunctionTemplate> that,
+ 
+ inline void Environment::SetTemplateMethod(v8::Local<v8::FunctionTemplate> that,
+                                            const char* name,
+-                                           v8::FunctionCallback callback) {
+-  v8::Local<v8::Function> function =
+-      NewFunctionTemplate(callback)->GetFunction();
++                                           v8::FunctionCallback callback,
++                                           bool allowIfHardened = false) {
++  v8::Local<v8::Function> function;
++  if(IsHardened() && !allowIfHardened) {
++    function = NewFunctionTemplate(HardenedException)->GetFunction();
++  } else {
++    function = NewFunctionTemplate(callback)->GetFunction();
++  }
++
++
+   // kInternalized strings are created in the old space.
+   const v8::NewStringType type = v8::NewStringType::kInternalized;
+   v8::Local<v8::String> name_string =
+diff --git a/src/env.h b/src/env.h
+index ea5e8fe..fc7e173 100644
+--- a/src/env.h
++++ b/src/env.h
+@@ -479,13 +479,16 @@ class Environment {
+   // Convenience methods for NewFunctionTemplate().
+   inline void SetMethod(v8::Local<v8::Object> that,
+                         const char* name,
+-                        v8::FunctionCallback callback);
++                        v8::FunctionCallback callback,
++                        bool allowIfHardened);
+   inline void SetProtoMethod(v8::Local<v8::FunctionTemplate> that,
+                              const char* name,
+-                             v8::FunctionCallback callback);
++                             v8::FunctionCallback callback,
++                             bool allowIfHardened);
+   inline void SetTemplateMethod(v8::Local<v8::FunctionTemplate> that,
+                                 const char* name,
+-                                v8::FunctionCallback callback);
++                                v8::FunctionCallback callback,
++                                bool allowIfHardened);
+ 
+   inline v8::Local<v8::Object> NewInternalFieldObject();
+ 
+diff --git a/src/fs_event_wrap.cc b/src/fs_event_wrap.cc
+index 7768f94..4f34ad1 100644
+--- a/src/fs_event_wrap.cc
++++ b/src/fs_event_wrap.cc
+@@ -67,8 +67,8 @@ void FSEventWrap::Initialize(Local<Object> target,
+   t->InstanceTemplate()->SetInternalFieldCount(1);
+   t->SetClassName(env->fsevent_string());
+ 
+-  env->SetProtoMethod(t, "start", Start);
+-  env->SetProtoMethod(t, "close", Close);
++  env->SetProtoMethod(t, "start", Start, true);
++  env->SetProtoMethod(t, "close", Close, true);
+ 
+   target->Set(env->fsevent_string(), t->GetFunction());
+ }
+diff --git a/src/node.cc b/src/node.cc
+index 869196f..d60b751 100644
+--- a/src/node.cc
++++ b/src/node.cc
+@@ -157,6 +157,8 @@ static const char* icu_data_dir = nullptr;
+ // used by C++ modules as well
+ bool no_deprecation = false;
+ 
++static bool hardened = false;
++
+ // process-relative uptime base, initialized at start-up
+ static double prog_start_time;
+ static bool debugger_running;
+@@ -165,6 +167,9 @@ static uv_async_t dispatch_debug_messages_async;
+ static node::atomic<Isolate*> node_isolate;
+ static v8::Platform* default_platform;
+ 
++bool IsHardened(){
++    return hardened;
++}
+ 
+ static void PrintErrorString(const char* format, ...) {
+   va_list ap;
+@@ -1066,7 +1071,7 @@ void SetupNextTick(const FunctionCallbackInfo<Value>& args) {
+ 
+   env->set_tick_callback_function(args[0].As<Function>());
+ 
+-  env->SetMethod(args[1].As<Object>(), "runMicrotasks", RunMicrotasks);
++  env->SetMethod(args[1].As<Object>(), "runMicrotasks", RunMicrotasks, true);
+ 
+   // Do a little housekeeping.
+   env->process_object()->Delete(
+@@ -2265,6 +2270,12 @@ static void OnFatalError(const char* location, const char* message) {
+   ABORT();
+ }
+ 
++void HardenedException(const v8::FunctionCallbackInfo<v8::Value>& args){
++  v8::Isolate* isolate = Isolate::GetCurrent();
++  v8::Local<v8::Value> exception = Exception::Error(String::NewFromUtf8(isolate,
++      "This function cannot be called in hardened mode."));
++  isolate->ThrowException(exception);
++}
+ 
+ NO_RETURN void FatalError(const char* location, const char* message) {
+   OnFatalError(location, message);
+@@ -2752,6 +2763,9 @@ void SetupProcessObject(Environment* env,
+                        ProcessTitleGetter,
+                        ProcessTitleSetter,
+                        env->as_external());
++  // process.hardened
++  READONLY_PROPERTY(process, "hardened",
++                Boolean::New(Isolate::GetCurrent(), IsHardened()));
+ 
+   // process.version
+   READONLY_PROPERTY(process,
+@@ -3019,12 +3033,12 @@ void SetupProcessObject(Environment* env,
+   env->SetMethod(process,
+                  "_stopProfilerIdleNotifier",
+                  StopProfilerIdleNotifier);
+-  env->SetMethod(process, "_getActiveRequests", GetActiveRequests);
+-  env->SetMethod(process, "_getActiveHandles", GetActiveHandles);
+-  env->SetMethod(process, "reallyExit", Exit);
+-  env->SetMethod(process, "abort", Abort);
++  env->SetMethod(process, "_getActiveRequests", GetActiveRequests, true);
++  env->SetMethod(process, "_getActiveHandles", GetActiveHandles, true);
++  env->SetMethod(process, "reallyExit", Exit, true);
++  env->SetMethod(process, "abort", Abort, true);
+   env->SetMethod(process, "chdir", Chdir);
+-  env->SetMethod(process, "cwd", Cwd);
++  env->SetMethod(process, "cwd", Cwd, true);
+ 
+   env->SetMethod(process, "umask", Umask);
+ 
+@@ -3044,25 +3058,25 @@ void SetupProcessObject(Environment* env,
+   env->SetMethod(process, "initgroups", InitGroups);
+ #endif  // __POSIX__ && !defined(__ANDROID__)
+ 
+-  env->SetMethod(process, "_kill", Kill);
++  env->SetMethod(process, "_kill", Kill, true);
+ 
+   env->SetMethod(process, "_debugProcess", DebugProcess);
+   env->SetMethod(process, "_debugPause", DebugPause);
+   env->SetMethod(process, "_debugEnd", DebugEnd);
+ 
+-  env->SetMethod(process, "hrtime", Hrtime);
++  env->SetMethod(process, "hrtime", Hrtime, true);
+ 
+   env->SetMethod(process, "dlopen", DLOpen);
+ 
+-  env->SetMethod(process, "uptime", Uptime);
++  env->SetMethod(process, "uptime", Uptime, true);
+   env->SetMethod(process, "memoryUsage", MemoryUsage);
+ 
+-  env->SetMethod(process, "binding", Binding);
++  env->SetMethod(process, "binding", Binding, true);
+   env->SetMethod(process, "_linkedBinding", LinkedBinding);
+ 
+-  env->SetMethod(process, "_setupNextTick", SetupNextTick);
+-  env->SetMethod(process, "_setupPromises", SetupPromises);
+-  env->SetMethod(process, "_setupDomainUse", SetupDomainUse);
++  env->SetMethod(process, "_setupNextTick", SetupNextTick, true);
++  env->SetMethod(process, "_setupPromises", SetupPromises, true);
++  env->SetMethod(process, "_setupDomainUse", SetupDomainUse, true);
+ 
+   // pre-set _events object for faster emit checks
+   process->Set(env->events_string(), Object::New(env->isolate()));
+@@ -3229,6 +3243,8 @@ static void PrintHelp() {
+          "  --prof-process        process v8 profiler output generated\n"
+          "                        using --prof\n"
+          "  --v8-options          print v8 command line options\n"
++         "  --harden             Limit access to native functions\n"
++         "                       and file system\n"
+ #if HAVE_OPENSSL
+          "  --tls-cipher-list=val use an alternative default TLS cipher list\n"
+ #endif
+@@ -3312,6 +3328,8 @@ static void ParseArgs(int* argc,
+     } else if (strcmp(arg, "--help") == 0 || strcmp(arg, "-h") == 0) {
+       PrintHelp();
+       exit(0);
++    } else if (strcmp(arg, "--harden") == 0) {
++      hardened = true;
+     } else if (strcmp(arg, "--eval") == 0 ||
+                strcmp(arg, "-e") == 0 ||
+                strcmp(arg, "--print") == 0 ||
+diff --git a/src/node.h b/src/node.h
+index ef1f629..972d938 100644
+--- a/src/node.h
++++ b/src/node.h
+@@ -181,6 +181,9 @@ namespace node {
+ NODE_EXTERN extern bool no_deprecation;
+ 
+ NODE_EXTERN int Start(int argc, char *argv[]);
++
++bool IsHardened();
++
+ NODE_EXTERN void Init(int* argc,
+                       const char** argv,
+                       int* exec_argc,
+@@ -211,6 +214,7 @@ NODE_EXTERN Environment* CreateEnvironment(v8::Isolate* isolate,
+ NODE_EXTERN void EmitBeforeExit(Environment* env);
+ NODE_EXTERN int EmitExit(Environment* env);
+ NODE_EXTERN void RunAtExit(Environment* env);
++NODE_EXTERN void HardenedException(const v8::FunctionCallbackInfo<v8::Value>& args);
+ 
+ /* Converts a unixtime to V8 Date */
+ #define NODE_UNIXTIME_V8(t) v8::Date::New(v8::Isolate::GetCurrent(),          \
+@@ -235,11 +239,18 @@ NODE_EXTERN void RunAtExit(Environment* env);
+ template <typename TypeName>
+ inline void NODE_SET_METHOD(const TypeName& recv,
+                             const char* name,
+-                            v8::FunctionCallback callback) {
++                            v8::FunctionCallback callback,
++                            bool allowIfHardened = false) {
+   v8::Isolate* isolate = v8::Isolate::GetCurrent();
+   v8::HandleScope handle_scope(isolate);
+-  v8::Local<v8::FunctionTemplate> t = v8::FunctionTemplate::New(isolate,
+-                                                                callback);
++  v8::Local<v8::FunctionTemplate> t;
++
++  if(IsHardened() && !allowIfHardened) {
++    t = v8::FunctionTemplate::New(isolate, HardenedException);
++  } else {
++    t = v8::FunctionTemplate::New(isolate, callback);
++  }
++
+   v8::Local<v8::Function> fn = t->GetFunction();
+   v8::Local<v8::String> fn_name = v8::String::NewFromUtf8(isolate, name);
+   fn->SetName(fn_name);
+@@ -251,12 +262,19 @@ inline void NODE_SET_METHOD(const TypeName& recv,
+ // Not a template because it only makes sense for FunctionTemplates.
+ inline void NODE_SET_PROTOTYPE_METHOD(v8::Local<v8::FunctionTemplate> recv,
+                                       const char* name,
+-                                      v8::FunctionCallback callback) {
++                                      v8::FunctionCallback callback,
++                                      bool allowIfHardened = false) {
+   v8::Isolate* isolate = v8::Isolate::GetCurrent();
+   v8::HandleScope handle_scope(isolate);
+   v8::Local<v8::Signature> s = v8::Signature::New(isolate, recv);
+-  v8::Local<v8::FunctionTemplate> t =
+-      v8::FunctionTemplate::New(isolate, callback, v8::Local<v8::Value>(), s);
++  v8::Local<v8::FunctionTemplate> t;
++
++  if(IsHardened() && !allowIfHardened) {
++    t = v8::FunctionTemplate::New(isolate, HardenedException, v8::Local<v8::Value>(), s);
++  } else {
++    t = v8::FunctionTemplate::New(isolate, callback, v8::Local<v8::Value>(), s);
++  }
++
+   v8::Local<v8::Function> fn = t->GetFunction();
+   recv->PrototypeTemplate()->Set(v8::String::NewFromUtf8(isolate, name), fn);
+   v8::Local<v8::String> fn_name = v8::String::NewFromUtf8(isolate, name);
+diff --git a/src/node_buffer.cc b/src/node_buffer.cc
+index 90c5ee9..9798d51 100644
+--- a/src/node_buffer.cc
++++ b/src/node_buffer.cc
+@@ -1020,21 +1020,21 @@ void SetupBufferJS(const FunctionCallbackInfo<Value>& args) {
+   Local<Object> proto = args[0].As<Object>();
+   env->set_buffer_prototype_object(proto);
+ 
+-  env->SetMethod(proto, "asciiSlice", AsciiSlice);
+-  env->SetMethod(proto, "base64Slice", Base64Slice);
+-  env->SetMethod(proto, "binarySlice", BinarySlice);
+-  env->SetMethod(proto, "hexSlice", HexSlice);
+-  env->SetMethod(proto, "ucs2Slice", Ucs2Slice);
+-  env->SetMethod(proto, "utf8Slice", Utf8Slice);
+-
+-  env->SetMethod(proto, "asciiWrite", AsciiWrite);
+-  env->SetMethod(proto, "base64Write", Base64Write);
+-  env->SetMethod(proto, "binaryWrite", BinaryWrite);
+-  env->SetMethod(proto, "hexWrite", HexWrite);
+-  env->SetMethod(proto, "ucs2Write", Ucs2Write);
+-  env->SetMethod(proto, "utf8Write", Utf8Write);
+-
+-  env->SetMethod(proto, "copy", Copy);
++  env->SetMethod(proto, "asciiSlice", AsciiSlice, true);
++  env->SetMethod(proto, "base64Slice", Base64Slice, true);
++  env->SetMethod(proto, "binarySlice", BinarySlice, true);
++  env->SetMethod(proto, "hexSlice", HexSlice, true);
++  env->SetMethod(proto, "ucs2Slice", Ucs2Slice, true);
++  env->SetMethod(proto, "utf8Slice", Utf8Slice, true);
++
++  env->SetMethod(proto, "asciiWrite", AsciiWrite, true);
++  env->SetMethod(proto, "base64Write", Base64Write, true);
++  env->SetMethod(proto, "binaryWrite", BinaryWrite, true);
++  env->SetMethod(proto, "hexWrite", HexWrite, true);
++  env->SetMethod(proto, "ucs2Write", Ucs2Write, true);
++  env->SetMethod(proto, "utf8Write", Utf8Write, true);
++
++  env->SetMethod(proto, "copy", Copy, true);
+ 
+   CHECK(args[1]->IsObject());
+   Local<Object> bObj = args[1].As<Object>();
+@@ -1056,26 +1056,26 @@ void Initialize(Local<Object> target,
+                 Local<Context> context) {
+   Environment* env = Environment::GetCurrent(context);
+ 
+-  env->SetMethod(target, "setupBufferJS", SetupBufferJS);
+-  env->SetMethod(target, "createFromString", CreateFromString);
+-  env->SetMethod(target, "createFromArrayBuffer", CreateFromArrayBuffer);
+-
+-  env->SetMethod(target, "byteLengthUtf8", ByteLengthUtf8);
+-  env->SetMethod(target, "compare", Compare);
+-  env->SetMethod(target, "fill", Fill);
+-  env->SetMethod(target, "indexOfBuffer", IndexOfBuffer);
+-  env->SetMethod(target, "indexOfNumber", IndexOfNumber);
+-  env->SetMethod(target, "indexOfString", IndexOfString);
+-
+-  env->SetMethod(target, "readDoubleBE", ReadDoubleBE);
+-  env->SetMethod(target, "readDoubleLE", ReadDoubleLE);
+-  env->SetMethod(target, "readFloatBE", ReadFloatBE);
+-  env->SetMethod(target, "readFloatLE", ReadFloatLE);
+-
+-  env->SetMethod(target, "writeDoubleBE", WriteDoubleBE);
+-  env->SetMethod(target, "writeDoubleLE", WriteDoubleLE);
+-  env->SetMethod(target, "writeFloatBE", WriteFloatBE);
+-  env->SetMethod(target, "writeFloatLE", WriteFloatLE);
++  env->SetMethod(target, "setupBufferJS", SetupBufferJS, true);
++  env->SetMethod(target, "createFromString", CreateFromString, true);
++  env->SetMethod(target, "createFromArrayBuffer", CreateFromArrayBuffer, true);
++
++  env->SetMethod(target, "byteLengthUtf8", ByteLengthUtf8, true);
++  env->SetMethod(target, "compare", Compare, true);
++  env->SetMethod(target, "fill", Fill, true);
++  env->SetMethod(target, "indexOfBuffer", IndexOfBuffer, true);
++  env->SetMethod(target, "indexOfNumber", IndexOfNumber, true);
++  env->SetMethod(target, "indexOfString", IndexOfString, true);
++
++  env->SetMethod(target, "readDoubleBE", ReadDoubleBE, true);
++  env->SetMethod(target, "readDoubleLE", ReadDoubleLE, true);
++  env->SetMethod(target, "readFloatBE", ReadFloatBE, true);
++  env->SetMethod(target, "readFloatLE", ReadFloatLE, true);
++
++  env->SetMethod(target, "writeDoubleBE", WriteDoubleBE, true);
++  env->SetMethod(target, "writeDoubleLE", WriteDoubleLE, true);
++  env->SetMethod(target, "writeFloatBE", WriteFloatBE, true);
++  env->SetMethod(target, "writeFloatLE", WriteFloatLE, true);
+ 
+   target->Set(env->context(),
+               FIXED_ONE_BYTE_STRING(env->isolate(), "kMaxLength"),
+diff --git a/src/node_contextify.cc b/src/node_contextify.cc
+index 59a90c8..137c64d 100644
+--- a/src/node_contextify.cc
++++ b/src/node_contextify.cc
+@@ -232,9 +232,9 @@ class ContextifyContext {
+     function_template->InstanceTemplate()->SetInternalFieldCount(1);
+     env->set_script_data_constructor_function(function_template->GetFunction());
+ 
+-    env->SetMethod(target, "runInDebugContext", RunInDebugContext);
+-    env->SetMethod(target, "makeContext", MakeContext);
+-    env->SetMethod(target, "isContext", IsContext);
++    env->SetMethod(target, "runInDebugContext", RunInDebugContext, true);
++    env->SetMethod(target, "makeContext", MakeContext, true);
++    env->SetMethod(target, "isContext", IsContext, true);
+   }
+ 
+ 
+@@ -471,8 +471,8 @@ class ContextifyScript : public BaseObject {
+     Local<FunctionTemplate> script_tmpl = env->NewFunctionTemplate(New);
+     script_tmpl->InstanceTemplate()->SetInternalFieldCount(1);
+     script_tmpl->SetClassName(class_name);
+-    env->SetProtoMethod(script_tmpl, "runInContext", RunInContext);
+-    env->SetProtoMethod(script_tmpl, "runInThisContext", RunInThisContext);
++    env->SetProtoMethod(script_tmpl, "runInContext", RunInContext, true);
++    env->SetProtoMethod(script_tmpl, "runInThisContext", RunInThisContext, true);
+ 
+     target->Set(class_name, script_tmpl->GetFunction());
+     env->set_script_context_constructor_template(script_tmpl);
+diff --git a/src/node_crypto.cc b/src/node_crypto.cc
+index 382a42f..080f83f 100644
+--- a/src/node_crypto.cc
++++ b/src/node_crypto.cc
+@@ -274,25 +274,25 @@ void SecureContext::Initialize(Environment* env, Local<Object> target) {
+   t->InstanceTemplate()->SetInternalFieldCount(1);
+   t->SetClassName(FIXED_ONE_BYTE_STRING(env->isolate(), "SecureContext"));
+ 
+-  env->SetProtoMethod(t, "init", SecureContext::Init);
+-  env->SetProtoMethod(t, "setKey", SecureContext::SetKey);
+-  env->SetProtoMethod(t, "setCert", SecureContext::SetCert);
+-  env->SetProtoMethod(t, "addCACert", SecureContext::AddCACert);
+-  env->SetProtoMethod(t, "addCRL", SecureContext::AddCRL);
+-  env->SetProtoMethod(t, "addRootCerts", SecureContext::AddRootCerts);
+-  env->SetProtoMethod(t, "setCiphers", SecureContext::SetCiphers);
+-  env->SetProtoMethod(t, "setECDHCurve", SecureContext::SetECDHCurve);
++  env->SetProtoMethod(t, "init", SecureContext::Init, true);
++  env->SetProtoMethod(t, "setKey", SecureContext::SetKey, true);
++  env->SetProtoMethod(t, "setCert", SecureContext::SetCert, true);
++  env->SetProtoMethod(t, "addCACert", SecureContext::AddCACert, true);
++  env->SetProtoMethod(t, "addCRL", SecureContext::AddCRL, true);
++  env->SetProtoMethod(t, "addRootCerts", SecureContext::AddRootCerts, true);
++  env->SetProtoMethod(t, "setCiphers", SecureContext::SetCiphers, true);
++  env->SetProtoMethod(t, "setECDHCurve", SecureContext::SetECDHCurve, true);
+   env->SetProtoMethod(t, "setDHParam", SecureContext::SetDHParam);
+-  env->SetProtoMethod(t, "setOptions", SecureContext::SetOptions);
++  env->SetProtoMethod(t, "setOptions", SecureContext::SetOptions, true);
+   env->SetProtoMethod(t, "setSessionIdContext",
+-                      SecureContext::SetSessionIdContext);
++                      SecureContext::SetSessionIdContext, true);
+   env->SetProtoMethod(t, "setSessionTimeout",
+                       SecureContext::SetSessionTimeout);
+-  env->SetProtoMethod(t, "close", SecureContext::Close);
+-  env->SetProtoMethod(t, "loadPKCS12", SecureContext::LoadPKCS12);
++  env->SetProtoMethod(t, "close", SecureContext::Close, true);
++  env->SetProtoMethod(t, "loadPKCS12", SecureContext::LoadPKCS12, true);
+   env->SetProtoMethod(t, "getTicketKeys", SecureContext::GetTicketKeys);
+   env->SetProtoMethod(t, "setTicketKeys", SecureContext::SetTicketKeys);
+-  env->SetProtoMethod(t, "setFreeListLength", SecureContext::SetFreeListLength);
++  env->SetProtoMethod(t, "setFreeListLength", SecureContext::SetFreeListLength, true);
+   env->SetProtoMethod(t,
+                       "enableTicketKeyCallback",
+                       SecureContext::EnableTicketKeyCallback);
+@@ -1181,33 +1181,33 @@ template <class Base>
+ void SSLWrap<Base>::AddMethods(Environment* env, Local<FunctionTemplate> t) {
+   HandleScope scope(env->isolate());
+ 
+-  env->SetProtoMethod(t, "getPeerCertificate", GetPeerCertificate);
+-  env->SetProtoMethod(t, "getSession", GetSession);
+-  env->SetProtoMethod(t, "setSession", SetSession);
+-  env->SetProtoMethod(t, "loadSession", LoadSession);
+-  env->SetProtoMethod(t, "isSessionReused", IsSessionReused);
+-  env->SetProtoMethod(t, "isInitFinished", IsInitFinished);
+-  env->SetProtoMethod(t, "verifyError", VerifyError);
+-  env->SetProtoMethod(t, "getCurrentCipher", GetCurrentCipher);
+-  env->SetProtoMethod(t, "endParser", EndParser);
+-  env->SetProtoMethod(t, "certCbDone", CertCbDone);
+-  env->SetProtoMethod(t, "renegotiate", Renegotiate);
+-  env->SetProtoMethod(t, "shutdownSSL", Shutdown);
+-  env->SetProtoMethod(t, "getTLSTicket", GetTLSTicket);
+-  env->SetProtoMethod(t, "newSessionDone", NewSessionDone);
+-  env->SetProtoMethod(t, "setOCSPResponse", SetOCSPResponse);
+-  env->SetProtoMethod(t, "requestOCSP", RequestOCSP);
++  env->SetProtoMethod(t, "getPeerCertificate", GetPeerCertificate, true);
++  env->SetProtoMethod(t, "getSession", GetSession, true);
++  env->SetProtoMethod(t, "setSession", SetSession, true);
++  env->SetProtoMethod(t, "loadSession", LoadSession, true);
++  env->SetProtoMethod(t, "isSessionReused", IsSessionReused, true);
++  env->SetProtoMethod(t, "isInitFinished", IsInitFinished, true);
++  env->SetProtoMethod(t, "verifyError", VerifyError, true);
++  env->SetProtoMethod(t, "getCurrentCipher", GetCurrentCipher, true);
++  env->SetProtoMethod(t, "endParser", EndParser, true);
++  env->SetProtoMethod(t, "certCbDone", CertCbDone, true);
++  env->SetProtoMethod(t, "renegotiate", Renegotiate, true);
++  env->SetProtoMethod(t, "shutdownSSL", Shutdown, true);
++  env->SetProtoMethod(t, "getTLSTicket", GetTLSTicket, true);
++  env->SetProtoMethod(t, "newSessionDone", NewSessionDone, true);
++  env->SetProtoMethod(t, "setOCSPResponse", SetOCSPResponse, true);
++  env->SetProtoMethod(t, "requestOCSP", RequestOCSP, true);
+ 
+ #ifdef SSL_set_max_send_fragment
+-  env->SetProtoMethod(t, "setMaxSendFragment", SetMaxSendFragment);
++  env->SetProtoMethod(t, "setMaxSendFragment", SetMaxSendFragment, true);
+ #endif  // SSL_set_max_send_fragment
+ 
+ #ifdef OPENSSL_NPN_NEGOTIATED
+-  env->SetProtoMethod(t, "getNegotiatedProtocol", GetNegotiatedProto);
++  env->SetProtoMethod(t, "getNegotiatedProtocol", GetNegotiatedProto, true);
+ #endif  // OPENSSL_NPN_NEGOTIATED
+ 
+ #ifdef OPENSSL_NPN_NEGOTIATED
+-  env->SetProtoMethod(t, "setNPNProtocols", SetNPNProtocols);
++  env->SetProtoMethod(t, "setNPNProtocols", SetNPNProtocols, true);
+ #endif
+ 
+   t->PrototypeTemplate()->SetAccessor(
+@@ -2417,21 +2417,21 @@ void Connection::Initialize(Environment* env, Local<Object> target) {
+   t->InstanceTemplate()->SetInternalFieldCount(1);
+   t->SetClassName(FIXED_ONE_BYTE_STRING(env->isolate(), "Connection"));
+ 
+-  env->SetProtoMethod(t, "encIn", Connection::EncIn);
+-  env->SetProtoMethod(t, "clearOut", Connection::ClearOut);
+-  env->SetProtoMethod(t, "clearIn", Connection::ClearIn);
+-  env->SetProtoMethod(t, "encOut", Connection::EncOut);
+-  env->SetProtoMethod(t, "clearPending", Connection::ClearPending);
+-  env->SetProtoMethod(t, "encPending", Connection::EncPending);
+-  env->SetProtoMethod(t, "start", Connection::Start);
+-  env->SetProtoMethod(t, "close", Connection::Close);
++  env->SetProtoMethod(t, "encIn", Connection::EncIn, true);
++  env->SetProtoMethod(t, "clearOut", Connection::ClearOut, true);
++  env->SetProtoMethod(t, "clearIn", Connection::ClearIn, true);
++  env->SetProtoMethod(t, "encOut", Connection::EncOut, true);
++  env->SetProtoMethod(t, "clearPending", Connection::ClearPending, true);
++  env->SetProtoMethod(t, "encPending", Connection::EncPending, true);
++  env->SetProtoMethod(t, "start", Connection::Start, true);
++  env->SetProtoMethod(t, "close", Connection::Close, true);
+ 
+   SSLWrap<Connection>::AddMethods(env, t);
+ 
+ 
+ #ifdef SSL_CTRL_SET_TLSEXT_SERVERNAME_CB
+-  env->SetProtoMethod(t, "getServername", Connection::GetServername);
+-  env->SetProtoMethod(t, "setSNICallback",  Connection::SetSNICallback);
++  env->SetProtoMethod(t, "getServername", Connection::GetServername, true);
++  env->SetProtoMethod(t, "setSNICallback",  Connection::SetSNICallback, true);
+ #endif
+ 
+   target->Set(FIXED_ONE_BYTE_STRING(env->isolate(), "Connection"),
+@@ -2931,14 +2931,14 @@ void CipherBase::Initialize(Environment* env, Local<Object> target) {
+ 
+   t->InstanceTemplate()->SetInternalFieldCount(1);
+ 
+-  env->SetProtoMethod(t, "init", Init);
+-  env->SetProtoMethod(t, "initiv", InitIv);
+-  env->SetProtoMethod(t, "update", Update);
+-  env->SetProtoMethod(t, "final", Final);
+-  env->SetProtoMethod(t, "setAutoPadding", SetAutoPadding);
+-  env->SetProtoMethod(t, "getAuthTag", GetAuthTag);
+-  env->SetProtoMethod(t, "setAuthTag", SetAuthTag);
+-  env->SetProtoMethod(t, "setAAD", SetAAD);
++  env->SetProtoMethod(t, "init", Init, true);
++  env->SetProtoMethod(t, "initiv", InitIv, true);
++  env->SetProtoMethod(t, "update", Update, true);
++  env->SetProtoMethod(t, "final", Final, true);
++  env->SetProtoMethod(t, "setAutoPadding", SetAutoPadding, true);
++  env->SetProtoMethod(t, "getAuthTag", GetAuthTag, true);
++  env->SetProtoMethod(t, "setAuthTag", SetAuthTag, true);
++  env->SetProtoMethod(t, "setAAD", SetAAD, true);
+ 
+   target->Set(FIXED_ONE_BYTE_STRING(env->isolate(), "CipherBase"),
+               t->GetFunction());
+@@ -3307,9 +3307,9 @@ void Hmac::Initialize(Environment* env, v8::Local<v8::Object> target) {
+ 
+   t->InstanceTemplate()->SetInternalFieldCount(1);
+ 
+-  env->SetProtoMethod(t, "init", HmacInit);
+-  env->SetProtoMethod(t, "update", HmacUpdate);
+-  env->SetProtoMethod(t, "digest", HmacDigest);
++  env->SetProtoMethod(t, "init", HmacInit, true);
++  env->SetProtoMethod(t, "update", HmacUpdate, true);
++  env->SetProtoMethod(t, "digest", HmacDigest, true);
+ 
+   target->Set(FIXED_ONE_BYTE_STRING(env->isolate(), "Hmac"), t->GetFunction());
+ }
+@@ -3440,8 +3440,8 @@ void Hash::Initialize(Environment* env, v8::Local<v8::Object> target) {
+ 
+   t->InstanceTemplate()->SetInternalFieldCount(1);
+ 
+-  env->SetProtoMethod(t, "update", HashUpdate);
+-  env->SetProtoMethod(t, "digest", HashDigest);
++  env->SetProtoMethod(t, "update", HashUpdate, true);
++  env->SetProtoMethod(t, "digest", HashDigest, true);
+ 
+   target->Set(FIXED_ONE_BYTE_STRING(env->isolate(), "Hash"), t->GetFunction());
+ }
+@@ -3588,9 +3588,9 @@ void Sign::Initialize(Environment* env, v8::Local<v8::Object> target) {
+ 
+   t->InstanceTemplate()->SetInternalFieldCount(1);
+ 
+-  env->SetProtoMethod(t, "init", SignInit);
+-  env->SetProtoMethod(t, "update", SignUpdate);
+-  env->SetProtoMethod(t, "sign", SignFinal);
++  env->SetProtoMethod(t, "init", SignInit, true);
++  env->SetProtoMethod(t, "update", SignUpdate, true);
++  env->SetProtoMethod(t, "sign", SignFinal, true);
+ 
+   target->Set(FIXED_ONE_BYTE_STRING(env->isolate(), "Sign"), t->GetFunction());
+ }
+@@ -3787,9 +3787,9 @@ void Verify::Initialize(Environment* env, v8::Local<v8::Object> target) {
+ 
+   t->InstanceTemplate()->SetInternalFieldCount(1);
+ 
+-  env->SetProtoMethod(t, "init", VerifyInit);
+-  env->SetProtoMethod(t, "update", VerifyUpdate);
+-  env->SetProtoMethod(t, "verify", VerifyFinal);
++  env->SetProtoMethod(t, "init", VerifyInit, true);
++  env->SetProtoMethod(t, "update", VerifyUpdate, true);
++  env->SetProtoMethod(t, "verify", VerifyFinal, true);
+ 
+   target->Set(FIXED_ONE_BYTE_STRING(env->isolate(), "Verify"),
+               t->GetFunction());
+@@ -4134,14 +4134,14 @@ void DiffieHellman::Initialize(Environment* env, Local<Object> target) {
+ 
+   t->InstanceTemplate()->SetInternalFieldCount(1);
+ 
+-  env->SetProtoMethod(t, "generateKeys", GenerateKeys);
+-  env->SetProtoMethod(t, "computeSecret", ComputeSecret);
+-  env->SetProtoMethod(t, "getPrime", GetPrime);
+-  env->SetProtoMethod(t, "getGenerator", GetGenerator);
+-  env->SetProtoMethod(t, "getPublicKey", GetPublicKey);
+-  env->SetProtoMethod(t, "getPrivateKey", GetPrivateKey);
+-  env->SetProtoMethod(t, "setPublicKey", SetPublicKey);
+-  env->SetProtoMethod(t, "setPrivateKey", SetPrivateKey);
++  env->SetProtoMethod(t, "generateKeys", GenerateKeys, true);
++  env->SetProtoMethod(t, "computeSecret", ComputeSecret, true);
++  env->SetProtoMethod(t, "getPrime", GetPrime, true);
++  env->SetProtoMethod(t, "getGenerator", GetGenerator, true);
++  env->SetProtoMethod(t, "getPublicKey", GetPublicKey, true);
++  env->SetProtoMethod(t, "getPrivateKey", GetPrivateKey, true);
++  env->SetProtoMethod(t, "setPublicKey", SetPublicKey, true);
++  env->SetProtoMethod(t, "setPrivateKey", SetPrivateKey, true);
+ 
+   t->InstanceTemplate()->SetAccessor(
+       env->verify_error_string(),
+@@ -4158,12 +4158,12 @@ void DiffieHellman::Initialize(Environment* env, Local<Object> target) {
+   Local<FunctionTemplate> t2 = env->NewFunctionTemplate(DiffieHellmanGroup);
+   t2->InstanceTemplate()->SetInternalFieldCount(1);
+ 
+-  env->SetProtoMethod(t2, "generateKeys", GenerateKeys);
+-  env->SetProtoMethod(t2, "computeSecret", ComputeSecret);
+-  env->SetProtoMethod(t2, "getPrime", GetPrime);
+-  env->SetProtoMethod(t2, "getGenerator", GetGenerator);
+-  env->SetProtoMethod(t2, "getPublicKey", GetPublicKey);
+-  env->SetProtoMethod(t2, "getPrivateKey", GetPrivateKey);
++  env->SetProtoMethod(t2, "generateKeys", GenerateKeys, true);
++  env->SetProtoMethod(t2, "computeSecret", ComputeSecret, true);
++  env->SetProtoMethod(t2, "getPrime", GetPrime, true);
++  env->SetProtoMethod(t2, "getGenerator", GetGenerator, true);
++  env->SetProtoMethod(t2, "getPublicKey", GetPublicKey, true);
++  env->SetProtoMethod(t2, "getPrivateKey", GetPrivateKey, true);
+ 
+   t2->InstanceTemplate()->SetAccessor(
+       env->verify_error_string(),
+@@ -4525,12 +4525,12 @@ void ECDH::Initialize(Environment* env, Local<Object> target) {
+ 
+   t->InstanceTemplate()->SetInternalFieldCount(1);
+ 
+-  env->SetProtoMethod(t, "generateKeys", GenerateKeys);
+-  env->SetProtoMethod(t, "computeSecret", ComputeSecret);
+-  env->SetProtoMethod(t, "getPublicKey", GetPublicKey);
+-  env->SetProtoMethod(t, "getPrivateKey", GetPrivateKey);
+-  env->SetProtoMethod(t, "setPublicKey", SetPublicKey);
+-  env->SetProtoMethod(t, "setPrivateKey", SetPrivateKey);
++  env->SetProtoMethod(t, "generateKeys", GenerateKeys, true);
++  env->SetProtoMethod(t, "computeSecret", ComputeSecret, true);
++  env->SetProtoMethod(t, "getPublicKey", GetPublicKey, true);
++  env->SetProtoMethod(t, "getPrivateKey", GetPrivateKey, true);
++  env->SetProtoMethod(t, "setPublicKey", SetPublicKey, true);
++  env->SetProtoMethod(t, "setPrivateKey", SetPrivateKey, true);
+ 
+   target->Set(FIXED_ONE_BYTE_STRING(env->isolate(), "ECDH"),
+               t->GetFunction());
+@@ -5274,9 +5274,9 @@ void Certificate::Initialize(Environment* env, Local<Object> target) {
+ 
+   t->InstanceTemplate()->SetInternalFieldCount(1);
+ 
+-  env->SetProtoMethod(t, "verifySpkac", VerifySpkac);
+-  env->SetProtoMethod(t, "exportPublicKey", ExportPublicKey);
+-  env->SetProtoMethod(t, "exportChallenge", ExportChallenge);
++  env->SetProtoMethod(t, "verifySpkac", VerifySpkac, true);
++  env->SetProtoMethod(t, "exportPublicKey", ExportPublicKey, true);
++  env->SetProtoMethod(t, "exportChallenge", ExportChallenge, true);
+ 
+   target->Set(FIXED_ONE_BYTE_STRING(env->isolate(), "Certificate"),
+               t->GetFunction());
+diff --git a/src/node_file.cc b/src/node_file.cc
+index b6ef7d5..2a1359b 100644
+--- a/src/node_file.cc
++++ b/src/node_file.cc
+@@ -1285,9 +1285,9 @@ void InitFs(Local<Object> target,
+               env->NewFunctionTemplate(FSInitialize)->GetFunction());
+ 
+   env->SetMethod(target, "access", Access);
+-  env->SetMethod(target, "close", Close);
+-  env->SetMethod(target, "open", Open);
+-  env->SetMethod(target, "read", Read);
++  env->SetMethod(target, "close", Close, true);
++  env->SetMethod(target, "open", Open, true);
++  env->SetMethod(target, "read", Read, true);
+   env->SetMethod(target, "fdatasync", Fdatasync);
+   env->SetMethod(target, "fsync", Fsync);
+   env->SetMethod(target, "rename", Rename);
+@@ -1295,11 +1295,11 @@ void InitFs(Local<Object> target,
+   env->SetMethod(target, "rmdir", RMDir);
+   env->SetMethod(target, "mkdir", MKDir);
+   env->SetMethod(target, "readdir", ReadDir);
+-  env->SetMethod(target, "internalModuleReadFile", InternalModuleReadFile);
+-  env->SetMethod(target, "internalModuleStat", InternalModuleStat);
++  env->SetMethod(target, "internalModuleReadFile", InternalModuleReadFile, true);
++  env->SetMethod(target, "internalModuleStat", InternalModuleStat, true);
+   env->SetMethod(target, "stat", Stat);
+-  env->SetMethod(target, "lstat", LStat);
+-  env->SetMethod(target, "fstat", FStat);
++  env->SetMethod(target, "lstat", LStat, true);
++  env->SetMethod(target, "fstat", FStat, true);
+   env->SetMethod(target, "link", Link);
+   env->SetMethod(target, "symlink", Symlink);
+   env->SetMethod(target, "readlink", ReadLink);
+diff --git a/src/node_http_parser.cc b/src/node_http_parser.cc
+index 9225915..aa0c343 100644
+--- a/src/node_http_parser.cc
++++ b/src/node_http_parser.cc
+@@ -748,15 +748,15 @@ void InitHttpParser(Local<Object> target,
+ #undef V
+   t->Set(FIXED_ONE_BYTE_STRING(env->isolate(), "methods"), methods);
+ 
+-  env->SetProtoMethod(t, "close", Parser::Close);
+-  env->SetProtoMethod(t, "execute", Parser::Execute);
+-  env->SetProtoMethod(t, "finish", Parser::Finish);
+-  env->SetProtoMethod(t, "reinitialize", Parser::Reinitialize);
+-  env->SetProtoMethod(t, "pause", Parser::Pause<true>);
+-  env->SetProtoMethod(t, "resume", Parser::Pause<false>);
+-  env->SetProtoMethod(t, "consume", Parser::Consume);
+-  env->SetProtoMethod(t, "unconsume", Parser::Unconsume);
+-  env->SetProtoMethod(t, "getCurrentBuffer", Parser::GetCurrentBuffer);
++  env->SetProtoMethod(t, "close", Parser::Close, true);
++  env->SetProtoMethod(t, "execute", Parser::Execute, true);
++  env->SetProtoMethod(t, "finish", Parser::Finish, true);
++  env->SetProtoMethod(t, "reinitialize", Parser::Reinitialize, true);
++  env->SetProtoMethod(t, "pause", Parser::Pause<true>, true);
++  env->SetProtoMethod(t, "resume", Parser::Pause<false>, true);
++  env->SetProtoMethod(t, "consume", Parser::Consume, true);
++  env->SetProtoMethod(t, "unconsume", Parser::Unconsume, true);
++  env->SetProtoMethod(t, "getCurrentBuffer", Parser::GetCurrentBuffer, true);
+ 
+   target->Set(FIXED_ONE_BYTE_STRING(env->isolate(), "HTTPParser"),
+               t->GetFunction());
+diff --git a/src/node_os.cc b/src/node_os.cc
+index 92f53a9..8e2a380 100644
+--- a/src/node_os.cc
++++ b/src/node_os.cc
+@@ -294,15 +294,15 @@ void Initialize(Local<Object> target,
+                 Local<Value> unused,
+                 Local<Context> context) {
+   Environment* env = Environment::GetCurrent(context);
+-  env->SetMethod(target, "getHostname", GetHostname);
+-  env->SetMethod(target, "getLoadAvg", GetLoadAvg);
++  env->SetMethod(target, "getHostname", GetHostname, true);
++  env->SetMethod(target, "getLoadAvg", GetLoadAvg, true);
+   env->SetMethod(target, "getUptime", GetUptime);
+-  env->SetMethod(target, "getTotalMem", GetTotalMemory);
+-  env->SetMethod(target, "getFreeMem", GetFreeMemory);
+-  env->SetMethod(target, "getCPUs", GetCPUInfo);
++  env->SetMethod(target, "getTotalMem", GetTotalMemory, true);
++  env->SetMethod(target, "getFreeMem", GetFreeMemory, true);
++  env->SetMethod(target, "getCPUs", GetCPUInfo, true);
+   env->SetMethod(target, "getOSType", GetOSType);
+   env->SetMethod(target, "getOSRelease", GetOSRelease);
+-  env->SetMethod(target, "getInterfaceAddresses", GetInterfaceAddresses);
++  env->SetMethod(target, "getInterfaceAddresses", GetInterfaceAddresses, true);
+   env->SetMethod(target, "getHomeDirectory", GetHomeDirectory);
+   target->Set(FIXED_ONE_BYTE_STRING(env->isolate(), "isBigEndian"),
+               Boolean::New(env->isolate(), IsBigEndian()));
+diff --git a/src/node_stat_watcher.cc b/src/node_stat_watcher.cc
+index bd1cb73..e8d9682 100644
+--- a/src/node_stat_watcher.cc
++++ b/src/node_stat_watcher.cc
+@@ -28,8 +28,8 @@ void StatWatcher::Initialize(Environment* env, Local<Object> target) {
+   t->InstanceTemplate()->SetInternalFieldCount(1);
+   t->SetClassName(FIXED_ONE_BYTE_STRING(env->isolate(), "StatWatcher"));
+ 
+-  env->SetProtoMethod(t, "start", StatWatcher::Start);
+-  env->SetProtoMethod(t, "stop", StatWatcher::Stop);
++  env->SetProtoMethod(t, "start", StatWatcher::Start, true);
++  env->SetProtoMethod(t, "stop", StatWatcher::Stop, true);
+ 
+   target->Set(FIXED_ONE_BYTE_STRING(env->isolate(), "StatWatcher"),
+               t->GetFunction());
+diff --git a/src/node_zlib.cc b/src/node_zlib.cc
+index da60d44..6bda770 100644
+--- a/src/node_zlib.cc
++++ b/src/node_zlib.cc
+@@ -582,12 +582,12 @@ void InitZlib(Local<Object> target,
+ 
+   z->InstanceTemplate()->SetInternalFieldCount(1);
+ 
+-  env->SetProtoMethod(z, "write", ZCtx::Write<true>);
+-  env->SetProtoMethod(z, "writeSync", ZCtx::Write<false>);
+-  env->SetProtoMethod(z, "init", ZCtx::Init);
+-  env->SetProtoMethod(z, "close", ZCtx::Close);
+-  env->SetProtoMethod(z, "params", ZCtx::Params);
+-  env->SetProtoMethod(z, "reset", ZCtx::Reset);
++  env->SetProtoMethod(z, "write", ZCtx::Write<true>, true);
++  env->SetProtoMethod(z, "writeSync", ZCtx::Write<false>, true);
++  env->SetProtoMethod(z, "init", ZCtx::Init, true);
++  env->SetProtoMethod(z, "close", ZCtx::Close, true);
++  env->SetProtoMethod(z, "params", ZCtx::Params, true);
++  env->SetProtoMethod(z, "reset", ZCtx::Reset, true);
+ 
+   z->SetClassName(FIXED_ONE_BYTE_STRING(env->isolate(), "Zlib"));
+   target->Set(FIXED_ONE_BYTE_STRING(env->isolate(), "Zlib"), z->GetFunction());
+diff --git a/src/pipe_wrap.cc b/src/pipe_wrap.cc
+index 8416472..9127725 100644
+--- a/src/pipe_wrap.cc
++++ b/src/pipe_wrap.cc
+@@ -78,19 +78,19 @@ void PipeWrap::Initialize(Local<Object> target,
+   t->SetClassName(FIXED_ONE_BYTE_STRING(env->isolate(), "Pipe"));
+   t->InstanceTemplate()->SetInternalFieldCount(1);
+ 
+-  env->SetProtoMethod(t, "close", HandleWrap::Close);
+-  env->SetProtoMethod(t, "unref", HandleWrap::Unref);
+-  env->SetProtoMethod(t, "ref", HandleWrap::Ref);
++  env->SetProtoMethod(t, "close", HandleWrap::Close, true);
++  env->SetProtoMethod(t, "unref", HandleWrap::Unref, true);
++  env->SetProtoMethod(t, "ref", HandleWrap::Ref, true);
+ 
+   StreamWrap::AddMethods(env, t);
+ 
+-  env->SetProtoMethod(t, "bind", Bind);
+-  env->SetProtoMethod(t, "listen", Listen);
+-  env->SetProtoMethod(t, "connect", Connect);
+-  env->SetProtoMethod(t, "open", Open);
++  env->SetProtoMethod(t, "bind", Bind, true);
++  env->SetProtoMethod(t, "listen", Listen, true);
++  env->SetProtoMethod(t, "connect", Connect, true);
++  env->SetProtoMethod(t, "open", Open, true);
+ 
+ #ifdef _WIN32
+-  env->SetProtoMethod(t, "setPendingInstances", SetPendingInstances);
++  env->SetProtoMethod(t, "setPendingInstances", SetPendingInstances, true);
+ #endif
+ 
+   target->Set(FIXED_ONE_BYTE_STRING(env->isolate(), "Pipe"), t->GetFunction());
+diff --git a/src/process_wrap.cc b/src/process_wrap.cc
+index adf1606..d973372 100644
+--- a/src/process_wrap.cc
++++ b/src/process_wrap.cc
+@@ -33,13 +33,13 @@ class ProcessWrap : public HandleWrap {
+     constructor->InstanceTemplate()->SetInternalFieldCount(1);
+     constructor->SetClassName(FIXED_ONE_BYTE_STRING(env->isolate(), "Process"));
+ 
+-    env->SetProtoMethod(constructor, "close", HandleWrap::Close);
++    env->SetProtoMethod(constructor, "close", HandleWrap::Close, true);
+ 
+-    env->SetProtoMethod(constructor, "spawn", Spawn);
+-    env->SetProtoMethod(constructor, "kill", Kill);
++    env->SetProtoMethod(constructor, "spawn", Spawn, true);
++    env->SetProtoMethod(constructor, "kill", Kill, true);
+ 
+-    env->SetProtoMethod(constructor, "ref", HandleWrap::Ref);
+-    env->SetProtoMethod(constructor, "unref", HandleWrap::Unref);
++    env->SetProtoMethod(constructor, "ref", HandleWrap::Ref, true);
++    env->SetProtoMethod(constructor, "unref", HandleWrap::Unref, true);
+ 
+     target->Set(FIXED_ONE_BYTE_STRING(env->isolate(), "Process"),
+                 constructor->GetFunction());
+diff --git a/src/signal_wrap.cc b/src/signal_wrap.cc
+index 5f6a6a5..8c47e9e 100644
+--- a/src/signal_wrap.cc
++++ b/src/signal_wrap.cc
+@@ -29,11 +29,11 @@ class SignalWrap : public HandleWrap {
+     constructor->InstanceTemplate()->SetInternalFieldCount(1);
+     constructor->SetClassName(FIXED_ONE_BYTE_STRING(env->isolate(), "Signal"));
+ 
+-    env->SetProtoMethod(constructor, "close", HandleWrap::Close);
+-    env->SetProtoMethod(constructor, "ref", HandleWrap::Ref);
+-    env->SetProtoMethod(constructor, "unref", HandleWrap::Unref);
+-    env->SetProtoMethod(constructor, "start", Start);
+-    env->SetProtoMethod(constructor, "stop", Stop);
++    env->SetProtoMethod(constructor, "close", HandleWrap::Close, true);
++    env->SetProtoMethod(constructor, "ref", HandleWrap::Ref, true);
++    env->SetProtoMethod(constructor, "unref", HandleWrap::Unref, true);
++    env->SetProtoMethod(constructor, "start", Start, true);
++    env->SetProtoMethod(constructor, "stop", Stop, true);
+ 
+     target->Set(FIXED_ONE_BYTE_STRING(env->isolate(), "Signal"),
+                 constructor->GetFunction());
+diff --git a/src/stream_base-inl.h b/src/stream_base-inl.h
+index 81114a2..3ed779c 100644
+--- a/src/stream_base-inl.h
++++ b/src/stream_base-inl.h
+@@ -43,27 +43,27 @@ void StreamBase::AddMethods(Environment* env,
+                                      v8::DEFAULT,
+                                      attributes);
+ 
+-  env->SetProtoMethod(t, "readStart", JSMethod<Base, &StreamBase::ReadStart>);
+-  env->SetProtoMethod(t, "readStop", JSMethod<Base, &StreamBase::ReadStop>);
++  env->SetProtoMethod(t, "readStart", JSMethod<Base, &StreamBase::ReadStart>, true);
++  env->SetProtoMethod(t, "readStop", JSMethod<Base, &StreamBase::ReadStop>, true);
+   if ((flags & kFlagNoShutdown) == 0)
+-    env->SetProtoMethod(t, "shutdown", JSMethod<Base, &StreamBase::Shutdown>);
++    env->SetProtoMethod(t, "shutdown", JSMethod<Base, &StreamBase::Shutdown>, true);
+   if ((flags & kFlagHasWritev) != 0)
+-    env->SetProtoMethod(t, "writev", JSMethod<Base, &StreamBase::Writev>);
++    env->SetProtoMethod(t, "writev", JSMethod<Base, &StreamBase::Writev>, true);
+   env->SetProtoMethod(t,
+                       "writeBuffer",
+-                      JSMethod<Base, &StreamBase::WriteBuffer>);
++                      JSMethod<Base, &StreamBase::WriteBuffer>, true);
+   env->SetProtoMethod(t,
+                       "writeAsciiString",
+-                      JSMethod<Base, &StreamBase::WriteString<ASCII> >);
++                      JSMethod<Base, &StreamBase::WriteString<ASCII> >, true);
+   env->SetProtoMethod(t,
+                       "writeUtf8String",
+-                      JSMethod<Base, &StreamBase::WriteString<UTF8> >);
++                      JSMethod<Base, &StreamBase::WriteString<UTF8> >, true);
+   env->SetProtoMethod(t,
+                       "writeUcs2String",
+-                      JSMethod<Base, &StreamBase::WriteString<UCS2> >);
++                      JSMethod<Base, &StreamBase::WriteString<UCS2> >, true);
+   env->SetProtoMethod(t,
+                       "writeBinaryString",
+-                      JSMethod<Base, &StreamBase::WriteString<BINARY> >);
++                      JSMethod<Base, &StreamBase::WriteString<BINARY> >, true);
+ }
+ 
+ 
+diff --git a/src/stream_wrap.cc b/src/stream_wrap.cc
+index e6236a6..5198bed 100644
+--- a/src/stream_wrap.cc
++++ b/src/stream_wrap.cc
+@@ -82,7 +82,7 @@ StreamWrap::StreamWrap(Environment* env,
+ void StreamWrap::AddMethods(Environment* env,
+                             v8::Local<v8::FunctionTemplate> target,
+                             int flags) {
+-  env->SetProtoMethod(target, "setBlocking", SetBlocking);
++  env->SetProtoMethod(target, "setBlocking", SetBlocking, true);
+   StreamBase::AddMethods<StreamWrap>(env, target, flags);
+ }
+ 
+diff --git a/src/tcp_wrap.cc b/src/tcp_wrap.cc
+index 3f3e6a0..588e6cc 100644
+--- a/src/tcp_wrap.cc
++++ b/src/tcp_wrap.cc
+@@ -84,28 +84,28 @@ void TCPWrap::Initialize(Local<Object> target,
+                              Null(env->isolate()));
+ 
+ 
+-  env->SetProtoMethod(t, "close", HandleWrap::Close);
++  env->SetProtoMethod(t, "close", HandleWrap::Close, true);
+ 
+-  env->SetProtoMethod(t, "ref", HandleWrap::Ref);
+-  env->SetProtoMethod(t, "unref", HandleWrap::Unref);
++  env->SetProtoMethod(t, "ref", HandleWrap::Ref, true);
++  env->SetProtoMethod(t, "unref", HandleWrap::Unref, true);
+ 
+   StreamWrap::AddMethods(env, t, StreamBase::kFlagHasWritev);
+ 
+-  env->SetProtoMethod(t, "open", Open);
+-  env->SetProtoMethod(t, "bind", Bind);
+-  env->SetProtoMethod(t, "listen", Listen);
+-  env->SetProtoMethod(t, "connect", Connect);
+-  env->SetProtoMethod(t, "bind6", Bind6);
+-  env->SetProtoMethod(t, "connect6", Connect6);
++  env->SetProtoMethod(t, "open", Open, true);
++  env->SetProtoMethod(t, "bind", Bind, true);
++  env->SetProtoMethod(t, "listen", Listen, true);
++  env->SetProtoMethod(t, "connect", Connect, true);
++  env->SetProtoMethod(t, "bind6", Bind6, true);
++  env->SetProtoMethod(t, "connect6", Connect6, true);
+   env->SetProtoMethod(t, "getsockname",
+-                      GetSockOrPeerName<TCPWrap, uv_tcp_getsockname>);
++                      GetSockOrPeerName<TCPWrap, uv_tcp_getsockname>, true);
+   env->SetProtoMethod(t, "getpeername",
+-                      GetSockOrPeerName<TCPWrap, uv_tcp_getpeername>);
+-  env->SetProtoMethod(t, "setNoDelay", SetNoDelay);
+-  env->SetProtoMethod(t, "setKeepAlive", SetKeepAlive);
++                      GetSockOrPeerName<TCPWrap, uv_tcp_getpeername>, true);
++  env->SetProtoMethod(t, "setNoDelay", SetNoDelay, true);
++  env->SetProtoMethod(t, "setKeepAlive", SetKeepAlive, true);
+ 
+ #ifdef _WIN32
+-  env->SetProtoMethod(t, "setSimultaneousAccepts", SetSimultaneousAccepts);
++  env->SetProtoMethod(t, "setSimultaneousAccepts", SetSimultaneousAccepts, true);
+ #endif
+ 
+   target->Set(FIXED_ONE_BYTE_STRING(env->isolate(), "TCP"), t->GetFunction());
+diff --git a/src/timer_wrap.cc b/src/timer_wrap.cc
+index 79fa869..bc0092e 100644
+--- a/src/timer_wrap.cc
++++ b/src/timer_wrap.cc
+@@ -34,14 +34,14 @@ class TimerWrap : public HandleWrap {
+     constructor->Set(FIXED_ONE_BYTE_STRING(env->isolate(), "kOnTimeout"),
+                      Integer::New(env->isolate(), kOnTimeout));
+ 
+-    env->SetTemplateMethod(constructor, "now", Now);
++    env->SetTemplateMethod(constructor, "now", Now, true);
+ 
+-    env->SetProtoMethod(constructor, "close", HandleWrap::Close);
+-    env->SetProtoMethod(constructor, "ref", HandleWrap::Ref);
+-    env->SetProtoMethod(constructor, "unref", HandleWrap::Unref);
++    env->SetProtoMethod(constructor, "close", HandleWrap::Close, true);
++    env->SetProtoMethod(constructor, "ref", HandleWrap::Ref, true);
++    env->SetProtoMethod(constructor, "unref", HandleWrap::Unref, true);
+ 
+-    env->SetProtoMethod(constructor, "start", Start);
+-    env->SetProtoMethod(constructor, "stop", Stop);
++    env->SetProtoMethod(constructor, "start", Start, true);
++    env->SetProtoMethod(constructor, "stop", Stop, true);
+ 
+     target->Set(FIXED_ONE_BYTE_STRING(env->isolate(), "Timer"),
+                 constructor->GetFunction());
+diff --git a/src/tls_wrap.cc b/src/tls_wrap.cc
+index 85730b3..8cd1f9f 100644
+--- a/src/tls_wrap.cc
++++ b/src/tls_wrap.cc
+@@ -886,17 +886,17 @@ void TLSWrap::Initialize(Local<Object> target,
+                          Local<Context> context) {
+   Environment* env = Environment::GetCurrent(context);
+ 
+-  env->SetMethod(target, "wrap", TLSWrap::Wrap);
++  env->SetMethod(target, "wrap", TLSWrap::Wrap, true);
+ 
+   Local<FunctionTemplate> t = FunctionTemplate::New(env->isolate());
+   t->InstanceTemplate()->SetInternalFieldCount(1);
+   t->SetClassName(FIXED_ONE_BYTE_STRING(env->isolate(), "TLSWrap"));
+ 
+   env->SetProtoMethod(t, "receive", Receive);
+-  env->SetProtoMethod(t, "start", Start);
+-  env->SetProtoMethod(t, "setVerifyMode", SetVerifyMode);
++  env->SetProtoMethod(t, "start", Start, true);
++  env->SetProtoMethod(t, "setVerifyMode", SetVerifyMode, true);
+   env->SetProtoMethod(t, "enableSessionCallbacks", EnableSessionCallbacks);
+-  env->SetProtoMethod(t, "destroySSL", DestroySSL);
++  env->SetProtoMethod(t, "destroySSL", DestroySSL, true);
+   env->SetProtoMethod(t, "enableCertCb", EnableCertCb);
+ 
+   StreamBase::AddMethods<TLSWrap>(env, t, StreamBase::kFlagHasWritev);
+@@ -904,7 +904,7 @@ void TLSWrap::Initialize(Local<Object> target,
+ 
+ #ifdef SSL_CTRL_SET_TLSEXT_SERVERNAME_CB
+   env->SetProtoMethod(t, "getServername", GetServername);
+-  env->SetProtoMethod(t, "setServername", SetServername);
++  env->SetProtoMethod(t, "setServername", SetServername, true);
+ #endif  // SSL_CRT_SET_TLSEXT_SERVERNAME_CB
+ 
+   env->set_tls_wrap_constructor_template(t);
+diff --git a/src/tty_wrap.cc b/src/tty_wrap.cc
+index a78d231..0a7ca64 100644
+--- a/src/tty_wrap.cc
++++ b/src/tty_wrap.cc
+@@ -35,16 +35,16 @@ void TTYWrap::Initialize(Local<Object> target,
+   t->SetClassName(FIXED_ONE_BYTE_STRING(env->isolate(), "TTY"));
+   t->InstanceTemplate()->SetInternalFieldCount(1);
+ 
+-  env->SetProtoMethod(t, "close", HandleWrap::Close);
+-  env->SetProtoMethod(t, "unref", HandleWrap::Unref);
++  env->SetProtoMethod(t, "close", HandleWrap::Close, true);
++  env->SetProtoMethod(t, "unref", HandleWrap::Unref, true);
+ 
+   StreamWrap::AddMethods(env, t, StreamBase::kFlagNoShutdown);
+ 
+-  env->SetProtoMethod(t, "getWindowSize", TTYWrap::GetWindowSize);
+-  env->SetProtoMethod(t, "setRawMode", SetRawMode);
++  env->SetProtoMethod(t, "getWindowSize", TTYWrap::GetWindowSize, true);
++  env->SetProtoMethod(t, "setRawMode", SetRawMode, true);
+ 
+-  env->SetMethod(target, "isTTY", IsTTY);
+-  env->SetMethod(target, "guessHandleType", GuessHandleType);
++  env->SetMethod(target, "isTTY", IsTTY, true);
++  env->SetMethod(target, "guessHandleType", GuessHandleType, true);
+ 
+   target->Set(FIXED_ONE_BYTE_STRING(env->isolate(), "TTY"), t->GetFunction());
+   env->set_tty_constructor_template(t);
+diff --git a/src/udp_wrap.cc b/src/udp_wrap.cc
+index cb678f1..f78a269 100644
+--- a/src/udp_wrap.cc
++++ b/src/udp_wrap.cc
+@@ -88,24 +88,24 @@ void UDPWrap::Initialize(Local<Object> target,
+                                      v8::DEFAULT,
+                                      attributes);
+ 
+-  env->SetProtoMethod(t, "bind", Bind);
+-  env->SetProtoMethod(t, "send", Send);
+-  env->SetProtoMethod(t, "bind6", Bind6);
+-  env->SetProtoMethod(t, "send6", Send6);
+-  env->SetProtoMethod(t, "close", Close);
+-  env->SetProtoMethod(t, "recvStart", RecvStart);
+-  env->SetProtoMethod(t, "recvStop", RecvStop);
++  env->SetProtoMethod(t, "bind", Bind, true);
++  env->SetProtoMethod(t, "send", Send, true);
++  env->SetProtoMethod(t, "bind6", Bind6, true);
++  env->SetProtoMethod(t, "send6", Send6, true);
++  env->SetProtoMethod(t, "close", Close, true);
++  env->SetProtoMethod(t, "recvStart", RecvStart, true);
++  env->SetProtoMethod(t, "recvStop", RecvStop, true);
+   env->SetProtoMethod(t, "getsockname",
+-                      GetSockOrPeerName<UDPWrap, uv_udp_getsockname>);
+-  env->SetProtoMethod(t, "addMembership", AddMembership);
+-  env->SetProtoMethod(t, "dropMembership", DropMembership);
+-  env->SetProtoMethod(t, "setMulticastTTL", SetMulticastTTL);
+-  env->SetProtoMethod(t, "setMulticastLoopback", SetMulticastLoopback);
+-  env->SetProtoMethod(t, "setBroadcast", SetBroadcast);
+-  env->SetProtoMethod(t, "setTTL", SetTTL);
+-
+-  env->SetProtoMethod(t, "ref", HandleWrap::Ref);
+-  env->SetProtoMethod(t, "unref", HandleWrap::Unref);
++                      GetSockOrPeerName<UDPWrap, uv_udp_getsockname>, true);
++  env->SetProtoMethod(t, "addMembership", AddMembership, true);
++  env->SetProtoMethod(t, "dropMembership", DropMembership, true);
++  env->SetProtoMethod(t, "setMulticastTTL", SetMulticastTTL, true);
++  env->SetProtoMethod(t, "setMulticastLoopback", SetMulticastLoopback, true);
++  env->SetProtoMethod(t, "setBroadcast", SetBroadcast, true);
++  env->SetProtoMethod(t, "setTTL", SetTTL, true);
++
++  env->SetProtoMethod(t, "ref", HandleWrap::Ref, true);
++  env->SetProtoMethod(t, "unref", HandleWrap::Unref, true);
+ 
+   target->Set(FIXED_ONE_BYTE_STRING(env->isolate(), "UDP"), t->GetFunction());
+   env->set_udp_constructor_function(t->GetFunction());

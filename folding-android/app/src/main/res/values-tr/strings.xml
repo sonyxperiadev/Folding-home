@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  Licensed under the LICENSE.
+  Copyright 2017, Sony Mobile Communications Inc.
+-->
+<resources xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="notification_service_finished_job_executed">Bilime katkıda bulundunuz</string>
+    <string name="notification_service_finished_failed">Tüm başlangıç koşulları karşılanmadı</string>
+    <string name="contributed_time">Katkıda bulunulan süre</string>
+    <string name="people_helping">Katkıda bulunan kişi sayısı</string>
+    <string name="research_type">Araştırma türü</string>
+    <string name="research_type_unavailable">Kullanılamaz</string>
+    <string name="setup_guide">Kurulum sihirbazı</string>
+    <string name="legal">Yasal Bilgiler</string>
+    <string name="share">Paylaş</string>
+    <string name="welcome">Folding@Home\'a hoş geldiniz</string>
+    <string name="read_more">Daha fazla bilgi</string>
+    <string name="more_info">Daha fazla bilgi</string>
+    <string name="finish">Bitir</string>
+    <string name="wizard_welcome_to_folding_subtitle">Alzheimer, Parkinson ve kansere çare bulunmasına katkıda bulunmak ister misiniz?</string>
+    <string name="wizard_welcome_to_folding_text">Telefonunuz siz uyurken bilimsel hesaplamalar yaparak, Stanford Üniversitesi\'ndeki bilim insanlarının pek çok hastalığa çare bulmasına yardımcı olabilir.</string>
+    <string-array name="help_find_cure">
+        <item>Folding@Home\'a kaydolarak, kullanmadığınız zamanlarda telefonunuzun işlemci gücünü bağışlayabilir ve Stanford Üniversitesi\'ndeki bilim insanlarının en yaygın görülen hastalıklara çare bulmasına yardımcı olabilirsiniz.</item>
+        <item>\"Katlanma\" vücudumuzdaki proteinlerin hareketini ifade eder. Protein katlanması konusunda yapılan araştırmalar çok fazla hesaplama gerektirmektedir. Bu nedenle Stanford Üniversitesi, bu hesaplamaları yapabilmek için insanlardan kullanılmayan cep telefonu işlemci gücünün bir kısmını bağışlamalarını istiyor. Siz uyurken, Stanforfd Üniversitesi telefonunuza çözmesi için bir katlama problemi gönderecek. Hesaplama tamamlandığında, sonuçlar Stanford\'a iletilecek.</item>
+        <item>Folding@Home hakkında daha fazla bilgiyi ana sayfada bulabilirsiniz:\nfolding.stanford.edu .</item>
+    </string-array>
+    <string name="powered_by">destekleyenler:</string>
+    <string name="private_date_safe_title">Özel verileriniz güvende.</string>
+    <string name="private_date_safe_text">Bu uygulama özel verilerinize erişmez.</string>
+    <string name="no_cost_mobile_data_title">Mobil veri için ücret alınmaz</string>
+    <string name="no_cost_mobile_data_text">Telefon Wi-Fi ağına bağlı olmalı.</string>
+    <string name="battery_not_drained_title">İşlem sırasında şarjınız bitmez</string>
+    <string name="battery_not_drained_text">Telefon şarj ünitesine bağlı olmalı ve pil tamamen dolu olmalı (%100)</string>
+    <string name="time_string_weeks">%1$dh %2$dg %3$ds</string>
+    <string name="time_string_days">%1$dg %2$ds %3$dd</string>
+    <string name="time_string_hours">%1$ds%2$d d</string>
+    <string name="share_facebook_success">Facebook\'ta başarıyla paylaşıldı</string>
+    <string name="share_facebook_error">Facebook\'ta paylaşılamadı</string>
+    <string name="waiting">Paylaşılıyor…</string>
+    <string name="share_object_message">Ben de katkıda bulunan %1$d kişiden biriyim ve toplam %2$s hesaplama süresiyle katkıda bulundum!</string>
+    <string name="notification_service_executing_job">Folding@Home çalışıyor.\nAraştırmalara katkıda bulunuyorsunuz.</string>
+    <string name="notification_service_not_executing">Folding@Home çalışmıyor.\nBaşlangıç koşulları karşılanmadı.</string>
+    <string name="settings">Ayarlar</string>
+    <string name="start_contribute">Başlangıç zamanı</string>
+    <string name="start_contribute_text">Hesaplama için başlangıç zamanı belirle</string>
+    <string name="settings_auto_wifi_msg">Katkı yaparken Wi-Fi bağlantısını etkinleştir</string>
+    <string name="notifications">Bildirimler</string>
+    <string name="settings_display_notification">Hesaplama tamamlanınca bildirim gönder</string>
+    <string name="contribution_interval_time">Katkı süresi</string>
+    <string name="wizard_step">Adım %1$d/%2$d</string>
+    <string name="no_opencl">Bu cihaz OpenCL\'yi desteklemiyor. İşleri yürütmek için bu kitaplık gerekli. Devam etmek istiyor musunuz?</string>
+    <string name="connect_to_wifi">Telefonun Wi-Fi ağına bağlı olması gerekiyor</string>
+    <string name="processing_time_title">Hesaplama süresi aralığı: %1$s – %2$s</string>
+    <string name="processing_time_text">Başlangıç zamanını ayarlardan değiştirebilirsiniz.</string>
+    <string name="will_start_when">Başlangıç koşulları</string>
+    <string name="share_facebook_contribution">Facebook\'ta paylaş</string>
+    <string name="app_disabled_title">Uygulama devre dışı</string>
+    <string name="app_disabled_message">Bu uygulama devre dışı bırakıldı ve artık kullanılamaz.</string>
+    <string name="stand_by">Beklemede</string>
+    <string name="helping_out">Yardım ediliyor</string>
+    <string name="disabled">Devre Dışı</string>
+    <string name="data_usage">Veri kullanımı</string>
+    <string name="data_usage_text">Cihazınızın Wi-Fi ağına bağlı olması gerekir.\nÖlçülü veya ücretli bir Wi-Fi bağlantısı kullanıyorsanız, veri kullanımınız ücretlendirilebilir.\n\nDaha fazla bilgi için İnternet servis sağlayıcınıza başvurun.</string>
+    <string name="whats_new">Yenilikler</string>
+    <string name="whats_new_contribution_status">Artık Folding@Home sistemini çalıştırmak için gerekli koşulların durumunu görebilirsiniz.</string>
+    <string name="whats_new_disable_indicator">Uygulamanın devre dışı bırakıldığını gösterir.</string>
+    <string name="whats_new_conditions_indicator">Wi-Fi bağlantısının hazır olduğunu, ancak telefonun şarj ünitesine bağlı ve pilin %100 şarj edilmiş olması gerektiğini gösterir.</string>
+    <string name="whats_new_enable_indicator">Tüm gereksinimlerin hazır olduğunu gösterir.</string>
+    <string name="whats_new_power_button">Artık uygulamayı etkinleştirmek veya devre dışı bırakmak daha kolay. Ayrıca, Folding@Home sisteminin güncel durumunu da görebilirsiniz.</string>
+    <string name="whats_new_login">Artık oturum açabilir ve katkılarınızı yükleyebilirsiniz.</string>
+    <string name="whats_new_contribution_indicators">Katkı durumunuzu kolayca takip etmek için iyileştirilmiş simgeler.</string>
+    <string name="whats_new_research_type">Katkıda bulunduğunuz araştırmayı gösterir.</string>
+    <string name="whats_new_people_helping">Folding@Home sistemini kullanan kişi sayısını gösterir.</string>
+    <string name="whats_new_contributed_time">Katkılarınızın toplam süresini gösterir.</string>
+    <string name="skip">Atla</string>
+    <string name="turn_on">Aç</string>
+    <string name="turn_off">Kapat</string>
+    <string name="active_research">Aktif araştırma</string>
+    <string name="notification_contribution_time">Teşekkürler. Bu cihaz son 24 saat içinde %1$s katkıda bulunmuştur.</string>
+    <string name="action_login">Oturum aç</string>
+    <string name="action_logout">%1$s (Oturumu kapat)</string>
+    <string name="action_leaderboards">Puan tablosu</string>
+    <string name="action_achievements">Başarılar</string>
+    <string name="action_invite_friends">Arkadaşları davet et</string>
+    <string name="notification_service_turn_on">Katkıda bulunmaya dvm etmk içn açın</string>
+    <string name="toast_logout">Oturum kapatıldı</string>
+    <string name="toast_network_unavailable">Şebeke kullanılamıyor</string>
+    <string name="paused">Duraklatıldı</string>
+    <string name="action_enable">Etkinleştir</string>
+    <string name="action_disable">Devre dışı bırak</string>
+    <string name="pause">Duraklat</string>
+    <string name="new_indicators">Yeni göstergeler</string>
+    <string name="new_power_button">Yeni güç düğmesi</string>
+    <string name="sign_in_google_game_service">Google Play™ Oyn Hzmtlr\'nde otrm açn</string>
+    <string name="view_more">Fazlası</string>
+    <string name="toast_achievements_disabled">Başarıları görüntülemek için oturum açın!</string>
+    <string name="toast_leaderboards_disabled">Skor tablolarını görüntülemek için oturum açın!</string>
+    <string name="contribution_details">Katkı detayları</string>
+    <string name="project_description">Proje açıklaması</string>
+    <string name="week">Hafta</string>
+    <string name="month">Ay</string>
+    <string name="all_time">Toplam süre</string>
+    <string name="time_string_hours_only">%1$d sa</string>
+    <string name="chart_week_label">Hafta %1$d</string>
+    <string name="hours_contributed_label_plural">%1$d saat katkı</string>
+    <string name="hours_contributed_label_singular">1 saat katkı</string>
+    <string name="contributed_no_data">Seçilen dönem için hiç katkı yok</string>
+    <string name="no_charger_tile">Şarj cihazı yok</string>
+    <string name="low_battery_tile">Düşük pil</string>
+    <string name="no_wifi_tile">Wi-Fi yok</string>
+    <string name="no_charger_text">Cihaz bir şarj ünitesine bağlı olmalıdır</string>
+    <string name="low_battery_text">Katkıyı başlatmak için pilin en az %98 düzeyinde şarj olması gerekir</string>
+    <string name="no_wifi_text">Katkıyı başlatmak için bir Wi-Fi ağına bağlanın.</string>
+</resources>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  Licensed under the LICENSE.
+  Copyright 2017, Sony Mobile Communications Inc.
+-->
+<resources xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="no_cost_mobile_data_text">手機必須連線至WLAN網路。</string>
+    <string name="wifi">WLAN</string>
+    <string name="settings_auto_wifi_msg">做貢獻期間啟用WLAN</string>
+    <string name="connect_to_wifi">手機需要連線至WLAN網路</string>
+    <string name="data_usage_text">您的裝置必須連線至WLAN網路。\n若您使用計量或付費WLAN連線，可能會向您收取資料使用費。\n\n有關更多資訊，請諮詢您的網際網路服務供應商。</string>
+    <string name="whats_new_conditions_indicator">表示WLAN已準備就緒，但手機必須連線充電器並充滿電。</string>
+    <string name="no_wifi_tile">無WLAN</string>
+    <string name="no_wifi_text">與WLAN網路連線以開始佔有比重。</string>
+</resources>

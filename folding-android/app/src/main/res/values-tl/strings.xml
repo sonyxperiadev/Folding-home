@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  Licensed under the LICENSE.
+  Copyright 2017, Sony Mobile Communications Inc.
+-->
+<resources xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="notification_service_finished_job_executed">Matagumpay kang nagbigay sa agham</string>
+    <string name="notification_service_finished_failed">Hindi natugunan ang lahat ng mga panimulang kundisyon</string>
+    <string name="contributed_time">Oras na naibigay</string>
+    <string name="people_helping">Mga taong tumutulong</string>
+    <string name="research_type">Uri ng pananaliksik</string>
+    <string name="research_type_unavailable">Hindi available</string>
+    <string name="setup_guide">Gabay sa pag-set up</string>
+    <string name="share">Ibahagi</string>
+    <string name="welcome">Welcome sa Folding@Home</string>
+    <string name="read_more">Magbasa pa</string>
+    <string name="more_info">Dagdag pang impormasyon</string>
+    <string name="finish">Tapusin</string>
+    <string name="wizard_welcome_to_folding_subtitle">Gustong mo bang makatulong na mahanap ang gamot sa Alzheimer\'s, Parkinson\'s at kanser?</string>
+    <string name="wizard_welcome_to_folding_text">Makakagawa ang telepono mo ng mga siyentipikong kalkulasyon habang natutulog ka, at tulungan ang mga siyentipiko ng Stanford University na makahanap ng mga gamot para sa maraming mga sakit.</string>
+    <string-array name="help_find_cure">
+        <item>Sa pamamagitan ng pag-sign up para sa Folding@Home, matutulungan mo ang mga siyentipiko ng Stanford University sa kanilang layunin na makahanap ng gamot sa halos lahat na pangkaraniwang mga sakit sa pag-donate ng lakas ng pagproseso ng iyong telepono sa tuwing hindi mo ito ginagamit.</item>
+        <item>Tinutukoy ng Folding ang mga aktibidad ng protina sa ating mga katawan. Ang pananaliksik ng protein folding ay nagngangailangan ng napakaraming kalkulasyon kaya nagpapa-donate ang Stanford University sa mga tao ng hindi nagagamit na lakas ng pagproseso ng mga telepono nila para kalkulahin ang ilan sa mga numero. Habang natutulog ka, magpapadala ang Stanford University ng folding problem para lutasin ng telepono mo. Kapag kumpleto na ang mga kalkulasyon, ipadadala pabalik ang mga resulta sa Stanford.</item>
+        <item>Makakahanap ka ng higit pang impormasyon tungkol sa Folding@Home sa homepage:\nfolding.stanford.edu</item>
+    </string-array>
+    <string name="powered_by">pinagagana ng</string>
+    <string name="private_date_safe_title">Ligtas ang pribado mong data.</string>
+    <string name="private_date_safe_text">Hindi ina-access ng application na ito ang pribado mong data.</string>
+    <string name="no_cost_mobile_data_title">Walang gastos sa mobile data</string>
+    <string name="no_cost_mobile_data_text">Dapat konektado ang telepono sa Wi-Fi network.</string>
+    <string name="battery_not_drained_title">Hindi made-drain ang baterya</string>
+    <string name="battery_not_drained_text">Dapat konektado ang telepono sa charger at naka-charge nang puno (100%)</string>
+    <string name="share_facebook_success">Matagumpay na naibahagi sa Facebook</string>
+    <string name="share_facebook_error">Hindi maibahagi sa Facebook</string>
+    <string name="waiting">Binabahagi...</string>
+    <string name="share_object_message">Isa ako sa %1$d mga taong tumutulong at nakapagbigay ako ng %2$s oras ng kalkulasyon!</string>
+    <string name="notification_service_executing_job">Tumatakbo ang Folding@Home.\nNagbibigay ka sa pananaliksik.</string>
+    <string name="notification_service_not_executing">Di tumatakbo Folding@Home.\nDi natugunan lahat kundisyon pagsimula.</string>
+    <string name="settings">Mga Setting</string>
+    <string name="start_contribute">Oras ng pagsimula</string>
+    <string name="start_contribute_text">Itakda ang oras ng pagsisimula para sa kalkulasyon</string>
+    <string name="settings_auto_wifi_msg">Paganahin ang Wi-Fi sa oras ng kontribusyon</string>
+    <string name="notifications">Mga abiso</string>
+    <string name="settings_display_notification">Magpadala ng mga abiso sa pagtatapos ng kalkulasyon</string>
+    <string name="contribution_interval_time">Tagal ng kontribusyon</string>
+    <string name="wizard_step">Hakbang %1$d/%2$d</string>
+    <string name="no_opencl">Hindi sinusuportahan ng device na ito ang OpenCL. Mahalaga ang library para gawin ang mga trabaho. Nais mo bang magpatuloy?</string>
+    <string name="connect_to_wifi">Kailangang konektado ang telepono sa Wi-Fi network.</string>
+    <string name="processing_time_title">Oras ng kalkulasyon nasa %1$s – %2$s</string>
+    <string name="processing_time_text">Mapapalitan mo ang oras ng pagsisimula sa mga setting.</string>
+    <string name="will_start_when">Mga kundisyon sa pagsisimula</string>
+    <string name="share_facebook_contribution">Ibahagi sa Facebook</string>
+    <string name="app_disabled_title">Naka-disable ang application</string>
+    <string name="app_disabled_message">Naka-disable ang application na ito at hindi na magagamit.</string>
+    <string name="stand_by">Maghintay</string>
+    <string name="helping_out">Tumutulong</string>
+    <string name="disabled">Naka-disable</string>
+    <string name="data_usage">Paggamit ng data</string>
+    <string name="data_usage_text">Konektado dapat ang device mo sa isang Wi-Fi network.\nKung gumagamit ka ng nakametro o bayad na Wi-Fi connection, maaaring singilin ka para sa paggamit ng data.\n\nPara sa karagdagang impormasyon, magtanong sa iyong Internet service provider.</string>
+    <string name="whats_new">Ano ang bago</string>
+    <string name="whats_new_contribution_status">Makikita mo na ngayon ang status ng mga inaatas na kalagayan para patakbuhin ang Folding@Home.</string>
+    <string name="whats_new_disable_indicator">Tinutukoy na naka-disable ang app.</string>
+    <string name="whats_new_conditions_indicator">Tinutukoy na handa na ang Wi-Fi, ngunit dapat konektado ang telepono sa isang charger at ang baterya ay dapat naka-charge nang 100%.</string>
+    <string name="whats_new_enable_indicator">Tinutukoy na lahat ng mga pangangailangan ay nakahanda.</string>
+    <string name="whats_new_power_button">Mas madali na ngayong i-enable o i-disable ang app. Makikita mo rin aang kasalukuyang status ng Folding@Home.</string>
+    <string name="whats_new_login">Makakapag-log in ka na ngayon at maia-upload ang mga kontribusyon mo.</string>
+    <string name="whats_new_contribution_indicators">Mga pinahusay na icon para madaling subaybayan ang status ng kontribusyon mo.</string>
+    <string name="whats_new_research_type">Tinutukoy ang pananaliksik kung saan ka nagbibigay.</string>
+    <string name="whats_new_people_helping">Tinutukoy ang bilang ng taong gumagamit ng Folding@Home.</string>
+    <string name="whats_new_contributed_time">Tinutukoy ang kabuuang oras ng mga kontribusyon mo.</string>
+    <string name="skip">Laktawan</string>
+    <string name="turn_on">I-on</string>
+    <string name="turn_off">I-off</string>
+    <string name="active_research">Aktibong pananaliksik</string>
+    <string name="notification_contribution_time">Salamat. Nag-ambag ang device na ito sa nakalipas na %1$s 24 na oras.</string>
+    <string name="action_login">Mag-sign in</string>
+    <string name="action_logout">%1$s (Mag-sign out)</string>
+    <string name="action_leaderboards">Mga Leaderboard</string>
+    <string name="action_achievements">Mga Nagawa</string>
+    <string name="action_invite_friends">Imbitahin kaibigan</string>
+    <string name="notification_service_turn_on">I-on para patuloy na mag-ambag</string>
+    <string name="toast_logout">Naka-log out</string>
+    <string name="toast_network_unavailable">Hindi available ang network</string>
+    <string name="paused">Naka-pause</string>
+    <string name="action_enable">Paganahin</string>
+    <string name="action_disable">Hindi pinagana</string>
+    <string name="pause">I-pause</string>
+    <string name="new_indicators">Bagong mga indicator</string>
+    <string name="new_power_button">Bagong power button</string>
+    <string name="sign_in_google_game_service">Sign in sa Google Play™ Ga. Ser.</string>
+    <string name="toast_achievements_disabled">Mag-sign in upang makita ang mga nagawa!</string>
+    <string name="toast_leaderboards_disabled">Mag-sign in upang makita ang mga nangunguna!</string>
+    <string name="contribution_details">Mga detalye ng pag-ambag</string>
+    <string name="project_description">Pagsasalarawan ng proyekto</string>
+    <string name="week">Linggo</string>
+    <string name="month">Buwan</string>
+    <string name="all_time">Kabuuang oras</string>
+    <string name="chart_week_label">Linggo %1$d</string>
+    <string name="hours_contributed_label_plural">%1$d (na) oras ang naambag</string>
+    <string name="hours_contributed_label_singular">1 oras ang naambag</string>
+    <string name="contributed_no_data">Walang pag-ambag para sa napiling yugto</string>
+    <string name="no_charger_tile">Walang charger</string>
+    <string name="low_battery_tile">Mahinang baterya</string>
+    <string name="no_wifi_tile">Walang Wi-Fi</string>
+    <string name="no_charger_text">Dapat ikonekta ang device sa isang charger</string>
+    <string name="low_battery_text">Kailangang naka-charge nang kahit 98% para simulan ang pag-ambag</string>
+    <string name="no_wifi_text">Kumonekta sa isang Wi-Fi network para simulan ang pag-ambag.</string>
+</resources>

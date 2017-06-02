@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  Licensed under the LICENSE.
+  Copyright 2017, Sony Mobile Communications Inc.
+-->
+<resources xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="notification_service_finished_job_executed">Þú hefur lagt þitt af mörkum í þágu vísindanna</string>
+    <string name="notification_service_finished_failed">Ekki voru öll skilyrði fyrir ræsingu uppfyllt.</string>
+    <string name="contributed_time">Tími framlags</string>
+    <string name="people_helping">Fólk hjálpar til</string>
+    <string name="research_type">Rannsóknargerð</string>
+    <string name="research_type_unavailable">Ótiltækt</string>
+    <string name="setup_guide">Uppsetningarleiðbeiningar</string>
+    <string name="legal">Lagatexti</string>
+    <string name="share">Deila</string>
+    <string name="welcome">Velkomin(n) í Folding@Home</string>
+    <string name="read_more">Lesa meira</string>
+    <string name="more_info">Frekari upplýsingar</string>
+    <string name="finish">Ljúka</string>
+    <string name="wizard_welcome_to_folding_subtitle">Vilt þú hjálpa til við að finna lækningu við Alzheimer, Parkinsonsveiki og krabbameini?</string>
+    <string name="wizard_welcome_to_folding_text">Síminn þinn getur gert vísindaútreikninga á meðan þú sefur og hjálpað þannig vísindamönnum við Stanford-háskóla að finna lækningu við mörgum sjúkdómum.</string>
+    <string-array name="help_find_cure">
+        <item>Með því að skrá þig í Folding@Home hjálparðu vísindamönnum við Stanford-háskóla í leit þeirra að lækningu við algengum sjúkdómum með því að leggja til vinnslugetu símans þegar þú ert ekki að nota hann.</item>
+        <item>Með fellingum er átt við próteinmyndun í líkamanum. Rannsóknir á próteinfellingum krefjast svo margra útreikninga að Stanford-háskóli biður fólk um að leggja fram ónotaðan vinnslukraft símanna sinna til að vinna úr tölum. Stanford sendir dæmi sem síminn þinn leysir á meðan þú sefur. Að útreikningnum loknum eru niðurstöðurnar sendar til Stanford.</item>
+        <item>Þú færð frekari upplýsingar um Folding@Home á heimasíðunni:\nfolding.stanford.edu</item>
+    </string-array>
+    <string name="powered_by">knúið af</string>
+    <string name="private_date_safe_title">Persónuleg gögn eru örugg.</string>
+    <string name="private_date_safe_text">Þetta forrit getur ekki nálgast persónulegu gögnin þín.</string>
+    <string name="no_cost_mobile_data_title">Gagnaflutningur kostar ekkert</string>
+    <string name="no_cost_mobile_data_text">Síminn verður að vera tengdur við Wi-Fi net.</string>
+    <string name="battery_not_drained_title">Rafhlaðan verður ekki tæmd</string>
+    <string name="battery_not_drained_text">Síminn verður að vera tengdur hleðslutæki og fullhlaðinn (100%)</string>
+    <string name="time_string_weeks">%1$d v %2$dd %3$dklst</string>
+    <string name="time_string_days">%1$dd %2$dklst %3$dm</string>
+    <string name="time_string_hours">%1$dklst %2$dm</string>
+    <string name="share_facebook_success">Deilt á Facebook</string>
+    <string name="share_facebook_error">Ekki tókst að deila á Facebook</string>
+    <string name="waiting">Deili...</string>
+    <string name="share_object_message">Ég er á meðal þeirra %1$d sem hafa hjálpað til og hef lagt fram %2$s af útreikningartíma!</string>
+    <string name="notification_service_executing_job">Folding@Home er í gangi.\nÞú tekur þátt í vísindarannsókn.</string>
+    <string name="notification_service_not_executing">Folding@Home er ekki í gangi.\nEkki eru allar forsendur til staðar.</string>
+    <string name="settings">Stillingar</string>
+    <string name="start_contribute">Upphafstími</string>
+    <string name="start_contribute_text">Stilla upphafstíma útreikninga</string>
+    <string name="settings_auto_wifi_msg">Kveikja á Wi-Fi á meðan á framlagi stendur</string>
+    <string name="notifications">Tilkynningar</string>
+    <string name="settings_display_notification">Senda tilkynningar við lok útreikninga</string>
+    <string name="contribution_interval_time">Lengd framlags</string>
+    <string name="wizard_step">Skref %1$d/%2$d</string>
+    <string name="no_opencl">Tækið styður ekki við OpenCL. Þetta safn er nauðsynlegt til þess að vinna verk. Viltu halda áfram?</string>
+    <string name="connect_to_wifi">Síminn þarf að vera tengdur við Wi-Fi net.</string>
+    <string name="processing_time_title">Útreikningartími er á milli %1$s – %2$s</string>
+    <string name="processing_time_text">Þú getur breytt upphafstímanum í stillingunum.</string>
+    <string name="will_start_when">Upphafsaðstæður</string>
+    <string name="share_facebook_contribution">Deila á Facebook</string>
+    <string name="app_disabled_title">Slökkt á forriti</string>
+    <string name="app_disabled_message">Slökkt er á forritinu og ekki er hægt að nota það lengur.</string>
+    <string name="stand_by">Bíða</string>
+    <string name="helping_out">Hjálpa til</string>
+    <string name="disabled">Slökkt</string>
+    <string name="data_usage">Gagnanotkun</string>
+    <string name="data_usage_text">Tækið þitt verður að vera tengt við Wi-Fi net.\nEf þú notar mælda eða gjaldskylda Wi-Fi tengingu kann að vera innheimt fyrir gagnanotkun.\n\nFrekari upplýsingar færðu hjá netþjónustuveitunni þinni.</string>
+    <string name="whats_new">Nýjungar</string>
+    <string name="whats_new_contribution_status">Nú geturðu séð stöðu nauðsynlegra skilyrða til að keyra Folding@Home.</string>
+    <string name="whats_new_disable_indicator">Gefur til kynna að slökkt sé á forritinu.</string>
+    <string name="whats_new_conditions_indicator">Gefur til kynna að Wi-Fi sé til reiðu, en að síminn verði að vera tengdur við hleðslutæki og rafhlaðan 100% hlaðin.</string>
+    <string name="whats_new_enable_indicator">Gefur til kynna að öll skilyrði séu tilbúin.</string>
+    <string name="whats_new_power_button">Nú er auðveldara að virkja eða slökkva á forritinu. Þú getur líka séð núverandi stöðu Folding@Home.</string>
+    <string name="whats_new_login">Nú geturðu innskráð þig og hlaðið upp þínu framlagi.</string>
+    <string name="whats_new_contribution_indicators">Bætt tákn til að geta auðveldlega fylgst með stöðu þíns framlags.</string>
+    <string name="whats_new_research_type">Gefur til kynna rannsóknirnar sem þú veitir framlag til.</string>
+    <string name="whats_new_people_helping">Gefur til kynna fjölda þeirra sem nota Folding@Home.</string>
+    <string name="whats_new_contributed_time">Gefur til kynna heildartíma þíns framlags.</string>
+    <string name="skip">Sleppa</string>
+    <string name="turn_on">Kveikja</string>
+    <string name="turn_off">Slökkva</string>
+    <string name="active_research">Virk rannsókn</string>
+    <string name="notification_contribution_time">Takk. Þetta tæki hefur lagt af mörkum %1$s undanfarinn sólarhring.</string>
+    <string name="action_login">Innskrá</string>
+    <string name="action_logout">%1$s (Skrá út)</string>
+    <string name="action_leaderboards">Topplistar</string>
+    <string name="action_achievements">Afrek</string>
+    <string name="action_invite_friends">Bjóða vinum</string>
+    <string name="notification_service_turn_on">Kv. á til að leggja áfram af mörkum</string>
+    <string name="toast_logout">Útskráð</string>
+    <string name="toast_network_unavailable">Ekki er hægt að tengjast við kerfið</string>
+    <string name="paused">Í bið</string>
+    <string name="action_enable">Virkja</string>
+    <string name="action_disable">Gera óvirkt</string>
+    <string name="pause">Hlé</string>
+    <string name="new_indicators">Nýir vísar</string>
+    <string name="new_power_button">Nýr aflrofi</string>
+    <string name="sign_in_google_game_service">Innskrá í Google Play™ leikjaþjónustu</string>
+    <string name="view_more">Skoða meira</string>
+    <string name="toast_achievements_disabled">Skráðu þig inn til að skoða afrekin!</string>
+    <string name="toast_leaderboards_disabled">Skráðu þig inn til að skoða hæstu stigin!</string>
+    <string name="contribution_details">Nánari atriði framlags</string>
+    <string name="project_description">Lýsing á verkefni</string>
+    <string name="week">Vika</string>
+    <string name="month">Mánuður</string>
+    <string name="all_time">Heildartími</string>
+    <string name="time_string_hours_only">%1$dklst</string>
+    <string name="chart_week_label">Vika %1$d</string>
+    <string name="hours_contributed_label_plural">%1$d klukkustunda framlag</string>
+    <string name="hours_contributed_label_singular">1 klukkustundar framlag</string>
+    <string name="contributed_no_data">Ekkert framlag fyrir valið tímabil</string>
+    <string name="no_charger_tile">Ekkert hleðslutæki</string>
+    <string name="low_battery_tile">Lítil hleðsla á rafhlöðu</string>
+    <string name="no_wifi_tile">Ekkert Wi-Fi</string>
+    <string name="no_charger_text">Tækið þarf að vera tengt við hleðslutæki</string>
+    <string name="low_battery_text">Rafhlaðan þarf að vera með að minnsta kosti 98% hleðslu til að hefja framlagið</string>
+    <string name="no_wifi_text">Tengja við Wi-Fi-netkerfi til að hefja framlagið.</string>
+</resources>

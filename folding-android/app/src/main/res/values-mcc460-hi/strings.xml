@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  Licensed under the LICENSE.
+  Copyright 2017, Sony Mobile Communications Inc.
+-->
+<resources xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="no_cost_mobile_data_text">फ़ोन को WLAN नेटवर्क से कनेक्ट होना चाहिए.</string>
+    <string name="settings_auto_wifi_msg">योगदान के दौरान WLAN सक्षम करें</string>
+    <string name="connect_to_wifi">फ़ोन का किसी WLAN नेटवर्क से कनेक्ट होना आवश्यक है</string>
+    <string name="data_usage_text">आपके डिवाइस को WLAN नेटवर्क से कनेक्ट होना चाहिए.\nयदि आप मीटर्ड या सशुल्क WLAN कनेक्शन का उपयोग करते हैं, तो डेटा उपयोग के लिए आपसे शुल्क लिया जा सकता है.\n\nअधिक जानकारी के लिए, अपने इंटरनेट सेवा प्रदाता के साथ पता करें.</string>
+    <string name="whats_new_conditions_indicator">दर्शाता है कि WLAN तैयार है, लेकिन फ़ोन को चार्जर से कनेक्ट होना चाहिए और बैटरी को 100% चार्ज होना चाहिए.</string>
+    <string name="no_wifi_tile">WLAN नहीं</string>
+    <string name="no_wifi_text">योगदान शुरू करने के लिए WLAN नेटवर्क से कनेक्ट करें।</string>
+</resources>

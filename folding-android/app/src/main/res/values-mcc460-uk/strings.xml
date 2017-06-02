@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  Licensed under the LICENSE.
+  Copyright 2017, Sony Mobile Communications Inc.
+-->
+<resources xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="no_cost_mobile_data_text">Телефон має бути підключеним до мережі WLAN.</string>
+    <string name="settings_auto_wifi_msg">Увімкнути WLAN під час внеску</string>
+    <string name="connect_to_wifi">Телефон має бути підключеним до мережі WLAN.</string>
+    <string name="data_usage_text">Пристрій має бути підключеним до мережі WLAN.\nУ разі підключення до вимірюваної або платної мережі WLAN може стягуватися плата за використання пакетних даних.\n\nДля отримання додаткових відомостей зверніться до постачальника послуг Інтернету.</string>
+    <string name="whats_new_conditions_indicator">Означає готовність до використання мережі WLAN, але телефон має бути підключеним до зарядного пристрою , а його акумулятор — повністю зарядженим (100%).</string>
+    <string name="no_wifi_tile">Немає WLAN</string>
+    <string name="no_wifi_text">Підключіться до мережі WLAN, щоб почати.</string>
+</resources>

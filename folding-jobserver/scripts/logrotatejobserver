@@ -1,0 +1,9 @@
+/var/log/jobserver.log {
+  daily
+  rotate 4
+  missingok
+  size 10M
+  notifempty
+  compress
+  copytruncate
+}

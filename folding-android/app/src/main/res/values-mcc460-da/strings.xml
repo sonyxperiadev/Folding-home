@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  Licensed under the LICENSE.
+  Copyright 2017, Sony Mobile Communications Inc.
+-->
+<resources xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="no_cost_mobile_data_text">Telefonen skal være forbundet med et WLAN-netværk.</string>
+    <string name="settings_auto_wifi_msg">Aktivér WLAN, mens du bidrager</string>
+    <string name="connect_to_wifi">Telefonen skal være forbundet med et WLAN-netværk</string>
+    <string name="data_usage_text">Din enhed skal have forbindelse til et WLAN-netværk.\nHvis du anvender en forbrugsafregnet eller betalt WLAN-forbindelse, skal du muligvis betale for dataforbruget.\n\nKontakt din internetudbyder, hvis du vil vide mere.</string>
+    <string name="whats_new_conditions_indicator">Viser, at WLAN er klar, men telefonen skal være tilsluttet en oplader, og batteriet skal være 100 % opladet.</string>
+    <string name="no_wifi_tile">Ingen WLAN</string>
+    <string name="no_wifi_text">Opret forbindelse til et WLAN-netværk for at starte bidraget.</string>
+</resources>

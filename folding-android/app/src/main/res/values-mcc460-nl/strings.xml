@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  Licensed under the LICENSE.
+  Copyright 2017, Sony Mobile Communications Inc.
+-->
+<resources xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="no_cost_mobile_data_text">Telefoon moet zijn verbonden met WLAN-netwerk.</string>
+    <string name="settings_auto_wifi_msg">WLAN inschakelen tijdens bijdrage</string>
+    <string name="connect_to_wifi">De telefoon moet zijn verbonden met een WLAN-netwerk</string>
+    <string name="data_usage_text">Je apparaat moet zijn verbonden met een WLAN-netwerk.\nAls je een betaalde WLAN-verbinding of een verbinding met datalimiet gebruikt, worden er mogelijk kosten voor dataverbruik in rekening gebracht.\n\nNeem contact op met je Internet Service Provider voor meer informatie.</string>
+    <string name="whats_new_conditions_indicator">Geeft aan dat WLAN gereed is, maar dat de telefoon moet worden aangesloten op een lader en dat de batterij voor 100% moet zijn opgeladen.</string>
+    <string name="no_wifi_tile">Geen WLAN</string>
+    <string name="no_wifi_text">Maak verbinding met een WLAN-netwerk om de bijdrage te starten</string>
+</resources>

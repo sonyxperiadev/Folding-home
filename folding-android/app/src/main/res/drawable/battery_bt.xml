@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  Licensed under the LICENSE.
+  Copyright 2017, Sony Mobile Communications Inc.
+-->
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:drawable="@drawable/ic_battery_off" android:state_enabled="false"/>
+    <item android:drawable="@drawable/ic_battery_pending" android:state_enabled="true" android:state_activated="false"/>
+    <item android:drawable="@drawable/ic_battery_on" android:state_enabled="true" android:state_activated="true"/>
+
+</selector>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  Licensed under the LICENSE.
+  Copyright 2017, Sony Mobile Communications Inc.
+-->
+<resources xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="no_cost_mobile_data_text">Telefoni duhet të jetë i lidhur me një rrjet WLAN.</string>
+    <string name="settings_auto_wifi_msg">Aktivizoni WLAN gjatë kontributit</string>
+    <string name="connect_to_wifi">Telefoni duhet të jetë i lidhur me një rrjet WLAN</string>
+    <string name="data_usage_text">Pajisja juaj duhet të jetë e lidhur me një rrjet WLAN.\nNëse përdorni një lidhje WLAN me limit ose me pagesë, mund të tarifoheni për përdorimin e të dhënave.\n\nPër më shumë informacione, kontaktoni me ofruesin e shërbimit të internetit.</string>
+    <string name="whats_new_conditions_indicator">Tregon se WLAN është gati, por telefoni duhet të lidhet me një ngarkues dhe bateria duhet të jetë e ngarkuar në nivelin 100%.</string>
+    <string name="no_wifi_tile">Nuk ka WLAN</string>
+    <string name="no_wifi_text">Lidhuni me një rrjet WLAN për të nisur kontributin.</string>
+</resources>

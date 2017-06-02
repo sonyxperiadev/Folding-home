@@ -1,0 +1,15 @@
+<!--
+  Licensed under the LICENSE.
+  Copyright 2017, Sony Mobile Communications Inc..
+-->
+<ListView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/dialog_lv"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:divider="@null"
+    android:paddingBottom="@dimen/padding_x_small"
+    android:paddingStart="@dimen/padding_small"
+    android:paddingEnd="@dimen/padding_tiny"
+    android:scrollbarStyle="outsideInset" >
+
+</ListView>

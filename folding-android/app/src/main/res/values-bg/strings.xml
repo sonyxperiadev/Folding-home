@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  Licensed under the LICENSE.
+  Copyright 2017, Sony Mobile Communications Inc.
+-->
+<resources xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="notification_service_finished_job_executed">Допринесохте към науката</string>
+    <string name="notification_service_finished_failed">Не всички начални условия са спазени</string>
+    <string name="contributed_time">Време на принос</string>
+    <string name="people_helping">Хора, които помагат</string>
+    <string name="research_type">Тип изследване</string>
+    <string name="research_type_unavailable">Неналично</string>
+    <string name="setup_guide">Ръководство за инсталиране</string>
+    <string name="legal">Правна информация</string>
+    <string name="share">Споделяне</string>
+    <string name="welcome">Добре дошли във Folding@Home</string>
+    <string name="read_more">Прочететe повече</string>
+    <string name="more_info">Още информация</string>
+    <string name="finish">Готово</string>
+    <string name="wizard_welcome_to_folding_subtitle">Искате ли да помогнете за намирането на лечение за Алцхаймер, Паркинсон и рак?</string>
+    <string name="wizard_welcome_to_folding_text">Вашият телефон може да извършва научни изчисления, докато спите, с което да помогнете на учените от Станфордския университет да намерят лечение за много болести.</string>
+    <string-array name="help_find_cure">
+        <item>Като се регистрирате за Folding@Home, вие можете да помогнете на учените от Станфордския университет в търсенето на лечение за много от най-често срещаните болести, като дарите обработващата мощност на вашия телефон, когато не го използвате.</item>
+        <item>Folding (формиране) се отнася за действията на протеините в нашите тела. Научните изследвания на формирането на протеините изискват толкова много изчисления, че Станфордският университет моли хората да дарят неизползваната мощност на своите телефони, за да се направят някои от изчисленията. Докато спите, Станфордският университет ще изпраща задача за фолдинг до телефона ви, който да я решава. След като изчисленията се извършат, резултатите се изпращат обратно в Станфорд.</item>
+        <item>Още информация за Folding@Home можете да намерите на началната страница:\nfolding.stanford.edu</item>
+    </string-array>
+    <string name="powered_by">поддържано от</string>
+    <string name="private_date_safe_title">Данните ви са в безопасност.</string>
+    <string name="private_date_safe_text">Приложението няма достъп до вашите лични данни.</string>
+    <string name="no_cost_mobile_data_title">Мобилните данни са безплатни</string>
+    <string name="no_cost_mobile_data_text">Телефонът трябва да е свързан с Wi-Fi мрежа.</string>
+    <string name="battery_not_drained_title">Батерията не се изтощава</string>
+    <string name="battery_not_drained_text">Телефонът трябва да е свързан със зарядно устройство и да е напълно зареден (100%)</string>
+    <string name="time_string_weeks">%1$dс %2$dд %3$dч</string>
+    <string name="time_string_days">%1$dд %2$dч %3$dм</string>
+    <string name="time_string_hours">%1$dч %2$dм</string>
+    <string name="share_facebook_success">Успешно споделено във Facebook</string>
+    <string name="share_facebook_error">Неуспешно споделяне във Facebook</string>
+    <string name="waiting">Споделяне...</string>
+    <string name="share_object_message">Аз съм един от %1$d човека, които помагат, и моят принос е %2$s време за изчисления!</string>
+    <string name="notification_service_executing_job">Folding@Home се изпълнява.\nДопринасяте за науката.</string>
+    <string name="notification_service_not_executing">Folding@Home не се изпълнява.\nНеизпълнени условия за старт.</string>
+    <string name="settings">Настройки</string>
+    <string name="start_contribute">Начален час</string>
+    <string name="start_contribute_text">Задаване на начален час за изчисленията</string>
+    <string name="settings_auto_wifi_msg">Включване на Wi-Fi по време на приноса</string>
+    <string name="notifications">Уведомления</string>
+    <string name="settings_display_notification">Изпращане на уведомления след изчисленията</string>
+    <string name="contribution_interval_time">Времетраене на приноса</string>
+    <string name="wizard_step">Стъпка %1$d/%2$d</string>
+    <string name="no_opencl">Това устройство не поддържа OpenCL. Тази библиотека е необходима за изпълнението на заданията. Желаете ли да продължите?</string>
+    <string name="connect_to_wifi">Телефонът трябва да е свързан с Wi-Fi мрежа</string>
+    <string name="processing_time_title">Времето за изчисл. е м/у %1$s - %2$s</string>
+    <string name="processing_time_text">Можете да смените началния час в настройките.</string>
+    <string name="will_start_when">Начални условия</string>
+    <string name="share_facebook_contribution">Споделяне във Facebook</string>
+    <string name="app_disabled_title">Приложението е забранено</string>
+    <string name="app_disabled_message">Приложението е забранено и повече не може да се използва.</string>
+    <string name="stand_by">Готовност</string>
+    <string name="helping_out">Помощ</string>
+    <string name="disabled">Забранено</string>
+    <string name="data_usage">Използване на данни</string>
+    <string name="data_usage_text">Вашето устройство трябва да е свързано към Wi-Fi мрежа.\nАко използвате Wi-Fi връзка, която е платена или с измерено потребление, може да платите такса за използването на данните.\n\nЗа повече информация проверете при своя доставчик на интернет услуги.</string>
+    <string name="whats_new">Какво е новото</string>
+    <string name="whats_new_contribution_status">Сега можете да виждате състоянието на задължителните условия, за да се изпълни Folding@Home.</string>
+    <string name="whats_new_disable_indicator">Показва, че приложението е забранено.</string>
+    <string name="whats_new_conditions_indicator">Показва, че Wi-Fi е в готовност, но телефонът трябва да се включи в зарядно устройство, а батерията трябва да е заредена до 100%.</string>
+    <string name="whats_new_enable_indicator">Показва, че всички изисквания са готови.</string>
+    <string name="whats_new_power_button">Сега е по-лесно да се разреши или забрани приложението. Можете също да виждате текущото състояние на Folding@Home.</string>
+    <string name="whats_new_login">Сега можете да влезете и да качите своите приноси.</string>
+    <string name="whats_new_contribution_indicators">Подобрени икони, за да се проследява по-лесно състоянието на вашите приноси.</string>
+    <string name="whats_new_research_type">Показва изследването, към което давате принос.</string>
+    <string name="whats_new_people_helping">Показва броя хора, използващи Folding@Home.</string>
+    <string name="whats_new_contributed_time">Показва сумарното време на вашите приноси.</string>
+    <string name="skip">Прескачане</string>
+    <string name="turn_on">Включване</string>
+    <string name="turn_off">Изключване</string>
+    <string name="active_research">Активно изследване</string>
+    <string name="notification_contribution_time">Благодарим. Това устройство е допринесло %1$s през последните 24 ч.</string>
+    <string name="action_login">Влизане</string>
+    <string name="action_logout">%1$s (Излизане)</string>
+    <string name="action_leaderboards">Табла на лидерите</string>
+    <string name="action_achievements">Постижения</string>
+    <string name="action_invite_friends">Канене на приятели</string>
+    <string name="notification_service_turn_on">Включете, за да допринасяте</string>
+    <string name="toast_logout">Излязъл</string>
+    <string name="toast_network_unavailable">Мрежата е недостъпна</string>
+    <string name="paused">На пауза</string>
+    <string name="action_enable">Активирайте</string>
+    <string name="action_disable">Деактивиране</string>
+    <string name="pause">Пауза</string>
+    <string name="new_indicators">Нови индикатори</string>
+    <string name="new_power_button">Нов бутон за включване</string>
+    <string name="sign_in_google_game_service">Влизане услуги игри Google Play™</string>
+    <string name="view_more">Покажи още</string>
+    <string name="toast_achievements_disabled">Влезте, за да видите постиженията!</string>
+    <string name="toast_leaderboards_disabled">Влезте, за да видите класациите!</string>
+    <string name="contribution_details">Данни за приноса</string>
+    <string name="project_description">Описание на проекта</string>
+    <string name="week">Седмица</string>
+    <string name="month">Месец</string>
+    <string name="all_time">Общо време</string>
+    <string name="time_string_hours_only">%1$d ч</string>
+    <string name="chart_week_label">Седмица %1$d</string>
+    <string name="hours_contributed_label_plural">%1$d отделени часа</string>
+    <string name="hours_contributed_label_singular">1 отделен час</string>
+    <string name="contributed_no_data">Няма принос за избрания период</string>
+    <string name="no_charger_tile">Няма зарядно устройство</string>
+    <string name="low_battery_tile">Слаба батерия</string>
+    <string name="no_wifi_tile">Няма Wi-Fi връзка</string>
+    <string name="no_charger_text">Устройството трябва да е свързано със зарядно устройство</string>
+    <string name="low_battery_text">Минималният заряд на батерията за стартиране на приноса е 98%</string>
+    <string name="no_wifi_text">Свържете се с Wi-Fi мрежа, за да стартирате приноса.</string>
+</resources>

@@ -1,0 +1,20 @@
+<template class="task-template">
+    <div id="contribution-time" class="tab-pane fade">
+        <ul class="topnav" id="myTopnav">
+            <li><a id="chart7Days">Last 7 Days</a></li>
+            <li><a id="chartByMonth">By Month</a></li>
+            <li><a id="chartAllYear">All Years</a></li>
+        </ul>
+        <button class="buttonPrevious" id="clickButtonPrevious" style="display: none">Previous Month</button>
+        <button class="buttonLater" id="clickButtonLater" style="display: none">Next Month</button>
+        <div id="container" style="min-width: 600px; height: 400px; margin: 80px auto"></div>
+    </div>
+    <div id="textNothingContributed" style="display: none; margin-top: 100px; margin-left: 150px">
+    </div>
+    <div id="nothingContributed" style="display: none; margin-top: 40px; margin-left: 210px">
+        <img id="imgNothingContributed" src="../assets/img/ic_launcher.png">
+    </div>
+    <script>
+        require(dirs.source + '/renderer-process/contribution-time-renderer.js');
+    </script>
+</template>

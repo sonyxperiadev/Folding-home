@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  Licensed under the LICENSE.
+  Copyright 2017, Sony Mobile Communications Inc.
+-->
+<resources xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="no_cost_mobile_data_text">Telefon WLAN şəbəkəyə qoşulmalıdır.</string>
+    <string name="settings_auto_wifi_msg">Dəstək zamanı WLAN aktivləşdir</string>
+    <string name="connect_to_wifi">Telefon WLAN şəbəkəyə qoşulmalıdır</string>
+    <string name="data_usage_text">Cihazınız WLAN şəbəkəsinə qoşulmalıdır.\nÖlçülən və ya ödənişli WLAN qoşulması istifadə edirsinizsə, verilənlərin istifadəsinə görə sizdən ödəniş tutula bilər.\n\nƏtraflı məlumat üçün İnternet xidməti provayderinizlə əlaqə saxlayın.</string>
+    <string name="whats_new_conditions_indicator">WLAN hazır olduğunu, lakin telefonun adapterə qoşulmalı və batareyanın 100% dolu olmalı olduğunu göstərir.</string>
+    <string name="no_wifi_tile">WLAN yoxdur</string>
+    <string name="no_wifi_text">Töhfə verməyə başlamaq üçün WLAN şəbəkəsinə qoşulun.</string>
+</resources>

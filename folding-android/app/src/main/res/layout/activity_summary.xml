@@ -1,0 +1,195 @@
+<!--
+ Licensed under the LICENSE.
+ Copyright 2017, Sony Mobile Communications Inc.
+-->
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/toolbar" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/summary_image_background"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:adjustViewBounds="true"
+            android:contentDescription="@string/app_name"
+            android:gravity="center"
+            android:padding="@dimen/padding_tiny"
+            android:src="@drawable/img_people_map" />
+
+        <RelativeLayout
+            android:id="@+id/summary_conditions_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignBottom="@id/summary_image_background"
+            android:paddingTop="@dimen/padding_small">
+
+            <LinearLayout
+                android:id="@+id/summary_page_indicator_container"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal" />
+
+            <android.support.v4.view.ViewPager
+                android:id="@+id/summary_view_pager"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingBottom="@dimen/activity_padding_vertical"
+        android:paddingEnd="@dimen/activity_padding_horizontal"
+        android:paddingStart="@dimen/activity_padding_horizontal"
+        android:scrollbarStyle="outsideOverlay">
+
+        <LinearLayout
+            android:id="@+id/summary_info_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="vertical">
+
+            <include
+                android:id="@+id/status_bar"
+                layout="@layout/status_bar" />
+
+            <LinearLayout
+                android:id="@+id/summary_research_type_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/activity_padding_horizontal"
+                    android:contentDescription="@string/research_type"
+                    android:src="@drawable/ic_info_research" />
+
+                <LinearLayout
+                    android:id="@+id/summary_research_type_internal_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/title_research_type"
+                        style="@style/text_title"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:drawableEnd="@drawable/ic_arrow_right"
+                        android:text="@string/research_type"
+                        android:textAlignment="viewStart" />
+
+                    <TextView
+                        android:id="@+id/summary_research_type"
+                        style="@style/text_subtitle"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textAlignment="viewStart" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <View
+                android:id="@+id/summary_first_line"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/wizard_line_height"
+                android:layout_marginBottom="@dimen/margin_small"
+                android:layout_marginTop="@dimen/margin_small"
+                android:background="@color/sony_gray_line" />
+
+            <LinearLayout
+                android:id="@+id/summary_people_helping_out_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/activity_padding_horizontal"
+                    android:contentDescription="@string/people_helping"
+                    android:src="@drawable/ic_info_people" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        style="@style/text_title"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/people_helping"
+                        android:textAlignment="viewStart" />
+
+                    <TextView
+                        android:id="@+id/summary_num_people_helping"
+                        style="@style/text_subtitle"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <View
+                android:id="@+id/summary_second_line"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/wizard_line_height"
+                android:layout_marginBottom="@dimen/margin_small"
+                android:layout_marginTop="@dimen/margin_small"
+                android:background="@color/sony_gray_line" />
+
+            <LinearLayout
+                android:id="@+id/summary_contributed_time_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/activity_padding_horizontal"
+                    android:contentDescription="@string/contributed_time"
+                    android:src="@drawable/ic_info_time" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/summary_time_tv"
+                        style="@style/text_title"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:drawableEnd="@drawable/ic_arrow_right"
+                        android:text="@string/contributed_time"
+                        android:textAlignment="viewStart" />
+
+                    <TextView
+                        android:id="@+id/summary_donated_time_tv"
+                        style="@style/text_subtitle"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textAlignment="viewStart" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

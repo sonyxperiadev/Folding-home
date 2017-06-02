@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  Licensed under the LICENSE.
+  Copyright 2017, Sony Mobile Communications Inc.
+-->
+<resources xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="no_cost_mobile_data_text">WLAN நெட்வொர்க்குடன் ஃபோன் இணைப்பு தேவை.</string>
+    <string name="settings_auto_wifi_msg">வழங்கலின்போது WLAN ஐ இயக்கு</string>
+    <string name="connect_to_wifi">ஃபோன், WLAN நெட்வொர்க். இணைக்கப்பட்டிருக்க வேண்டும்</string>
+    <string name="data_usage_text">உங்கள் சாதனம் WLAN பிணையத்துடன் இணைக்கப்பட வேண்டும்.\nகட்டணம் செலுத்தும் அல்லது கட்டண WLAN இணைப்பைப் பயன்படுத்தினால், தரவு பயன்பாட்டிற்கு கட்டணம் விதிக்கப்படலாம்.\n\nகூடுதல் தகவலுக்கு இணைய சேவை வழங்குநரைத் தொடர்புகொள்ளவும்.</string>
+    <string name="whats_new_conditions_indicator">WLAN தயாராக உள்ளதைக் குறிக்கிறது, ஆனால் சார்ஜருடன் மொபைல் இணைக்கப்பட்டு, பேட்டரி 100% சார்ஜ் செய்யப்பட வேண்டும்.</string>
+    <string name="no_wifi_tile">WLAN இல்லை</string>
+    <string name="no_wifi_text">பங்களிப்பைத் தொடங்க ஒரு WLAN பிணையத்துடன் இணைக்கவும்.</string>
+</resources>

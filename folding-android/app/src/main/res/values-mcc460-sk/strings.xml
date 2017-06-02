@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  Licensed under the LICENSE.
+  Copyright 2017, Sony Mobile Communications Inc.
+-->
+<resources xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="no_cost_mobile_data_text">Telefón musí byť pripojený k sieti WLAN.</string>
+    <string name="settings_auto_wifi_msg">Povoliť počas výpočtu sieť WLAN</string>
+    <string name="connect_to_wifi">Telefón sa potrebuje pripojiť k sieti WLAN</string>
+    <string name="data_usage_text">Toto zariadenie musí byť pripojené k sieti WLAN.\nAk používate časovo závislé alebo platené pripojenie k sieti WLAN, môžu sa na vás vzťahovať poplatky za používanie dát.\n\nĎalšie informácie získate od poskytovateľa internetových služieb.</string>
+    <string name="whats_new_conditions_indicator">Označuje, že sieť WLAN je pripravená, ale telefón musí byť pripojený k nabíjačke a batéria musí byť nabitá na 100 %.</string>
+    <string name="no_wifi_tile">Nie je pripojenie k WLAN</string>
+    <string name="no_wifi_text">Ak chcete začať s poskytovaním voľnej výpočtovej kapacity, pripojte sa k sieti WLAN.</string>
+</resources>

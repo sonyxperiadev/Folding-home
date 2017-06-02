@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  Licensed under the LICENSE.
+  Copyright 2017, Sony Mobile Communications Inc.
+-->
+<resources xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="notification_service_finished_job_executed">Bạn đã đóng góp cho khoa học</string>
+    <string name="notification_service_finished_failed">Không phải mọi điều kiện bắt đầu đều được đáp ứng</string>
+    <string name="contributed_time">Thời gian đã đóng góp</string>
+    <string name="people_helping">Những người giúp đỡ</string>
+    <string name="research_type">Loại nghiên cứu</string>
+    <string name="research_type_unavailable">Không có</string>
+    <string name="setup_guide">Hướng dẫn thiết lập</string>
+    <string name="legal">Pháp lý</string>
+    <string name="share">Chia sẻ</string>
+    <string name="welcome">Chào mừng đến với Folding@Home</string>
+    <string name="read_more">Đọc thêm</string>
+    <string name="more_info">Thông tin thêm</string>
+    <string name="finish">Kết thúc</string>
+    <string name="wizard_welcome_to_folding_subtitle">Bạn muốn giúp tìm ra cách chữa trị cho bệnh Alzheimer, Parkinson và ung thư?</string>
+    <string name="wizard_welcome_to_folding_text">Điện thoại của bạn có thể thực hiện các phép tính khoa học trong khi bạn ngủ và giúp các nhà khoa học của Đại học Stanford tìm ra cách chữa trị cho nhiều căn bệnh.</string>
+    <string-array name="help_find_cure">
+        <item>Khi đăng ký Folding@Home, bạn đã giúp đỡ các nhà khoa học của Đại học Stanford trong quá trình tìm kiếm cách chữa trị những căn bệnh mà chúng ta thường gặp nhất bằng cách quyên tặng sức mạnh xử lý của điện thoại khi không sử dụng đến.</item>
+        <item>Gấp nếp đề cập đến các hoạt động của protein trong cơ thể chúng ta. Nghiên cứu về gấp nếp protein yêu cầu số lượng phép tính nhiều đến mức Đại học Stanford đã phải nhờ mọi người quyên tặng phần sức mạnh xử lý không sử dụng đến trên điện thoại của mình để giải quyết một số con số. Khi bạn ngủ, Đại học Stanford sẽ gửi một vấn đề về gấp nếp đến điện thoại của bạn để giải quyết. Sau khi các phép tính hoàn tất, kết quả sẽ được gửi lại cho Stanford.</item>
+        <item>Bạn có thể tìm thêm thông tin về Folding@Home trên trang chủ:\nfolding.stanford.edu</item>
+    </string-array>
+    <string name="powered_by">cung cấp bởi</string>
+    <string name="private_date_safe_title">Dữ liệu cá nhân của bạn an toàn.</string>
+    <string name="private_date_safe_text">Ứng dụng này không truy cập dữ liệu cá nhân của bạn.</string>
+    <string name="no_cost_mobile_data_title">Không mất phí dữ liệu di động</string>
+    <string name="no_cost_mobile_data_text">Điện thoại phải được kết nối với mạng Wi-Fi.</string>
+    <string name="battery_not_drained_title">Pin sẽ không bị cạn</string>
+    <string name="battery_not_drained_text">Điện thoại phải được kết nối với bộ sạc và sạc đầy (100%)</string>
+    <string name="time_string_weeks">%1$dt %2$dn %3$dg</string>
+    <string name="time_string_days">%1$dn %2$dg %3$dp</string>
+    <string name="time_string_hours">%1$dg %2$dp</string>
+    <string name="share_facebook_success">Đã chia sẻ thành công trên Facebook</string>
+    <string name="share_facebook_error">Không thể chia sẻ trên Facebook</string>
+    <string name="waiting">Đang chia sẻ…</string>
+    <string name="share_object_message">Tôi là một trong %1$d người giúp đỡ và tôi đã đóng góp %2$s thời gian tính toán!</string>
+    <string name="notification_service_executing_job">Folding@Home đang chạy.\nBạn đang đóng góp cho nghiên cứu KH.</string>
+    <string name="notification_service_not_executing">Folding@Home hiện không chạy.\nChưa đáp ứng mọi điều kiện bắt đầu.</string>
+    <string name="settings">Cài đặt</string>
+    <string name="start_contribute">Thời gian bắt đầu</string>
+    <string name="start_contribute_text">Cài thời gian bắt đầu cho phép tính</string>
+    <string name="settings_auto_wifi_msg">Bật Wi-Fi trong khi đóng góp</string>
+    <string name="notifications">Thông báo</string>
+    <string name="settings_display_notification">Gửi thông báo khi phép tính kết thúc</string>
+    <string name="contribution_interval_time">Thời lượng đóng góp</string>
+    <string name="wizard_step">Bước %1$d/%2$d</string>
+    <string name="no_opencl">Thiết bị này không hỗ trợ OpenCL. Thư viện này là yêu cầu thiết yếu để thực thi công việc. Bạn có muốn tiếp tục không?</string>
+    <string name="connect_to_wifi">Điện thoại cần được kết nối với mạng Wi-Fi</string>
+    <string name="processing_time_title">Thời gian tính trong khoảng %1$s – %2$s</string>
+    <string name="processing_time_text">Bạn có thể thay đổi thời gian bắt đầu trong cài đặt.</string>
+    <string name="will_start_when">Điều kiện bắt đầu</string>
+    <string name="share_facebook_contribution">Chia sẻ trên Facebook</string>
+    <string name="app_disabled_title">Ứng dụng đã bị vô hiệu hóa</string>
+    <string name="app_disabled_message">Ứng dụng này bị vô hiệu hóa và không thể sử dụng nữa.</string>
+    <string name="stand_by">Chờ</string>
+    <string name="helping_out">Trợ giúp</string>
+    <string name="disabled">Đã vô hiệu hóa</string>
+    <string name="data_usage">Mức sử dụng dữ liệu</string>
+    <string name="data_usage_text">Thiết bị của bạn phải được kết nối với mạng Wi-Fi.\nNếu bạn sử dụng kết nối Wi-Fi phải trả tiền hoặc tính theo lưu lượng sử dụng, bạn có thể được tính phí cho mức sử dụng dữ liệu.\n\nĐể biết thêm thông tin, hãy kiểm tra với nhà cung cấp dịch vụ Internet của bạn.</string>
+    <string name="whats_new">Tin mới</string>
+    <string name="whats_new_contribution_status">Bây giờ, bạn có thể thấy trạng thái các tình trạng bắt buộc để chạy Folding@Home.</string>
+    <string name="whats_new_disable_indicator">Cho biết ứng dụng đã bị vô hiệu hóa.</string>
+    <string name="whats_new_conditions_indicator">Cho biết Wi-Fi đã sẵn sàng nhưng phải kết nối điện thoại với bộ sạc và pin phải được sạc 100%.</string>
+    <string name="whats_new_enable_indicator">Cho biết tất cả yêu cầu đã sẵn sàng.</string>
+    <string name="whats_new_power_button">Giờ đây việc kích hoạt hoặc vô hiệu hóa ứng dụng đã trở nên dễ dàng hơn. Bạn cũng có thể thấy trạng thái hiện tại của Folding@Home.</string>
+    <string name="whats_new_login">Bây giờ bạn có thể đăng nhập và tải lên đóng góp của mình.</string>
+    <string name="whats_new_contribution_indicators">Các biểu tượng đã được cải tiến để dễ dàng theo dõi trạng thái đóng góp của bạn.</string>
+    <string name="whats_new_research_type">Cho biết nghiên cứu mà bạn đang đóng góp.</string>
+    <string name="whats_new_people_helping">Cho biết số người đang sử dụng Folding@Home.</string>
+    <string name="whats_new_contributed_time">Cho biết tổng thời gian đóng góp của bạn.</string>
+    <string name="skip">Bỏ qua</string>
+    <string name="turn_on">Bật</string>
+    <string name="turn_off">Tắt</string>
+    <string name="active_research">Nghiên cứu đang thực hiện</string>
+    <string name="notification_contribution_time">Cảm ơn bạn. Thiết bị này đã đóng góp %1$s trong suốt 24 giờ qua.</string>
+    <string name="action_login">Đăng nhập</string>
+    <string name="action_logout">%1$s (Đăng xuất)</string>
+    <string name="action_leaderboards">Ban lãnh đạo</string>
+    <string name="action_achievements">Thành tựu</string>
+    <string name="action_invite_friends">Mời bạn bè</string>
+    <string name="notification_service_turn_on">Bật để tiếp tục đóng góp</string>
+    <string name="toast_logout">Đăng xuất</string>
+    <string name="toast_network_unavailable">Mạng không khả dụng</string>
+    <string name="paused">Đã t.dừng</string>
+    <string name="action_enable">Kích hoạt</string>
+    <string name="action_disable">Tắt</string>
+    <string name="pause">Tạm dừng</string>
+    <string name="new_indicators">Chỉ báo mới</string>
+    <string name="new_power_button">Nút nguồn mới</string>
+    <string name="sign_in_google_game_service">Đ.nhập vào D.vụ trò chơi Google Play™</string>
+    <string name="view_more">Xem thêm</string>
+    <string name="toast_achievements_disabled">Đăng nhập để xem thành tích!</string>
+    <string name="toast_leaderboards_disabled">Đăng nhập để xem bảng xếp hạng!</string>
+    <string name="contribution_details">Chi tiết đóng góp</string>
+    <string name="project_description">Mô tả dự án</string>
+    <string name="week">Tuần</string>
+    <string name="month">Tháng</string>
+    <string name="all_time">Tổng thời gian</string>
+    <string name="time_string_hours_only">%1$d giờ</string>
+    <string name="chart_week_label">Tuần %1$d</string>
+    <string name="hours_contributed_label_plural">Đã đóng góp %1$d giờ</string>
+    <string name="hours_contributed_label_singular">Đã đóng góp 1 giờ</string>
+    <string name="contributed_no_data">Không có đóng góp nào trong khoảng thời gian đã chọn</string>
+    <string name="no_charger_tile">Không có bộ sạc</string>
+    <string name="low_battery_tile">Pin yếu</string>
+    <string name="no_wifi_tile">Không có Wi-Fi</string>
+    <string name="no_charger_text">Thiết bị phải được kết nối với bộ sạc</string>
+    <string name="low_battery_text">Pin cần được sạc tối thiểu 98% để bắt đầu đóng góp</string>
+    <string name="no_wifi_text">Kết nối với Wi-Fi để bắt đầu đóng góp.</string>
+</resources>

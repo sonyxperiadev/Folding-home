@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  Licensed under the LICENSE.
+  Copyright 2017, Sony Mobile Communications Inc.
+-->
+<resources xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="no_cost_mobile_data_text">O telefone deve estar conectado à rede WLAN.</string>
+    <string name="wifi">WLAN</string>
+    <string name="settings_auto_wifi_msg">Habilitar WLAN durante a contribuição</string>
+    <string name="connect_to_wifi">O telefone precisa estar conectado a uma rede WLAN</string>
+    <string name="data_usage_text">Seu dispositivo deve estar conectado a uma rede WLAN.\nSe você usar uma conexão WLAN limitada ou paga, poderá ser cobrado pelo uso de dados.\n\nPara obter mais informações, consulte seu provedor de Internet.</string>
+    <string name="whats_new_conditions_indicator">Indica que o WLAN está pronto, mas o celular precisa ser conectado a um carregador, e a bateria deve estar 100% carregada.</string>
+    <string name="no_wifi_tile">Sem WLAN</string>
+    <string name="no_wifi_text">Conecte-se a uma rede WLAN para iniciar a contribuição.</string>
+</resources>

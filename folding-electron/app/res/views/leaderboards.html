@@ -1,0 +1,22 @@
+<template class="task-template">
+    <div id="leaderboards" class="tab-pane fade">
+        <section class="content">
+
+            <div class="center-horizontal" id="leaderboard-error-content"></div>
+
+            <section id="leaderboard-section" class="content-archi">
+
+                <ul id="leaderboard-list-podium" class="fist-places">
+                </ul>
+
+                <ol id="leaderboard-list-normal" class="users-list">
+                </ol>
+
+            </section>
+        </section> <!-- fim da content -->
+        <!-- fim da content -->
+    </div>
+    <script>
+        require(dirs.source + '/renderer-process/leaderboard-renderer.js');
+    </script>
+</template>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  Licensed under the LICENSE.
+  Copyright 2017, Sony Mobile Communications Inc.
+-->
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="no_cost_mobile_data_text">Phone must be connected to WLAN network.</string>
+    <string name="wifi">WLAN</string>
+    <string name="settings_auto_wifi_msg">Enable WLAN during contribution</string>
+    <string name="connect_to_wifi">The phone needs to be connected to a WLAN network</string>
+    <string name="data_usage_text">Your device must be connected to a WLAN network.\nIf you use a metered or paid WLAN connection, you may be charged for the data usage.\n\nFor more info, check with your Internet service provider.</string>
+    <string name="whats_new_conditions_indicator" formatted="false">Indicates that WLAN is ready, but the phone must be connected to a charger and the battery must be 100% charged.</string>
+    <string name="no_wifi_tile">No WLAN</string>
+    <string name="no_wifi_text">Connect to a WLAN network to start the contribution.</string>
+</resources>

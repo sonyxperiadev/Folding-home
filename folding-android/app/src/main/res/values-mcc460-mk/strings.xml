@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  Licensed under the LICENSE.
+  Copyright 2017, Sony Mobile Communications Inc.
+-->
+<resources xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="no_cost_mobile_data_text">Телефонот мора да се поврзе на WLAN мрежа.</string>
+    <string name="settings_auto_wifi_msg">Вклучи WLAN за време на придонесувањето</string>
+    <string name="connect_to_wifi">Телефонот треба да се поврзе на WLAN мрежа</string>
+    <string name="data_usage_text">Вашиот уред мора да биде поврзан на WLAN мрежа.\nАко користите WLAN конекција на мерач или платена, може да ви биде наплатено за користење на податоците.\n\nЗа повеќе информации, проверете кај вашиот провајдер на Интернет услуги.</string>
+    <string name="whats_new_conditions_indicator">Покажува дека WLAN мрежата е подготвена, но телефонот мора да биде поврзан на полнач, а батеријата мора да биде 100% наполнета.</string>
+    <string name="no_wifi_tile">Нема WLAN</string>
+    <string name="no_wifi_text">Поврзете се на WLAN мрежа за да започнете придонесот.</string>
+</resources>

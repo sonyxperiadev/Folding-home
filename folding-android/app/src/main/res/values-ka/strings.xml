@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  Licensed under the LICENSE.
+  Copyright 2017, Sony Mobile Communications Inc.
+-->
+<resources xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="notification_service_finished_job_executed">თქვენ შეიტანეთ წვლილი მეცნიერებაში</string>
+    <string name="notification_service_finished_failed">ყველა საწყისი პირობა არ არის დაკმაყოფილებული</string>
+    <string name="contributed_time">მონაწილეობის დრო</string>
+    <string name="people_helping">მონაწილეები</string>
+    <string name="research_type">კვლევის ტიპი</string>
+    <string name="research_type_unavailable">მიუწვდომელი</string>
+    <string name="setup_guide">დაყენების სახელმძღვანელო</string>
+    <string name="legal">იურიდიული ცნობები</string>
+    <string name="share">გაზიარება</string>
+    <string name="welcome">მოგესალმებათ Folding@Home</string>
+    <string name="read_more">მეტის წაკითხვა</string>
+    <string name="more_info">დამატებითი ინფორმაცია</string>
+    <string name="finish">დასრულება</string>
+    <string name="wizard_welcome_to_folding_subtitle">გსურთ დაგვეხმაროთ ვიპოვოთ ალცჰეიმერის, პარკინსონის და კიბოს დაავადების განკურნების საშუალება?</string>
+    <string name="wizard_welcome_to_folding_text">თქვენს ტელეფონს შეუძლია შეასრულოს გამოთვლები, სანამ თქვენ გძინავთ, რითაც დაეხმარება სტენფორდის უნივერსიტეტის მეცნიერებს სხვადასხვა დაავადებების განკურნების საშუალებების პოვნაში.</string>
+    <string-array name="help_find_cure">
+        <item>Folding@Home-ზე დარეგისტრირების შემთხვევაში, თქვენ დაეხმარებით სტენფორდის უნივერსიტეტის მეცნიერებს ყველაზე გავრცელებული დაავადებების განკურნების საშუალებების მოძებნაში. ეს მოხდება იმის წყალობით, რომ შესწირავთ თქვენი ტელეფონის სამუშაო ენერგიას, როდესაც მას არ იყენებთ.</item>
+        <item>ტერმინი „შედედება“ ნიშნავს ცილებთან დაკავშირებულ პროცესს ორგანიზმში. ცილების შედედების პროცესის შესწავლას უამრავი სხვადასხვა გამოთვლა სჭირდება, ამიტომ სტენფორდის უნივერსიტეტი სთხოვს მომხმარებლებს, შეწირონ მათი ტელეფონების სამუშაო ენერგია, როდესაც მათ არ იყენებენ, მონაცემების მისაღებად. იმ დროს, როდესაც გძინავთ, სტენფორდის უნივერსიტეტი გამოაგზავნის თქვენს ტელეფონში ცილების შედედებასთან დაკავშირებულ მონაცემებს დასამუშავებლად. გამოთვლების შესრულების შემდეგ შედეგები ისევ სტენფორდში გაიგზავნება.</item>
+        <item>დამატებითი ინფორმაცია Folding@Home-ის შესახებ შეგიძლიათ იხილოთ საწყის გვერდზე:\nfolding.stanford.edu</item>
+    </string-array>
+    <string name="powered_by">მომწოდებელი</string>
+    <string name="private_date_safe_title">პირადი მონ. დაცულია</string>
+    <string name="private_date_safe_text">ამ პროგრამას არ აქვს წვდომა თქვენს პირად მონაცემებზე.</string>
+    <string name="no_cost_mobile_data_title">მობ. მონაც. გადაც. უფასოა</string>
+    <string name="no_cost_mobile_data_text">ტელეფონი უნდა იყოს დაკავშირებული Wi-Fi ქსელთან.</string>
+    <string name="battery_not_drained_title">ელემენტი არ დაიცლება</string>
+    <string name="battery_not_drained_text">ტელეფონი უნდა იყოს დაკავშირებული დამტენთან და სრულად დატენილი (100%)</string>
+    <string name="time_string_weeks">%1$dკვ %2$dდ %3$dსთ</string>
+    <string name="time_string_days">%1$dდ%2$dსთ %3$dწთ</string>
+    <string name="time_string_hours">%1$dსთ%2$dწთ</string>
+    <string name="share_facebook_success">წარმატებით გაზიარდა Facebook-ზე</string>
+    <string name="share_facebook_error">ვერ გაზიარდა Facebook-ზე</string>
+    <string name="waiting">გაზიარება…</string>
+    <string name="share_object_message">მე ვარ %1$d-დან ერთ-ერთი მონაწილე. ჩემი მონაწილეობის და გამოთვლის დროა: %2$s!</string>
+    <string name="notification_service_executing_job">Folding@Home გაშვებულია.\nმონაწილეობთ კვლევაში.</string>
+    <string name="notification_service_not_executing">Folding@Home არაა გაშვებული.\nყველა მოთხოვნა არაა დაკმაყ.</string>
+    <string name="settings">პარამეტრები</string>
+    <string name="start_contribute">საწყისი დრო</string>
+    <string name="start_contribute_text">საწყისი დროის დაყენება გამოთვლისთვის</string>
+    <string name="settings_auto_wifi_msg">Wi-Fi-ს ჩართვა მონაწილეობის დროს</string>
+    <string name="notifications">შეტყობინებები</string>
+    <string name="settings_display_notification">შეტყობ. გაგზავნა გამოთვლის დასრულებ.</string>
+    <string name="contribution_interval_time">მონაწილეობის ხანგრძლივობა</string>
+    <string name="wizard_step">ეტაპი %1$d/%2$d</string>
+    <string name="no_opencl">ამ მოწყობილობაში არ მუშაობს OpenCL. ეს ბიბლიოთეკა მნიშვნელოვანია დავალებების შესასრულებლად. გსურთ გააგრძელოთ?</string>
+    <string name="connect_to_wifi">ტელეფონი უნდა იყოს დაკავშირებული Wi-Fi ქსელთან</string>
+    <string name="processing_time_title">გამოთ. დრო დიაპაზ.: %1$s - %2$s</string>
+    <string name="processing_time_text">შეგიძლიათ შეცვალოთ საწყისი დრო პარამეტრებში.</string>
+    <string name="will_start_when">საწყისი პირობები</string>
+    <string name="share_facebook_contribution">გაზიარება Facebook-ზე</string>
+    <string name="app_disabled_title">პროგრამა გამორთულია</string>
+    <string name="app_disabled_message">ეს პროგრამა გამორთულია და მისი გამოყენება შეუძლებელია.</string>
+    <string name="stand_by">ლოდინის რეჟიმი</string>
+    <string name="helping_out">დახმარება</string>
+    <string name="disabled">გამორთულია</string>
+    <string name="data_usage">მონაცემთა გამოყენება</string>
+    <string name="data_usage_text">მოწყობილობა დაკავშირებული უნდა იყოს Wi-Fi ქსელთან.\nთუ იყენებთ ტარიფიცირებულ ან ფასიან Wi-Fi კავშირს, შესაძლოა, დაგერიცხოთ მონაცემთა გამოყენების საფასური.\n\nდამატებითი ინფორმაციისთვის მიმართეთ ინტერნეტის სერვისის პროვაიდერს.</string>
+    <string name="whats_new">სიახლეები</string>
+    <string name="whats_new_contribution_status">ახლა შეგიძლიათ იხილოთ პირობების საჭირო სტატუსი Folding@Home-ის გასაშვებად.</string>
+    <string name="whats_new_disable_indicator">მიუთითებს, რომ პროგრამა გამორთულია.</string>
+    <string name="whats_new_conditions_indicator">მიუთითებს, რომ Wi-Fi მზადაა, მაგრამ ტელეფონი უნდა იყოს მიერთებული დამტენთან და კვების ელემენტი 100%-ით უნდა იყოს დატენილი.</string>
+    <string name="whats_new_enable_indicator">მიუთითებს, რომ ყველა მოთხოვნა მზადაა.</string>
+    <string name="whats_new_power_button">პროგრამის ჩართვა და გამორთვა გაადვილდა. ასევე შეგიძლიათ იხილოთ Folding@Home-ის მიმდინარე სტატუსი.</string>
+    <string name="whats_new_login">ახლა შეგიძლიათ შეხვიდეთ და ატვირთოთ თქვენი მონაცემები.</string>
+    <string name="whats_new_contribution_indicators">გაუმჯობესებულია პიქტოგრამები, შეტანილი მონაცემების სტატუსის ადვილი აღრიცხვისთვის.</string>
+    <string name="whats_new_research_type">მიუთითებს კვლევას, რომელშიც ტვირთავთ მონაცემებს.</string>
+    <string name="whats_new_people_helping">მიუთითებს ადამიანების რაოდენობას, რომლებიც იყენებენ Folding@Home-ს.</string>
+    <string name="whats_new_contributed_time">მიუთითებს შეტანილი მონაცემების საერთო დროს.</string>
+    <string name="skip">გამოტოვ.</string>
+    <string name="turn_on">ჩართვა</string>
+    <string name="turn_off">გამორთვა</string>
+    <string name="active_research">აქტიური კვლევა</string>
+    <string name="notification_contribution_time">გმადლობთ. მოწყობილობის წვლილია %1$s ბოლო 24 სთ-ში.</string>
+    <string name="action_login">შესვლა</string>
+    <string name="action_logout">%1$s (გამოსვლა)</string>
+    <string name="action_leaderboards">ბანერები</string>
+    <string name="action_achievements">მიღწევები</string>
+    <string name="action_invite_friends">მეგობრების მოწვევა</string>
+    <string name="notification_service_turn_on">ჩართეთ და ჩაერთეთ</string>
+    <string name="toast_logout">გამოვიდა სისტემიდან</string>
+    <string name="toast_network_unavailable">ქსელი მიუწვდომელია</string>
+    <string name="paused">დაპაუზდა</string>
+    <string name="action_enable">ჩართვა</string>
+    <string name="action_disable">გამორთვა</string>
+    <string name="pause">პაუზა</string>
+    <string name="new_indicators">ახალი ინდიკატორები</string>
+    <string name="new_power_button">ახალი ჩართვის ღილაკი</string>
+    <string name="sign_in_google_game_service">შესვლა Google Play™ თამაშებში</string>
+    <string name="view_more">იხ. მეტი</string>
+    <string name="toast_achievements_disabled">შედით, მიღწევების სანახავად!</string>
+    <string name="toast_leaderboards_disabled">შედით, ლიდერთა ცხრილის სანახავად!</string>
+    <string name="contribution_details">შენატანის დეტალები</string>
+    <string name="project_description">პროექტის აღწერა</string>
+    <string name="week">კვირა</string>
+    <string name="month">თვე</string>
+    <string name="all_time">მთლიანი დრო</string>
+    <string name="time_string_hours_only">%1$dსთ</string>
+    <string name="chart_week_label">კვირა %1$d</string>
+    <string name="hours_contributed_label_plural">%1$d საათი შეტანილია</string>
+    <string name="hours_contributed_label_singular">1 საათი შეტანილია</string>
+    <string name="contributed_no_data">არჩეულ პერიოდში შენატანი არ არის</string>
+    <string name="no_charger_tile">დამტენი არ არის</string>
+    <string name="low_battery_tile">კვების ელემენტი იცლება</string>
+    <string name="no_wifi_tile">Wi-Fi არ არის</string>
+    <string name="no_charger_text">მოწყობილობა უნდა იყოს დაკავშირებული დამტენთან</string>
+    <string name="low_battery_text">შენატანის დასაწყებად კვების ელემენტი უნდა იყოს დამუხტული მინიმუმ 98%-ით</string>
+    <string name="no_wifi_text">შენატანის დასაწყებად, დაუკავშირდით Wi-Fi ქსელს.</string>
+</resources>

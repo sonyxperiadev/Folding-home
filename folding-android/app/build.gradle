@@ -1,0 +1,254 @@
+apply plugin: 'com.android.application'
+apply plugin: 'jacoco'
+apply plugin: 'findbugs'
+apply plugin: 'checkstyle'
+apply plugin: 'pmd'
+apply plugin: 'io.fabric'
+
+repositories {
+    maven { url 'https://maven.fabric.io/public' }
+}
+
+def getVersionName = { ->
+    return '1.00.61';
+}
+
+def getVersionCode = { ->
+    return 10061
+}
+
+def getBaseName = { ->
+    return "Folding@Home_" + getVersionName();
+}
+
+android {
+    testBuildType "debugTestMode"
+    compileSdkVersion Integer.parseInt(project.ANDROID_BUILD_SDK_VERSION)
+    buildToolsVersion project.ANDROID_BUILD_TOOLS_VERSION
+
+    applicationVariants.all { variant ->
+        variant.outputs.each { output ->
+            def apk = output.outputFile;
+            def newName;
+            newName = apk.name
+                    .replace(project.name, getBaseName());
+            output.outputFile = new File(apk.parentFile, newName);
+        }
+    }
+
+    testOptions {
+        unitTests.returnDefaultValues = true
+    }
+
+    defaultConfig {
+        applicationId "com.sonymobile.androidapp.gridcomputing"
+        testApplicationId "com.sonymobile.androidapp.gridcomputing.test"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+        minSdkVersion Integer.parseInt(project.ANDROID_BUILD_MIN_SDK_VERSION)
+        targetSdkVersion Integer.parseInt(project.ANDROID_BUILD_TARGET_SDK_VERSION)
+        versionCode getVersionCode()
+        versionName getVersionName()
+        multiDexEnabled true
+    }
+
+    dexOptions {
+        javaMaxHeapSize "4g"
+    }
+
+    buildTypes {
+        //should set the field TEST_MODE=false for ALL build types and true only for debugTestMode
+        releaseUnsigned {
+            buildConfigField "boolean", "TEST_MODE", "false"
+            buildConfigField "boolean", "REPORT_ANALYTICS", "true"
+            minifyEnabled true
+            zipAlignEnabled true
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+
+        release {
+            buildConfigField "boolean", "TEST_MODE", "false"
+            buildConfigField "boolean", "REPORT_ANALYTICS", "true"
+            minifyEnabled true
+            zipAlignEnabled true
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+
+        debug {
+            signingConfig signingConfigs.debug
+            buildConfigField "boolean", "TEST_MODE", "false"
+            buildConfigField "boolean", "REPORT_ANALYTICS", "true"
+            testCoverageEnabled true
+            debuggable true
+            applicationIdSuffix ".dev"
+        }
+
+        debugTestMode {
+            signingConfig signingConfigs.debug
+            buildConfigField "boolean", "TEST_MODE", "true"
+            buildConfigField "boolean", "REPORT_ANALYTICS", "true"
+            testCoverageEnabled true
+            debuggable true
+            applicationIdSuffix ".debug"
+        }
+    }
+
+    sourceSets {
+        main {
+            jniLibs.srcDirs = ['src/main/libs'] //native *.so dir
+            jni.srcDirs = [] //disable automatic ndk-build
+        }
+    }
+
+    lintOptions {
+        lintConfig file("cq-configs/lint/lint.xml")
+        xmlOutput file("build/reports/lint/lint-result.xml")
+        htmlOutput file("build/reports/lint/lint-result.html")
+        checkReleaseBuilds true
+        // Or, if you prefer, you can continue to check for errors in release builds,
+        // but continue the build even when errors are found:
+        abortOnError false
+    }
+
+    packagingOptions {
+        exclude 'META-INF/NOTICE'
+        exclude 'META-INF/LICENSE'
+        exclude 'META-INF/maven/com.google.guava/guava/pom.properties'
+        exclude 'META-INF/maven/com.google.guava/guava/pom.xml'
+    }
+}
+
+dependencies {
+    compile fileTree(dir: 'libs', include: ['*.jar'])
+    compile 'com.android.support:multidex:1.0.1'
+    compile 'com.android.support:appcompat-v7:23.4.0'
+    compile 'com.android.support:recyclerview-v7:23.4.0'
+    compile 'com.android.support:design:23.4.0'
+    compile 'com.google.android.gms:play-services-games:8.4.0'
+    compile 'com.google.android.gms:play-services-plus:8.4.0'
+    compile 'com.facebook.android:facebook-android-sdk:4.6.0'
+    compile 'de.greenrobot:eventbus:2.4.0'
+    compile 'com.github.PhilJay:MPAndroidChart:v3.0.0'
+    compile project(':libraries:google-games')
+
+    compile('com.twitter.sdk.android:twitter:2.2.0@aar') {
+        transitive = true;
+    }
+
+    testCompile 'junit:junit:4.12'
+
+    androidTestCompile('com.android.support.test.espresso:espresso-core:2.2.1') {
+        exclude group: 'com.android.support', module: 'support-annotations'
+    }
+
+    androidTestCompile('com.android.support.test:runner:0.5') {
+        exclude group: 'com.android.support', module: 'support-annotations'
+    }
+
+    androidTestCompile('com.android.support.test.espresso:espresso-web:2.2.1') {
+        exclude group: 'com.android.support', module: 'support-annotations'
+    }
+
+    androidTestCompile 'com.jayway.android.robotium:robotium-solo:5.6.0'
+}
+
+pmd {
+    toolVersion = '4.2.6'
+}
+
+task pmd(type: Pmd) {
+    ignoreFailures = true
+    source = fileTree('src/main/java')
+    ruleSets = ["basic", "braces", "strings", "design", "unusedcode", "android"]
+    include '**/*.java'
+    exclude '**/gen/**'
+    reports {
+        xml.enabled = true
+    }
+}
+
+task checkstyleMain(type: Checkstyle) {
+    configFile file("cq-configs/checkstyle/checkstyle.xml")
+    configProperties.checkstyleSuppressionsPath = file("cq-configs/checkstyle/checkstyle_suppressions.xml").absolutePath
+    source = fileTree('src/main/java')
+    include '**/*.java'
+    exclude '**/gen/**'
+    classpath = files()
+    ignoreFailures = true
+    reports {
+        xml.enabled = true
+        xml.destination = "${buildDir}/reports/checkstyle/checkstyle.xml"
+    }
+}
+
+task checkstyleHtml(dependsOn: checkstyleMain) << {
+    ant.xslt(in: checkstyleMain.reports.xml.destination,
+            style: file('cq-configs/checkstyle/checkstyle-html.xsl'),
+            out: new File(checkstyleMain.reports.xml.destination.parent, 'checkstyle.html'))
+}
+checkstyleMain.finalizedBy checkstyleHtml
+
+task findbugs(type: FindBugs, dependsOn: assembleDebug) {
+    description 'Run findbugs'
+    group 'verification'
+    classes = fileTree('build/intermediates/classes/debug/')
+    source = fileTree('src/main/java')
+    classpath = files()
+    effort = 'max'
+    ignoreFailures = 'true'
+    excludeFilter = file("cq-configs/findbugs/exclude.xml")
+    reports {
+        xml.enabled = true
+        html.enabled = false
+    }
+}
+
+task zipSource(type: Zip) {
+    from('src')
+    baseName = getBaseName() + "_source"
+}
+
+task zipTests(type: Zip) {
+    from('src/androidTest')
+    baseName = getBaseName() + "_test"
+}
+
+task zipMapping(type: Zip) {
+    from('build/outputs/mapping')
+    baseName = "mapping"
+}
+
+task javadocs(type: Javadoc) {
+    failOnError false
+    source = 'src/main/java'
+}
+
+task jacocoTestReport(type: JacocoReport, dependsOn: 'createDebugTestModeCoverageReport') {
+    def coverageSourceDirs = [
+            "${buildDir.parent}/src/main/java"
+    ]
+    group = "Reporting"
+    description = "Generate Jacoco coverage reports"
+    classDirectories = fileTree(
+            dir: "${buildDir}/intermediates/classes",
+            excludes: ['**/R.class',
+                       '**/R$*.class',
+                       '**/BuildConfig.*',
+                       '**/Manifest*.*']
+    )
+    sourceDirectories = files(coverageSourceDirs)
+    additionalSourceDirs = files(coverageSourceDirs)
+    executionData = files(
+            "${buildDir}/outputs/code-coverage/connected/flavors/INTERNAL/coverage.ec"
+    )
+    reports {
+        xml {
+            enabled = true
+            destination "${buildDir}/reports/jacoco/jacoco.xml"
+        }
+        csv.enabled false
+        html {
+            enabled true
+            destination "${buildDir}/jacocoHtml"
+        }
+    }
+}

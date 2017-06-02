@@ -1,0 +1,13 @@
+diff --git a/CMakeLists.txt b/CMakeLists.txt
+index e849e4b..0283017 100644
+--- a/CMakeLists.txt
++++ b/CMakeLists.txt
+@@ -12,6 +12,8 @@
+ #   libOpenMM_static.a
+ #----------------------------------------------------
+ 
++add_definitions(-DOPENMM_CPU_BUILDING_STATIC_LIBRARY)
++
+ find_package(PythonInterp)
+ mark_as_advanced(CLEAR PYTHON_EXECUTABLE)
+ 

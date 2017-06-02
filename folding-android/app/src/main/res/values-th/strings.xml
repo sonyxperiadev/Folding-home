@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  Licensed under the LICENSE.
+  Copyright 2017, Sony Mobile Communications Inc.
+-->
+<resources xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="notification_service_finished_job_executed">คุณได้ช่วยเหลือวงการวิทยาศาสตร์</string>
+    <string name="notification_service_finished_failed">ไม่เป็นไปตามสภาวะเริ่มต้นทั้งหมด</string>
+    <string name="contributed_time">เวลาที่ช่วยเหลือ</string>
+    <string name="people_helping">ช่วยเหลือซึ่งกันและกัน</string>
+    <string name="research_type">ประเภทการวิจัย</string>
+    <string name="research_type_unavailable">ไม่มีให้ใช้</string>
+    <string name="setup_guide">คู่มือการตั้งค่า</string>
+    <string name="legal">กฎหมาย</string>
+    <string name="share">แชร์</string>
+    <string name="welcome">ยินดีต้อนรับเข้าสู่ Folding@Home</string>
+    <string name="read_more">อ่านเพิ่มเติม</string>
+    <string name="more_info">ข้อมูลเพิ่มเติม</string>
+    <string name="finish">เสร็จสิ้น</string>
+    <string name="wizard_welcome_to_folding_subtitle">คุณต้องการช่วยค้นหาวิธีรักษาโรคอัลไซเมอร์ พาร์กินสัน และมะเร็งหรือไม่</string>
+    <string name="wizard_welcome_to_folding_text">โทรศัพท์ของคุณสามารถคำนวณทางวิทยาศาสตร์ในขณะที่คุณหลับและช่วยนักวิทยาศาสตร์ของมหาวิทยาลัยสแตนฟอร์ดค้นหาวิธีรักษาโรคต่างๆ มากมาย</string>
+    <string-array name="help_find_cure">
+        <item>เมื่อสมัคร Folding@Home คุณได้ช่วยนักวิทยาศาสตร์ของมหาวิทยาลัยสแตนฟอร์ดในการหาวิธีการรักษาโรคทั่วไปหลายโรค โดยบริจาคกำลังไฟในการประมวลผลของโทรศัพท์เมื่อไม่ใช้ด้วยตนเอง</item>
+        <item>การม้วนตัวหมายถึงกิจกรรมของโปรตีนในร่างกายของเรา การวิจัยการม้วนตัวของโปรตีนต้องอาศัยการคำนวณจำนวนมาก ดังนั้นนักวิทยาศาสตร์ของมหาวิทยาลัยสแตนฟอร์ดจึงขอให้ประชาชนบริจาคพลังในการประมวลผลที่ไม่ใช้งานในโทรศัพท์ของคุณเพื่อหาค่าตัวเลขต่างๆ ในขณะที่คุณหลับ มหาวิทยาลัยแสตนฟอร์ตจะส่งโจทย์การม้วนตัวของโปรตีนไปให้โทรศัพท์ของคูณแก้ เมื่อคำนวณเสร็จแล้ว ผลลัพธ์ที่ได้จะถูกส่งกลับไปยังสแตนฟอร์ด</item>
+        <item>คุณสามารถดูข้อมูลเพิ่มเติมเกี่ยวกับ Folding@Home ได้ที่โฮมเพจ:\nfolding.stanford.edu</item>
+    </string-array>
+    <string name="powered_by">ขับเคลื่อนโดย</string>
+    <string name="private_date_safe_title">ข้อมูลส่วนตัวของคุณปลอดภัย</string>
+    <string name="private_date_safe_text">แอปพลิเคชันนี้จะไม่เข้าสู่ข้อมูลส่วนบุคคลของคุณ</string>
+    <string name="no_cost_mobile_data_title">ไม่มีค่าใช้จ่ายสำหรับข้อมูลอุปกร.</string>
+    <string name="no_cost_mobile_data_text">ต้องเชื่อมต่อโทรศัพท์เข้ากับเครือข่าย Wi-Fi</string>
+    <string name="battery_not_drained_title">แบตเตอรี่จะไม่สูญเสียพลังงาน</string>
+    <string name="battery_not_drained_text">ต้องเชื่อมต่อโทรศัพท์เข้ากับเครื่องชาร์จและประจุพลังงานเต็ม (100%)</string>
+    <string name="time_string_weeks">%1$dสัปดาห์ %2$dวัน %3$dชั่วโมง</string>
+    <string name="time_string_days">%1$dวัน %2$dชั่วโมง %3$dนาที</string>
+    <string name="time_string_hours">%1$dชั่วโมง %2$dนาที</string>
+    <string name="share_facebook_success">แชร์บน Facebook สำเร็จแล้ว</string>
+    <string name="share_facebook_error">ไม่สามารถแชร์บน Facebook ได้</string>
+    <string name="waiting">กำลังแชร์…</string>
+    <string name="share_object_message">ฉันเป็น %1$d หนึ่งคนที่ให้ความช่วยเหลือและฉันได้ช่วยเหลือด้วยเวลาคำนวณ %2$s!</string>
+    <string name="notification_service_executing_job">Folding@Home กำลัง.\u0020\nคุณกำลังช่.</string>
+    <string name="notification_service_not_executing">Folding@Home กำลังทำงาน\u0020\nไม่ตรงตามเงื่อนไขการเริ่มต้นทั้งหมด</string>
+    <string name="settings">การตั้งค่า</string>
+    <string name="start_contribute">เวลาเริ่มต้น</string>
+    <string name="start_contribute_text">ตั้งค่าเวลาเริ่มต้นสำหรับการคำนวณ</string>
+    <string name="settings_auto_wifi_msg">เปิดใช้ Wi-Fi ระหว่างการช่วยเหลือ</string>
+    <string name="notifications">ข้อความแจ้งเตือน</string>
+    <string name="settings_display_notification">ส่งข้อความแจ้งเตือนเมื่อสิ้นสุดการคำนวณ</string>
+    <string name="contribution_interval_time">ระยะเวลาช่วยเหลือ</string>
+    <string name="wizard_step">ขั้นตอน %1$d/%2$d</string>
+    <string name="no_opencl">อุปกรณ์นี้ไม่รองรับ OpenCL ไลบรารีจำเป็นต่อการดำเนินงาน คุณต้องการทำต่อหรือไม่</string>
+    <string name="connect_to_wifi">โทรศัพท์จำเป็นต้องเชื่อมต่อกับเครือข่าย Wi-Fi</string>
+    <string name="processing_time_title">เวลาคำนวณอยู่ระหว่าง %1$s – %2$s</string>
+    <string name="processing_time_text">คุณสามารถเปลี่ยนเวลาเริ่มต้นได้ในการตั้งค่า</string>
+    <string name="will_start_when">เงื่อนไขการเริ่มต้น</string>
+    <string name="share_facebook_contribution">แชร์บน Facebook</string>
+    <string name="app_disabled_title">ปิดใช้งานแอปพลิเคชั่น</string>
+    <string name="app_disabled_message">ปิดใช้งานแอปพลิเคชั่นและไม่สามารถใช้ได้อีกต่อไป</string>
+    <string name="stand_by">พร้อมใช้งาน</string>
+    <string name="helping_out">ช่วยเหลือ</string>
+    <string name="disabled">ปิดใช้งาน</string>
+    <string name="data_usage">ข้อมูลการใช้งาน</string>
+    <string name="data_usage_text">เครื่องของคุณต้องเชื่อมต่อกับเครือข่าย Wi-Fi\nหากใช้การเชื่อมต่อแบบวัดปริมาณการใช้งานหรือ Wi-Fi แบบจ่ายเงิน คุณต้องเสียค่าใช้จ่ายสำหรับข้อมูลการใช้งาน\n\nตรวจสอบข้อมูลเพิ่มเติมจากผู้ให้บริการอินเตอร์เน็ตของคุณ</string>
+    <string name="whats_new">สิ่งใหม่ๆ</string>
+    <string name="whats_new_contribution_status">ตอนนี้คุณสามารถดูสถานะของเงื่อนไขที่กำหนดเพื่อเปิดใช้ Folding@Home ได้แล้ว</string>
+    <string name="whats_new_disable_indicator">แสดงว่าแอพปิดใช้งาน</string>
+    <string name="whats_new_conditions_indicator">แสดงว่า Wi-Fi พร้อม แต่ต้องเชื่อมต่อโทรศัพท์กับที่ชาร์จและต้องชาร์จแบตเตอรี่ให้เต็ม 100%</string>
+    <string name="whats_new_enable_indicator">แสดงว่าครบข้อกำหนดทั้งหมด</string>
+    <string name="whats_new_power_button">ขณะนี้สามารถเปิดหรือปิดใช้งานแอพได้ง่ายขึ้น นอกจากนี้คุณยังสามารถดูสถานะปัจจุบันของ Folding@Home ได้</string>
+    <string name="whats_new_login">ขณะนี้คุณสามารถล็อกอินและอัพโหลดรายการของคุณได้</string>
+    <string name="whats_new_contribution_indicators">ปรับปรุงไอคอนเพื่อให้ติดตามสถานะรายการของคุณได้ง่ายขึ้น</string>
+    <string name="whats_new_research_type">แสดงงานวิจัยที่คุณกำลังดำเนินการ</string>
+    <string name="whats_new_people_helping">แสดงจำนวนบุคคลที่ใช้ Folding@Home</string>
+    <string name="whats_new_contributed_time">แสดงเวลาทั้งหมดที่คุณดำเนินการ</string>
+    <string name="skip">ข้าม</string>
+    <string name="turn_on">เปิด</string>
+    <string name="turn_off">ปิด</string>
+    <string name="active_research">การวิจัยที่กำลังดำเนินการ</string>
+    <string name="notification_contribution_time">ขอบคุณ อุปกรณ์นี้ได้มอบ %1$s ในช่วง 24 ชั่วโมงที่ผ่านมา</string>
+    <string name="action_login">ลงชื่อเข้าใช้</string>
+    <string name="action_logout">%1$s (ลงชื่อออก)</string>
+    <string name="action_leaderboards">กระดานผู้นำ</string>
+    <string name="action_achievements">ความสำเร็จ</string>
+    <string name="action_invite_friends">เชิญเพื่อน</string>
+    <string name="notification_service_turn_on">เปิดเพื่อมอบต่อไป</string>
+    <string name="toast_logout">ออกจากระบบแล้ว</string>
+    <string name="toast_network_unavailable">เครือข่ายไม่พร้อมใช้งาน</string>
+    <string name="paused">พักไว้</string>
+    <string name="action_enable">เปิดใช้</string>
+    <string name="action_disable">ปิดใช้</string>
+    <string name="pause">พัก</string>
+    <string name="new_indicators">ตัวระบุใหม่</string>
+    <string name="new_power_button">ปุ่มเปิด/ปิดใหม่</string>
+    <string name="sign_in_google_game_service">ลงชื่อเข้าใช้บริการเกมของ Google Play™</string>
+    <string name="view_more">ดูเพิ่มเติม</string>
+    <string name="toast_achievements_disabled">ลงชื่อเข้าใช้เพื่อดูด่านที่ผ่านได้</string>
+    <string name="toast_leaderboards_disabled">ลงชื่อเข้าใช้เพื่อดูลีดเดอร์บอร์ด</string>
+    <string name="contribution_details">รายละเอียดการมีส่วนร่วม</string>
+    <string name="project_description">คำอธิบายโครงการ</string>
+    <string name="week">สัปดาห์</string>
+    <string name="month">เดือน</string>
+    <string name="all_time">เวลารวม</string>
+    <string name="time_string_hours_only">%1$d ชม.</string>
+    <string name="chart_week_label">สัปดาห์ที่ %1$d</string>
+    <string name="hours_contributed_label_plural">มีส่วนร่วม %1$d ชั่วโมง</string>
+    <string name="hours_contributed_label_singular">มีส่วนร่วม 1 ชั่วโมง</string>
+    <string name="contributed_no_data">ไม่มีส่วนร่วมในช่วงเวลาที่เลือก</string>
+    <string name="no_charger_tile">ไม่ได้เสียบเครื่องชาร์จ</string>
+    <string name="low_battery_tile">แบตเตอรี่เหลือน้อย</string>
+    <string name="no_wifi_tile">ไม่ได้เชื่อมต่อ Wi-Fi</string>
+    <string name="no_charger_text">อุปกรณ์ต้องเสียบกับเครื่องชาร์จ</string>
+    <string name="low_battery_text">ต้องมีแบตเตอรี่ถึง 98% จึงจะเริ่มมีส่วนร่วมได้</string>
+    <string name="no_wifi_text">เชื่อมต่อเครือข่าย Wi-Fi เพื่อเริ่มมีส่วนร่วม</string>
+</resources>

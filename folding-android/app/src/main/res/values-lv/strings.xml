@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  Licensed under the LICENSE.
+  Copyright 2017, Sony Mobile Communications Inc.
+-->
+<resources xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="notification_service_finished_job_executed">Esat sniedzis ieguldījumu zinātnē</string>
+    <string name="notification_service_finished_failed">Ne visi sākuma nosacījumi tika ievēroti</string>
+    <string name="contributed_time">Ieguldītais laiks</string>
+    <string name="people_helping">Palīgi</string>
+    <string name="research_type">Pētījuma veids</string>
+    <string name="research_type_unavailable">Nav pieejams</string>
+    <string name="setup_guide">Iestatīšanas ceļvedis</string>
+    <string name="legal">Juridiska informācija</string>
+    <string name="share">Kopīgot</string>
+    <string name="welcome">Esiet sveicināts Folding@Home!</string>
+    <string name="read_more">Lasīt vairāk</string>
+    <string name="more_info">Plašāka informācija</string>
+    <string name="finish">Pabeigt</string>
+    <string name="wizard_welcome_to_folding_subtitle">Vai vēlaties palīdzēt atrast līdzekļus Alcheimera un Parkinsona slimības, kā arī vēža ārstēšanai?</string>
+    <string name="wizard_welcome_to_folding_text">Kamēr jūs guļat, jūsu tālrunis var veikt zinātniskus aprēķinus un palīdzēt Stenfordas Universitātes zinātniekiem atrast līdzekļus dažādu slimību ārstēšanai.</string>
+    <string-array name="help_find_cure">
+        <item>Reģistrējoties projektā Folding@Home, jūs ziedojat sava tālruņa apstrādes jaudu, kad pats to neizmantojat, un palīdzat Stenfordas Universitātes zinātniekiem atrast līdzekļus daudzu mūsdienās izplatītu slimību ārstēšanai.</item>
+        <item>Folding (latviski — satīšanās) attiecas attiecas uz proteīnu uzvedību mūsu ķermenī. Proteīnu satīšanās pētījuma veikšanai ir nepieciešams tik daudz aprēķinu, ka Stenfordas Universitāte lūdz cilvēkiem ziedot savu tālruņu apstrādes jaudu, lai tiktu galā ar dažiem no cipariem. Kad gulēsit, Stenfordas Universitāte nosūtīs uz jūsu tālruni kādu satīšanās problēmu, kas tam būs jāatrisina. Kad aprēķini būs pabeigti, rezultāti tiks nosūtīti atpakaļ uz Stenfordu.</item>
+        <item>Plašāku informāciju par projektu Folding@Home varat atrast mājaslapā:\nfolding.stanford.edu</item>
+    </string-array>
+    <string name="powered_by">nodrošina</string>
+    <string name="private_date_safe_title">Jūsu privātie dati ir drošībā.</string>
+    <string name="private_date_safe_text">Šī lietotne nepiekļūt jūsu privātajiem datiem.</string>
+    <string name="no_cost_mobile_data_title">Nav maksas par mob. datiem</string>
+    <string name="no_cost_mobile_data_text">Tālrunim ir jābūt savienotam ar Wi-Fi tīklu.</string>
+    <string name="battery_not_drained_title">Akumulators netiks iztukšots</string>
+    <string name="battery_not_drained_text">Tālrunim ir jābūt pievienotam pie lādētāja un pilnībā uzlādētam (100%)</string>
+    <string name="time_string_weeks">%1$dn %2$dd %3$dh</string>
+    <string name="share_facebook_success">Sekmīgi kopīgots pakalpojumā Facebook</string>
+    <string name="share_facebook_error">Nevarēja kopīgot pakalpojumā Facebook</string>
+    <string name="waiting">Kopīgo...</string>
+    <string name="share_object_message">Esmu viens no %1$d palīgiem un esmu ieguldījis %2$s aprēķināšanas laika.</string>
+    <string name="notification_service_executing_job">Folding@Home darbojas.\nJūs sniedzat ieguldījumu pētījumā.</string>
+    <string name="notification_service_not_executing">Folding@Home nedarbojas.\nNe visi sākšanas nosacījumi ir izpildīti.</string>
+    <string name="settings">Iestatījumi</string>
+    <string name="start_contribute">Sākuma laiks</string>
+    <string name="start_contribute_text">Iestatīt aprēķināšanas sākuma laiku</string>
+    <string name="settings_auto_wifi_msg">Ieguldījuma laikā iespējot Wi-Fi</string>
+    <string name="notifications">Paziņojumi</string>
+    <string name="settings_display_notification">Aprēķinu beigās nosūtīt paziņojumus</string>
+    <string name="contribution_interval_time">Ieguldījuma ilgums</string>
+    <string name="wizard_step">%1$d. darbība no %2$d</string>
+    <string name="no_opencl">Šī ierīce neatbalsta OpenCL. Šī bibliotēka ir būtiski svarīga darbu veikšanai. Vai vēlaties turpināt?</string>
+    <string name="connect_to_wifi">Tālrunis ir jāsavieno ar Wi-Fi tīklu</string>
+    <string name="processing_time_title">Aprēķināšanas laiks ir no %1$s līdz %2$s</string>
+    <string name="processing_time_text">Sākuma laiku varat mainīt iestatījumos.</string>
+    <string name="will_start_when">Sākšanas nosacījumi</string>
+    <string name="share_facebook_contribution">Kopīgot pakalpojumā Facebook</string>
+    <string name="app_disabled_title">Lietotne atspējota</string>
+    <string name="app_disabled_message">Šī lietotne ir atspējota, un to vairs nevar izmantot.</string>
+    <string name="stand_by">Gaidstāve</string>
+    <string name="helping_out">Darbojas</string>
+    <string name="disabled">Atspējota</string>
+    <string name="data_usage">Datu lietojums</string>
+    <string name="data_usage_text">Jūsu ierīcei ir jābūt savienotai ar Wi-Fi tīklu.\nJa izmantojat Wi-Fi savienojumu ar skaitītāju vai maksas Wi-Fi savienojumu, jums var tikt prasīta maksa par datu lietojumu.\n\nPapildinformāciju varat iegūt no sava interneta pakalpojumu sniedzēja.</string>
+    <string name="whats_new">Kas jauns</string>
+    <string name="whats_new_contribution_status">Tagad varat redzēt nepieciešamo nosacījumu statusu, lai palaistu lietotni Folding@Home.</string>
+    <string name="whats_new_disable_indicator">Norāda, ka lietotne ir atslējota.</string>
+    <string name="whats_new_conditions_indicator">Norāda, ka Wi-Fi ir pieejams, taču tālrunim ir jāpievieno lādētājs un akumulatoram ir jābūt pilnībā uzlādētam.</string>
+    <string name="whats_new_enable_indicator">Norāda, ka visi nepieciešamie nosacījumi ir izpildīti.</string>
+    <string name="whats_new_power_button">Tagad lietotni ir vieglāk iespējot vai atspējot. Varat arī redzēt lietotnes Folding@Home pašreizējo statusu.</string>
+    <string name="whats_new_login">Tagad varat pieteikties un augšupielādēt savu ieguldījumu.</string>
+    <string name="whats_new_contribution_indicators">Uzlabotas ikonas, lai viegli varētu izsekot savu ieguldījumu statusam.</string>
+    <string name="whats_new_research_type">Norāda pētījumu, kurā veicat ieguldījumu.</string>
+    <string name="whats_new_people_helping">Norāda cilvēku skaitu, kas lieto Folding@Home.</string>
+    <string name="whats_new_contributed_time">Norāda kopējo ieguldījumā patērēto laiku.</string>
+    <string name="skip">Izlaist</string>
+    <string name="turn_on">Ieslēgt</string>
+    <string name="turn_off">Izslēgt</string>
+    <string name="active_research">Aktīva izpēte</string>
+    <string name="notification_contribution_time">Paldies! Šī ierīce pēdējo 24 h laikā ir nodrošinājusi %1$s.</string>
+    <string name="action_login">Pierakstīties</string>
+    <string name="action_logout">%1$s (Izrakstīties)</string>
+    <string name="action_leaderboards">Labākie rezultāti</string>
+    <string name="action_achievements">Sasniegumi</string>
+    <string name="action_invite_friends">Uzaicināt draugus</string>
+    <string name="notification_service_turn_on">Ieslēdziet, lai turpinātu piedalīties</string>
+    <string name="toast_logout">Lietotājs ir atteicies</string>
+    <string name="toast_network_unavailable">Tīkls nav pieejams</string>
+    <string name="paused">Pauzēts</string>
+    <string name="action_enable">Aktivizēt</string>
+    <string name="action_disable">Atspējot</string>
+    <string name="pause">Pauzēt</string>
+    <string name="new_indicators">Jauni indikatori</string>
+    <string name="new_power_button">Jauna ieslēgšanas/izslēgšanas poga</string>
+    <string name="sign_in_google_game_service">Pierakstīties Google Play™ spēļu pak.</string>
+    <string name="view_more">Skatīt vairāk</string>
+    <string name="toast_achievements_disabled">Pierakstieties, lai skatītu sasniegumus!</string>
+    <string name="toast_leaderboards_disabled">Pierakstieties, lai skatītu labākos rezultātus!</string>
+    <string name="contribution_details">Informācija par ieguldījumu</string>
+    <string name="project_description">Projekta apraksts</string>
+    <string name="week">Nedēļa</string>
+    <string name="month">Mēnesis</string>
+    <string name="all_time">Kopējais laiks</string>
+    <string name="time_string_hours_only">%1$d h</string>
+    <string name="chart_week_label">%1$d. nedēļa</string>
+    <string name="hours_contributed_label_plural">Ieguldītas %1$d stundas</string>
+    <string name="hours_contributed_label_singular">Ieguldīta 1 stunda</string>
+    <string name="contributed_no_data">Nav ieguldījumu atlasītajā periodā</string>
+    <string name="no_charger_tile">Nav lādētāja</string>
+    <string name="low_battery_tile">Zems akum. uzlādes līm.</string>
+    <string name="no_wifi_tile">Nav Wi-Fi</string>
+    <string name="no_charger_text">Ierīce ir jāpievieno lādētājam</string>
+    <string name="low_battery_text">Lai sāktu ieguldījumu, akumulatora uzlādes līmenim ir jābūt vismaz 98%</string>
+    <string name="no_wifi_text">Lai sāktu ieguldījumu, izveidojiet savienojumu ar Wi-Fi tīklu.</string>
+</resources>

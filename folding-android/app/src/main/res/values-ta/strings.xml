@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  Licensed under the LICENSE.
+  Copyright 2017, Sony Mobile Communications Inc.
+-->
+<resources xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="notification_service_finished_job_executed">அறிவியலில் பங்களித்துள்ளீர்கள்</string>
+    <string name="notification_service_finished_failed">தொ. நிபந்தனை. பூர்த்திசெய்யப்படவி.</string>
+    <string name="contributed_time">வழங்கிய நேரம்</string>
+    <string name="people_helping">உதவுபவர்கள்</string>
+    <string name="research_type">ஆய்வின் வகை</string>
+    <string name="research_type_unavailable">கிடைக்கவில்லை</string>
+    <string name="setup_guide">அமைவு வழிகா.</string>
+    <string name="legal">சட்ட.</string>
+    <string name="share">பகிர்</string>
+    <string name="welcome">Folding@Home க்கு வருக</string>
+    <string name="read_more">மேலும் படி</string>
+    <string name="more_info">மேலும் தகவல்</string>
+    <string name="finish">முடி</string>
+    <string name="wizard_welcome_to_folding_subtitle">அல்சைமர், பார்கின்சன், கேன்சரை குணப்படுத்த உதவ விரும்புகிறீர்களா?</string>
+    <string name="wizard_welcome_to_folding_text">நீங்கள் உறங்கும்போது, உங்கள் ஃபோன் அறிவியல் கணக்கீடுகளை மேற்கொண்டு, பல நோய்களைத் தீர்க்க ஸ்டான்போர்ட் பல்கலைக்கழக அறிவியலறிஞர்களுக்கு உதவும்.</string>
+    <string-array name="help_find_cure">
+        <item>Folding@Home இல் பதிவுசெய்வதன் மூலம், நீங்கள் பயன்படுத்தாதபோது, ஃபோனின் செயலாக்க உரிமையை வழங்குவதன் மூலம், மிகவும் பொதுவான நோய்களைக் கண்டறிய உதவுவதில் ஸ்டான்போர்ட் பல்கலைக்கழக அறிவியலறிஞர்களுக்கு உதவுகிறீர்கள்.</item>
+        <item>நமது உடலின் புரோட்டின் செயல்பாடுகளையே ஃபோல்டிங் எனப்படுகின்றன. இந்த ஆய்விற்கு பல கணக்கீடுகள் தேவை. சில எண்களைப் பெற பயன்படுத்தாத ஃபோனின் செயலாக்க ஆற்றலை வழங்கும்படி Stanford University கேட்பார்கள். நீங்கள் உறங்கும்போது, உங்கள் ஃபோன் தீர்ப்பதற்கான ஃபோல்டிங் கணக்கை Stanford University ஐச் சார்ந்தவர்கள் அனுப்பி வைப்பார்கள். கணக்கீடு முடிந்ததும், முடிவுகள் Stanford க்கு அனுப்பப்படும்.</item>
+        <item>முகப்பு பக்கத்தில், Folding@Home குறித்த கூடுதல் தகவலைக் காணலாம்:\nfolding.stanford.edu</item>
+    </string-array>
+    <string name="powered_by">வழங்கியது</string>
+    <string name="private_date_safe_title">தனிப்பட்ட தக. பாதுகாக்.</string>
+    <string name="private_date_safe_text">தனிப்பட்ட தரவை இந்தப் பயன்பாட்டால் அணுக முடியாது.</string>
+    <string name="no_cost_mobile_data_title">மொபைல் தரவு இலவசம்</string>
+    <string name="no_cost_mobile_data_text">Wi-Fi நெட்வொர்க்குடன் ஃபோன் இணைப்பு தேவை.</string>
+    <string name="battery_not_drained_title">பேட்டரி இழக்கப்படாது</string>
+    <string name="battery_not_drained_text">ஃபோன், சார்ஜருடன் இணைக்கப்பட்டு, முழு (100%) சார்ஜில் இருக்க வேண்டும்</string>
+    <string name="time_string_weeks">%1$d வா %2$d நா %3$d ம</string>
+    <string name="time_string_days">%1$dநா %2$dம %3$dநி</string>
+    <string name="time_string_hours">%1$dம %2$dநி</string>
+    <string name="share_facebook_success">Facebook இல் பகிரப்பட்டது</string>
+    <string name="share_facebook_error">Facebook இல் பகிர முடியாது</string>
+    <string name="waiting">பகிர்கிறது…</string>
+    <string name="share_object_message">%1$d பேரில் நானும் ஒருவர், கணக்கீடு நேரத்தில் %2$s ஐ வழங்கியுள்ளேன்!</string>
+    <string name="notification_service_executing_job">Folding@Home இயங்கு.\nஅறிவியல் ஆய்வில் வழ.</string>
+    <string name="notification_service_not_executing">Folding@Home இயங்கவில்லை.\nஎந்த நிப. தீர்க்கப்படவில்லை.</string>
+    <string name="settings">அமைப்பு</string>
+    <string name="start_contribute">தொடக்க நேரம்</string>
+    <string name="start_contribute_text">கணக்கிட, தொடக்க நேரம் அமை</string>
+    <string name="settings_auto_wifi_msg">வழங்கலின்போது Wi-Fi ஐ இயக்கு</string>
+    <string name="notifications">அறிவிப்புகள்</string>
+    <string name="settings_display_notification">கணக்கீட்டின் முடிவில் அறிவிப்புகள் அனுப்பு</string>
+    <string name="contribution_interval_time">வழங்கிய காலஅளவு</string>
+    <string name="wizard_step">படி %1$d/%2$d</string>
+    <string name="no_opencl">இந்தச் சாதனம் OpenCL ஐ ஆதரிக்கவில்லை. பணிகளைச் செயல்படுத்த இந்த நூலகம் அவசியம். தொடர விருப்பமா?</string>
+    <string name="connect_to_wifi">ஃபோன், Wi-Fi நெட்வொர்க். இணைக்கப்பட்டிருக்க வேண்டும்</string>
+    <string name="processing_time_title">கணக்கீடு வரம்பு: %1$s – %2$s</string>
+    <string name="processing_time_text">அமைப்புகளில் தொடக்க நேரத்தை மாற்றலாம்.</string>
+    <string name="will_start_when">தொடக்க நிலைகள்</string>
+    <string name="share_facebook_contribution">Facebook இல் பகிர்</string>
+    <string name="app_disabled_title">பயன்பாடு முடக்கப்பட்டது</string>
+    <string name="app_disabled_message">இந்தப் பயன்பாடு முடக்கப்பட்டது, இனி பயன்படுத்த முடியாது.</string>
+    <string name="stand_by">காத்திருப்பு முறைமை</string>
+    <string name="helping_out">செயல்படுத்துகிறது</string>
+    <string name="disabled">முடக்கியுள்ளீர்கள்</string>
+    <string name="data_usage">தரவு பயன்பாடு</string>
+    <string name="data_usage_text">உங்கள் சாதனம் Wi-Fi பிணையத்துடன் இணைக்கப்பட வேண்டும்.\nகட்டணம் செலுத்தும் அல்லது கட்டண Wi-Fi இணைப்பைப் பயன்படுத்தினால், தரவு பயன்பாட்டிற்கு கட்டணம் விதிக்கப்படலாம்.\n\nகூடுதல் தகவலுக்கு இணைய சேவை வழங்குநரைத் தொடர்புகொள்ளவும்.</string>
+    <string name="whats_new">புதிய அம்சங்கள்</string>
+    <string name="whats_new_contribution_status">இப்போது Folding@Home ஐ இயக்கத் தேவைப்படும் நிபந்தனைகளின் நிலையைப் பார்க்கலாம்.</string>
+    <string name="whats_new_disable_indicator">பயன்பாடு முடக்கப்பட்டுள்ளது என்பதைக் குறிக்கிறது.</string>
+    <string name="whats_new_conditions_indicator">Wi-Fi தயாராக உள்ளதைக் குறிக்கிறது, ஆனால் சார்ஜருடன் மொபைல் இணைக்கப்பட்டு, பேட்டரி 100% சார்ஜ் செய்யப்பட வேண்டும்.</string>
+    <string name="whats_new_enable_indicator">எல்லா தேவைகளும் தயாராக உள்ளன என்பதைக் குறிக்கிறது.</string>
+    <string name="whats_new_power_button">இப்போது பயன்பாட்டை எளிதாக இயக்கலாம் அல்லது முடக்கலாம். Folding@Home இன் நடப்பு நிலையையும் பார்க்கலாம்.</string>
+    <string name="whats_new_login">இப்போது உள்நுழைந்து, உங்கள் பங்களிப்புகளை ஏற்றலாம்.</string>
+    <string name="whats_new_contribution_indicators">உங்கள் பங்கேற்பு நிலையைத் கண்காணிப்பதற்காக மேம்படுத்தப்பட்ட ஐகான்கள்.</string>
+    <string name="whats_new_research_type">நீங்கள் பங்களிக்கும் ஆராய்ச்சியைக் குறிக்கிறது.</string>
+    <string name="whats_new_people_helping">Folding@Home ஐப் பயன்படுத்துவோரின் எண்ணிக்கையைக் குறிக்கிறது.</string>
+    <string name="whats_new_contributed_time">நீங்கள் பங்களித்த மொத்த நேரத்தைக் குறிக்கிறது.</string>
+    <string name="skip">தவிர்</string>
+    <string name="turn_on">இயக்கு</string>
+    <string name="turn_off">அணை</string>
+    <string name="active_research">செயலிலுள்ள ஆய்வு</string>
+    <string name="notification_contribution_time">நன்றி. கடந்த 24மணிநேரத்தில், இந்தச் சாதனம் %1$s பங்களித்துள்ளது.</string>
+    <string name="action_login">உள்நுழை</string>
+    <string name="action_logout">%1$s (வெளியேறு)</string>
+    <string name="action_leaderboards">லீடர்போர்டுகள்</string>
+    <string name="action_achievements">சாதனைகள்</string>
+    <string name="action_invite_friends">நண்பர். அழை</string>
+    <string name="notification_service_turn_on">தொடர்ந்து பங்களி. இயக்.</string>
+    <string name="toast_logout">வெளியேறிவிட்டீர்கள்</string>
+    <string name="toast_network_unavailable">பிணையம் கிடைக்கவில்லை</string>
+    <string name="paused">இடைநிறுத்தப்பட்டது</string>
+    <string name="action_enable">செயல்பெறச் செய்</string>
+    <string name="action_disable">முடக்கவும்</string>
+    <string name="pause">இடைநிறுத்து</string>
+    <string name="new_indicators">புதிய இன்டிகேட்டர்கள்</string>
+    <string name="new_power_button">புதிய பவர் பொத்தான்</string>
+    <string name="sign_in_google_game_service">Google Play™ கே. சே. உள்நுழைக</string>
+    <string name="view_more">காட்டு</string>
+    <string name="toast_achievements_disabled">சாதனைகளைப் பார்க்க உள்நுழைக!</string>
+    <string name="toast_leaderboards_disabled">லீடர்போர்டுகளைப் பார்க்க உள்நுழைக!</string>
+    <string name="contribution_details">பங்களிப்பு விவரங்கள்</string>
+    <string name="project_description">திட்ட விளக்கம்</string>
+    <string name="week">வாரம்</string>
+    <string name="month">மாதம்</string>
+    <string name="all_time">மொத்த நேரம்</string>
+    <string name="time_string_hours_only">%1$dம</string>
+    <string name="chart_week_label">வாரம் %1$d</string>
+    <string name="hours_contributed_label_plural">%1$d மணிநேரம் பங்களிக்கப்பட்டது</string>
+    <string name="hours_contributed_label_singular">1 மணிநேரம் பங்களிக்கப்பட்டது</string>
+    <string name="contributed_no_data">தேர்ந்தெடுத்த காலத்திற்கு பங்களிப்பு இல்லை</string>
+    <string name="no_charger_tile">மின்னேற்றி இல்லை</string>
+    <string name="low_battery_tile">பேட்டரி குறைவு</string>
+    <string name="no_wifi_tile">Wi-Fi இல்லை</string>
+    <string name="no_charger_text">சாதனத்தை மின்னேற்றியுடன் இணைக்க வேண்டும்</string>
+    <string name="low_battery_text">பங்களிப்பைத் தொடங்க பேட்டரி குறைந்தபட்சம் 98% மின்னேற்றப்பட்டிருக்க வேண்டும்</string>
+    <string name="no_wifi_text">பங்களிப்பைத் தொடங்க ஒரு Wi-Fi பிணையத்துடன் இணைக்கவும்.</string>
+</resources>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  Licensed under the LICENSE.
+  Copyright 2017, Sony Mobile Communications Inc.
+-->
+<resources xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="no_cost_mobile_data_text">Telefon perlu bersambung ke rangkaian WLAN.</string>
+    <string name="settings_auto_wifi_msg">Dayakan WLAN semasa menyumbang</string>
+    <string name="connect_to_wifi">Telefon perlu bersambung ke rangkaian WLAN</string>
+    <string name="data_usage_text">Peranti anda perlu disambungkan ke rangkaian WLAN.\nJika anda menggunakan sambungan WLAN bermeter atau berbayar, anda mungkin dicaj untuk penggunaan data.\n\nUntuk mendapatkan maklumat selanjutnya, rujuk pembekal khidmat Internet anda.</string>
+    <string name="whats_new_conditions_indicator">Menunjukkan bahawa WLAN bersedia, tetapi telefon perlu disambungkan ke pengecas dan bateri hendaklah dicas 100%.</string>
+    <string name="no_wifi_tile">Tiada WLAN</string>
+    <string name="no_wifi_text">Sambung ke rangkaian WLAN untuk memulakan sumbangan.</string>
+</resources>

@@ -1,0 +1,173 @@
+<!--
+  Licensed under the LICENSE.
+  Copyright 2017, Sony Mobile Communications Inc.
+-->
+
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.sonymobile.androidapp.gridcomputing"
+    android:installLocation="auto">
+
+    <compatible-screens>
+        <!-- xxxhdpi -->
+        <screen
+            android:screenDensity="640"
+            android:screenSize="small" />
+        <screen
+            android:screenDensity="640"
+            android:screenSize="normal" />
+        <screen
+            android:screenDensity="640"
+            android:screenSize="large" />
+        <screen
+            android:screenDensity="640"
+            android:screenSize="xlarge" />
+        <!-- xxhdpi -->
+        <screen
+            android:screenDensity="480"
+            android:screenSize="small" />
+        <screen
+            android:screenDensity="480"
+            android:screenSize="normal" />
+        <screen
+            android:screenDensity="480"
+            android:screenSize="large" />
+        <screen
+            android:screenDensity="480"
+            android:screenSize="xlarge" />
+
+        <!-- xhdpi -->
+        <screen
+            android:screenDensity="320"
+            android:screenSize="small" />
+        <screen
+            android:screenDensity="320"
+            android:screenSize="normal" />
+        <screen
+            android:screenDensity="320"
+            android:screenSize="large" />
+        <screen
+            android:screenDensity="320"
+            android:screenSize="xlarge" />
+
+        <!-- hdpi -->
+        <screen
+            android:screenDensity="240"
+            android:screenSize="small" />
+        <screen
+            android:screenDensity="240"
+            android:screenSize="normal" />
+        <screen
+            android:screenDensity="240"
+            android:screenSize="large" />
+        <screen
+            android:screenDensity="240"
+            android:screenSize="xlarge" />
+    </compatible-screens>
+
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+
+
+    <application
+        android:name="com.sonymobile.androidapp.gridcomputing.utils.ApplicationData"
+        android:allowBackup="false"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+
+        <meta-data
+            android:name="com.google.android.gms.games.APP_ID"
+            android:value="@string/app_id" />
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+
+        <activity
+            android:name="com.sonymobile.androidapp.gridcomputing.activities.WizardActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.sonymobile.androidapp.gridcomputing.activities.SummaryActivity"
+            android:exported="true"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.sonymobile.androidapp.gridcomputing.activities.ReportsActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.sonymobile.androidapp.gridcomputing.activities.ProjectDetailsActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.sonymobile.androidapp.gridcomputing.activities.AchievementsActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.Translucent"/>
+        <activity
+            android:name="com.sonymobile.androidapp.gridcomputing.activities.LauncherActivity"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar.Fullscreen">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="com.sonyericsson.category.SETUP_WIZARD_SETTING" />
+            </intent-filter>
+
+            <meta-data
+                android:name="com.sonyericsson.setupguide.PluginItemTitle"
+                android:resource="@string/app_name" />
+            <meta-data
+                android:name="com.sonyericsson.setupguide.PluginItemDescription"
+                tools:ignore="ManifestResource"
+                android:resource="@string/wizard_welcome_to_folding_text" />
+            <meta-data
+                android:name="com.sonyericsson.setupguide.PluginItemIcon"
+                android:resource="@drawable/ic_launcher" />
+        </activity>
+
+        <!-- FACEBOOK ACTIVITY -->
+        <activity
+            android:name="com.facebook.FacebookActivity"
+            android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize|orientation"
+            android:label="@string/app_name"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+
+        <meta-data
+            android:name="com.facebook.sdk.ApplicationId"
+            android:value="@string/fb_app_id" />
+
+        <service android:name="com.sonymobile.androidapp.gridcomputing.service.ComputeService">
+            <meta-data
+                android:name="com.sonyericsson.applicationid"
+                android:value="com.sonyericsson.sdo.appid.1" />
+        </service>
+
+        <receiver android:name="com.sonymobile.androidapp.gridcomputing.receivers.BootupReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+            </intent-filter>
+        </receiver>
+        <receiver android:name=".receivers.LanguageChangeReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.LOCALE_CHANGED" />
+            </intent-filter>
+        </receiver>
+        <receiver android:name=".receivers.AlarmReceiver" />
+
+       <!--Replace with your facebook content provider key-->
+        <provider
+            android:name="com.facebook.FacebookContentProvider"
+            android:authorities="<PLACE_YOUR_FACEBOOK_CONTENT_PROVIDER_HERE>"
+            android:exported="true" />
+    </application>
+</manifest>

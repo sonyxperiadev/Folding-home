@@ -1,0 +1,19 @@
+#!/bin/bash
+
+export TOOLCHAIN=$PWD/android-toolchain
+mkdir -p $TOOLCHAIN
+$1/build/tools/make-standalone-toolchain.sh \
+    --toolchain=aarch64-linux-android-4.9 \
+    --arch=arm64 \
+    --install-dir=$TOOLCHAIN \
+    --platform=android-21 --force
+export PATH=$TOOLCHAIN/bin:$PATH
+export AR=$TOOLCHAIN/bin/aarch64-linux-android-ar
+export CC=$TOOLCHAIN/bin/aarch64-linux-android-gcc
+export CXX=$TOOLCHAIN/bin/aarch64-linux-android-g++
+export LINK=$TOOLCHAIN/bin/aarch64-linux-android-g++
+
+./configure \
+    --without-snapshot \
+    --dest-cpu=arm64 \
+    --dest-os=android

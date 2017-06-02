@@ -1,0 +1,105 @@
+#!/bin/bash
+#
+#
+# Licensed under the LICENSE.
+# Copyright 2017, Sony Mobile Communications Inc.
+#
+#
+### BEGIN INIT INFO
+# Provides:             GridComputeJobServer
+# Required-Start:       $syslog $remote_fs
+# Required-Stop:        $syslog $remote_fs
+# Should-Start:         $local_fs
+# Should-Stop:          $local_fs
+# Default-Start:        2 3 4 5
+# Default-Stop:         0 1 6
+# Short-Description:    Grid Compute JobServer
+# Description:          Grid Compute JobServer
+### END INIT INFO
+
+# An application name to display in echo text.
+NAME="Grid Compute JobServer"
+# The full path to the directory containing the node binary.
+NODE_BIN_DIR=/usr/bin
+# The full path to the directory containing the forever binary.
+FOREVER_BIN_DIR=/usr/local/bin
+# Set the NODE_PATH to the Node.js main node_modules directory.
+NODE_PATH=/usr/local/lib/node_modules
+# The directory containing the application start Javascript file.
+# This directory is changed automatically based on the npm preinstall npm script
+APPLICATION_DIRECTORY=/opt/jobserver
+# The application start Javascript filename.
+APPLICATION_START=src/server.js
+# Process ID file path.
+PIDFILE=/var/run/jobserver.pid
+# Log file path.
+LOGFILE=/var/log/jobserver.log
+#
+
+# Add node to the path for situations in which the environment is passed.
+PATH=$FOREVER_BIN_DIR:$NODE_BIN_DIR:$PATH
+# Export all environment variables that must be visible for the Node.js
+# application process forked by Forever. It will not see any of the other
+# variables defined in this script.
+export NODE_PATH=$NODE_PATH
+
+start() {
+    echo "Starting $NAME"
+    # The pidfile contains the child process pid, not the forever process pid.
+    # We're only using it as a marker for whether or not the process is
+    # running.
+    cd $APPLICATION_DIRECTORY
+    forever --pidFile $PIDFILE --sourceDir $APPLICATION_DIRECTORY \
+        -a -l $LOGFILE --minUptime 5000 -d --spinSleepTime 2000 \
+        start $APPLICATION_START &
+    RETVAL=$?
+}
+
+stop() {
+    if [ -f $PIDFILE ]; then
+        echo "Shutting down $NAME"
+        # Tell Forever to stop the process. Note that doing it this way means
+        # that each application that runs as a service must have a different
+        # start file name, regardless of which directory it is in.
+        forever stop $APPLICATION_START
+        # Get rid of the pidfile, since Forever won't do that.
+        rm -f $PIDFILE
+        RETVAL=$?
+    else
+        echo "$NAME is not running."
+        RETVAL=0
+    fi
+}
+
+restart() {
+    echo "Restarting $NAME"
+    stop
+    start
+}
+
+status() {
+    echo "Status for $NAME:"
+    forever list
+    RETVAL=$?
+}
+
+case "$1" in
+    start)
+        start
+        ;;
+    stop)
+        stop
+        ;;
+    status)
+        status
+        ;;
+    restart)
+        restart
+        ;;
+    *)
+        echo "Usage: {start|stop|status|restart}"
+        exit 1
+        ;;
+esac
+exit $RETVAL
+

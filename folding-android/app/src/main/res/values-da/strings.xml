@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  Licensed under the LICENSE.
+  Copyright 2017, Sony Mobile Communications Inc.
+-->
+<resources xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="notification_service_finished_job_executed">Du har bidraget til forskningen</string>
+    <string name="notification_service_finished_failed">Alle startbetingelserne var ikke opfyldt</string>
+    <string name="contributed_time">Bidragstid</string>
+    <string name="people_helping">Personer hjælper til</string>
+    <string name="research_type">Forskningstype</string>
+    <string name="research_type_unavailable">Ikke tilgængelig</string>
+    <string name="setup_guide">Opsætningsvejledning</string>
+    <string name="legal">Juridiske oplysninger</string>
+    <string name="share">Del</string>
+    <string name="welcome">Velkommen til Folding@Home</string>
+    <string name="read_more">Læs mere</string>
+    <string name="more_info">Flere oplysninger</string>
+    <string name="finish">Afslut</string>
+    <string name="wizard_welcome_to_folding_subtitle">Vil du hjælpe med at finde kuren mod Alzheimers, Parkinson og kræft?</string>
+    <string name="wizard_welcome_to_folding_text">Din telefon kan foretage videnskabelige beregninger, mens du sover, og hjælpe forskere ved Stanford University med at finde en kur mod en række sygdomme.</string>
+    <string-array name="help_find_cure">
+        <item>Når du tilmelder dig Folding@Home, hjælper du forskerne ved Stanford University i deres søgen efter en kur mod de mest almindelige sygdomme ved at donere din telefons processorkraft, når du ikke selv anvender den.</item>
+        <item>Foldning refererer til kroppens proteinaktiviteter. Forskningen i proteinfoldning kræver så mange beregninger, at Stanford University beder folk om at donere deres telefoners ubrugte processorkraft til at beregne nogle af tallene. Når du sover, sender Stanford University et foldningsproblem, som din telefon skal løse. Når beregningerne er fuldført, sendes resultaterne tilbage til Stanford.</item>
+        <item>Du kan få flere oplysninger om Folding@Home på webstedet:\nfolding.stanford.edu</item>
+    </string-array>
+    <string name="powered_by">leveret af</string>
+    <string name="private_date_safe_title">Dine private oplysninger er sikre.</string>
+    <string name="private_date_safe_text">Denne app kan ikke få adgang til dine personlige oplysninger.</string>
+    <string name="no_cost_mobile_data_title">Du skal ikke betale for mobildata</string>
+    <string name="no_cost_mobile_data_text">Telefonen skal være forbundet med et Wi-Fi-netværk.</string>
+    <string name="battery_not_drained_title">Batteriet drænes ikke</string>
+    <string name="battery_not_drained_text">Telefonen skal være tilsluttet en oplader og helt opladet (100 %)</string>
+    <string name="time_string_weeks">%1$du %2$dd %3$dt.</string>
+    <string name="time_string_days">%1$dd %2$dt. %3$dm.</string>
+    <string name="time_string_hours">%1$dt. %2$dm.</string>
+    <string name="share_facebook_success">Blev delt på Facebook</string>
+    <string name="share_facebook_error">Kunne ikke dele på Facebook</string>
+    <string name="waiting">Deler ...</string>
+    <string name="share_object_message">Jeg er en ud af %1$d personer, som gør en forskel, og jeg har bidraget med en beregningstid på %2$s !</string>
+    <string name="notification_service_executing_job">Folding@Home kører.\nDu bidrager til videnskabelig forskning.</string>
+    <string name="notification_service_not_executing">Folding@Home kører ikke.\nAlle startbetingelserne blev ikke overholdt.</string>
+    <string name="settings">Indstillinger</string>
+    <string name="start_contribute">Starttidspunkt</string>
+    <string name="start_contribute_text">Indstil starttidspunkt for beregning</string>
+    <string name="settings_auto_wifi_msg">Aktivér Wi-Fi, mens du bidrager</string>
+    <string name="notifications">Beskeder</string>
+    <string name="settings_display_notification">Send beskeder, når beregningen er slut</string>
+    <string name="contribution_interval_time">Bidragsvarighed</string>
+    <string name="wizard_step">Trin %1$d/%2$d</string>
+    <string name="no_opencl">Denne enhed understøtter ikke OpenCL. Dette bibliotek er nødvendigt for at udføre jobs. Vil du fortsætte?</string>
+    <string name="connect_to_wifi">Telefonen skal være forbundet med et Wi-Fi-netværk</string>
+    <string name="processing_time_title">Beregningstiden er mellem %1$s–%2$s</string>
+    <string name="processing_time_text">Du kan skifte starttidspunktet i indstillingerne.</string>
+    <string name="will_start_when">Startbetingelser</string>
+    <string name="share_facebook_contribution">Del på Facebook</string>
+    <string name="app_disabled_title">Appen er deaktiveret</string>
+    <string name="app_disabled_message">Denne app er deaktiveret og kan ikke længere anvendes.</string>
+    <string name="stand_by">Standby</string>
+    <string name="helping_out">Hjælper til</string>
+    <string name="disabled">Deaktiveret</string>
+    <string name="data_usage">Dataforbrug</string>
+    <string name="data_usage_text">Din enhed skal have forbindelse til et Wi-Fi-netværk.\nHvis du anvender en forbrugsafregnet eller betalt Wi-Fi-forbindelse, skal du muligvis betale for dataforbruget.\n\nKontakt din internetudbyder, hvis du vil vide mere.</string>
+    <string name="whats_new">Nyheder</string>
+    <string name="whats_new_contribution_status">Nu kan du se status for de betingelser, der skal være opfyldt for at køre Folding@Home.</string>
+    <string name="whats_new_disable_indicator">Viser at appen er deaktiveret.</string>
+    <string name="whats_new_conditions_indicator">Viser, at Wi-Fi er klar, men telefonen skal være tilsluttet en oplader, og batteriet skal være 100 % opladet.</string>
+    <string name="whats_new_enable_indicator">Viser, at alle betingelser er opfyldt.</string>
+    <string name="whats_new_power_button">Nu er det lettere at aktivere og deaktivere appen. Du kan også se den aktuelle status for Folding@Home.</string>
+    <string name="whats_new_login">Nu kan du logge på og overføre dit bidrag.</string>
+    <string name="whats_new_contribution_indicators">Forbedrede ikoner, så du nemt kan holde styr på status for dit bidrag.</string>
+    <string name="whats_new_research_type">Viser den forskning, du støtter.</string>
+    <string name="whats_new_people_helping">Viser antal personer, der anvender Folding@Home.</string>
+    <string name="whats_new_contributed_time">Viser den samlede tid, du har bidraget med.</string>
+    <string name="skip">Spring over</string>
+    <string name="turn_on">Slå til</string>
+    <string name="turn_off">Slå fra</string>
+    <string name="active_research">Aktiv forskning</string>
+    <string name="notification_contribution_time">Tak. Denne enhed har bidraget med %1$s i løbet af det seneste døgn.</string>
+    <string name="action_login">Log på</string>
+    <string name="action_logout">%1$s (Log af)</string>
+    <string name="action_achievements">Pokaler</string>
+    <string name="action_invite_friends">Invitér venner</string>
+    <string name="notification_service_turn_on">Slå til for at fortsætte med at bidrage</string>
+    <string name="toast_logout">Logget af</string>
+    <string name="toast_network_unavailable">Netværk ikke tilgængeligt</string>
+    <string name="paused">Pauset</string>
+    <string name="action_enable">Aktiver</string>
+    <string name="action_disable">Deaktiver</string>
+    <string name="pause">Sæt på pause</string>
+    <string name="new_indicators">Nye indikatorer</string>
+    <string name="new_power_button">Ny til/fra-knap</string>
+    <string name="sign_in_google_game_service">Log på Google Play™ Games Services</string>
+    <string name="view_more">Vis mere</string>
+    <string name="toast_achievements_disabled">Log på for at få vist resultaterne!</string>
+    <string name="toast_leaderboards_disabled">Log på for at få vist vindertavlerne!</string>
+    <string name="contribution_details">Bidragsoplysninger</string>
+    <string name="project_description">Projektbeskrivelse</string>
+    <string name="week">Uge</string>
+    <string name="month">Måned</string>
+    <string name="all_time">Samlet tid</string>
+    <string name="time_string_hours_only">%1$d t.</string>
+    <string name="chart_week_label">Uge %1$d</string>
+    <string name="hours_contributed_label_plural">Bidraget %1$d timer</string>
+    <string name="hours_contributed_label_singular">Bidraget 1 time</string>
+    <string name="contributed_no_data">Intet bidrag i den valgte periode</string>
+    <string name="no_charger_tile">Ingen oplader</string>
+    <string name="low_battery_tile">Lavt batteriniveau</string>
+    <string name="no_wifi_tile">Ingen Wi-Fi</string>
+    <string name="no_charger_text">Enheden skal sluttes til en oplader</string>
+    <string name="low_battery_text">Batteriet skal være mindst 98 % opladet for at starte bidraget</string>
+    <string name="no_wifi_text">Opret forbindelse til et Wi-Fi-netværk for at starte bidraget.</string>
+</resources>

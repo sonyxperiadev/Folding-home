@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  Licensed under the LICENSE.
+  Copyright 2017, Sony Mobile Communications Inc.
+-->
+<resources xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="no_cost_mobile_data_text">Das Telefon muss mit einem WLAN-Netzwerk verbunden sein.</string>
+    <string name="wifi">WLAN</string>
+    <string name="settings_auto_wifi_msg">WLAN während Beteiligung aktivieren</string>
+    <string name="connect_to_wifi">Das Telefon muss mit einem WLAN-Netzwerk verbunden sein.</string>
+    <string name="data_usage_text">Ihr Gerät muss über eine Verbindung mit einem WLAN-Netzwerk verfügen.\nWenn Sie eine kostenpflichtige WLAN-Verbindung verwenden, können Kosten für die Datennutzung entstehen.\n\nFragen Sie Ihren Internetanbieter nach Einzelheiten.</string>
+    <string name="whats_new_conditions_indicator">Zeigt an, dass WLAN bereit ist, das Mobiltelefon muss jedoch an ein Ladegerät angeschlossen sein und der Akku einen Ladestand von 100% aufweisen.</string>
+    <string name="no_wifi_tile">Kein WLAN</string>
+    <string name="no_wifi_text">Stellen Sie eine Verbindung zu einem WLAN-Netzwerk her, um die Mitwirkung zu starten.</string>
+</resources>

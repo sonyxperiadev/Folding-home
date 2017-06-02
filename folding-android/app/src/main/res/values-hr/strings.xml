@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  Licensed under the LICENSE.
+  Copyright 2017, Sony Mobile Communications Inc.
+-->
+<resources xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="notification_service_finished_job_executed">Uspješno ste dali svoj doprinos znanosti</string>
+    <string name="notification_service_finished_failed">Nisu zadovoljeni svi početni uvjeti</string>
+    <string name="contributed_time">Vrijeme davanja doprinosa</string>
+    <string name="people_helping">Osobe koje pružaju pomoć</string>
+    <string name="research_type">Vrsta istraživanja</string>
+    <string name="research_type_unavailable">Nedostupan</string>
+    <string name="setup_guide">Vodič za postavljanje</string>
+    <string name="legal">Pravne informacije</string>
+    <string name="share">Dijeli</string>
+    <string name="welcome">Dobro došli u Folding@Home</string>
+    <string name="read_more">Pročitajte više</string>
+    <string name="more_info">Više informacija</string>
+    <string name="finish">Završi</string>
+    <string name="wizard_welcome_to_folding_subtitle">Želite li pomoći da se pronađu lijekovi za Alzheimerovu, Parkinsonovu bolest i rak?</string>
+    <string name="wizard_welcome_to_folding_text">Telefon može izvoditi znanstvene proračune dok spavate i na taj način pomoći znanstvenicima sveučilišta Stanford u pronalaženju lijekova za mnoga oboljenja.</string>
+    <string-array name="help_find_cure">
+        <item>Ako se prijavite u projekt Folding@Home i ustupite snagu procesora svojega telefona u vrijeme kada ga vi ne upotrebljavate, pomoći ćete znanstvenicima sveučilišta Stanford u njihovim istraživanjima i pokušajima da pronađu lijekove za mnoga od najčešćih oboljenja.</item>
+        <item>Pojam \"savijanja\" odnosi se na aktivnosti bjelančevina u našem tijelu. U istraživanju savijanja bjelančevina potrebno je toliko izračunavanja da je sveučilište Stanford zatražilo od korisnika telefona da doniraju neiskorištene resurse procesora svojih pametnih telefona kako bi se obavile brojne operacije. Dok spavate, sveučilište Stanford će poslati problem savijanja koji će vaš mobilni telefon riješiti. Kada izračunavanja budu gotova, rezultati će se poslati natrag sveučilištu Stanford.</item>
+        <item>Više pojedinosti o projektu Folding@Home možete naći na naslovnici:\nfolding.stanford.edu</item>
+    </string-array>
+    <string name="powered_by">omogućuje</string>
+    <string name="private_date_safe_title">Vaši su osobni podaci sigurni.</string>
+    <string name="private_date_safe_text">Ta aplikacija ne može pristupati vašim osobnim podacima.</string>
+    <string name="no_cost_mobile_data_title">Prijenos mob. pod. se ne napl.</string>
+    <string name="no_cost_mobile_data_text">Telefon mora biti povezan na Wi-Fi mrežu.</string>
+    <string name="battery_not_drained_title">Bat. se neće potpuno ispr.</string>
+    <string name="battery_not_drained_text">Telefon se mora spojiti na punjač i baterija mora biti potpuno napunjena (100%)</string>
+    <string name="time_string_weeks">%1$dtj. %2$dd %3$dh</string>
+    <string name="share_facebook_success">Uspješno podijeljeno na Facebooku</string>
+    <string name="share_facebook_error">Ne može se dijeliti na Facebooku</string>
+    <string name="waiting">Dijeljenje...</string>
+    <string name="share_object_message">Ja sam jedan od %1$d sudionika koji pružaju pomoć i moj doprinos je %2$s vremena za izračunavanje!</string>
+    <string name="notification_service_executing_job">Folding@Home je u radu.\nDoprinosite znanstvenom istraživanju.</string>
+    <string name="notification_service_not_executing">Aplikacija Folding@Home se ne izvodi.\nNisu zadovoljeni svi uvjeti za pokretanje.</string>
+    <string name="settings">Postavke</string>
+    <string name="start_contribute">Vrijeme početka</string>
+    <string name="start_contribute_text">Postavite vrijeme početka izračunavanja</string>
+    <string name="settings_auto_wifi_msg">Omogućite Wi-Fi za vrijeme sudjelovanja</string>
+    <string name="notifications">Obavijesti</string>
+    <string name="settings_display_notification">Pošalji obavijesti na kraju izračunavanja</string>
+    <string name="contribution_interval_time">Trajanje davanja doprinosa</string>
+    <string name="wizard_step">Korak %1$d/%2$d</string>
+    <string name="no_opencl">Ovaj uređaj ne podržava biblioteku OpenCL. Ova biblioteka bitna je za izvršavanje poslova. Želite li nastaviti?</string>
+    <string name="connect_to_wifi">Telefon mora biti povezan na Wi-Fi mrežu</string>
+    <string name="processing_time_title">Vrijeme izrač. je između %1$s – %2$s</string>
+    <string name="processing_time_text">Vrijeme početka možete promijeniti u Postavkama.</string>
+    <string name="will_start_when">Početni uvjeti</string>
+    <string name="share_facebook_contribution">Dijeli na Facebooku</string>
+    <string name="app_disabled_title">Aplikacija je onemogućena</string>
+    <string name="app_disabled_message">Ova aplikacija je onemogućena i više se ne može koristiti.</string>
+    <string name="stand_by">Čekanje</string>
+    <string name="helping_out">Pružanje pomoći</string>
+    <string name="disabled">Onemogućeno</string>
+    <string name="data_usage">Korištenje podataka</string>
+    <string name="data_usage_text">Uređaj mora biti povezan s Wi-Fi mrežom.\nAko koristite Wi-Fi vezu s plaćanjem ili mjerenjem podataka, promet podacima mogao bi vam se naplatiti.\n\nViše pojedinosti zatražite od svojega davatelja internetskih usluga.</string>
+    <string name="whats_new">Što je novo</string>
+    <string name="whats_new_contribution_status">Sada možete vidjeti status potrebnih uvjeta za pokretanje aplikacije Folding@Home.</string>
+    <string name="whats_new_disable_indicator">Prikazuje da je aplikacija deaktivirana.</string>
+    <string name="whats_new_conditions_indicator">Prikazuje da je Wi-Fi spreman, ali se telefon mora spojiti na punjač i baterija mora biti 100% puna.</string>
+    <string name="whats_new_enable_indicator">Prikazuje da su svi zahtjevi spremni.</string>
+    <string name="whats_new_power_button">Sada je lakše aktiviranje i deaktiviranje aplikacije. Također možete vidjeti trenutni status aplikacije Folding@Home.</string>
+    <string name="whats_new_login">Sada se možete prijaviti i poslati svoje priloge.</string>
+    <string name="whats_new_contribution_indicators">Poboljšane simbole za lakše praćenje status vaših priloga.</string>
+    <string name="whats_new_research_type">Prikazuje istraživanje kojemu ste dali svoj prilog.</string>
+    <string name="whats_new_people_helping">Prikazuje broj ljudi koji koriste aplikaciju Folding@Home.</string>
+    <string name="whats_new_contributed_time">Prikazuje ukupno vrijeme vaših priloga.</string>
+    <string name="skip">Preskoči</string>
+    <string name="turn_on">Uključite</string>
+    <string name="turn_off">Isključite</string>
+    <string name="active_research">Aktivna istraživanja</string>
+    <string name="notification_contribution_time">Hvala. U zadnjih 24 sata ovaj uređaj je dao doprinos %1$s.</string>
+    <string name="action_login">Prijava</string>
+    <string name="action_logout">%1$s (Odjava)</string>
+    <string name="action_leaderboards">Tablice</string>
+    <string name="action_achievements">Ostvarenja</string>
+    <string name="action_invite_friends">Pozovi prijatelje</string>
+    <string name="notification_service_turn_on">Uključite da nastav. davati doprinos</string>
+    <string name="toast_logout">Odjavljeni ste</string>
+    <string name="toast_network_unavailable">Mreža nije dostupna</string>
+    <string name="paused">Pauzirano</string>
+    <string name="action_enable">Omogući</string>
+    <string name="action_disable">Onemogući</string>
+    <string name="pause">Pauza</string>
+    <string name="new_indicators">Novi pokazatelji</string>
+    <string name="new_power_button">Novi gumb za uključivanje/isključivanje</string>
+    <string name="sign_in_google_game_service">Prijavite se u usl. igranja Google Play™</string>
+    <string name="view_more">Prikaži više</string>
+    <string name="toast_achievements_disabled">Prijavite se da biste vidjeli dostignuća!</string>
+    <string name="toast_leaderboards_disabled">Prijavite se da biste vidjeli tablice rezultata!</string>
+    <string name="contribution_details">Detalji o doprinosu</string>
+    <string name="project_description">Opis projekta</string>
+    <string name="week">Tjedan</string>
+    <string name="month">Mjesec</string>
+    <string name="all_time">Ukupno vrijeme</string>
+    <string name="time_string_hours_only">%1$d h</string>
+    <string name="chart_week_label">Tjedan %1$d</string>
+    <string name="hours_contributed_label_plural">Doprinos: %1$d h</string>
+    <string name="hours_contributed_label_singular">Doprinos: 1 h</string>
+    <string name="contributed_no_data">Nema doprinosa za odabrano razdoblje</string>
+    <string name="no_charger_tile">Nema punjača</string>
+    <string name="low_battery_tile">Niska napunjenost baterije</string>
+    <string name="no_wifi_tile">Nema Wi-Fi signala</string>
+    <string name="no_charger_text">Uređaj mora biti priključen na punjač</string>
+    <string name="low_battery_text">Da bi doprinos započeo, baterija mora biti napunjena najmanje 98 %</string>
+    <string name="no_wifi_text">Povežite se s Wi-Fi mrežom da biste pokrenuli doprinos.</string>
+</resources>

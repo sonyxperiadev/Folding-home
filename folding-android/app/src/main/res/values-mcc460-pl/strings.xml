@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  Licensed under the LICENSE.
+  Copyright 2017, Sony Mobile Communications Inc.
+-->
+<resources xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="no_cost_mobile_data_text">Telefon musi być połączony z siecią WLAN.</string>
+    <string name="settings_auto_wifi_msg">Włącz sieć WLAN podczas uczestnictwa</string>
+    <string name="connect_to_wifi">Telefon musi być połączony z siecią WLAN</string>
+    <string name="data_usage_text">Urządzenie musi być połączone z siecią WLAN.\nKorzystanie z ograniczonego bądź płatnego połączenia WLAN może spowodować naliczenie opłaty za wykorzystanie danych.\n\nWięcej informacji można uzyskać u usługodawcy internetowego.</string>
+    <string name="whats_new_conditions_indicator">Wskazuje, że sieć WLAN jest gotowa, ale telefon musi być podłączony do ładowarki, a bateria musi być w 100% naładowana.</string>
+    <string name="no_wifi_tile">Brak łączności WLAN</string>
+    <string name="no_wifi_text">Aby rozpocząć udział, połącz się z siecią WLAN.</string>
+</resources>

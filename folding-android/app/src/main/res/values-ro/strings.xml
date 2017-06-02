@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  Licensed under the LICENSE.
+  Copyright 2017, Sony Mobile Communications Inc.
+-->
+<resources xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="notification_service_finished_job_executed">Ați contribuit la dezvoltarea științei</string>
+    <string name="notification_service_finished_failed">Nu s-au întrunit toate condiţiile de pornire</string>
+    <string name="contributed_time">Durata contribuției</string>
+    <string name="people_helping">Persoane care contribuie</string>
+    <string name="research_type">Tipul cercetării</string>
+    <string name="research_type_unavailable">Indisponibil</string>
+    <string name="setup_guide">Ghid de configurare</string>
+    <string name="legal">Aspecte juridice</string>
+    <string name="share">Partajare</string>
+    <string name="welcome">Bun venit la Folding@Home!</string>
+    <string name="read_more">Citiți mai multe</string>
+    <string name="more_info">Informații suplimentare</string>
+    <string name="finish">Terminare</string>
+    <string name="wizard_welcome_to_folding_subtitle">Doriți să contribuiți la descoperirea remediului pentru Alzheimer, Parkinson și cancer?</string>
+    <string name="wizard_welcome_to_folding_text">Telefonul dvs. poate efectua calcule științifice în timp ce dormiți, ajutându-i astfel pe oamenii de știință de la Stanford University să găsească remedii pentru numeroase boli.</string>
+    <string-array name="help_find_cure">
+        <item>Înscriindu-vă la programul Folding@Home, veți ajuta oamenii de știință de la Stanford University în încercarea lor de a găsi remediul pentru multe dintre bolile comune ale omenirii, donând puterea de procesare a telefonului atunci când nu o folosiți.</item>
+        <item>Plierea (folding) constituie o activitate a proteinelor din organismele noastre. Deoarece pentru cercetarea plierii proteinelor este nevoie de un număr imens de calcule, Stanford University le adresează oamenilor rugămintea de a-și dona puterea de procesare neutilizată a telefoanelor pentru a obține o parte din rezultate. Atunci când dormiți, Stanford University va trimite pe telefonul dvs. o problemă de pliere pentru a fi rezolvată. După finalizarea calculelor, rezultatele sunt trimise înapoi la Stanford.</item>
+        <item>Puteți găsi mai multe informații despre Folding@Home pe pagina de pornire:\nfolding.stanford.edu</item>
+    </string-array>
+    <string name="powered_by">tehnologie oferită de</string>
+    <string name="private_date_safe_title">Datele private sunt în siguranță.</string>
+    <string name="private_date_safe_text">Această aplicație nu vă pot accesa datele private.</string>
+    <string name="no_cost_mobile_data_title">Fără costuri pt. date de tel. mob.</string>
+    <string name="no_cost_mobile_data_text">Telefonul trebuie să fie conectat la o rețea Wi-Fi.</string>
+    <string name="battery_not_drained_title">Bateria nu se va descărca</string>
+    <string name="battery_not_drained_text">Telefonul trebuie să fie conectat la un încărcător și încărcat complet (100%)</string>
+    <string name="time_string_weeks">%1$ds %2$dz %3$dh</string>
+    <string name="time_string_days">%1$d z %2$d h %3$d m</string>
+    <string name="time_string_hours">%1$d h %2$d m</string>
+    <string name="share_facebook_success">S-a partajat cu succes pe Facebook</string>
+    <string name="share_facebook_error">Nu se poate partaja pe Facebook</string>
+    <string name="waiting">Se distribuie…</string>
+    <string name="share_object_message">Sunt una dintre cele %1$d (de) persoane implicate în acest proiect, la care am contribuit cu o durată de calcule de %2$s!</string>
+    <string name="notification_service_executing_job">Folding@Home este în curs de executare.\nAstfel, contribuiți la cercetarea științifică.</string>
+    <string name="notification_service_not_executing">Folding@Home nu se execută.\nNu s-au întrunit toate cond. prelim.</string>
+    <string name="settings">Setări</string>
+    <string name="start_contribute">Oră pornire</string>
+    <string name="start_contribute_text">Activați ora de începere a calculelor</string>
+    <string name="settings_auto_wifi_msg">Se activează funcția Wi-Fi în timpul contribuției</string>
+    <string name="notifications">Notificări</string>
+    <string name="settings_display_notification">Se trimit notificări la terminarea calculelor</string>
+    <string name="contribution_interval_time">Durată contribuție</string>
+    <string name="wizard_step">Pasul %1$d/%2$d</string>
+    <string name="no_opencl">Acest dispozitiv nu acceptă OpenCL. Această bibliotecă este necesară pentru executarea sarcinilor. Doriți să continuați?</string>
+    <string name="connect_to_wifi">Telefonul trebuie să fie conectat la o rețea Wi-Fi.</string>
+    <string name="processing_time_title">Durata alocată calculelor: %1$s – %2$s</string>
+    <string name="processing_time_text">Puteți schimba ora începerii din setări.</string>
+    <string name="will_start_when">Condiții preliminare</string>
+    <string name="share_facebook_contribution">Partajare pe Facebook</string>
+    <string name="app_disabled_title">Aplicație dezactivată</string>
+    <string name="app_disabled_message">Această aplicație este dezactivată și nu mai poate fi utilizată.</string>
+    <string name="stand_by">În așteptare</string>
+    <string name="helping_out">Contribuie</string>
+    <string name="disabled">Dezactivată</string>
+    <string name="data_usage">Nivel utilizare date</string>
+    <string name="data_usage_text">Dispozitivul trebuie să fie conectat la o rețea Wi-Fi.\nDacă utilizați o conexiune Wi-Fi contorizată sau cu plată, este posibil să fiți taxat pentru utilizare de date.\n\nPentru informații suplimentare, contactați furnizorul de servicii Internet.</string>
+    <string name="whats_new">Noutăți</string>
+    <string name="whats_new_contribution_status">Acum puteți să vedeți starea condițiilor necesare pentru rularea aplicației Folding@Home.</string>
+    <string name="whats_new_disable_indicator">Indică faptul că aplicația este dezactivată.</string>
+    <string name="whats_new_conditions_indicator">Indică faptul că rețeaua Wi-Fi este pregătită, dar telefonul trebuie conectat la încărcător și bateria trebuie să fie 100% încărcată.</string>
+    <string name="whats_new_enable_indicator">Indică faptul că toate cerințele sunt îndeplinite.</string>
+    <string name="whats_new_power_button">Acum este mai simplu să activați sau să dezactivați aplicația. De asemenea, puteți să vedeți starea curentă a aplicației Folding@Home.</string>
+    <string name="whats_new_login">Acum puteți să vă conectați și să vă încărcați contribuțiile.</string>
+    <string name="whats_new_contribution_indicators">Pictograme optimizate pentru a vă monitoriza cu ușurință starea contribuțiilor.</string>
+    <string name="whats_new_research_type">Indică cercetarea la care contribuiți.</string>
+    <string name="whats_new_people_helping">Indică numărul de persoane care utilizează Folding@Home.</string>
+    <string name="whats_new_contributed_time">Indică durata totală a contribuțiilor dvs.</string>
+    <string name="skip">Ignorare</string>
+    <string name="turn_on">Activare</string>
+    <string name="turn_off">Dezactivare</string>
+    <string name="active_research">Cercetare activă</string>
+    <string name="notification_contribution_time">Vă mulțumim. Acest dispozitiv a contribuit cu %1$s în ultimele 24 h.</string>
+    <string name="action_login">Conectare</string>
+    <string name="action_logout">%1$s (deconectare)</string>
+    <string name="action_leaderboards">Clasamente</string>
+    <string name="action_achievements">Realizări</string>
+    <string name="action_invite_friends">Invitați prieteni</string>
+    <string name="notification_service_turn_on">Activați pt. a continua contribuția</string>
+    <string name="toast_logout">Deconectat</string>
+    <string name="toast_network_unavailable">Reţea indisponibilă</string>
+    <string name="paused">Întreruptă</string>
+    <string name="action_enable">Activare</string>
+    <string name="action_disable">Dezactivare</string>
+    <string name="pause">Pauză</string>
+    <string name="new_indicators">Indicatori noi</string>
+    <string name="new_power_button">Buton de pornire/oprire nou</string>
+    <string name="sign_in_google_game_service">Con. la Google Play™ Games Services</string>
+    <string name="view_more">Mai multe</string>
+    <string name="toast_achievements_disabled">Conectați-vă pentru a vedea realizările!</string>
+    <string name="toast_leaderboards_disabled">Conectați-vă pentru a vedea clasamentele!</string>
+    <string name="contribution_details">Detalii contribuţie</string>
+    <string name="project_description">Descriere proiect</string>
+    <string name="week">Săptămână</string>
+    <string name="month">Lună</string>
+    <string name="all_time">Timp total</string>
+    <string name="time_string_hours_only">%1$d h</string>
+    <string name="chart_week_label">Săptămâna %1$d</string>
+    <string name="hours_contributed_label_plural">%1$d ore de contribuţie</string>
+    <string name="hours_contributed_label_singular">1 oră de contribuţie</string>
+    <string name="contributed_no_data">Nicio contribuţie în perioada selectată</string>
+    <string name="no_charger_tile">Lipsă încărcător</string>
+    <string name="low_battery_tile">Baterie descărcată</string>
+    <string name="no_wifi_tile">Lipsă Wi-Fi</string>
+    <string name="no_charger_text">Dispozitivul trebuie conectat la un încărcător</string>
+    <string name="low_battery_text">Bateria trebuie să fie încărcată la cel puţin 98% pentru a începe contribuţia</string>
+    <string name="no_wifi_text">Conectaţi-vă la o reţea Wi-Fi pentru a începe contribuţia.</string>
+</resources>

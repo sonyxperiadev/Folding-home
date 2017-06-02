@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  Licensed under the LICENSE.
+  Copyright 2017, Sony Mobile Communications Inc.
+-->
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:color="@color/gray_disabled" android:state_enabled="false"/>
+    <item android:color="@color/orange" android:state_enabled="true" android:state_activated="false"/>
+    <item android:color="@color/green" android:state_enabled="true" android:state_activated="true"/>
+    
+</selector>

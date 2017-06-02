@@ -1,0 +1,35 @@
+#!/bin/bash
+
+export CURRENT_DIR=$PWD
+export FFTW_PATH=$CURRENT_DIR/fftw-3.3.6
+export PROJECT_PATH=$CURRENT_DIR/openmm
+export CMAKE_SOURCE_DIR=$PROJECT_PATH
+export TOOLCHAIN=$CURRENT_DIR/android-toolchain
+export ANDROID_NDK=$1
+mkdir -p $TOOLCHAIN
+$ANDROID_NDK/build/tools/make-standalone-toolchain.sh \
+    --toolchain=aarch64-linux-android-4.9 \
+    --arch=arm64 \
+    --install-dir=$TOOLCHAIN \
+    --platform=android-21 --force
+export PATH=$PATH:$TOOLCHAIN/bin
+export AR=aarch64-linux-android-ar
+export CC=aarch64-linux-android-gcc
+export CXX=aarch64-linux-android-g++
+export LINK=aarch64-linux-android-g++
+export PYTHON=/usr/bin/python
+
+mkdir $PROJECT_PATH/build
+cd $PROJECT_PATH/build
+
+# Compile cpu-features
+mkdir $ANDROID_NDK/sources/android/cpufeatures/jni
+cp $ANDROID_NDK/sources/android/cpufeatures/* $ANDROID_NDK/sources/android/cpufeatures/jni
+NDK_PROJECT_PATH=$ANDROID_NDK/sources/android/cpufeatures $ANDROID_NDK/ndk-build APP_ABI=all
+cp $ANDROID_NDK/sources/android/cpufeatures/obj/local/arm64-v8a/libcpufeatures.a $TOOLCHAIN/sysroot/usr/lib
+cp $ANDROID_NDK/sources/android/cpufeatures/cpu-features.h $TOOLCHAIN/sysroot/usr/include
+ # -DOPENCL_INCLUDE_DIR=$OPENCL_INCLUDE_DIR
+
+cmake -DANDROID_NDK=$ANDROID_NDK -DBUILD_TESTING=OFF -DOPENMM_BUILD_C_AND_FORTRAN_WRAPPERS=OFF -DOPENMM_BUILD_AMOEBA_PLUGIN=OFF -DOPENMM_BUILD_PYTHON_WRAPPERS=OFF -DANDROID=TRUE -DCMAKE_SYSTEM_NAME:STRING="Linux" -DOPENMM_BUILD_CPU_LIB=ON -DOPENMM_CPU_BUILDING_STATIC_LIBRARY=TRUE -DCMAKE_BUILD_TYPE=Release --stl=stlport -DOPENMM_BUILD_PME_PLUGIN=ON -DFFTW_INCLUDES=$FFTW_PATH/build/include/ -DFFTW_LIBRARY=$FFTW_PATH/build/lib/libfftw3f.a -DFFTW_THREADS_LIBRARY=$FFTW_PATH/build/lib/libfftw3f_threads.a -DCMAKE_CXX_FLAGS_RELEASE="-march=armv8-a -funsafe-math-optimizations -O3 -DNDEBUG" $PROJECT_PATH
+
+VERBOSE=1 make -j 5

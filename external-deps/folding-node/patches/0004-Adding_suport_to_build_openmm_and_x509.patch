@@ -1,0 +1,58 @@
+diff --git a/node.gyp b/node.gyp
+index d549e18..bfa62fe 100644
+--- a/node.gyp
++++ b/node.gyp
+@@ -90,6 +90,8 @@
+       'deps/v8/tools/tickprocessor.js',
+       'deps/v8/tools/SourceMap.js',
+       'deps/v8/tools/tickprocessor-driver.js',
++      'lib/x509.js',
++      'lib/openmm.js',
+     ],
+   },
+ 
+@@ -102,7 +104,9 @@
+         'node_js2c#host',
+         'deps/cares/cares.gyp:cares',
+         'deps/v8/tools/gyp/v8.gyp:v8',
+-        'deps/v8/tools/gyp/v8.gyp:v8_libplatform'
++        'deps/v8/tools/gyp/v8.gyp:v8_libplatform',
++        'deps/x509/binding.gyp:x509',
++        'deps/openmm/binding.gyp:openmm'
+       ],
+ 
+       'include_dirs': [
+@@ -110,7 +114,11 @@
+         'tools/msvs/genfiles',
+         'deps/uv/src/ares',
+         '<(SHARED_INTERMEDIATE_DIR)', # for node_natives.h
+-        'deps/v8' # include/v8_platform.h
++        'deps/v8', # include/v8_platform.h
++        'deps/nan',
++        'deps/x509/include',
++        'deps/openmm/include',
++        'deps/openmm/src'
+       ],
+ 
+       'sources': [
+@@ -195,6 +203,8 @@
+         '<@(library_files)',
+         # node.gyp is added to the project by default.
+         'common.gypi',
++        'deps/x509/src/addon.cc',
++        'deps/openmm/src/bindings.cc'
+       ],
+ 
+       'defines': [
+@@ -203,9 +213,11 @@
+         'NODE_WANT_INTERNALS=1',
+         # Warn when using deprecated V8 APIs.
+         'V8_DEPRECATION_WARNINGS=1',
++        'NODEJS'
+       ],
+ 
+ 
++      'cflags_cc': ['-frtti', '-fexceptions' ],
+       'conditions': [
+         [ 'node_tag!=""', {
+           'defines': [ 'NODE_TAG="<(node_tag)"' ],

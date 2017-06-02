@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  Licensed under the LICENSE.
+  Copyright 2017, Sony Mobile Communications Inc.
+-->
+<resources xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="notification_service_finished_job_executed">Դուք նպաստեցիք գիտության զարգացմանը</string>
+    <string name="notification_service_finished_failed">Ոչ բոլոր սկզբնական պայմաններն են բավարարվել</string>
+    <string name="contributed_time">Օգնթ տրմդրմ ժմնկը</string>
+    <string name="people_helping">Օգնություն տրամադրող մարդիկ</string>
+    <string name="research_type">Հետազոտության տեսակը</string>
+    <string name="research_type_unavailable">Անմատչելի է</string>
+    <string name="setup_guide">Տեղակայման ուղեցույց</string>
+    <string name="legal">Իրավական</string>
+    <string name="share">Համօգտագործում</string>
+    <string name="welcome">Բարի գալուստ Folding@Home</string>
+    <string name="read_more">Կարդալ ավելին</string>
+    <string name="more_info">Այլ տեղեկություններ</string>
+    <string name="finish">Ավարտել</string>
+    <string name="wizard_welcome_to_folding_subtitle">Ցանկանո՞ւմ եք նպաստել հետազոտական աշխատանքներին, որոնք կօգնեն բուժման միջոցներ գտնել այնպիսի հիվանդությունների դեմ, ինչպիսիք էն Ալցհեյմերի, Պարկինսոնի հիվանդությունները և քաղցկեղը:</string>
+    <string name="wizard_welcome_to_folding_text">Մինչդեռ դուք քնած եք, ձեր հեռախոսը կարող է գիտական հաշվարկներ կատարել և Սթենֆորդի համալսարանի գիտնականներին օգնել բուժման միջոցներ գտնել բազմաթիվ հիվանդությունների դեմ:</string>
+    <string-array name="help_find_cure">
+        <item>Գրանցվելով Folding@Home-ում՝ դուք թույլ եք տալիս օգտվել ձեր հեռախոսի տվյալների մշակման հնարավորություններից (երբ դուք ինքներդ այն չեք օգտագործում) և նպաստում եք Սթենֆորդի համալսարանի գիտնականների կողմից՝ առավել տարածված հիվանդությունների դեմ բուժման միջոցներ գտնելուն ուղղված գիտահետազոտական աշխատանքների կատարմանը:</item>
+        <item>Ոլորում բառը (folding) վերաբերում է մեր մարմիններում իրականացվող սպիտակուցային գործընթացներին: Սպիտակուցային ոլորման հետազոտական աշխատանքները հաշվարկների այնքան մեծ ծավալ են պահանջում, որ Սթենֆորդի համալսարանի մասնագետները մարդկանց խնդրում են իրենց հեռախոսների չօգտագործված հզորություններից օգտվելու հնարավորություն տալ՝ հաշվարկների մի մասը կատարելու նպատակով: Երբ դուք քնած եք, Սթենֆորդի համալսարանի մասնագետները ձեր հեռախոսին ուղարկում են ոլորման հետ առնչվող խնդիր՝ այն լուծելու համար: Հաշվարկներն ավարտելուց հետո արդյունքներն ուղարկվում են հետ՝ Սթենֆորդի համալսարան:</item>
+        <item>Folding@Home-ի վերաբերյալ լրացուցիչ տեղեկություններ կարող եք գտնել նախագծի հիմնաէջում՝\nfolding.stanford.edu</item>
+    </string-array>
+    <string name="powered_by">օժանդակող՝</string>
+    <string name="private_date_safe_title">Ձեր անհտկն տվյլ ապահվ են:</string>
+    <string name="private_date_safe_text">Այս աշխատածրագրերը ձեր անհատական տվյալներ մուտք չի գործում:</string>
+    <string name="no_cost_mobile_data_title">Բջջ տվյլ հմր վճրնր չկն</string>
+    <string name="no_cost_mobile_data_text">Հեռախոսը պետք է միացած լինի Wi-Fi ցանցին:</string>
+    <string name="battery_not_drained_title">Մարտկոցի լիցքը չի սպառվի</string>
+    <string name="battery_not_drained_text">Հեռախոսը պետք է լիցքավորիչին միացված և ամբողջությամբ լիցքավորված լինի (100%)</string>
+    <string name="time_string_weeks">%1$dշբթ %2$dօր %3$dժ</string>
+    <string name="time_string_days">%1$dօր %2$dժ %3$dր</string>
+    <string name="time_string_hours">%1$dժ %2$dր</string>
+    <string name="share_facebook_success">Հաջողությամբ համօգտագործվեց Facebook-ում</string>
+    <string name="share_facebook_error">Անհնար է համօգտագործել Facebook-ում</string>
+    <string name="waiting">Համօգտագործում…</string>
+    <string name="share_object_message">Ես օգնություն ցուցաբերած %1$d մարդկանցից մեկն եմ և հաշվարկներ կատարելու համար տրամադրել եմ այսքան ժամանակ՝ %2$s:</string>
+    <string name="notification_service_executing_job">Folding@Home-ը գրծրկվծ է:\nԴք նպստմ եք գտհտզ աշխ իրկնց:</string>
+    <string name="notification_service_not_executing">Folding@Home-ը գրծրկվծ չէ:\nՈչ բլր մկնրկ պյմննրն են բվրրվմ:</string>
+    <string name="settings">Պարամետրեր</string>
+    <string name="start_contribute">Մեկնարկի ժամանակը</string>
+    <string name="start_contribute_text">Տեղակայել հաշվարկների մեկնարկի ժամանակը</string>
+    <string name="settings_auto_wifi_msg">Միացնել Wi-Fi-ը օգնություն տրամադրելու ընթացքում</string>
+    <string name="notifications">Ծանուցումներ</string>
+    <string name="settings_display_notification">Հաշվարկների ավարտից հետո ուղարկել ծանուցումներ</string>
+    <string name="contribution_interval_time">Օգնության տրամադրման տևողությունը</string>
+    <string name="wizard_step">Քայլ %1$d/%2$d</string>
+    <string name="no_opencl">Այս սարքը չի աջակցում OpenCL-ը: Այս դարանը շատ կարևոր է աշխատանքներ կատարելու համար: Ցանկանո՞ւմ եք շարունակել:</string>
+    <string name="connect_to_wifi">Հեռախոսը պետք է միացված լինի Wi-Fi ցանցին</string>
+    <string name="processing_time_title">Հշվ կկտրվ հտյլ ժմնկմ՝ %1$s - %2$s</string>
+    <string name="processing_time_text">Կարող եք պարամետրերում փոխել մեկնարկի ժամանակը:</string>
+    <string name="will_start_when">Մկնրկի նխպյմննր</string>
+    <string name="share_facebook_contribution">Համօգտագործել Facebook-ում</string>
+    <string name="app_disabled_title">Աշխատածրագիրը կասեցվել է</string>
+    <string name="app_disabled_message">Այս աշխատածրագիրը կասեցվել է ու այլևս չի կարող օգտագործվել:</string>
+    <string name="stand_by">Սպասման ռեժիմ</string>
+    <string name="helping_out">Տվյալների մշակում</string>
+    <string name="disabled">Անջատված է</string>
+    <string name="data_usage">Տվյալների օգտագործում</string>
+    <string name="data_usage_text">Ձեր սարքը պետք է միացած լինի Wi-Fi ցանցին:\nԵթե օգտագործում եք տրաֆիկի հաշվառմամբ կամ վճարովի Wi-Fi միացում, ապա տվյալների օգտագործման համար ձեզանից կարող է վճար գանձվել:\n\nԼրացուցիչ տեղեկություններ ստանալու համար դիմեք ձեր Ինտերնետային ծառայությունների մատակարարին:</string>
+    <string name="whats_new">Նորույթներ</string>
+    <string name="whats_new_contribution_status">Այժմ կարող եք տեսնել Folding@Home-ը գործարկելու համար պահանջվող պայմանների ընթացիկ կարգավիճակը:</string>
+    <string name="whats_new_disable_indicator">Ցույց է տալիս, որ աշխատածրագիրը կասեցված է:</string>
+    <string name="whats_new_conditions_indicator">Ցույց է տալիս, որ Wi-Fi-ը պատրաստ է, սակայն հեռախոսն անհրաժեշտ է միացնել լիցքավորիչին, իսկ մարտկոցը պետք է 100%-ով լիցքավորված լինի:</string>
+    <string name="whats_new_enable_indicator">Ցույց է տալիս, որ բոլոր պահանջները բավարարված են:</string>
+    <string name="whats_new_power_button">Այժմ աշխատածրագիր միացնելը կամ կասեցնելը ավելի հեշտ է: Կարող եք նաև տեսնել Folding@Home-ի ընթացիկ կարգավիճակը:</string>
+    <string name="whats_new_login">Այժմ կարող եք մուտք գործել և վերբեռնել ձեր մասնակցության տվյալները:</string>
+    <string name="whats_new_contribution_indicators">Բարելավված պատկերակներ՝ ձեր մասնակցության կարգավիճակը հետագծելու համար:</string>
+    <string name="whats_new_research_type">Ցույց է տալիս հետազոտությունները, որոնցում դուք մասնակցում եք:</string>
+    <string name="whats_new_people_helping">Ցույց է տալիս Folding@Home-ն օգտագործող մարդկանց քանակը:</string>
+    <string name="whats_new_contributed_time">Ցույց է տալիս ձեր մասնակցության ընդհանուր ժամանակը:</string>
+    <string name="skip">Բաց թողնել</string>
+    <string name="turn_on">Միացնել</string>
+    <string name="turn_off">Անջատել</string>
+    <string name="active_research">Ակտիվ հետազոտություն</string>
+    <string name="notification_contribution_time">Շնորհակալություն: Վերջին 24 ժամվա ընթացքում այս սարքը ունեցել է %1$s մասնակցություն:</string>
+    <string name="action_login">Մուտք գործել</string>
+    <string name="action_logout">%1$s (Դուրս գալ)</string>
+    <string name="action_leaderboards">Առաջատարների աղյուսակներ</string>
+    <string name="action_achievements">Նվաճումներ</string>
+    <string name="action_invite_friends">Հրավիրել ընկերներին</string>
+    <string name="notification_service_turn_on">Մցրեք՝ մսնկցթ շրնկլու համար</string>
+    <string name="toast_logout">Դուրս է եկել</string>
+    <string name="toast_network_unavailable">Ցանցը անհասանելի է</string>
+    <string name="paused">Դադարեցվել է</string>
+    <string name="action_enable">Միացնել</string>
+    <string name="action_disable">Անջատել</string>
+    <string name="pause">Դադար</string>
+    <string name="new_indicators">Նոր ցուցիչներ</string>
+    <string name="new_power_button">Նոր սնուցման կոճակ</string>
+    <string name="sign_in_google_game_service">Մտք գրծլ Google Play™ Խղրի ծռյթ</string>
+    <string name="view_more">Դտլ ավլն</string>
+    <string name="toast_achievements_disabled">Մուտք գործեք՝ նվաճումները տեսնելու համար:</string>
+    <string name="toast_leaderboards_disabled">Մուտք գործեք՝ առաջատարների աղյուսակները տեսնելու համար:</string>
+    <string name="contribution_details">Նվիրատվության մանրամասներ</string>
+    <string name="project_description">Նախագծի նկարագրություն</string>
+    <string name="week">Շաբաթ</string>
+    <string name="month">Ամիս</string>
+    <string name="all_time">Ընդամեկը ժամանակ</string>
+    <string name="time_string_hours_only">%1$dժ</string>
+    <string name="chart_week_label">Շաբաթ %1$d</string>
+    <string name="hours_contributed_label_plural">%1$d ժամ նվիրատվություն</string>
+    <string name="hours_contributed_label_singular">1 ժամ նվիրատվություն</string>
+    <string name="contributed_no_data">Ընտրված ժամանակահատվածում նվիրատվություն չկա</string>
+    <string name="no_charger_tile">Լիցքավորիչ չկա</string>
+    <string name="low_battery_tile">Մարտկոցի լիցքը ցածր է</string>
+    <string name="no_wifi_tile">Wi-Fi չկա</string>
+    <string name="no_charger_text">Սարքը պետք է լիցքավորիչին միացած լինի</string>
+    <string name="low_battery_text">Նվիրատվությունը սսելու համար մարտկոցը պետք է առնվազն 98% լինի</string>
+    <string name="no_wifi_text">Նվիրատվության համար միացեք Wi-Fi ցանցին։</string>
+</resources>

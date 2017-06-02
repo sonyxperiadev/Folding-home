@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  Licensed under the LICENSE.
+  Copyright 2017, Sony Mobile Communications Inc.
+-->
+<resources xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="notification_service_finished_job_executed">Συνεισφέρατε στην επιστημονική έρευνα</string>
+    <string name="notification_service_finished_failed">Δεν πληρούνται όλες οι προϋποθέσεις έναρξης</string>
+    <string name="contributed_time">Διάστημα συνεισφοράς</string>
+    <string name="people_helping">Άτομα που βοηθούν</string>
+    <string name="research_type">Τύπος έρευνας</string>
+    <string name="research_type_unavailable">Μη διαθέσιμο</string>
+    <string name="setup_guide">Οδηγός ρύθμισης</string>
+    <string name="legal">Νομικές σημειώσεις</string>
+    <string name="share">Κοινή χρήση</string>
+    <string name="welcome">Καλωσορίσατε στο Folding@Home</string>
+    <string name="read_more">Περισσότερα</string>
+    <string name="more_info">Περισσότερες πληροφορίες</string>
+    <string name="finish">Τέλος</string>
+    <string name="wizard_welcome_to_folding_subtitle">Θέλετε να συμβάλλετε στην εύρεση της θεραπείας για τις νόσους Αλτσχάιμερ, Πάρκινσον ή τον καρκίνο;</string>
+    <string name="wizard_welcome_to_folding_text">Το τηλέφωνό σας μπορεί να εκτελέσει επιστημονικούς υπολογισμούς ενώ εσείς κοιμάστε και να βοηθήσει τους επιστήμονες του πανεπιστημίου του Στάντφορντ να βρουν θεραπείες για πολλές νόσους.</string>
+    <string-array name="help_find_cure">
+        <item>Με την εγγραφή σας στο Folding@Home, βοηθάτε τους επιστήμονες του πανεπιστημίου του Στάνφορντ στην αναζήτηση της θεραπείας για πολλές από τις πιο διαδεδομένες ασθένειες, προσφέροντας την υπολογιστική ισχύ του τηλεφώνου σας όταν δεν το χρησιμοποιείτε.</item>
+        <item>Η αναδίπλωση αναφέρεται στις πρωτεϊνικές διεργασίες στα σώματά μας. Η έρευνα σχετικά με την αναδίπλωση πρωτεϊνών απαιτεί τόσους υπολογισμούς, που το πανεπιστήμιο του Στάντφορντ ζητά από όλους μας να προσφέρουν τη μη χρησιμοποιούμενη υπολογιστική ισχύ των τηλεφώνων μας για την επίλυση ορισμένων από τις εξισώσεις. Όσο εσείς κοιμάστε, το πανεπιστήμιο του Στάντφορντ θα στείλει ένα πρόβλημα αναδίπλωσης για να λυθεί από το τηλέφωνό σας. Μόλις ολοκληρωθούν οι υπολογισμοί, τα αποτελέσματα επιστρέφονται στο Στάντφορντ.</item>
+        <item>Μπορείτε να βρείτε περισσότερες πληροφορίες σχετικά με την εφαρμογή Folding@Home στην αρχική σελίδα:\nfolding.stanford.edu</item>
+    </string-array>
+    <string name="powered_by">με την υποστήριξη</string>
+    <string name="private_date_safe_title">Το απόρρητό σας είναι ασφαλές.</string>
+    <string name="private_date_safe_text">Η εφαρμογή δεν έχει πρόσβαση στα προσωπικά σας δεδομένα.</string>
+    <string name="no_cost_mobile_data_title">Χωρίς κόστος δεδομ. κιν. τηλ.</string>
+    <string name="no_cost_mobile_data_text">Το τηλέφωνο θα πρέπει να είναι συνδεδεμένο σε δίκτυο Wi-Fi.</string>
+    <string name="battery_not_drained_title">Η μπαταρία σας δεν εξαντληθεί</string>
+    <string name="battery_not_drained_text">Το τηλέφωνο θα πρέπει να είναι συνδεδεμένο στο φορτιστή και πλήρως φορτισμένο (100%)</string>
+    <string name="time_string_weeks">%1$dεβδ. %2$dημ. %3$dώρ.</string>
+    <string name="time_string_days">%1$d ημ. %2$d ώρ. %3$d λ.</string>
+    <string name="time_string_hours">%1$d ώρ. %2$d λ.</string>
+    <string name="share_facebook_success">Κοινοποιήθηκε με επιτυχία στο Facebook</string>
+    <string name="share_facebook_error">Δεν ήταν δυνατή η κοινή χρήση στο Facebook</string>
+    <string name="waiting">Γίνεται κοινή χρήση...</string>
+    <string name="share_object_message">Είμαι ένα από τα %1$d άτομα που βοηθούν και έχω συνεισφέρει %2$s χρόνου υπολογισμών!</string>
+    <string name="notification_service_executing_job">Το Folding@Home εκτελείται.\nΣυνεισφέρετε στην επιστημονική έρευνα.</string>
+    <string name="notification_service_not_executing">Το Folding@Home δεν εκτελ.\nΔεν πληρ. όλες οι προϋποθέσεις έναρξης.</string>
+    <string name="settings">Ρυθμίσεις</string>
+    <string name="start_contribute">Ώρα έναρξης</string>
+    <string name="start_contribute_text">Ορισμός ώρας έναρξης για τους υπολογισμούς</string>
+    <string name="settings_auto_wifi_msg">Ενεργοποίηση του Wi-Fi κατά τη συνεισφορά</string>
+    <string name="notifications">Ειδοποιήσεις</string>
+    <string name="settings_display_notification">Αποστολή ειδοποιήσεων στο τέλος των υπολογισμών</string>
+    <string name="contribution_interval_time">Διάρκεια συνεισφοράς</string>
+    <string name="wizard_step">Βήμα %1$d/%2$d</string>
+    <string name="no_opencl">Αυτή η συσκευή δεν υποστηρίζει το OpenCL. Αυτή η βιβλιοθήκη είναι απαραίτητη για την εκτέλεση εργασιών. Θέλετε να συνεχίσετε;</string>
+    <string name="connect_to_wifi">Το τηλέφωνο πρέπει να είναι συνδεδεμένο σε δίκτυο Wi-Fi</string>
+    <string name="processing_time_title">Διάστημα υπολογισμών: %1$s – %2$s</string>
+    <string name="processing_time_text">Μπορείτε να αλλάξετε την ώρα έναρξης από τις ρυθμίσεις.</string>
+    <string name="will_start_when">Προϋποθέσεις έναρξης</string>
+    <string name="share_facebook_contribution">Κοινή χρήση στο Facebook</string>
+    <string name="app_disabled_title">Η εφαρμογή απενεργοποιήθηκε</string>
+    <string name="app_disabled_message">Η εφαρμογή απενεργοποιήθηκε και δεν μπορεί να χρησιμοποιηθεί πλέον.</string>
+    <string name="stand_by">Σε αναμονή</string>
+    <string name="helping_out">Συμμετοχή στον υπολογισμό</string>
+    <string name="disabled">Ανενεργό</string>
+    <string name="data_usage">Χρήση δεδομένων</string>
+    <string name="data_usage_text">Η συσκευή σας πρέπει να είναι συνδεδεμένη σε ένα δίκτυο Wi-Fi.\nΑν χρησιμοποιείτε σύνδεση Wi-Fi με μέτρηση ή επί πληρωμή, ενδέχεται να χρεωθείτε για τη χρήση δεδομένων.\n\nΓια περισσότερες πληροφορίες, απευθυνθείτε στον πάροχος υπηρεσιών Internet.</string>
+    <string name="whats_new">Τι νέο υπάρχει</string>
+    <string name="whats_new_contribution_status">Τώρα μπορείτε να δείτε την κατάσταση απαιτούμενων συνθηκών για την εκτέλεση του Folding@Home.</string>
+    <string name="whats_new_disable_indicator">Υποδεικνύει ότι η εφαρμογή είναι απενεργοποιημένη.</string>
+    <string name="whats_new_conditions_indicator">Υποδεικνύει ότι το Wi-Fi είναι έτοιμο, αλλά το τηλέφωνο θα πρέπει να είναι συνδεδεμένο σε φορτιστή και η μπαταρία να είναι 100% φορτισμένη.</string>
+    <string name="whats_new_enable_indicator">Υποδεικνύει ότι πληρούνται όλες οι προϋποθέσεις.</string>
+    <string name="whats_new_power_button">Τώρα, είναι πιο εύκολο να ενεργοποιήσετε ή να απενεργοποιήσετε την εφαρμογή. Μπορείτε, επίσης να δείτε την τρέχουσα κατάσταση του Folding@Home.</string>
+    <string name="whats_new_login">Τώρα, μπορείτε να συνδεθείτε και να αποστείλετε τη συνεισφορά σας.</string>
+    <string name="whats_new_contribution_indicators">Βελτιωμένα εικονίδια για την εύκολη παρακολούθηση της κατάστασης συνεισφοράς.</string>
+    <string name="whats_new_research_type">Υποδεικνύει την έρευνα στην οποία συνεισφέρετε.</string>
+    <string name="whats_new_people_helping">Υποδεικνύει τον αριθμό των ατόμων που χρησιμοποιούν το Folding@Home.</string>
+    <string name="whats_new_contributed_time">Υποδεικνύει το συνολικό χρόνο συνεισφοράς.</string>
+    <string name="skip">Παράλειψη</string>
+    <string name="turn_on">Ενεργοποίηση</string>
+    <string name="turn_off">Απενεργοποίηση</string>
+    <string name="active_research">Ενεργή έρευνα</string>
+    <string name="notification_contribution_time">Ευχαριστούμε. Αυτή η συσκευή έχει συνεισφέρει %1$s τις τελευταίες 24 ώρες.</string>
+    <string name="action_login">Είσοδος</string>
+    <string name="action_logout">%1$s (Αποσύνδεση)</string>
+    <string name="action_leaderboards">Πίνακες κατάταξης</string>
+    <string name="action_achievements">Επιτεύγματα</string>
+    <string name="action_invite_friends">Πρόσκληση φίλων</string>
+    <string name="notification_service_turn_on">Ενεργ. για συνέχιση συνεισφοράς</string>
+    <string name="toast_logout">Έγινε αποσύνδεση</string>
+    <string name="toast_network_unavailable">Το δίκτυο δεν είναι διαθέσιμο</string>
+    <string name="paused">Τέθηκε σε παύση</string>
+    <string name="action_enable">Ενεργοποίηση</string>
+    <string name="action_disable">Απενεργοποίηση</string>
+    <string name="pause">Παύση</string>
+    <string name="new_indicators">Νέες ενδείξεις</string>
+    <string name="new_power_button">Νέο κουμπί λειτουργίας</string>
+    <string name="sign_in_google_game_service">Σύνδ. στις υπηρ.παιχν. Google Play™</string>
+    <string name="view_more">Προβ.περ.</string>
+    <string name="toast_achievements_disabled">Συνδεθείτε για να δείτε τα επιτεύγματα!</string>
+    <string name="toast_leaderboards_disabled">Συνδεθείτε για να δείτε τους πίνακες κατάταξης!</string>
+    <string name="contribution_details">Στοιχεία συνεισφοράς</string>
+    <string name="project_description">Περιγραφή έργου</string>
+    <string name="week">Εβδομάδα</string>
+    <string name="month">Μήνας</string>
+    <string name="all_time">Συνολικός χρόνος</string>
+    <string name="time_string_hours_only">%1$dώ</string>
+    <string name="chart_week_label">Εβδομάδα %1$d</string>
+    <string name="hours_contributed_label_plural">Συνεισφορά %1$d ωρών</string>
+    <string name="hours_contributed_label_singular">Συνεισφορά 1 ώρας</string>
+    <string name="contributed_no_data">Δεν υπάρχει συνεισφορά για την επιλεγμένη περίοδο</string>
+    <string name="no_charger_tile">Δεν υπάρχει φορτιστής</string>
+    <string name="low_battery_tile">Χαμηλή μπαταρία</string>
+    <string name="no_wifi_tile">Δεν υπάρχει σύνδεση Wi-Fi</string>
+    <string name="no_charger_text">Η συσκευή πρέπει να συνδεθεί με φορτιστή</string>
+    <string name="low_battery_text">Η μπαταρία πρέπει να έχει φορτιστεί κατά 98% τουλάχιστον για να αρχίσει η συνεισφορά</string>
+    <string name="no_wifi_text">Συνδεθείτε με ένα δίκτυο Wi-Fi για έναρξη της συνεισφοράς.</string>
+</resources>

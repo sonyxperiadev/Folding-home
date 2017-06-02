@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  Licensed under the LICENSE.
+  Copyright 2017, Sony Mobile Communications Inc.
+-->
+<resources xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="no_cost_mobile_data_text">Το τηλέφωνο θα πρέπει να είναι συνδεδεμένο σε δίκτυο WLAN.</string>
+    <string name="settings_auto_wifi_msg">Ενεργοποίηση του WLAN κατά τη συνεισφορά</string>
+    <string name="connect_to_wifi">Το τηλέφωνο πρέπει να είναι συνδεδεμένο σε δίκτυο WLAN</string>
+    <string name="data_usage_text">Η συσκευή σας πρέπει να είναι συνδεδεμένη σε ένα δίκτυο WLAN.\nΑν χρησιμοποιείτε σύνδεση WLAN με μέτρηση ή επί πληρωμή, ενδέχεται να χρεωθείτε για τη χρήση δεδομένων.\n\nΓια περισσότερες πληροφορίες, απευθυνθείτε στον πάροχος υπηρεσιών Internet.</string>
+    <string name="whats_new_conditions_indicator">Υποδεικνύει ότι το WLAN είναι έτοιμο, αλλά το τηλέφωνο θα πρέπει να είναι συνδεδεμένο σε φορτιστή και η μπαταρία να είναι 100% φορτισμένη.</string>
+    <string name="no_wifi_tile">Δεν υπάρχει σύνδεση WLAN</string>
+    <string name="no_wifi_text">Συνδεθείτε με ένα δίκτυο WLAN για έναρξη της συνεισφοράς.</string>
+</resources>

@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  Licensed under the LICENSE.
+  Copyright 2017, Sony Mobile Communications Inc.
+-->
+<resources xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="notification_service_finished_job_executed">Pomohli ste vede</string>
+    <string name="notification_service_finished_failed">Nie sú splnené všetky podmienky pre spustenie</string>
+    <string name="contributed_time">Darovaný čas celkom</string>
+    <string name="people_helping">Prispievatelia</string>
+    <string name="research_type">Typ výskumu</string>
+    <string name="research_type_unavailable">Nie je k dispozícii</string>
+    <string name="setup_guide">Sprievodca nastavením</string>
+    <string name="legal">Zmluvné podmienky</string>
+    <string name="share">Zdieľať</string>
+    <string name="welcome">Víta vás projekt Folding@Home</string>
+    <string name="read_more">Ďalšie informácie</string>
+    <string name="more_info">Ďalšie informácie</string>
+    <string name="finish">Dokončiť</string>
+    <string name="wizard_welcome_to_folding_subtitle">Chcete pomôcť nájsť liek na Alzheimerovu chorobu, Parkinsonovu chorobu a rakovinu?</string>
+    <string name="wizard_welcome_to_folding_text">Váš telefón môže vykonávať vedecké výpočty, kým spíte, a pomáhať tak vedcom zo Stanfordskej univerzity nájsť liek na veľa chorôb.</string>
+    <string-array name="help_find_cure">
+        <item>Registráciou v projekte Folding@Home pomôžete vedcom zo Stanfordskej univerzity v ich úsilí nájsť liek na veľa našich najbežnejších chorôb. Vaša pomoc spočíva v tom, že darujete procesorový výkon svojho telefónu v čase, keď ho sami nevyužívate.</item>
+        <item>Skladanie (z angl. „folding“) označuje aktivity bielkovín v našom tele. Výskum skladania bielkovín vyžaduje toľko výpočtov, že Stanfordská univerzita žiada ľudí, aby darovali nevyužitý procesorový výkon svojich telefónov na spracovanie časti výpočtov. Keď spíte, Stanfordská univerzita vám zašle výpočtovú úlohu skladania, ktorú musí telefón vyriešiť. Po dokončení výpočtov sa výsledky odošlú späť do Stanfordu.</item>
+        <item>Ďalšie informácie o projekte Folding@Home nájdete na jeho domovskej stránke:\nfolding.stanford.edu</item>
+    </string-array>
+    <string name="powered_by">technológia</string>
+    <string name="private_date_safe_title">Vaše údaje sú v bezpečí.</string>
+    <string name="private_date_safe_text">Táto aplikácia nemá prístup k vašim súkromným údajom.</string>
+    <string name="no_cost_mobile_data_title">Dáta nebudú spoplatnené</string>
+    <string name="no_cost_mobile_data_text">Telefón musí byť pripojený k sieti Wi-Fi.</string>
+    <string name="battery_not_drained_title">Batéria sa nevyčerpá</string>
+    <string name="battery_not_drained_text">Telefón musí byť pripojený k nabíjačke a musí byť úplne nabitý (na 100 %)</string>
+    <string name="time_string_weeks">%1$dtýžd. %2$ddní %3$dh</string>
+    <string name="time_string_days">%1$d dní %2$d h %3$d min</string>
+    <string name="time_string_hours">%1$d h %2$d m</string>
+    <string name="share_facebook_success">Úspešne zdieľané v sieti Facebook</string>
+    <string name="share_facebook_error">Nedá sa zdieľať v sieti Facebook</string>
+    <string name="waiting">Zdieľa sa...</string>
+    <string name="share_object_message">Som jeden z %1$d ľudí, ktorí pomáhajú. Daroval som na výpočet celkom %2$s času.</string>
+    <string name="notification_service_executing_job">Je spustená úloha Folding@Home.\nPomáhate vedeckému výskumu.</string>
+    <string name="notification_service_not_executing">Úloha Folding@Home nie je spustená.\nNie sú splnené podmienky spustenia.</string>
+    <string name="settings">Nastavenie</string>
+    <string name="start_contribute">Čas spustenia</string>
+    <string name="start_contribute_text">Nastaviť čas spustenia výpočtu</string>
+    <string name="settings_auto_wifi_msg">Povoliť počas výpočtu sieť Wi-Fi</string>
+    <string name="notifications">Upozornenia</string>
+    <string name="settings_display_notification">Odosielať po skončení výpočtu upozornenia</string>
+    <string name="contribution_interval_time">Darovaná doba</string>
+    <string name="wizard_step">Krok %1$d/%2$d</string>
+    <string name="no_opencl">Toto zariadenie nepodporuje knižnicu OpenCL. Táto knižnica je nevyhnutná na vykonávanie úloh. Chcete pokračovať?</string>
+    <string name="connect_to_wifi">Telefón sa potrebuje pripojiť k sieti Wi-Fi</string>
+    <string name="processing_time_title">Doba výpočtu je medzi %1$s a %2$s</string>
+    <string name="processing_time_text">Čas spustenia môžete zmeniť v nastaveniach.</string>
+    <string name="will_start_when">Podmienky spustenia</string>
+    <string name="share_facebook_contribution">Zdieľať v sieti Facebook</string>
+    <string name="app_disabled_title">Aplikácia je zakázaná</string>
+    <string name="app_disabled_message">Táto aplikácia je zakázaná a už sa nesmie používať.</string>
+    <string name="stand_by">Pohotovostný režim</string>
+    <string name="helping_out">Pomáhate nám</string>
+    <string name="disabled">Zakázané</string>
+    <string name="data_usage">Používanie dát</string>
+    <string name="data_usage_text">Toto zariadenie musí byť pripojené k sieti Wi-Fi.\nAk používate časovo závislé alebo platené pripojenie k sieti Wi-Fi, môžu sa na vás vzťahovať poplatky za používanie dát.\n\nĎalšie informácie získate od poskytovateľa internetových služieb.</string>
+    <string name="whats_new">Novinky</string>
+    <string name="whats_new_contribution_status">Teraz sa zobrazuje stav splnenia všetkých požiadaviek na spustenie aplikácie Folding@Home.</string>
+    <string name="whats_new_disable_indicator">Označuje, že aplikácia je zakázaná.</string>
+    <string name="whats_new_conditions_indicator">Označuje, že sieť Wi-Fi je pripravená, ale telefón musí byť pripojený k nabíjačke a batéria musí byť nabitá na 100 %.</string>
+    <string name="whats_new_enable_indicator">Označuje, že všetky požiadavky sú splnené.</string>
+    <string name="whats_new_power_button">Aplikácia sa teraz povoľuje a zakazuje jednoduchším spôsobom. Môžete tiež zobraziť aktuálny stav aplikácie Folding@Home.</string>
+    <string name="whats_new_login">Teraz sa môžete prihlásiť a odovzdať svoje príspevky.</string>
+    <string name="whats_new_contribution_indicators">Vylepšené ikony zjednodušujú sledovanie stavu vašich príspevkov.</string>
+    <string name="whats_new_research_type">Označuje výskum, do ktorého prispievate.</string>
+    <string name="whats_new_people_helping">Označuje počet ľudí používajúcich aplikáciu Folding@Home.</string>
+    <string name="whats_new_contributed_time">Označuje celkový čas vašich príspevkov.</string>
+    <string name="skip">Preskočiť</string>
+    <string name="turn_on">Zapnúť</string>
+    <string name="turn_off">Vypnúť</string>
+    <string name="active_research">Aktívny výskum</string>
+    <string name="notification_contribution_time">Ďakujeme. Toto zariadenie za posledných 24 hodín pomáhalo %1$s.</string>
+    <string name="action_login">Prihlásiť sa</string>
+    <string name="action_logout">%1$s (Odhlásiť sa)</string>
+    <string name="action_leaderboards">Tabuľky najlepších</string>
+    <string name="action_achievements">Dosiahnuté výkony</string>
+    <string name="action_invite_friends">Pozvať priateľov</string>
+    <string name="notification_service_turn_on">Ak chcete pomáhať, zapnite aplikáciu.</string>
+    <string name="toast_logout">Odhlásený</string>
+    <string name="toast_network_unavailable">Sieť je nedostupná</string>
+    <string name="paused">Pozastavené</string>
+    <string name="action_enable">Zapnúť</string>
+    <string name="action_disable">Vypnúť</string>
+    <string name="pause">Pozastaviť</string>
+    <string name="new_indicators">Nové indikátory</string>
+    <string name="new_power_button">Nové tlačidlo napájania</string>
+    <string name="sign_in_google_game_service">Prihlásiť sa k hrám Google Play™</string>
+    <string name="view_more">Zobraziť</string>
+    <string name="toast_achievements_disabled">Ak chcete zobraziť dosiahnuté výkony, prihláste sa.</string>
+    <string name="toast_leaderboards_disabled">Ak chcete zobraziť tabuľky najlepších, prihláste sa.</string>
+    <string name="contribution_details">Údaje o poskytovaní voľnej výpočtovej kapacity</string>
+    <string name="project_description">Popis projektu</string>
+    <string name="week">Týždeň</string>
+    <string name="month">Mesiac</string>
+    <string name="all_time">Celkový čas</string>
+    <string name="time_string_hours_only">%1$d h</string>
+    <string name="chart_week_label">%1$d. týždeň</string>
+    <string name="hours_contributed_label_plural">Poskytnutý čas: %1$d h</string>
+    <string name="hours_contributed_label_singular">Poskytnutý čas: 1 hodina</string>
+    <string name="contributed_no_data">V uvedenom období sa kapacita neposkytla</string>
+    <string name="no_charger_tile">Zariadenie nie je pripojené k nabíjačke</string>
+    <string name="low_battery_tile">Slabá batéria</string>
+    <string name="no_wifi_tile">Nie je pripojenie k Wi-Fi</string>
+    <string name="no_charger_text">Zariadenie musí byť pripojené k nabíjačke</string>
+    <string name="low_battery_text">Aby sa mohlo spustiť poskytovanie voľnej výpočtovej kapacity, batéria musí byť nabitá aspoň na 98 %</string>
+    <string name="no_wifi_text">Ak chcete začať s poskytovaním voľnej výpočtovej kapacity, pripojte sa k sieti Wi-Fi.</string>
+</resources>

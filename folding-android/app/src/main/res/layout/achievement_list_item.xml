@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    Licensed under the LICENSE.
+    Copyright 2017, Sony Mobile Communications Inc.
+-->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/achievement_item_background"
+                android:padding="@dimen/padding_small">
+
+    <RelativeLayout
+        android:id="@+id/achievement_image_layout"
+        android:layout_width="@dimen/achievement_image_size"
+        android:layout_height="@dimen/achievement_image_size"
+        android:layout_alignParentStart="true"
+        android:layout_centerVertical="true"
+        android:padding="@dimen/padding_small">
+
+        <ImageView
+            android:id="@+id/achievement_item_image"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:contentDescription="@string/games_achievement_list_title"/>
+
+        <com.sonymobile.androidapp.gridcomputing.views.AchievementProgressView
+            android:id="@+id/achievement_progress_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:visibility="gone"/>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/achievement_text_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@id/achievement_image_layout"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/achievement_item_title"
+            style="@style/achievement_text_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:text="Samuel L Achievement"/>
+
+        <TextView
+            android:id="@+id/achievement_item_description"
+            style="@style/achievement_text_subtitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:text="A lot of text. A lot of text. A lot of text. A lot of text. A lot of text. A lot of text. A lot of text. A lot of text. A lot of text. A lot of text. A lot of text. A lot of text. A lot of text. A lot of text. A lot of text. A lot of text. A lot of text. A lot of text. A lot of text. A lot of text. A lot of text. A lot of text. A lot of text. A lot of text."/>
+
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/achievement_text_layout">
+
+        <TextView
+            android:id="@+id/achievement_item_xp"
+            style="@style/achievement_text_subtitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:textAllCaps="true"
+            android:textColor="@android:color/holo_green_dark"/>
+
+        <TextView
+            android:id="@+id/achievement_item_date"
+            style="@style/achievement_text_subtitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:textAllCaps="true"
+            tools:text="01 JUL 2015"
+            />
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

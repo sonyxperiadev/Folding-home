@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  Licensed under the LICENSE.
+  Copyright 2017, Sony Mobile Communications Inc.
+-->
+<resources xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="no_cost_mobile_data_text">휴대폰이 WLAN 네트워크에 연결되어 있어야 합니다.</string>
+    <string name="settings_auto_wifi_msg">참여하는 동안 WLAN를 사용하도록 설정</string>
+    <string name="connect_to_wifi">휴대폰이 WLAN 네트워크에 연결되어 있어야 합니다.</string>
+    <string name="data_usage_text">기기가 WLAN 네트워크에 연결되어 있어야 합니다.\n사용량이 제한되었거나 유료 WLAN 연결을 사용하는 경우 데이터 사용 시 요금이 부과될 수 있습니다.\n\n자세한 내용은 ISP(인터넷 서비스 공급자)에 문의하시기 바랍니다.</string>
+    <string name="whats_new_conditions_indicator">WLAN가 준비되었지만 휴대폰을 충전기에 연결하고 배터리가 100% 충전되어야 함을 나타냅니다.</string>
+    <string name="no_wifi_tile">WLAN에 연결되지 않음</string>
+    <string name="no_wifi_text">참여를 시작하려면 WLAN 네트워크에 연결되어 있어야 함</string>
+</resources>

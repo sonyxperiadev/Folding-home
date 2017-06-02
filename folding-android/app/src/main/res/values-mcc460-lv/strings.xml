@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  Licensed under the LICENSE.
+  Copyright 2017, Sony Mobile Communications Inc.
+-->
+<resources xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="no_cost_mobile_data_text">Tālrunim ir jābūt savienotam ar WLAN tīklu.</string>
+    <string name="settings_auto_wifi_msg">Ieguldījuma laikā iespējot WLAN</string>
+    <string name="connect_to_wifi">Tālrunis ir jāsavieno ar WLAN tīklu</string>
+    <string name="data_usage_text">Jūsu ierīcei ir jābūt savienotai ar WLAN tīklu.\nJa izmantojat WLAN savienojumu ar skaitītāju vai maksas WLAN savienojumu, jums var tikt prasīta maksa par datu lietojumu.\n\nPapildinformāciju varat iegūt no sava interneta pakalpojumu sniedzēja.</string>
+    <string name="whats_new_conditions_indicator">Norāda, ka WLAN ir pieejams, taču tālrunim ir jāpievieno lādētājs un akumulatoram ir jābūt pilnībā uzlādētam.</string>
+    <string name="no_wifi_tile">Nav WLAN</string>
+    <string name="no_wifi_text">Lai sāktu ieguldījumu, izveidojiet savienojumu ar WLAN tīklu.</string>
+</resources>

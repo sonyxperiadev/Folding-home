@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  Licensed under the LICENSE.
+  Copyright 2017, Sony Mobile Communications Inc.
+-->
+<resources xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="no_cost_mobile_data_text">Հեռախոսը պետք է միացած լինի WLAN ցանցին:</string>
+    <string name="settings_auto_wifi_msg">Միացնել WLAN-ը օգնություն տրամադրելու ընթացքում</string>
+    <string name="connect_to_wifi">Հեռախոսը պետք է միացված լինի WLAN ցանցին</string>
+    <string name="data_usage_text">Ձեր սարքը պետք է միացած լինի WLAN ցանցին:\nԵթե օգտագործում եք տրաֆիկի հաշվառմամբ կամ վճարովի WLAN միացում, ապա տվյալների օգտագործման համար ձեզանից կարող է վճար գանձվել:\n\nԼրացուցիչ տեղեկություններ ստանալու համար դիմեք ձեր Ինտերնետային ծառայությունների մատակարարին:</string>
+    <string name="whats_new_conditions_indicator">Ցույց է տալիս, որ WLAN-ը պատրաստ է, սակայն հեռախոսն անհրաժեշտ է միացնել լիցքավորիչին, իսկ մարտկոցը պետք է 100%-ով լիցքավորված լինի:</string>
+    <string name="no_wifi_tile">WLAN չկա</string>
+    <string name="no_wifi_text">Նվիրատվության համար միացեք WLAN ցանցին։</string>
+</resources>

@@ -1,0 +1,19 @@
+{
+  "name": "openmm",
+  "version": "0.1.0",
+  "description": "OpenMM library.",
+  "author": {
+    "name": "Stanford"
+  },  
+  "main": "./build/Release/openmm",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/SimTk/openmm"
+  },  
+  "scripts": {
+    "install": "node-gyp rebuild"
+  },  
+  "license": "MIT, BSD, GNU LGPL V3",
+  "gypfile": true
+}
+

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  Licensed under the LICENSE.
+  Copyright 2017, Sony Mobile Communications Inc.
+-->
+<resources xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="no_cost_mobile_data_text">Телефон WLAN челтәренә тоташкан булырга тиеш.</string>
+    <string name="settings_auto_wifi_msg">Иганә итү вакытында WLAN эшләтеп җибәрү</string>
+    <string name="connect_to_wifi">Телефонны WLAN челтәренә тоташтыру сорала</string>
+    <string name="data_usage_text">Җайланмагыз WLAN челтәренә тоташкан булырга тиеш.\nИсәпләнүче яки түләнүче WLAN тоташмасын куллансагыз, мәгълуматны куллану өчен түләү алынырга мөмикн.\n\nӨстәмә мәгълүматны Интернет хезмәтен тәэмин итүчесеннән алыгыз.</string>
+    <string name="whats_new_conditions_indicator">WLAN\'ның әзер булуын күрсәтә, ләкин телефон коруга тоташкан һәм батарейка 100% кадәр корылган булырга тиеш.</string>
+    <string name="no_wifi_tile">WLAN юк</string>
+    <string name="no_wifi_text">Өлеш кертә башлау өчен WLAN челтәренә тоташу.</string>
+</resources>

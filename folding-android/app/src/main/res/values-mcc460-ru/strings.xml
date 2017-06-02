@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  Licensed under the LICENSE.
+  Copyright 2017, Sony Mobile Communications Inc.
+-->
+<resources xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="no_cost_mobile_data_text">Смартфон необходимо подключить к сети WLAN.</string>
+    <string name="settings_auto_wifi_msg">Включить WLAN на время сотрудничества</string>
+    <string name="connect_to_wifi">Телефон необходимо подключить к сети WLAN.</string>
+    <string name="data_usage_text">Устройство должно быть подключено к сети WLAN.\nЕсли вы используете платное или не безлимитное соединение WLAN, за передачу данных может взиматься плата.\n\nЗа дополнительными сведениями обращайтесь к поставщику услуг Интернета.</string>
+    <string name="whats_new_conditions_indicator">Вид значков состояния, когда соединение с сетью WLAN установлено, но смартфон должен быть подключен к зарядному устройству, а аккумулятор полностью заряжен.</string>
+    <string name="no_wifi_tile">Нет подключения WLAN</string>
+    <string name="no_wifi_text">Чтобы начать участие, подключитесь к сети WLAN.</string>
+</resources>

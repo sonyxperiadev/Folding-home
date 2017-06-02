@@ -1,0 +1,66 @@
+<!--
+ Licensed under the LICENSE.
+ Copyright 2017, Sony Mobile Communications Inc.
+-->
+
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+	    <item name="android:windowActionBar">false</item>
+	    <item name="colorPrimary">@color/colorPrimary</item>
+	    <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+	    <item name="colorAccent">@color/colorAccent</item>
+	    <item name="popupTheme">@style/AppTheme.Popup</item>
+	</style>
+
+	<style name="AppTheme.ActionBar" parent="ThemeOverlay.AppCompat.Dark.ActionBar">
+	    <item name="android:textColorPrimary">@color/textColorPrimary</item>
+	    <item name="android:background">?attr/colorPrimary</item>
+        <item name="popupTheme">@style/AppTheme.Popup</item>
+	</style>
+
+    <style name="AppTheme.Translucent" parent="AppTheme">
+        <item name="android:windowBackground">@color/achievement_screen_background</item>
+        <item name="android:colorBackgroundCacheHint">@null</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowAnimationStyle">@android:style/Animation</item>
+    </style>
+
+    <style name="AppTheme.ActionBar.Translucent" parent="AppTheme.ActionBar">
+        <item name="android:textColorPrimary">@color/textColorPrimary</item>
+        <item name="android:background">@color/achievement_screen_background</item>
+        <item name="popupTheme">@style/AppTheme.Popup</item>
+    </style>
+
+	<style name="AppTheme.Popup" parent="ThemeOverlay.AppCompat.Light">
+	    <item name="android:background">@null</item>
+	</style>
+
+    <style name="conditions_dialog_text" parent="@android:style/Widget.TextView">
+        <item name="android:textColor">@color/sony_black</item>
+        <item name="android:textSize">@dimen/wizard_font_size_medium</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:layout_marginRight">@dimen/margin_medium</item>
+        <item name="android:fontFamily">sans-seriff</item>
+        <item name="android:minLines">4</item>
+    </style>
+
+    <style name="text_title" parent="@android:style/TextAppearance.DeviceDefault.Medium">
+        <item name="android:textColor">@color/sony_black</item>
+        <item name="android:fontFamily">sans-seriff</item>
+    </style>
+
+    <style name="text_subtitle" parent="@android:style/TextAppearance.DeviceDefault.Small">
+        <item name="android:textColor">@color/sony_gray</item>
+        <item name="android:fontFamily">sans-seriff</item>
+    </style>
+
+    <style name="achievement_text_title" parent="text_title">
+        <item name="android:textSize">@dimen/achievement_text_title</item>
+    </style>
+
+    <style name="achievement_text_subtitle" parent="text_subtitle">
+        <item name="android:textSize">@dimen/achievement_text_subtitle</item>
+    </style>
+
+</resources>

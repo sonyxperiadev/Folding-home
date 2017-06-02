@@ -1,0 +1,256 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+   Licensed under the LICENSE.
+   Copyright 2017, Sony Mobile Communications Inc.
+-->
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+
+    <!-- Application Name -->
+    <string name="app_name" translatable="false" xliff:restype="x-_UNLIMITED">Folding@Home</string>
+    <!-- Indicates to the user that the processing (calculation) time is over and the application was able to process some data (Folding@Home should not be translated) -->
+    <string name="notification_service_finished_job_executed" xliff:restype="x-GENERIC/NOTIFICATION/SUBTITLE/EXPANDED">You have contributed to science</string>
+    <!-- Indicates to the user that the processing (calculation) time is over and the application was not able to process some data -->
+    <string name="notification_service_finished_failed" xliff:restype="x-GENERIC/NOTIFICATION/SUBTITLE/EXPANDED">Not all starting conditions were met</string>
+    <!-- Label placed above the total contribution time which indicates how many minutes, hours, days or weeks the user has contributed his/her phone's processing power to science. -->
+    <string name="contributed_time" xliff:restype="x-GENERIC/LIST/TITLE">Contributed time</string>
+    <!-- Label indicating how many users are contributing to the Folding@Home -->
+    <string name="people_helping" xliff:restype="x-GENERIC/LIST/TITLE">People helping out</string>
+    <!-- Label placed above the name of the research type that the user is currently contributing (the type itself can assume several names) -->
+    <string name="research_type" xliff:restype="x-GENERIC/LIST/TITLE">Research type</string>
+    <!-- Message placed when research type is undefined -->
+    <string name="research_type_unavailable" xliff:restype="x-GENERIC/LIST/TITLE">Unavailable</string>
+    <!-- Menu option to open the setup guide screen -->
+    <string name="setup_guide" xliff:restype="x-GENERIC/MENU/OVERFLOW">Setup guide</string>
+    <!-- Menu option to display the legal informations screen. This is also used as the title in the legal screen. -->
+    <string name="legal" xliff:restype="x-GENERIC/MENU/OVERFLOW">Legal</string>
+    <!-- Menu option to open the share submenu, which will show the available sharing applications (such as Facebook). -->
+    <string name="share" xliff:restype="x-GENERIC/MENU/OVERFLOW">Share</string>
+    <!-- Title welcoming the user to the application. Folding@Home should not be translated.  -->
+    <string name="welcome" xliff:restype="x-GENERIC/LIST/TITLE">Welcome to Folding@Home</string>
+    <!-- This text is placed on a Button that will open another screen with more information about Folding@Home project -->
+    <string name="read_more" xliff:restype="x-GENERIC/BUTTON/1BUTTON">Read more</string>
+    <!-- Title to a screen containing more information about Folding@Home project -->
+    <string name="more_info" xliff:restype="x-GENERIC/SUBHEADER">More information</string>
+    <!-- Text placed on a button when the setup guide is on its last page to indicate that the guide will be closed if this button is clicked -->
+    <string name="finish" xliff:restype="x-GENERIC/BUTTON/3BUTTONS">Finish</string>
+    <!-- Introduction information regarding Folding@Home -->
+    <string name="wizard_welcome_to_folding_subtitle" xliff:restype="x-_UNLIMITED">Do you want to help find the cure for Alzheimer\'s, Parkinson\'s and cancer?</string>
+    <!-- Complementary information regarding Folding@Home -->
+    <string name="wizard_welcome_to_folding_text" xliff:restype="x-_UNLIMITED">Your phone can perform scientific calculations while you sleep, and help Stanford University scientists find the cure for many diseases.</string>
+    <!-- List of text containing more information regarding Folding@Home project -->
+    <string-array name="help_find_cure" xliff:restype="x-_UNLIMITED">
+
+        <!-- Information about what you are contributing to when you join Folding@Home Project (Folding@Home should not be translated) -->
+        <item>By signing up for Folding@Home, you help Stanford University scientists in their quest to find the cure for many of our most common diseases by donating your phone\'s processing power when you aren\'t using it yourself.</item>
+        <!-- More information regarding the meaning of Folding and how the application helps people -->
+        <item>Folding refers to protein activities in our bodies. The research of protein folding requires so many calculations that Stanford University asks people to donate their phones\' unused processing power to crunch some of the numbers. When you sleep, Stanford University will send a folding problem for your phone to solve. Once calculations are complete, the results are sent back to Stanford.</item>
+        <!-- Link to Folding@Home homepage if the user wants to read more information. (Folding@Home and folding.stanford.edu should not be translated) -->
+        <item>You can find more information about Folding@Home on the homepage:\nfolding.stanford.edu</item>
+    </string-array>
+    <!-- Text placed above the sponsors names: 'powered by Sony, Stanford University, Vodafone' -->
+    <string name="powered_by" xliff:restype="x-GENERIC/LIST/SUBTITLE">powered by</string>
+    <!-- Title label to let the user know that all the personal data is safe. -->
+    <string name="private_date_safe_title" xliff:restype="x-GENERIC/LIST/TITLE/ICON">Your private data is safe.</string>
+    <!-- Subtitle label, to let the user know that other applications can't access the private data. -->
+    <string name="private_date_safe_text" xliff:restype="x-GENERIC/LIST/SUBTITLE/ICON">This application doesn\'t access your private data.</string>
+    <!-- Title label, to let the user know that the transmitted/received data is free of charge, since it will use Wi-Fi -->
+    <string name="no_cost_mobile_data_title" xliff:restype="x-GENERIC/LIST/TITLE/ICON">There is no cost for mobile data</string>
+    <!-- Subtitle label, to let the user know that the phone must be connected to a wi-fi network. -->
+    <string name="no_cost_mobile_data_text" xliff:restype="x-GENERIC/LIST/SUBTITLE/ICON">Phone must be connected to Wi-Fi network.</string>
+
+    <!-- Title label, to let the user know that the battery will not discharge during the processing/calculation -->
+    <string name="battery_not_drained_title" xliff:restype="x-GENERIC/LIST/TITLE/ICON">The battery will not be drained</string>
+    <!-- Subtitle label, to let the user know that the the phone must be connected to a wall charger and the battery must be fully charged (100%) -->
+    <string name="battery_not_drained_text" xliff:restype="x-GENERIC/LIST/SUBTITLE/ICON">The phone must be connected to a charger and fully charged (100%)</string>
+
+    <!-- The three variables are the following: number of weeks, number of days and number of hours, all followed by the respectively abbreviated form ('w', 'd' and 'h'). e.g. '2w 5d 20h' -->
+    <string name="time_string_weeks" xliff:restype="x-_UNLIMITED">%1$dw %2$dd %3$dh</string>
+    <!-- The three variables are the following: number of days, number of hours and number of minutes, all followed by the respectively abbreviated form ('d', 'h' and 'm'). e.g. '5d 19h 59m' -->
+    <string name="time_string_days" xliff:restype="x-_UNLIMITED">%1$dd %2$dh %3$dm</string>
+    <!-- The two variables are the following: number of hours and number of minutes, all followed by the respectively abbreviated form ('h' and 'm'). e.g. '23h 59m' -->
+    <string name="time_string_hours" xliff:restype="x-_UNLIMITED">%1$dh %2$dm</string>
+    <!-- The Facebook application name -->
+    <string name="facebook" translatable="false" xliff:restype="x-_UNLIMITED">Facebook</string>
+    <!-- Message shown when the Facebook sharing is completed. (Facebook should not be translated) -->
+    <string name="share_facebook_success" xliff:restype="x-GENERIC/TOAST/TEXT">Successfully shared on Facebook</string>
+    <!-- Message shown when there is an error while trying to share using Facebook (Facebook should not be translated) -->
+    <string name="share_facebook_error" xliff:restype="x-GENERIC/TOAST/TEXT">Could not share on Facebook</string>
+    <!-- Text indicating that the sharing operation is waiting to complete. -->
+    <string name="waiting" xliff:restype="x-GENERIC/DIALOG/PROGRESS">Sharing…</string>
+    <!-- Message used to share on Facebook. The first variable is the number of people helping the calculations and the second is the total calculation time (according to the time format specified above). e.g. 'I'm one of 12 people helping out and I've contributed with 15w 4d 20h of calculation time!' -->
+    <string name="share_object_message" xliff:restype="x-_UNLIMITED">I\'m one of %1$d people helping out and I\'ve contributed with %2$s of calculation time!</string>
+    <!-- Indicates to the user that the application is running and processing (calculating) some data (Folding@Home should not be translated) -->
+    <string name="notification_service_executing_job" xliff:restype="x-GENERIC/NOTIFICATION/SUBTITLE/EXPANDED">Folding@Home is running.\nYou are contributing to scientific research.</string>
+    <!-- Indicates to the user that the application is running but is not doing any processing (calculation) (Folding@Home should not be translated) -->
+    <string name="notification_service_not_executing" xliff:restype="x-GENERIC/NOTIFICATION/SUBTITLE/EXPANDED">Folding@Home is not running.\nAll starting conditions are not met.</string>
+    <!-- Menu option to go to the settings screen. This is also used as the title in the settings screen. -->
+    <string name="settings" xliff:restype="x-GENERIC/MENU/OVERFLOW">Settings</string>
+    <!-- Title label, indicates the starting time when the application is going to start running -->
+    <string name="start_contribute" xliff:restype="x-GENERIC/LIST/TITLE/SWITCH">Starting time</string>
+    <!-- Subtitle label, lets the user changes the starting time when the application is going to start running -->
+    <string name="start_contribute_text" xliff:restype="x-GENERIC/LIST/SUBTITLE/CONTROL/ICON">Set start time for calculation</string>
+    <!-- Title label, indicates an option regarding if the Wi-Fi should be turned on before the application starts executing -->
+    <string name="wifi" xliff:restype="x-GENERIC/LIST/TITLE/SWITCH">Wi-Fi</string>
+    <!-- Subtitle label, lets the user chooses if the Wi-Fi should be turned on automatically before the application starts executing -->
+    <string name="settings_auto_wifi_msg" xliff:restype="x-GENERIC/LIST/SUBTITLE/CONTROL/ICON">Enable Wi-Fi during contribution</string>
+    <!-- Title of view where user can select to get notification messages should after the application finishes a calculation job. -->
+    <string name="notifications" xliff:restype="x-GENERIC/LIST/TITLE/SWITCH">Notifications</string>
+    <!-- Checkbox text, lets the user choose if they want to have notification message when the application finishes a calculation -->
+    <string name="settings_display_notification" xliff:restype="x-GENERIC/LIST/SUBTITLE/CONTROL/ICON">Send notifications at the end of calculation</string>
+    <!-- Subtitle label, indicates the contribution interval and reminds its duration (currently six hours) -->
+    <string name="contribution_interval_time" xliff:restype="x-GENERIC/LIST/SUBTITLE">Contribution duration</string>
+    <!-- Setup guide step/page counter. The first variable will show the current page and the second will show the total number of pages. e.g. 'Step 1/2' or 'Step 2/2'. -->
+    <string name="wizard_step" xliff:restype="x-GENERIC/BUTTON/3BUTTONS">Step %1$d/%2$d</string>
+    <!-- Question shown when the user opens the application and the OpenCL (should not be translated) library doesn't exist on the phone. This question is followed by a yes/no option. If the yes option is selected, the application will continue to execute, if the no option is selected, the application will be closed. -->
+    <string name="no_opencl" xliff:restype="x-UNLIMITED">This device does not support OpenCL. This library is essential to execute jobs. Would you like to continue?</string>
+    <!-- Subtitle label, short description to let the user know that the phone must be connected to a wi-fi network in order to start calculating -->
+    <string name="connect_to_wifi" xliff:restype="x-GENERIC/LIST/SUBTITLE/ICON">The phone needs to be connected to a Wi-Fi network</string>
+    <!-- Title label, to let the user know the time interval which the application will run. The first variable the start time and the second variable is the end time, both times respects the format time format used in the phone (24h or AM-PM). e.g. 'Calculation time is between 10:30 - 16:30' or 'Calculation time is between 10:30AM - 4:30PM' -->
+    <string name="processing_time_title" xliff:restype="x-GENERIC/LIST/TITLE/ICON">Calculation time is between %1$s – %2$s</string>
+    <!-- Subtitle label, to let the user know that he can change the starting time on the settings screen -->
+    <string name="processing_time_text" xliff:restype="x-GENERIC/LIST/SUBTITLE/ICON">You can change start time in settings.</string>
+    <!-- Title of a Popup that informs the user about the pre-conditions (or starting conditions) for the app to start calculating. -->
+    <string name="will_start_when" xliff:restype="x-GENERIC/DIALOG/TITLE">Starting conditions</string>
+    <!-- Text placed on a button that will open the Facebook application to share the contribution time (Facebook should not be translated) -->
+    <string name="share_facebook_contribution" xliff:restype="x-GENERIC/BUTTON/1BUTTON">Share on Facebook</string>
+    <!-- Title to show in the dialog to notify the user that this application can not be used anymore. -->
+    <string name="app_disabled_title" xliff:restype="x-GENERIC/DIALOG/TITLE/ICON">Application disabled </string>
+    <!-- Message to show in the dialog to notify the user that this application can not be used anymore. -->
+    <string name="app_disabled_message" xliff:restype="x-UNLIMITED">This application is disabled and cannot be used any longer.</string>
+
+
+    <!-- Message to show when Folding@Home is in stand by mode, that is, when the application is enabled and the conditions were not met. Used both in the notification and in the status bar of the main screen -->
+    <string name="stand_by" xliff:restype="x-GENERIC/NOTIFICATION/SUBTITLE">Stand by </string>
+    <!-- Indicates on the notification bar and on the main screen that the application is running and processing (calculating) some data. -->
+    <string name="helping_out" xliff:restype="x-GENERIC/NOTIFICATION/SUBTITLE">Helping out</string>
+    <!-- Message to show when the application is disabled by the user -->
+    <string name="disabled" xliff:restype="x-GENERIC/SUBHEADER">Disabled</string>
+
+
+    <!-- Title for a section to warn the user about the data usage. -->
+    <string name="data_usage" xliff:restype="x-GENERIC/SUBHEADER">Data usage</string>
+    <!-- Text to explain that the device must be connected to Wi-Fi and to warn about data usage. -->
+    <string name="data_usage_text" xliff:restype="x-_UNLIMITED">Your device must be connected to a Wi-Fi network.\nIf you use a metered or paid Wi-Fi connection, you may be charged for the data usage.\n\nFor more info, check with your Internet service provider.</string>
+
+
+    <!-- This text is placed as a title on top of sections that shows the new features on the app. -->
+    <string name="whats_new" xliff:restype="x-GENERIC/DIALOG/TITLE">What\'s New</string>
+    <!-- Text to explain that the app now have icons to indicates the status of all 3 required conditions: connected to wi-fi, plugged to charger and battery fully charged. -->
+    <string name="whats_new_contribution_status" xliff:restype="x-_UNLIMITED">Now you can see the required conditions status to run Folding@Home.</string>
+    <!-- Text to explain an illustration showing how the status icons will look when the application is disabled. -->
+    <string name="whats_new_disable_indicator" xliff:restype="x-_UNLIMITED">Indicates that the app is disabled.</string>
+    <!-- Text to explain an illustration showing how the status icons will look when the wi-fi is connected but the phone is not charging and the battery is not 100% charged. -->
+    <string name="whats_new_conditions_indicator" formatted="false" xliff:restype="x-_UNLIMITED">Indicates that Wi-Fi is ready, but the phone must be connected to a charger and the battery must be 100% charged.</string>
+    <!-- Text to explain an illustration showing how the status icons will look when all conditions are met. -->
+    <string name="whats_new_enable_indicator" xliff:restype="x-_UNLIMITED">Indicates that all requirements are ready.</string>
+
+
+    <!-- Explains an illustration that shows how the user can enable/disable the application. Also shows a text with the app's current status (disabled, stand by or working). -->
+    <string name="whats_new_power_button" xliff:restype="x-_UNLIMITED">Now it\'s easier to enable or disable the app. You can also see the current status of Folding@Home.</string>
+
+
+    <!-- Explains that the app now have a login functionality and the data about the user's contribution will be saved and uploaded so the user will not lose his contributions history. -->
+    <string name="whats_new_login" xliff:restype="x-_UNLIMITED">Now you can log in and upload your contributions.</string>
+
+
+    <!-- Text to explain that the app now have new icons to easily identify some data about the contribution (research type, contribution time and number of people who are helping). -->
+    <string name="whats_new_contribution_indicators" xliff:restype="x-_UNLIMITED">Improved icons to easily keep track of your contribution status.</string>
+    <!-- Explains the icon that identifies the research type. -->
+    <string name="whats_new_research_type" xliff:restype="x-_UNLIMITED">Indicates the research which you are contributing to.</string>
+    <!-- Explains the icon that identifies how many people are helping/unsing Folding@Home. -->
+    <string name="whats_new_people_helping" xliff:restype="x-_UNLIMITED">Indicates the number of people using Folding@Home.</string>
+    <!-- Explains the icon that identifies the amount of time the user has contributed. -->
+    <string name="whats_new_contributed_time" xliff:restype="x-_UNLIMITED">Indicates the total time of your contributions.</string>
+
+
+    <!-- Text placed on a button on the setup guide to indicate that it will skip the setup guide. -->
+    <string name="skip" xliff:restype="x-GENERIC/BUTTON/3BUTTONS">Skip</string>
+
+
+    <!-- Text placed on the notification to turn on the contribution. -->
+    <string name="turn_on" xliff:restype="x-GENERIC/NOTIFICATION/SUBTITLE">Turn on</string>
+    <!-- Text placed on the notification to turn off the contribution. -->
+    <string name="turn_off" xliff:restype="x-GENERIC/NOTIFICATION/SUBTITLE">Turn off</string>
+    <!-- Menu option to show the details about the current research. -->
+    <string name="active_research" xliff:restype="x-GENERIC/MENU/OVERFLOW">Active research</string>
+    <!-- Text to show as a notification to warn the user about the time he has contributed in the last 24 hours. The variable is a text formated as time and specified in time_string_weeks, time_string_days, time_string_hours -->
+    <string name="notification_contribution_time" xliff:restype="x-_UNLIMITED">Thanks. This device has contributed %1$s during the last 24h.</string>
+    <!-- Menu option to login into a google account. -->
+    <string name="action_login" xliff:restype="x-GENERIC/MENU/OVERFLOW">Sign in</string>
+    <!-- Menu option to logout. The first variable is the username, example: "John Doe (Logout)" -->
+    <string name="action_logout" xliff:restype="x-GENERIC/MENU/OVERFLOW">%1$s (Sign out)</string>
+    <!-- Menu option to enter leaderboards screen -->
+    <string name="action_leaderboards" xliff:restype="x-GENERIC/MENU/OVERFLOW">Leaderboards</string>
+    <!-- Menu option to enter Achivements screen" -->
+    <string name="action_achievements" xliff:restype="x-GENERIC/MENU/OVERFLOW">Achievements</string>
+    <!-- Menu option to enter Invite Friends screen" -->
+    <string name="action_invite_friends" xliff:restype="x-GENERIC/MENU/OVERFLOW">Invite friends</string>
+    <!-- Message showed in the notification after the Folding@Home is disabled -->
+    <string name="notification_service_turn_on" xliff:restype="x-GENERIC/NOTIFICATION/1ACTION">Turn on to keep contributing</string>
+
+    <!-- Message shown as a Toast when the user logs out -->
+    <string name="toast_logout" xliff:restype="x-GENERIC/TOAST/TEXT">Logged out</string>
+    <!-- Message shown as a Toast when there's no network available -->
+    <string name="toast_network_unavailable" xliff:restype="x-GENERIC/TOAST/TEXT">Network unavailable</string>
+    <!-- Indicates on the main screen that the application is paused. -->
+    <string name="paused" xliff:restype="x-GENERIC/NOTIFICATION/SUBTITLE">Paused</string>
+    <!-- Menu option to enable folding and start the contribution. -->
+    <string name="action_enable" xliff:restype="x-GENERIC/MENU/OVERFLOW">Enable</string>
+    <!-- Menu option to disable folding and stop the contribution" -->
+    <string name="action_disable" xliff:restype="x-GENERIC/MENU/OVERFLOW">Disable</string>
+    <!-- Text placed on the notification to pause the contribution. -->
+    <string name="pause" xliff:restype="x-GENERIC/NOTIFICATION/SUBTITLE">Pause</string>
+    <!-- This text is placed as a title of a section that shows the new indicators on the app. -->
+    <string name="new_indicators" xliff:restype="x-_UNLIMITED">New indicators</string>
+    <!-- This text is placed as a title of a section that shows the new button on the app. -->
+    <string name="new_power_button" xliff:restype="x-_UNLIMITED">New power button</string>
+    <!-- This text is placed on a Button that will login into a google account -->
+    <string name="sign_in_google_game_service" xliff:restype="x-GENERIC/BUTTON/1BUTTON">Sign in Google Play™ Games Services</string>
+    <!-- This text is placed on a Button to display more information about research type -->
+    <string name="view_more" xliff:restype="x-GENERIC/BUTTON/2BUTTONS">View more</string>
+    <!-- Message shown as a toast when the user tries to open the achievements screen and isn't logged into google account -->
+    <string name="toast_achievements_disabled" xliff:restype="x-GENERIC/TOAST/TEXT">Sign in to view the achievements!</string>
+    <!-- Message shown as a toast when the user tries to open the leaderboards screen and isn't logged into google account -->
+    <string name="toast_leaderboards_disabled" xliff:restype="x-GENERIC/TOAST/TEXT">Sign in to view the leaderboards!</string>
+
+    <!--========================= New Strings below =========================-->
+	<skip/>
+    <!-- Action bar title of the activity that shows the contribution details/report -->
+    <string name="contribution_details" xliff:restype="x-GENERIC/DIALOG/TITLE">Contribution details</string>
+    <!-- Action bar title of the activity that shows the project description -->
+    <string name="project_description" xliff:restype="x-GENERIC/DIALOG/TITLE">Project description</string>
+    <!-- Tab title to show the contributed time for this week only -->
+    <string name="week" xliff:restype="x-GENERIC/DIALOG/TITLE">Week</string>
+    <!-- Tab title to show the contributed time for a specific month -->
+    <string name="month" xliff:restype="x-GENERIC/DIALOG/TITLE">Month</string>
+    <!-- Tab title to show the contributed time for all the years -->
+    <string name="all_time" xliff:restype="x-GENERIC/DIALOG/TITLE">Total time</string>
+    <!-- Representation of a time in hours only, the variable is in the following format: number of hours followed by the respectively abbreviated form ('h'). e.g. '145h' -->
+    <string name="time_string_hours_only"  xliff:restype="x-_UNLIMITED">%1$dh</string>
+    <!-- Label used in the monthly chart, the variable is the week number within a month. e.g. 'Week 1', 'Week 2' -->
+    <string name="chart_week_label" xliff:restype="x-_UNLIMITED">Week %1$d</string>
+    <!-- Chart title to indicate the total contributed time within a specific perid. e.g. '20 Hours contributed', '1975 hours contributed' -->
+    <string name="hours_contributed_label_plural" xliff:restype="x-_UNLIMITED">%1$d hours contributed</string>
+    <!-- Chart title to indicate that the user has contributed for only 1 hour -->
+    <string name="hours_contributed_label_singular" xliff:restype="x-_UNLIMITED">1 hour contributed</string>
+    <!-- Chart title to indicate that the user has not contributed yet -->
+    <string name="contributed_no_data" xliff:restype="x-_UNLIMITED">No contribution for the selected period</string>
+    <!-- Image subtitle to indicate that the phone is not plugged in the charger -->
+    <string name="no_charger_tile" xliff:restype="x-GENERIC/LIST/TITLE/ICON">No charger</string>
+    <!-- Image subtitle to indicate that the phone battery is low -->
+    <string name="low_battery_tile" xliff:restype="x-GENERIC/LIST/TITLE/ICON">Low battery</string>
+    <!-- Image subtitle to indicate that the phone has no Wi-Fi connection -->
+    <string name="no_wifi_tile" xliff:restype="x-GENERIC/LIST/TITLE/ICON">No Wi-Fi</string>
+
+    <!-- Image description -->
+    <!-- Message shown as explanation that functionality depends on the phone being plugged to a charger -->
+    <string name="no_charger_text" xliff:restype="x-GENERIC/LIST/SUBTITLE/ICON">The device must be connected to a charger</string>
+    <!-- Message shown as explanation that functionality depends on the phone battery level being at least 98% -->
+    <string name="low_battery_text" xliff:restype="x-GENERIC/LIST/SUBTITLE/ICON">Battery needs to be at least 98% charged to start the contribution</string>
+    <!-- Message shown as explanation that functionality depends the phone being connected to Wi-Fi network -->
+    <string name="no_wifi_text" xliff:restype="x-GENERIC/LIST/SUBTITLE/ICON">Connect to a Wi-Fi network to start the contribution.</string>
+
+    <!-- The Twitter application name -->
+    <string name="twitter" translatable="false" xliff:restype="x-_UNLIMITED">Twitter</string>
+
+</resources>

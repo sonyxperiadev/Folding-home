@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  Licensed under the LICENSE.
+  Copyright 2017, Sony Mobile Communications Inc.
+-->
+<resources xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="notification_service_finished_job_executed">Ön hozzájárult a tudomány fejlődéséhez</string>
+    <string name="notification_service_finished_failed">Nem teljesült minden alapfeltétel</string>
+    <string name="contributed_time">Felajánlott idő</string>
+    <string name="people_helping">Segítők száma</string>
+    <string name="research_type">A kutatás típusa</string>
+    <string name="research_type_unavailable">Nem érhető el</string>
+    <string name="setup_guide">Beállítási útmutató</string>
+    <string name="legal">Jogi infó</string>
+    <string name="share">Megosztás</string>
+    <string name="welcome">Üdvözli a Folding@Home</string>
+    <string name="read_more">Tovább</string>
+    <string name="more_info">További információ</string>
+    <string name="finish">Befejezés</string>
+    <string name="wizard_welcome_to_folding_subtitle">Szeretne segíteni az Alzheimer-kór, a Parkinson-kór és a rák ellenszerének felkutatásában?</string>
+    <string name="wizard_welcome_to_folding_text">Telefonja tudományos számításokat végezhet, amíg Ön alszik, és segíthet a Stanford Egyetem tudósainak számos betegség ellenszerének felkutatásában.</string>
+    <string-array name="help_find_cure">
+        <item>A Folding@Home programra regisztrálva Ön is segíthet a Stanford Egyetem tudósainak számos gyakori betegség ellenszerének felkutatásában azzal, hogy felkínálja telefonja feldolgozókapacitását, amikor Ön nem használja azt.</item>
+        <item>A „Folding” (feltekeredés) szó a testünkben lezajló fehérjetevékenységekre utal. A fehérjefeltekeredés kutatása olyan sok számítást igényel, hogy a Stanford Egyetem az emberek segítségét kéri, hogy telefonjaik nem használt feldolgozókapacitásának felajánlásával segítsenek elvégezni néhány számítást. Amikor Ön alszik, a Stanford Egyetem egy megoldandó feltekeredési problémát fog elküldeni telefonjára. A számítások végeztével a telefon visszaküldi az adatokat az egyetemnek.</item>
+        <item>A Folding@Home programról itt talál bővebb információt:\nfolding.stanford.edu</item>
+    </string-array>
+    <string name="powered_by">támogatók:</string>
+    <string name="private_date_safe_title">Adatai biztonságban vannak.</string>
+    <string name="private_date_safe_text">Ez az alkalmazás nem fér hozzá személyes adataihoz.</string>
+    <string name="no_cost_mobile_data_title">Nincsenek adatátviteli díjak</string>
+    <string name="no_cost_mobile_data_text">A telefont Wi-Fi hálózathoz kell csatlakoztatni</string>
+    <string name="battery_not_drained_title">Az akku nem fog lemerülni</string>
+    <string name="battery_not_drained_text">A telefont töltőhöz kell csatlakoztatni és teljesen feltöltött (100%-os) állapotban kell lennie</string>
+    <string name="time_string_weeks">%1$dh %2$dn %3$dó</string>
+    <string name="time_string_days">%1$dn %2$dó %3$dp</string>
+    <string name="time_string_hours">%1$dó %2$dp</string>
+    <string name="share_facebook_success">Sikerült megosztani a Facebookon</string>
+    <string name="share_facebook_error">Nem sikerült megosztani a Facebookon</string>
+    <string name="waiting">Megosztás...</string>
+    <string name="share_object_message">Egyike vagyok a(z) %1$d segítőnek, és már %2$s számítási idővel járultam hozzá a programhoz!</string>
+    <string name="notification_service_executing_job">A Folding@Home fut.\nÖn is hozzájárul a tudományos kutatáshoz.</string>
+    <string name="notification_service_not_executing">A Folding@Home nem fut.\nNem teljesíti az összes alapfeltételt.</string>
+    <string name="settings">Beállítások</string>
+    <string name="start_contribute">Kezdési idő</string>
+    <string name="start_contribute_text">Adja meg a számítás kezdési idejét</string>
+    <string name="settings_auto_wifi_msg">Wi-Fi bekapcsolása a hozzájáruláskor</string>
+    <string name="notifications">Értesítések</string>
+    <string name="settings_display_notification">Értesítések küldése a számítás végén</string>
+    <string name="contribution_interval_time">Hozzájárulás időtartama</string>
+    <string name="wizard_step">Lépés: %1$d/%2$d</string>
+    <string name="no_opencl">Ez a készülék nem támogatja az OpenCL keretrendszert. Ez a könyvtár nélkülözhetetlen a feladatok végrehajtásához. Szeretné folytatni?</string>
+    <string name="connect_to_wifi">A telefont Wi-Fi hálózathoz kell csatlakoztatni</string>
+    <string name="processing_time_title">A számítás %1$s és %2$s között zajlik</string>
+    <string name="processing_time_text">A kezdési időt a beállítások között módosíthatja.</string>
+    <string name="will_start_when">Alapfeltételek</string>
+    <string name="share_facebook_contribution">Megosztás a Facebookon</string>
+    <string name="app_disabled_title">Alkalmazás letiltva</string>
+    <string name="app_disabled_message">Ez az alkalmazás le van tiltva és már nem használható.</string>
+    <string name="stand_by">Készenlét</string>
+    <string name="helping_out">Kisegítés</string>
+    <string name="disabled">Letiltva</string>
+    <string name="data_usage">Adathasználat</string>
+    <string name="data_usage_text">A készüléknek Wi-Fi-hálózathoz kell kapcsolódnia.\nHa mérős vagy fizetős Wi-Fi-kapcsolatot használ, akkor lehetséges, hogy fizetnie kell az adatforgalomért.\n\nTovábbi tájékoztatásért forduljon az internetszolgáltatóhoz.</string>
+    <string name="whats_new">Újdonságok</string>
+    <string name="whats_new_contribution_status">Mostantól láthatja a Folding@Home futtatásához szükséges feltételek állapotát.</string>
+    <string name="whats_new_disable_indicator">Azt jelzi, hogy az alkalmazás le van tiltva.</string>
+    <string name="whats_new_conditions_indicator">Azt jelzi, hogy a Wi-Fi készen áll, de a telefont töltőhöz kell csatlakoztatni, és az akkumulátornak 100%-on kell lennie.</string>
+    <string name="whats_new_enable_indicator">Azt jelzi, hogy minden feltételt teljesít.</string>
+    <string name="whats_new_power_button">Mostantól könnyebb engedélyezni és letiltani az alkalmazást. A Folding@Home aktuális állapotát is láthatja.</string>
+    <string name="whats_new_login">Mostantól bejelentkezhet, és feltöltheti saját anyagait.</string>
+    <string name="whats_new_contribution_indicators">Továbbfejlesztett ikonok a hozzájárulás állapotának egyszerűbb követéséhez.</string>
+    <string name="whats_new_research_type">Azt jelzi, hogy Ön melyik kutatáshoz járul hozzá.</string>
+    <string name="whats_new_people_helping">Azt jelzi, hogy hányan használják a Folding@Home alkalmazást.</string>
+    <string name="whats_new_contributed_time">Azt jelzi, hogy Ön összesen mennyi idővel járult hozzá.</string>
+    <string name="skip">Kihagyás</string>
+    <string name="turn_on">Bekapcsolás</string>
+    <string name="turn_off">Kikapcsolás</string>
+    <string name="active_research">Aktív kutatás</string>
+    <string name="notification_contribution_time">Köszönjük! A készülék hozzájárulása %1$s volt az elmúlt 24 órában.</string>
+    <string name="action_login">Bejelentkezés</string>
+    <string name="action_logout">%1$s (Kilépés)</string>
+    <string name="action_leaderboards">Ranglisták</string>
+    <string name="action_achievements">Eredmények</string>
+    <string name="action_invite_friends">Barátok meghívása</string>
+    <string name="notification_service_turn_on">Kapcsolja be a folytatáshoz</string>
+    <string name="toast_logout">Kijelentkezett</string>
+    <string name="toast_network_unavailable">A hálózat nem érhető el</string>
+    <string name="paused">Szünetel</string>
+    <string name="action_enable">Engedélyezés</string>
+    <string name="action_disable">Letiltás</string>
+    <string name="pause">Szünet</string>
+    <string name="new_indicators">Új jelzők</string>
+    <string name="new_power_button">Új bekapcsológomb</string>
+    <string name="sign_in_google_game_service">Belépés: Google Play™ játékszolg.</string>
+    <string name="view_more">Továbbiak</string>
+    <string name="toast_achievements_disabled">Lépjen be az elért eredmények megtekintéséhez!</string>
+    <string name="toast_leaderboards_disabled">Lépjen be a ranglista megtekintéséhez!</string>
+    <string name="contribution_details">Közös munka részletei</string>
+    <string name="project_description">Projektleírás</string>
+    <string name="week">Hét</string>
+    <string name="month">Hónap</string>
+    <string name="all_time">Teljes idő</string>
+    <string name="time_string_hours_only">%1$d ó</string>
+    <string name="chart_week_label">%1$d. hét</string>
+    <string name="hours_contributed_label_plural">%1$d órán át működött közre</string>
+    <string name="hours_contributed_label_singular">1 órán át működött közre</string>
+    <string name="contributed_no_data">Nincs közös munka a kijelölt időszakban</string>
+    <string name="no_charger_tile">Nincs töltés</string>
+    <string name="low_battery_tile">Az akku. tölt. alacsony</string>
+    <string name="no_wifi_tile">Nincs Wi-Fi</string>
+    <string name="no_charger_text">A készüléket töltőhöz kell csatlakoztatni</string>
+    <string name="low_battery_text">Az akkumulátort legalább 98%-ra fel kell tölteni a közös munka indításához</string>
+    <string name="no_wifi_text">Az együttműködés elkezdéséhez csatlakozzon Wi-Fi-hálózathoz.</string>
+</resources>

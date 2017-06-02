@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  Licensed under the LICENSE.
+  Copyright 2017, Sony Mobile Communications Inc.
+-->
+<resources xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="notification_service_finished_job_executed">Сіз ғылымға үлес қостыңыз</string>
+    <string name="notification_service_finished_failed">Кейбір бастапқы шарттар орындалмады</string>
+    <string name="contributed_time">Қатысқан уақыт</string>
+    <string name="people_helping">Адамдарға көмектесу</string>
+    <string name="research_type">Зерттеу түрі</string>
+    <string name="research_type_unavailable">Қолжетімді емес</string>
+    <string name="setup_guide">Орнату нұсқаулығы</string>
+    <string name="legal">Заңды</string>
+    <string name="share">Бөлісу</string>
+    <string name="welcome">Folding@Home жоб. қош келд.</string>
+    <string name="read_more">Қосымша ақпарат алу</string>
+    <string name="more_info">Қосымша ақпарат</string>
+    <string name="finish">Аяқтау</string>
+    <string name="wizard_welcome_to_folding_subtitle">Альцгеймер, Паркинсон және қатерлі ісік ауруларына ем табуға көмектескіңіз келе ме?</string>
+    <string name="wizard_welcome_to_folding_text">Телефоныңыз ұйықтап жатқанда ғылыми зерттеулер жасай алады және Стэнфорд университетінің ғалымдарына көптеген аурулардың емін табуға көмектеседі.</string>
+    <string-array name="help_find_cure">
+        <item>Folding@Home жобасына тіркеліп, телефонды өзіңіз пайдаланбағанда, оның өңдеу қуатын беру арқылы Стэнфорд университетінің ғалымдарының ең көп таралған аурулардың көбісіне ем табуға қатысты сұрауына көмектесесіз.</item>
+        <item>Фолдинг біздің ағзамыздағы ақуыздың әрекетіне қатысты. Ақуыз фолдингін зерттеу, Стэнфорд университетінің ғалымдары нөмірлерді есептеу үшін адамдардан телефондарының пайдаланылмаған өңдеу қуатын беруді сұрайтын көптеген есептеулерді қажет етеді. Сіз ұйықтап жатқан кезде Стэнфорд университеті телефоныңызға шешетін фолдинг мәселесін жібереді. Есептеулер аяқталған кезде нәтижелер кері Стэнфордқа жіберіледі.</item>
+        <item>Folding@Home туралы қосымша ақпаратты басты бетте табасыз:\nfolding.stanford.edu</item>
+    </string-array>
+    <string name="powered_by">Негізінде</string>
+    <string name="private_date_safe_title">Жеке деректеріңіз қауіпсіз.</string>
+    <string name="private_date_safe_text">Бұл қолданба жеке деректеріңізге кірмейді.</string>
+    <string name="no_cost_mobile_data_title">Мобил. деректер. бағасы жоқ</string>
+    <string name="no_cost_mobile_data_text">Телефон Wi-Fi желісіне қосулы болуы керек.</string>
+    <string name="battery_not_drained_title">Батарея бос болмауы керек</string>
+    <string name="battery_not_drained_text">Телефон зарядтау құрылғысына жалғануы және толық зарядталуы керек (100%)</string>
+    <string name="time_string_weeks">%1$dе %2$dқ %3$dб</string>
+    <string name="time_string_days">%1$dқ%2$dб %3$dм</string>
+    <string name="time_string_hours">%1$dб%2$dм</string>
+    <string name="share_facebook_success">Facebook сайтында сәтті бөлісілді</string>
+    <string name="share_facebook_error">Facebook сайтында бөлісілмейді</string>
+    <string name="waiting">Бөлісу…</string>
+    <string name="share_object_message">Мен %1$d қатысушы адамдардың бірімін және %2$s есептеу уақытына қатыстым!</string>
+    <string name="notification_service_executing_job">Folding@Home жұмыс істеп тұр.\u0020\nСіз ғылыми зерттеуге қатысасыз.</string>
+    <string name="notification_service_not_executing">Folding@Home жұмыс істеп тұрған жоқ.\nБарлық бастау шарттары сәйкес емес.</string>
+    <string name="settings">Параметрлер</string>
+    <string name="start_contribute">Бастау уақыты</string>
+    <string name="start_contribute_text">Есептеудің бастау уақытын белгілеу</string>
+    <string name="settings_auto_wifi_msg">Қатысу кезінде Wi-Fi желісін қосу</string>
+    <string name="notifications">Хабарландырулар</string>
+    <string name="settings_display_notification">Есептеудің соңында хабарландыру жіберу</string>
+    <string name="contribution_interval_time">Қатысу ұзақтығы</string>
+    <string name="wizard_step">Қадам %1$d/%2$d</string>
+    <string name="no_opencl">Құрылғы OpenCL қолдамайды. Бұл кітапхана тапсырмалар орындауға қажетті. Жалғастырғыңыз келе ме?</string>
+    <string name="connect_to_wifi">Телефон Wi-Fi желісіне жалғануы керек</string>
+    <string name="processing_time_title">Есепт. кел. мән аралығ. %1$s - %2$s</string>
+    <string name="processing_time_text">Параметрлердегі бастау уақытын өзгертуіңізге болады.</string>
+    <string name="will_start_when">Бастау шарттары</string>
+    <string name="share_facebook_contribution">Facebook сайтында бөлісу</string>
+    <string name="app_disabled_title">Қолданба өшірілді</string>
+    <string name="app_disabled_message">Бұл қолданба өшірілді және оны бұдан былай пайдалану мүмкін емес.</string>
+    <string name="stand_by">Күту режимі</string>
+    <string name="helping_out">Көмектесу</string>
+    <string name="disabled">Өшірілген</string>
+    <string name="data_usage">Деректерді пайдалану</string>
+    <string name="data_usage_text">Құрылғыңыз Wi-Fi желісіне қосылған болуы тиіс.\nЕгер өлшенетін немесе ақылы Wi-Fi байланысын пайдалансаңыз, деректерді пайдалану үшін ақы төлеуіңіз мүмкін.\n\nҚосымша ақпарат алу үшін Интернет провайдеріне хабарласыңыз.</string>
+    <string name="whats_new">Жаңалықтар</string>
+    <string name="whats_new_contribution_status">Енді Folding@Home қолданбасын іске қосу үшін қажетті шарттар күйін көре аласыз.</string>
+    <string name="whats_new_disable_indicator">Қолданбаның өшірілгенін көрсетеді.</string>
+    <string name="whats_new_conditions_indicator">Wi-Fi желісінің дайын екендігін, бірақ телефонды зарядтағышқа қосу керектігін және батареяны 100% зарядтау қажеттігін көрсетеді.</string>
+    <string name="whats_new_enable_indicator">Барлық шарттардың орындалғандығын көрсетеді.</string>
+    <string name="whats_new_power_button">Енді қолданбаны қосу немесе өшіру оңайырақ. Folding@Home қолданбасының ағымдағы күйін де көре аласыз.</string>
+    <string name="whats_new_login">Енді жүйеге кіріп, деректеріңізді жүктей аласыз.</string>
+    <string name="whats_new_contribution_indicators">Қосқан үлесіңіздің күйін оңай қадағалауға арналған жақсартылған белгішелер.</string>
+    <string name="whats_new_research_type">Сіз қатысып отырған зерттеуді көрсетеді.</string>
+    <string name="whats_new_people_helping">Folding@Home қолданбасын пайдаланатын адамдардың санын көрсетеді.</string>
+    <string name="whats_new_contributed_time">Қосқан үлесіңіздің жалпы уақытын көрсетеді.</string>
+    <string name="skip">Өткізу</string>
+    <string name="turn_on">Қосу</string>
+    <string name="turn_off">Өшіру</string>
+    <string name="active_research">Белсенді іздеу</string>
+    <string name="notification_contribution_time">Рақмет. Бұл құрылғы соңғы 24 сағат ішінде %1$s жұмсады.</string>
+    <string name="action_login">Жүйеге кіру</string>
+    <string name="action_logout">%1$s (Шығу)</string>
+    <string name="action_leaderboards">Үздіктер тізімі</string>
+    <string name="action_achievements">Жетістіктер</string>
+    <string name="action_invite_friends">Достарды шақыру</string>
+    <string name="notification_service_turn_on">Қатысуды жалғас-у үшін қосыңыз</string>
+    <string name="toast_logout">Жүйеден шықты</string>
+    <string name="toast_network_unavailable">Желі қол жетімді емес</string>
+    <string name="paused">Кідіртілді</string>
+    <string name="action_enable">Қосу</string>
+    <string name="action_disable">Өшіру</string>
+    <string name="pause">Уақытша тоқтату</string>
+    <string name="new_indicators">Жаңа көрсеткіштер</string>
+    <string name="new_power_button">Жаңа қуат түймесі</string>
+    <string name="sign_in_google_game_service">Google Play™ ойындар қызметіне кіру</string>
+    <string name="view_more">Қос. көру</string>
+    <string name="toast_achievements_disabled">Жетістіктерді көру үшін кіріңіз!</string>
+    <string name="toast_leaderboards_disabled">Лидерлер кестесін көру үшін кіріңіз!</string>
+    <string name="contribution_details">Үлес туралы мәліметтер</string>
+    <string name="project_description">Жоба сипаттамасы</string>
+    <string name="week">Апта</string>
+    <string name="month">Ай</string>
+    <string name="all_time">Жалпы уақыт</string>
+    <string name="time_string_hours_only">%1$dсағ</string>
+    <string name="chart_week_label">Апта %1$d</string>
+    <string name="hours_contributed_label_plural">%1$d сағат үлес қосылды</string>
+    <string name="hours_contributed_label_singular">1 сағат үлес қосылды</string>
+    <string name="contributed_no_data">Таңдалған кезеңде үлес қосылмаған</string>
+    <string name="no_charger_tile">Зарядтағыш жоқ</string>
+    <string name="low_battery_tile">Батарея заряды аз</string>
+    <string name="no_wifi_tile">Wi-Fi жоқ</string>
+    <string name="no_charger_text">Құрылғы зарядтағышқа қосылған болуы керек</string>
+    <string name="low_battery_text">Үлес қосуды бастау үшін батарея кемінде 98% зарядталған болуы керек</string>
+    <string name="no_wifi_text">Үлес қосуды бастау үшін Wi-Fi желісіне қосылыңыз.</string>
+</resources>

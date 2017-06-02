@@ -1,0 +1,63 @@
+<!--
+ Licensed under the LICENSE.
+ Copyright 2017, Sony Mobile Communications Inc.
+-->
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/fragment_wizard_welcome"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scrollbarStyle="outsideInset">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingEnd="@dimen/activity_padding_horizontal"
+        android:paddingStart="@dimen/activity_padding_horizontal"
+        android:paddingTop="@dimen/activity_padding_vertical" >
+
+        <TextView
+            style="@android:style/TextAppearance.DeviceDefault.Large"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/margin_medium"
+            android:fontFamily="sans-seriff-light"
+            android:scrollbars="vertical"
+            android:text="@string/whats_new"
+            android:textAlignment="viewStart" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:contentDescription="@string/whats_new_power_button"
+            android:src="@drawable/img_step6"
+            android:layout_margin="@dimen/margin_small" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/margin_small"
+            android:autoLink="web"
+            android:fontFamily="sans-seriff"
+            android:scrollbars="vertical"
+            android:text="@string/whats_new_login"
+            android:textAlignment="center"
+            android:textColor="@color/sony_gray_text"
+            android:textSize="@dimen/wizard_font_size_small" />
+
+        <Button
+            android:id="@+id/sign_in_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAllCaps="false"
+            android:onClick="onClick"
+            android:layout_gravity="center"
+            android:drawableStart="@drawable/ic_button_sign_in"
+            android:drawablePadding="@dimen/padding_x_small"
+            android:text="@string/sign_in_google_game_service"/>
+
+    </LinearLayout>
+
+</ScrollView>

@@ -1,0 +1,41 @@
+<!--
+  Licensed under the LICENSE.
+  Copyright 2017, Sony Mobile Communications Inc.
+-->
+<!-- Findbug exclude filter. -->
+<FindBugsFilter>
+    <Match>
+        <Class name="~.\*\.R\$.*" />
+        <Bug pattern="NM_CLASS_NAMING_CONVENTION" />
+    </Match>
+    <Match>
+        <Class name="~.*\.R\$.*" />
+    </Match>
+    <Match>
+        <Package name="~android.*" />
+    </Match>
+    <Match>
+        <Package name="~com\.google.*" />
+    </Match>
+    <Match>
+        <Package name="~com\.facebook.*" />
+    </Match>
+    <Match>
+        <Package name="~android.*" />
+    </Match>
+    <Match>
+        <Package name="~com\.sonymobile\.gagtmhelper.*" />
+    </Match>
+    <Match>
+        <Package name="~com\.sonymobile\.gahelper.*" />
+    </Match>
+    <Match>
+        <Package name="~com\.sonyericsson\.legal.*" />
+    </Match>
+    <Match>
+        <Package name="~com\.sonymobile\.androidapp\.gridcomputing\.test.*" />
+    </Match>
+    <Match>
+        <Class name="~.*AnalogClock\.java" />
+    </Match>
+</FindBugsFilter>

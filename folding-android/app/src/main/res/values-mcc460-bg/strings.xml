@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  Licensed under the LICENSE.
+  Copyright 2017, Sony Mobile Communications Inc.
+-->
+<resources xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="no_cost_mobile_data_text">Телефонът трябва да е свързан с WLAN мрежа.</string>
+    <string name="settings_auto_wifi_msg">Включване на WLAN по време на приноса</string>
+    <string name="connect_to_wifi">Телефонът трябва да е свързан с WLAN мрежа</string>
+    <string name="data_usage_text">Вашето устройство трябва да е свързано към WLAN мрежа.\nАко използвате WLAN връзка, която е платена или с измерено потребление, може да платите такса за използването на данните.\n\nЗа повече информация проверете при своя доставчик на интернет услуги.</string>
+    <string name="whats_new_conditions_indicator">Показва, че WLAN е в готовност, но телефонът трябва да се включи в зарядно устройство, а батерията трябва да е заредена до 100%.</string>
+    <string name="no_wifi_tile">Няма WLAN връзка</string>
+    <string name="no_wifi_text">Свържете се с WLAN мрежа, за да стартирате приноса.</string>
+</resources>

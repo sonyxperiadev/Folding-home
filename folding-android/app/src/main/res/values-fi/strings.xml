@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  Licensed under the LICENSE.
+  Copyright 2017, Sony Mobile Communications Inc.
+-->
+<resources xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="notification_service_finished_job_executed">Olet tukenut onnistuneesti tutkimusta.</string>
+    <string name="notification_service_finished_failed">Kaikki alkuvaatimukset eivät täyttyneet.</string>
+    <string name="contributed_time">Osallistumisaika</string>
+    <string name="people_helping">Osallistuvien lukumäärä</string>
+    <string name="research_type">Tutkimustyyppi</string>
+    <string name="research_type_unavailable">Ei käytettävissä</string>
+    <string name="setup_guide">Ohjattu asennustoiminto</string>
+    <string name="legal">Käyttöehdot</string>
+    <string name="share">Jaa</string>
+    <string name="welcome">Tämä on Folding@Home</string>
+    <string name="read_more">Lue lisää</string>
+    <string name="more_info">Lisätietoja</string>
+    <string name="finish">Valmis</string>
+    <string name="wizard_welcome_to_folding_subtitle">Haluatko auttaa löytämään parannuskeinon Alzheimerin ja Parkinsonin tautiin sekä syöpään?</string>
+    <string name="wizard_welcome_to_folding_text">Puhelin voi nukkuessasi suorittaa tieteellisiä laskutoimituksia ja auttaa Stanfordin yliopiston tutkijoita löytämään parannuskeinoja moniin sairauksiin.</string>
+    <string-array name="help_find_cure">
+        <item>Ilmoittautumalla Folding@Home-hankkeeseen autat Stanfordin yliopiston tutkijoita löytämään parannuskeinon moniin yleisimpiin sairauksiin lahjoittamalla puhelimesi laskentatehoa, kun et käytä sitä itse.</item>
+        <item>Folding (laskostuminen) viittaa proteiinien toimintaan kehossamme.Proteiinien laskostumisen tutkimus vaatii niin paljon laskelmia, että Stanfordin yliopisto pyytää ihmisiä lahjoittamaan puhelimien käyttämätöntä laskentatehoa joidenkin laskutoimitusten suorittamista varten. Nukkuessasi Stanfordin yliopisto lähettää yhden laskostumisongelman puhelimesi ratkaistavaksi. Kun laskelmat on tehty, tulokset lähetetään takaisin Stanfordiin.</item>
+        <item>Lisää Folding@Home-hanketta koskevaa tietoa löydät hankkeen kotisivuilta:\nfolding.stanford.edu</item>
+    </string-array>
+    <string name="powered_by">palvelun tarjoaa</string>
+    <string name="private_date_safe_title">Yksityiset tiedot ovat turvassa.</string>
+    <string name="private_date_safe_text">Sovellus ei käytä yksityisiä tietoja.</string>
+    <string name="no_cost_mobile_data_title">Mobiilidatasta ei peritä maksua.</string>
+    <string name="no_cost_mobile_data_text">Puhelimen on oltava yhteydessä langattomaan lähiverkkoon.</string>
+    <string name="battery_not_drained_title">Akku ei tyhjene.</string>
+    <string name="battery_not_drained_text">Puhelimen on oltava liitettynä laturiin ja täyteen ladattu (100 %).</string>
+    <string name="time_string_weeks">%1$d vk %2$d pv %3$d h</string>
+    <string name="time_string_days">%1$dpv %2$dh %3$dmin</string>
+    <string name="time_string_hours">%1$dh %2$dmin</string>
+    <string name="share_facebook_success">Facebook-jakaminen onnistui.</string>
+    <string name="share_facebook_error">Facebook-jakaminen epäonnistui.</string>
+    <string name="waiting">Jaetaan...</string>
+    <string name="share_object_message">Hankkeeseen osallistuu %1$d, ja olen yksi heistä. Olen Olen antanut käyttöön %2$s laskenta-aikaa.</string>
+    <string name="notification_service_executing_job">Folding@Home on käynnissä.\nOsallistut tieteelliseen tutkimukseen.</string>
+    <string name="notification_service_not_executing">Folding@Home ei ole käynnissä.\nKaikki aloitusehdot eivät täyty.</string>
+    <string name="settings">Asetukset</string>
+    <string name="start_contribute">Aloitusaika</string>
+    <string name="start_contribute_text">Aseta laskennan alkamisaika</string>
+    <string name="settings_auto_wifi_msg">Ota Wi-Fi käyttöön osallistuttaessa</string>
+    <string name="notifications">Ilmoitukset</string>
+    <string name="settings_display_notification">Lähetä ilmoitukset laskennan päätteeksi</string>
+    <string name="contribution_interval_time">Osallistumisen kesto</string>
+    <string name="wizard_step">Vaihe %1$d/%2$d</string>
+    <string name="no_opencl">Laite ei tue OpenCL-viitekehystä. Kirjastoa tarvitaan tehtävien suorittamiseen. Haluatko jatkaa?</string>
+    <string name="connect_to_wifi">Puhelimen on oltava yhteydessä langattomaan lähiverkkoon.</string>
+    <string name="processing_time_title">Laskenta-aika on %1$s – %2$s</string>
+    <string name="processing_time_text">Alkamisajan voi muuttaa asetuksista.</string>
+    <string name="will_start_when">Aloitusehdot</string>
+    <string name="share_facebook_contribution">Jaa Facebookissa</string>
+    <string name="app_disabled_title">Sovellus poistettu käytöstä</string>
+    <string name="app_disabled_message">Tämä sovellus on poistettu käytöstä, eikä sitä voida enää käyttää.</string>
+    <string name="stand_by">Valmiustila</string>
+    <string name="helping_out">Käsittely kesken</string>
+    <string name="disabled">Ei käytössä</string>
+    <string name="data_usage">Tietojen käyttö</string>
+    <string name="data_usage_text">Laite on kytkettävä langattomaan lähiverkkoon.\nSiirrettyjen tietojen määrään perustuvaa langatonta lähiverkkoyhteyttä käytettäessä tiedonsiirrosta voidaan periä maksu.\n\nLisätietoja saat Internet-palveluntarjoajalta.</string>
+    <string name="whats_new">Uutta</string>
+    <string name="whats_new_contribution_status">Nyt näet Folding@Home-hankkeeseen osallistuessasi tarvittavat tilatiedot.</string>
+    <string name="whats_new_disable_indicator">Ilmoittaa, että sovellus ei ole käytössä.</string>
+    <string name="whats_new_conditions_indicator">Ilmoittaa, että langaton lähiverkko on valmis, mutta puhelin on liitettävä laturiin ja akun on oltava täysin ladattu.</string>
+    <string name="whats_new_enable_indicator">Ilmoittaa, että kaikki vaatimukset on täytetty.</string>
+    <string name="whats_new_power_button">Nyt sovelluksen ottaminen käyttöön ja poistaminen käytöstä on helpompaa. Näet myös Folding@Home-hankkeen nykytilan.</string>
+    <string name="whats_new_login">Nyt voit kirjautua sisään ja lähettää oman osuutesi.</string>
+    <string name="whats_new_contribution_indicators">Parannettujen kuvakkeiden avulla oman osuuden seuraaminen on helppoa.</string>
+    <string name="whats_new_research_type">Ilmoittaa tutkimuksen, johon osallistut.</string>
+    <string name="whats_new_people_helping">Ilmoittaa Folding@Home-hankkeeseen osallistujien määrän.</string>
+    <string name="whats_new_contributed_time">Ilmoittaa lahjoittamasi kokonaisajan.</string>
+    <string name="skip">Ohita</string>
+    <string name="turn_on">Ota käyttöön</string>
+    <string name="turn_off">Poista käytöstä</string>
+    <string name="active_research">Nykyinen haku</string>
+    <string name="notification_contribution_time">Kiitos. Kuluneiden 24 tunnin aikana laitteen suoritinaikaa on käytetty %1$s.</string>
+    <string name="action_login">Kirjaudu</string>
+    <string name="action_logout">%1$s (Kirjaudu ulos)</string>
+    <string name="action_leaderboards">Tulostaulukot</string>
+    <string name="action_achievements">Suoritukset</string>
+    <string name="action_invite_friends">Kutsu kavereita</string>
+    <string name="notification_service_turn_on">Jatka osallist. ottamalla käyttöön</string>
+    <string name="toast_logout">Kirjauduttu ulos</string>
+    <string name="toast_network_unavailable">Verkko ei ole käytettävissä</string>
+    <string name="paused">Keskeytetty</string>
+    <string name="action_enable">Ota käyttöön</string>
+    <string name="action_disable">Poista käytöstä</string>
+    <string name="pause">Tauko</string>
+    <string name="new_indicators">Uudet ilmaisimet</string>
+    <string name="new_power_button">Uusi virtapainike</string>
+    <string name="sign_in_google_game_service">Kirjaudu Google Play™ -pelipalveluun</string>
+    <string name="view_more">Näytä lisää</string>
+    <string name="toast_achievements_disabled">Näytä tavoitetilanne kirjautumalla sisään!</string>
+    <string name="toast_leaderboards_disabled">Näytä tulostaulut kirjautumalla sisään!</string>
+    <string name="contribution_details">Osallistumistiedot</string>
+    <string name="project_description">Projektin kuvaus</string>
+    <string name="week">Viikko</string>
+    <string name="month">Kuukausi</string>
+    <string name="all_time">Kokonaisaika</string>
+    <string name="time_string_hours_only">%1$d t</string>
+    <string name="chart_week_label">Viikko %1$d</string>
+    <string name="hours_contributed_label_plural">%1$d tuntia osallistuttu</string>
+    <string name="hours_contributed_label_singular">1 tunti osallistuttu</string>
+    <string name="contributed_no_data">Ei osallistumista valitulla ajanjaksolla</string>
+    <string name="no_charger_tile">Ei laturia</string>
+    <string name="low_battery_tile">Alhainen akun lataus</string>
+    <string name="no_wifi_tile">Ei Wi-Fi-yhteyttä</string>
+    <string name="no_charger_text">Laitteen täytyy olla liitettynä laturiin</string>
+    <string name="low_battery_text">Jos haluat aloittaa tämän osallistumisen, akun lataustason täytyy olla vähintään 98 %</string>
+    <string name="no_wifi_text">Jos haluat aloittaa osallistumisen, muodosta yhteys Wi-Fi-verkkoon.</string>
+</resources>

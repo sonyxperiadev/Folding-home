@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  Licensed under the LICENSE.
+  Copyright 2017, Sony Mobile Communications Inc.
+-->
+<resources xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="no_cost_mobile_data_text">Telefonas turi būti prijungtas prie „WLAN“ tinklo.</string>
+    <string name="settings_auto_wifi_msg">Įgalinti „WLAN“ bendradarbiaujant</string>
+    <string name="connect_to_wifi">Telefonas turi būti prijungtas prie „WLAN“ tinklo</string>
+    <string name="data_usage_text">Prietaisas turi būti prijungtas prie „WLAN“ tinklo.\nJei naudojate apskaičiuotų duomenų arba mokamą „WLAN“ ryšį, galbūt reikės mokėti už duomenų naudojimą.\n\nDaugiau informacijos teiraukitės interneto paslaugų teikėjo.</string>
+    <string name="whats_new_conditions_indicator">Nurodo, kad „WLAN“ parengtas, bet telefonas turi būti prijungtas prie įkroviklio ir akumuliatorius turi būti 100 % įkrautas.</string>
+    <string name="no_wifi_tile">Nėra „WLAN“</string>
+    <string name="no_wifi_text">Norint pradėti sąveiką reikia prisijungti prie „WLAN“ tinklo.</string>
+</resources>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  Licensed under the LICENSE.
+  Copyright 2017, Sony Mobile Communications Inc.
+-->
+<resources xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="no_cost_mobile_data_text">Puhelimen on oltava yhteydessä langattomaan lähiverkkoon.</string>
+    <string name="settings_auto_wifi_msg">Ota WLAN käyttöön osallistuttaessa</string>
+    <string name="connect_to_wifi">Puhelimen on oltava yhteydessä langattomaan lähiverkkoon.</string>
+    <string name="data_usage_text">Laite on kytkettävä langattomaan lähiverkkoon.\nSiirrettyjen tietojen määrään perustuvaa langatonta lähiverkkoyhteyttä käytettäessä tiedonsiirrosta voidaan periä maksu.\n\nLisätietoja saat Internet-palveluntarjoajalta.</string>
+    <string name="whats_new_conditions_indicator">Ilmoittaa, että langaton lähiverkko on valmis, mutta puhelin on liitettävä laturiin ja akun on oltava täysin ladattu.</string>
+    <string name="no_wifi_tile">Ei WLAN-yhteyttä</string>
+    <string name="no_wifi_text">Jos haluat aloittaa osallistumisen, muodosta yhteys WLAN-verkkoon.</string>
+</resources>

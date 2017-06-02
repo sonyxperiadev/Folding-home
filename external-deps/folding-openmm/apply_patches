@@ -1,0 +1,7 @@
+#!/bin/bash
+
+git apply \
+   patches/0001-Building_static_cpu.patch \
+   patches/0002-fftw_estimate.patch \
+   --directory=openmm
+

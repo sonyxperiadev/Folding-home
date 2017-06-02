@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  Licensed under the LICENSE.
+  Copyright 2017, Sony Mobile Communications Inc.
+-->
+<resources xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="notification_service_finished_job_executed">תרמת בהצלחה למדע</string>
+    <string name="notification_service_finished_failed">לא כל תנאי הפתיחה מולאו.</string>
+    <string name="contributed_time">הזמן שנתרם</string>
+    <string name="people_helping">אנשים מגישים עזרה</string>
+    <string name="research_type">סוג מחקר</string>
+    <string name="research_type_unavailable">לא זמין</string>
+    <string name="setup_guide">מדריך הגדרה</string>
+    <string name="legal">משפטי</string>
+    <string name="share">שתף</string>
+    <string name="welcome">ברוך הבא אל Folding@Home</string>
+    <string name="read_more">קרא עוד</string>
+    <string name="more_info">מידע נוסף</string>
+    <string name="finish">סיום</string>
+    <string name="wizard_welcome_to_folding_subtitle">רוצה לעזור למצוא מרפא לאלצהיימר, פרקינסון וסרטן?</string>
+    <string name="wizard_welcome_to_folding_text">הטלפון שלך יכול לבצע חישובים מדעיים בזמן שאתה ישן, ולסייע למדענים של אוניברסיטת סטנפורד למצוא מרפא למחלות רבות.</string>
+    <string-array name="help_find_cure">
+        <item>אם תירשם ל-Folding@Home, תוכל לסייע למדענים של אוניברסיטת סטנפורד למצוא מרפא לרבות מהמחלות הנפוצות ביותר, על-ידי תרומת כוח העיבוד של הטלפון שלך כאשר אינך משתמש בו.</item>
+        <item>קיפול מתייחס לפעילויות של החלבונים בגוף האדם. המחקר על קיפול חלבונים מחייב כמות רבה מאוד של חישובים, לכן אוניברסיטת סטנפורד מבקשת מאנשים לתרום את עוצמת העיבוד של הטלפון שאינה מנוצלת כדי לטפל בחלק מהמספרים. בזמן שאתה ישן, אוניברסיטת סטנפורד תשלח בעיית קיפול לטלפון שלך לצורך פתרון. לאחר שהחישובים יושלמו, התוצאות יישלחו בחזרה לסטנפורד.</item>
+        <item>תוכל לאתר מידע נוסף על Folding@Home בדף הבית:\nfolding.stanford.edu</item>
+    </string-array>
+    <string name="powered_by">מופעל על-ידי</string>
+    <string name="private_date_safe_title">הנתונים הפרטיים שלך בטוחים.</string>
+    <string name="private_date_safe_text">ליישום זה אין אפשרות לגשת לנתונים הפרטיים שלך.</string>
+    <string name="no_cost_mobile_data_title">אין עלות עבור נתונים סלולריים</string>
+    <string name="no_cost_mobile_data_text">הטלפון חייב להיות מחובר לרשת Wi-Fi.</string>
+    <string name="battery_not_drained_title">הסוללה לא תתרוקן</string>
+    <string name="battery_not_drained_text">הטלפון חייב להיות מחובר למטען ולהיות טעון במלואו (100%)</string>
+    <string name="time_string_weeks">%1$dשב\' %2$dי\' %3$dש\'</string>
+    <string name="time_string_days">%1$dש\' %2$dי\' %3$dש\'</string>
+    <string name="time_string_hours">%1$dי\' %2$dש\'</string>
+    <string name="share_facebook_success">שותף בהצלחה ב-Facebook</string>
+    <string name="share_facebook_error">לא ניתן לשתף ב-Facebook</string>
+    <string name="waiting">משתף...</string>
+    <string name="share_object_message">אני אחד מ-%1$d אנשים שעוזרים למחקר ותרמתי באמצעות %2$s זמן חישוב!</string>
+    <string name="notification_service_executing_job">Folding@Home פועל.\nאתה תורם למחקר מדעי.</string>
+    <string name="notification_service_not_executing">Folding@Home אינו פועל.\nכל התנאים המוקדמים אינם מתקיימים.</string>
+    <string name="settings">הגדרות</string>
+    <string name="start_contribute">שעת התחלה</string>
+    <string name="start_contribute_text">הגדר שעת התחלה עבור החישוב</string>
+    <string name="settings_auto_wifi_msg">הפעל Wi-Fi במהלך התרומה</string>
+    <string name="notifications">הודעות</string>
+    <string name="settings_display_notification">שלך הודעות בסיום החישוב</string>
+    <string name="contribution_interval_time">משך תרומה</string>
+    <string name="wizard_step">שלב %1$d/%2$d</string>
+    <string name="no_opencl">התקן זה אינו תומך ב-OpenCL. זוהי ספרייה חיונית לביצוע עבודות. האם ברצונך להמשיך?</string>
+    <string name="connect_to_wifi">הטלפון צריך להיות מחובר לרשת Wi-Fi</string>
+    <string name="processing_time_title">זמן החישוב הוא בין %1$s – %2$s</string>
+    <string name="processing_time_text">תוכל לשנות את שעת ההתחלה בהגדרות.</string>
+    <string name="will_start_when">תנאים מקדימים</string>
+    <string name="share_facebook_contribution">שתף ב-Facebook</string>
+    <string name="app_disabled_title">היישום מושבת</string>
+    <string name="app_disabled_message">יישום זה מושבת ולא ניתן להמשיך להשתמש בו.</string>
+    <string name="stand_by">מצב המתנה</string>
+    <string name="helping_out">מתן עזרה</string>
+    <string name="disabled">מושבת</string>
+    <string name="data_usage">שימוש בנתונים</string>
+    <string name="data_usage_text">תוכל לחבר את ההתקן שלך לרשת Wi-Fi.\nאם אתה משתמש בחיבור מדוד או בתשלום לרשת Wi-Fi, ייתכן שתידרש לשלם בעבור השימוש בנתונים.\n\nלקבלת מידע נוסף, בדוק עם ספק שירותי האינטרנט שלך.</string>
+    <string name="whats_new">מה חדש</string>
+    <string name="whats_new_contribution_status">כעת אתה יכול לראות את סטטוס התנאים הדרושים להפעלת Folding@Home.</string>
+    <string name="whats_new_disable_indicator">מציין כי היישום מושבת.</string>
+    <string name="whats_new_conditions_indicator">מציין כי יש רשת Wi-Fi מוכנה, אך יש לחבר את הטלפון למטען ולהגיע לקיבולת טעינה של 100% בסוללה.</string>
+    <string name="whats_new_enable_indicator">מציין כי כל הדרישות מוכנות.</string>
+    <string name="whats_new_power_button">כעת קל יותר להפעיל או להשבית את היישום. תוכל גם לראות את הסטטוס הנוכחי של Folding@Home.</string>
+    <string name="whats_new_login">כעת אתה יכול להיכנס ולהעלות את תרומותיך.</string>
+    <string name="whats_new_contribution_indicators">סמלים משופרים לניהול מעקב בקלות אחרי סטטוס התרומות שלך.</string>
+    <string name="whats_new_research_type">מציין את המחקר שלו אתה תורם.</string>
+    <string name="whats_new_people_helping">מציין את מספר האנשים שמשתמשים ב-Folding@Home.</string>
+    <string name="whats_new_contributed_time">מציין את משך הזמן הכולל של התרומות שלך.</string>
+    <string name="skip">דלג</string>
+    <string name="turn_on">הפעל</string>
+    <string name="turn_off">כבה</string>
+    <string name="active_research">מחקר פעיל</string>
+    <string name="notification_contribution_time">תודה. מכשיר זה תרם %1$s במהלך 24 השעות האחרונות.</string>
+    <string name="action_login">היכנס</string>
+    <string name="action_logout">%1$s (התנתק)</string>
+    <string name="action_leaderboards">לוחות תוצאות</string>
+    <string name="action_achievements">הישגים</string>
+    <string name="action_invite_friends">הזמן חברים</string>
+    <string name="notification_service_turn_on">הפעל כדי להמשיך לתרום</string>
+    <string name="toast_logout">מנותק</string>
+    <string name="toast_network_unavailable">הרשת אינה זמינה</string>
+    <string name="paused">מושהה</string>
+    <string name="action_enable">הפעל</string>
+    <string name="action_disable">השבת</string>
+    <string name="pause">השהה</string>
+    <string name="new_indicators">מחוונים חדשים</string>
+    <string name="new_power_button">לחצן הפעלה חדש</string>
+    <string name="sign_in_google_game_service">היכנס אל Google Play™ Games Services</string>
+    <string name="view_more">הצג עוד</string>
+    <string name="toast_achievements_disabled">היכנס כדי להציג את ההישגים!</string>
+    <string name="toast_leaderboards_disabled">היכנס כדי להציג את לוחות התוצאות!</string>
+    <string name="contribution_details">פרטי תרומה</string>
+    <string name="project_description">תיאור פרויקט</string>
+    <string name="week">שבוע</string>
+    <string name="month">חודש</string>
+    <string name="all_time">זמן כולל</string>
+    <string name="time_string_hours_only">%1$dשעות</string>
+    <string name="chart_week_label">שבוע %1$d</string>
+    <string name="hours_contributed_label_plural">נתרמו %1$d שעות</string>
+    <string name="hours_contributed_label_singular">נתרמה שעה אחת</string>
+    <string name="contributed_no_data">אין תרומה עבור התקופה שנבחרה</string>
+    <string name="no_charger_tile">אין מטען</string>
+    <string name="low_battery_tile">סוללה חלשה</string>
+    <string name="no_wifi_tile">אין חיבור Wi-Fi</string>
+    <string name="no_charger_text">יש לחבר את המכשיר למטען</string>
+    <string name="low_battery_text">על רמת טעינת הסוללה להיות 98% לפחות כדי להתחיל בתרומה</string>
+    <string name="no_wifi_text">התחבר לרשת Wi-Fi כדי להתחיל בתרומה.</string>
+</resources>

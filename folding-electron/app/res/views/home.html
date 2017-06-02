@@ -1,0 +1,66 @@
+<template class="task-template">
+    <div id="home" class="tab-pane fade in active">
+        <section class="content">
+            <img class="people-image" bind-src="{{dirs.assets}}/img/img_people.png"><br/>
+
+            <div class="row">
+                <div class="col-md-12 center-block ">
+                    <img id="button-start-stop" class="power-button"
+                         bind-src="{{dirs.assets}}/img/ic_power_off.png"><br/>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12 text-center blank-row">
+                    <div class="proc-text">
+                        <strong id="processing-spam">{{disabled|translate}}</strong>
+                    </div>
+                </div>
+            </div>
+
+            <br/>
+
+            <br/>
+            <div id="home-main-row-research-title" class="row">
+                <div class="col-xs-2"><img class="desc-icon" bind-src="{{dirs.assets}}/img/ic_research_type.png"><br/>
+                </div>
+                <div id="row-research-title" class="col-xs-7">
+                    <h4><strong>{{research_title|translate}}</strong></h4>
+                    <h6 class="desc-title" id="desc-title"><strong></strong></h6>
+                </div>
+                <div class="col-xs-3">
+                    <button type="button" id="read-more" class="btn btn-primary uppercase">{{read_more|translate}}</button>
+                </div>
+
+                <hr class="hr"/>
+            </div>
+            <div id="row-full-desc" class="row">
+                <div class="col-md-12">
+                    <h6 id="full-desc-title"></h6>
+                </div>
+            </div>
+            <div id="home-main-row-people-helping-out" class="row">
+                <div class="col-xs-2"><img class="desc-icon" bind-src="{{dirs.assets}}/img/ic_people_helping.png"><br/>
+                </div>
+                <div class="col-xs-7">
+                    <h4><strong>{{people_helping_out|translate}}</strong></h4>
+                    <h6 id="people-helping" class="desc-title"><strong></strong></h6>
+                </div>
+                <div class="col-xs-3"></div>
+                <hr/>
+            </div>
+            <div class="row">
+                <div class="col-xs-2"><img class="desc-icon"
+                                           bind-src="{{dirs.assets}}/img/ic_contributed_time.png"><br/></div>
+                <div class="col-xs-7">
+                    <h4><strong>{{contributed_time|translate}}</strong></h4>
+                    <h6 class="desc-title" id="contributed-time"><strong></strong></h6>
+                </div>
+                <div class="col-xs-3"></div>
+            </div>
+
+        </section>
+    </div>
+    <script>
+        require(dirs.source + '/renderer-process/home-renderer.js');
+    </script>
+</template>

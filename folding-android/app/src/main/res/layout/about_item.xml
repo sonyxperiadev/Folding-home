@@ -1,0 +1,14 @@
+<!--
+  Licensed under the LICENSE.
+  Copyright 2017, Sony Mobile Communications Inc.
+-->
+<TextView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:autoLink="web"
+       android:fontFamily="sans-serif"
+       android:gravity="top|start"
+       android:linksClickable="true"
+       android:textColor="@color/sony_gray_text"
+       android:textSize="@dimen/text_medium" />

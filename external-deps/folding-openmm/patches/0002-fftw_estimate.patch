@@ -1,0 +1,15 @@
+diff --git a/plugins/cpupme/src/CpuPmeKernels.cpp b/plugins/cpupme/src/CpuPmeKernels.cpp
+index 78e319f..d47ce49 100644
+--- a/plugins/cpupme/src/CpuPmeKernels.cpp
++++ b/plugins/cpupme/src/CpuPmeKernels.cpp
+@@ -390,8 +390,8 @@ void CpuCalcPmeReciprocalForceKernel::initialize(int xsize, int ysize, int zsize
+     realGrid = tempGrid[0];
+     complexGrid = (fftwf_complex*) fftwf_malloc(sizeof(fftwf_complex)*gridx*gridy*(gridz/2+1));
+     fftwf_plan_with_nthreads(numThreads);
+-    forwardFFT = fftwf_plan_dft_r2c_3d(gridx, gridy, gridz, realGrid, complexGrid, FFTW_MEASURE);
+-    backwardFFT = fftwf_plan_dft_c2r_3d(gridx, gridy, gridz, complexGrid, realGrid, FFTW_MEASURE);
++    forwardFFT = fftwf_plan_dft_r2c_3d(gridx, gridy, gridz, realGrid, complexGrid, FFTW_ESTIMATE);
++    backwardFFT = fftwf_plan_dft_c2r_3d(gridx, gridy, gridz, complexGrid, realGrid, FFTW_ESTIMATE);
+     hasCreatedPlan = true;
+     
+     // Initialize the b-spline moduli.

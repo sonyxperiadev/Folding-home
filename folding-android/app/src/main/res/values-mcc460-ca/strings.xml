@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  Licensed under the LICENSE.
+  Copyright 2017, Sony Mobile Communications Inc.
+-->
+<resources xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="no_cost_mobile_data_text">El telèfon ha d\'estar connectat a una xarxa WLAN.</string>
+    <string name="settings_auto_wifi_msg">Habilita WLAN durant la col·laboració</string>
+    <string name="connect_to_wifi">El telèfon ha d\'estar connectat a una xarxa WLAN</string>
+    <string name="data_usage_text">El dispositiu ha d\'estar connectat a una xarxa WLAN.\nSi utilitzeu una connexió WLAN mesurada o de pagament, és possible que se us apliqui un càrrec per l\'ús de dades.\n\nPer obtenir-ne més informació, consulteu amb el vostre Proveïdor d\'Internet.</string>
+    <string name="whats_new_conditions_indicator">Indica que la WLAN està preparada, però el telèfon ha d\'estar connectat a un carregador i la bateria ha d\'estar carregada al 100%.</string>
+    <string name="no_wifi_tile">Cap WLAN</string>
+    <string name="no_wifi_text">Connecteu-vos a una xarxa WLAN per iniciar la contribució.</string>
+</resources>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+Strings that do not need to be translated.
+-->
+<resources>
+    <!-- Google play url. -->
+    <string name="google_play_url">https://play.google.com/store/apps/details?id=com.sonymobile.androidapp.gridcomputing</string>
+    <string name="stanford_folding_url">https://s3-eu-west-1.amazonaws.com/grid-bucket/redirect_to_stanford.html</string>
+    <string name="google_play_url_shortened">http://goo.gl/CfI5If</string>
+    <string name="fb_app_id" translatable="false"><PLACE_YOUR_FACEBOOK_APP_ID_HERE></string>
+
+</resources>

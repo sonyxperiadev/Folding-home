@@ -1,0 +1,618 @@
+/*
+ * Licensed under the LICENSE.
+ * Copyright 2017, Sony Mobile Communications Inc.
+ */
+
+* { /* Zerando as margins e os peddings */
+    margin: 0;
+    padding: 0;
+}
+
+/* Estrutura */
+.main {
+    max-width: 770px;
+    margin: 0 auto;
+    font-family: 'Roboto', sans-serif;
+    border-radius: 0 0 10px 10px;
+    overflow: hidden;
+}
+
+.main, .sidebar, .content {
+    height: 100%;
+}
+
+.sidebar {
+    width: 250px;
+    float: left;
+    background: #279fe9;
+}
+
+/* Quebra de linha */
+.clear {
+    clear: both;
+}
+
+/* Tema Login */
+.sidebar .login {
+    background: #4b4b48;
+    color: #fff;
+    height: 45px;
+    position: relative;
+}
+
+.sidebar .login h2 {
+    padding-left: 35px;
+    padding-top: 12px;
+    width: 80%;
+    font-size: 14px;
+    font-weight: normal;
+    text-transform: uppercase;
+}
+
+.sidebar .login h2::before, .sidebar .login button {
+    width: 15px;
+    height: 15px;
+    position: absolute;
+    top: 12px;
+    content: " ";
+    display: block;
+}
+
+.sidebar .login h2::before {
+    background: url(../img/ic_login.png) no-repeat;
+    background-position: 1px 1px;
+    left: 12px;
+}
+
+.sidebar .login button {
+    background: url(../img/ic_arrow.png) no-repeat;
+    background-position: 1px 5px;
+    right: 12px;
+    border: none;
+    cursor: pointer;
+}
+
+/* Fim do tema Login */
+.logo {
+    height: 175px;
+    width: 100%;
+    display: block;
+    background: url(../img/bg_sidebar.png) top center no-repeat;
+    background-size: 100%;
+}
+
+.logo img {
+    display: block;
+    position: relative;
+    top: 20px;
+    margin: 0 auto;
+}
+
+/* Estilo do Menu */
+.menu {
+    width: 100%;
+    list-style: none;
+}
+
+.menu li {
+    box-sizing: border-box;
+    padding: 20px 35px;
+    border-bottom: 1px solid #fff;
+
+    transition: linear all 0.2s;
+    -webkit-transition: linear all 0.2s;
+    -moz-transition: linear all 0.2s;
+    -ms-transition: linear all 0.2s;
+}
+
+.menu li:hover {
+    background: #0270c5;
+}
+
+.menu a {
+    text-decoration: none;
+    position: relative;
+    color: #fff;
+    padding: 20px 35px;
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.menu .home a::before, .menu .achie a::before, .menu .leade a::before, .menu .contrib a::before, .menu .legal a::before, .menu .setup a::before {
+    width: 25px;
+    height: 25px;
+    content: " ";
+    display: block;
+    position: absolute;
+    top: 20px;
+    left: -10px;
+}
+
+.menu .home a::before {
+    background: url(../img/ic_home_normal.png) top center no-repeat;
+}
+
+.menu .achie a::before {
+    background: url(../img/ic_archievements_normal.png) top center no-repeat;
+}
+
+.menu .leade a::before {
+    background: url(../img/ic_gamefication_normal.png) top center no-repeat;
+}
+
+.menu .contrib a::before {
+    background: url(../img/ic_contribution_time_normal.png) top center no-repeat;
+}
+
+.menu .legal a::before {
+    background: url(../img/ic_legal_normal.png) top center no-repeat;
+}
+
+.menu .setup a::before {
+    background: url(../img/ic_guide_normal.png) top center no-repeat;
+}
+
+/* active menu */
+.menu .active {
+    background: #fff !important;
+    border-left: 1px solid #279fe9;
+    position: relative;
+}
+
+.menu .active::after {
+    width: 15px;
+    height: 15px;
+    content: " ";
+    background: #fff;
+    display: block;
+    position: absolute;
+    top: 22px;
+    right: -7px;
+    transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -ms-transform: rotate(45deg); /* IE 9 */
+    -webkit-transform: rotate(45deg); /* Chrome, Safari, Opera */
+}
+
+.menu .active a {
+    color: #279fe9;
+}
+
+.menu .home.active a::before {
+    background: url(../img/ic_home_active.png) top center no-repeat;
+}
+
+.menu .leade.active a::before {
+    background: url(../img/ic_gamefication_active.png) top center no-repeat;
+}
+
+.menu .contrib.active a::before {
+    background: url(../img/ic_contribution_time_active.png) top center no-repeat;
+}
+
+.menu .achie.active a::before {
+    background: url(../img/ic_archievements_active.png) top center no-repeat;
+}
+
+.menu .legal.active a::before {
+    background: url(../img/ic_legal_active.png) top center no-repeat;
+}
+
+.menu .setup.active a::before {
+    background: url(../img/ic_guide_active.png) top center no-repeat;
+}
+
+/* Estilo content */
+.content {
+    background: #f1f1f1;
+    max-width: 520px;
+    /* float: right; */
+    box-sizing: border-box;
+    padding: 15px 20px;
+}
+
+.content .title {
+    float: left;
+    width: 50%;
+    margin: 10px 0;
+}
+
+.content progress {
+    border-radius: 5px;
+    float: right;
+    display: block;
+    bottom: -20px;
+    left: 40px;
+    position: relative;
+}
+
+.content .progress {
+    position: relative;
+    float: right;
+    font-size: 14px;
+    text-align: right;
+}
+
+.content progress[value]::-webkit-progress-bar {
+    background: #fafafa;
+    border-radius: 10px;
+}
+
+.content progress[value]::-webkit-progress-value {
+    background: #279fe9;
+    border-radius: 10px;
+}
+
+.content .content-list, .content .content-archi, .content-legal {
+    height: 595px;
+    width: 100%;
+    overflow: auto;
+    list-style: none;
+}
+
+.content .content-list h2 {
+    font-size: 18px;
+    font-weight: 800;
+}
+
+.content .content-list .time {
+    font-size: 14px;
+    color: #9d9d9d;
+    margin: 10px 0;
+}
+
+.content .content-list li {
+    background: #fff;
+    box-sizing: border-box;
+    padding: 15px 10px;
+    position: relative;
+    margin-bottom: 10px;
+}
+
+.content .content-list li img {
+    float: left;
+    margin-right: 10px;
+}
+
+.content .content-list li .date {
+    position: absolute;
+    top: 12px;
+    right: 20px;
+    font-weight: 700;
+}
+
+/* Estilo da lista de usuários */
+.content .fist-places {
+    text-align: center;
+    border-bottom: 1px solid #fff;
+    padding-bottom: 10px;
+    margin: 15px 0;
+}
+
+.content .fist-places h2, .content .users-list h2 {
+    font-size: 20px;
+    font-weight: 400;
+    margin-top: 10px;
+}
+
+.content .fist-places h3, .content .users-list h3 {
+    font-size: 16px;
+    font-weight: 400;
+    color: #568635;
+    margin: 10px 0;
+}
+
+.content .fist-places li {
+    display: inline-block;
+    width: 25%;
+}
+
+.content .fist-places li:nth-of-type(2) {
+    width: 35%;
+    margin: 0 10px;
+}
+
+.content .fist-places figure {
+    position: relative;
+    z-index: 1;
+}
+
+.content .fist-places img {
+    width: 100%;
+    height: auto;
+    border-radius: 50%;
+    border: 2px solid #fff;
+
+    /* sombra projetada */
+    -webkit-box-shadow: 4px 6px 8px -6.5px #333;
+    box-shadow: 4px 6px 8px -6.5px #333;
+}
+
+.content .fist-places .position {
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    border-radius: 5px;
+    z-index: 2;
+    font-weight: 700;
+    background: #673ab4;
+    border: 2px solid #fff;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    transform: rotate(45deg);
+}
+
+.content .fist-places figure .position h3 {
+    transform: rotate(-45deg);
+    font-weight: 500;
+    margin: 6px 10px;
+    color: #fff;
+}
+
+.content .users-list {
+    counter-reset: item 3
+}
+
+.content .users-list li {
+    display: block;
+    float: left;
+    width: 100%;
+    margin: 10px 0;
+    position: relative;
+}
+
+.content .users-list li::before {
+    content: counter(item) " ";
+    counter-increment: item;
+    display: block;
+    color: #737373;
+    font-size: 22px;
+    position: absolute;
+    left: 5px;
+    top: 30px;
+}
+
+.content .users-list li img {
+    width: 80px;
+    border-radius: 50%;
+    height: 80px;
+    float: left;
+    margin: 0 34px;
+    border: 2px solid #fff;
+    /* sombra projetada */
+    -webkit-box-shadow: 4px 6px 8px -6.5px #333;
+    box-shadow: 4px 6px 8px -6.5px #333;
+}
+
+.content .users-list .position {
+    width: 25px;
+    height: 25px;
+    text-align: center;
+    border-radius: 5px;
+    z-index: 2;
+    font-weight: 700;
+    background: #cc3d30;
+    border: 2px solid #fff;
+    position: absolute;
+    left: 90px;
+    bottom: 0;
+    transform: rotate(45deg);
+}
+
+.content .users-list .position h3 {
+    transform: rotate(-45deg);
+    font-weight: 400;
+    margin: 5px 10px;
+    color: #fff;
+}
+
+.content .content-legal p {
+    font-size: 14px;
+    line-height: 18px;
+    margin-bottom: 5px;
+}
+
+.content .content-legal h2 {
+    font-size: 18px;
+    color: #279fe9;
+    margin: 10px 0 5px 0;
+}
+
+/* Setup Guide */
+.content-setup {
+    position: relative;
+    height: 510px;
+}
+
+.content-setup img {
+    width: 410px;
+    height: auto;
+    display: block;
+    margin: 25px auto;
+}
+
+.content-setup h2, .content-setup h3, .content-setup .alert, .content-setup p, .content-setup a {
+    margin: 10px 0;
+}
+
+.content-setup h2 {
+    font-size: 26px;
+    font-weight: 400;
+}
+
+.content-setup h3 {
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.content-setup .alert, .content-setup a {
+    font-size: 14px;
+    color: #c4522c;
+}
+
+.content-setup p.read-more {
+    text-align: right;
+}
+
+.setup-nav {
+    display: block;
+    z-index: 10;
+    position: relative;
+}
+
+.setup-nav .bt-default {
+    padding: 10px 25px;
+    background: #279fe9;
+    color: #fff;
+    font-size: 16px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    transition: linear all 0.2s;
+    -webkit-transition: linear all 0.2s;
+    -moz-transition: linear all 0.2s;
+    -ms-transition: linear all 0.2s;
+}
+
+.setup-nav .bt-default {
+    background: #1788ce;
+    z-index: 10;
+}
+
+.setup-nav ul {
+    text-align: center;
+    position: relative;
+    top: 65px;
+}
+
+.setup-nav ul li {
+    display: inline-block;
+    margin: 0 4px;
+    border-radius: 50%;
+    width: 12px;
+    height: 12px;
+    background: #979797;
+}
+
+.setup-nav .nav-active {
+    background: #f57942;
+}
+
+#bt-01, #bt-04 {
+    display: none;
+    position: absolute;
+    left: 0;
+}
+
+#bt-02 {
+    position: absolute;
+    right: 0;
+}
+
+#bt-03 {
+    display: none;
+    position: absolute;
+    right: 0;
+}
+
+.wizard-1 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 1;
+    z-index: 0;
+}
+
+.wizard-1 .powered {
+    margin-top: 30px;
+    width: 250px;
+    float: left;
+}
+
+.wizard-1 .powered p {
+    font-size: 13px;
+    color: #808080;
+    font-style: italic;
+    margin: 0 0;
+}
+
+.wizard-1 .powered ul, .setup-nav ul {
+    list-style: none;
+}
+
+.wizard-1 .powered ul li {
+    width: 105px;
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.wizard-1 .powered ul li img {
+    width: 98%;
+    height: auto;
+    margin: 5px 0;
+}
+
+.wizard-2 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: none;
+}
+
+.wizard-3 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: none;
+    color: #6d6d6d;
+    text-align: center;
+}
+
+.wizard-3 p {
+    margin: 10px 0 25px 0;
+}
+
+.wizard-3 .google-play {
+    background: #d6d7d7;
+    margin: 10px auto;
+    font-size: 16px;
+    font-weight: 500;
+    width: 360px;
+    height: 55px;
+    border-radius: 5px;
+    display: block;
+    position: relative;
+    background-image: url('../img/bt-google.png');
+    background-repeat: no-repeat;
+    background-position: 10px;
+    cursor: pointer;
+}
+
+.wizard-3 .google-play::before {
+    width: 44px;
+    height: 44px;
+}
+
+.wizard-3 img {
+    width: 230px;
+    display: block;
+    margin: 0 auto;
+}
+
+#processing-spam {
+    color: darkgray;
+}
+
+.read_more_line_1 {
+  font-size: larger;
+}
+
+.read_more_line_2 {
+  color: darkgray;
+}
+
+.read_more_line_3 {
+  font-size: larger;
+}

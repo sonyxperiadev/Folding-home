@@ -1,0 +1,33 @@
+#!/bin/bash
+
+BASE_DIR="`pwd`"
+INSTALL_DIR="`pwd`/fftw-3.2.2/build"
+SRC_DIR="`pwd`/fftw-3.2.2"
+
+export PROJECT_PATH=$PWD
+export CURRENT_DIR=$PROJECT_PATH
+export TOOLCHAIN=$CURRENT_DIR/android-toolchain
+export ANDROID_NDK=$1
+mkdir -p $TOOLCHAIN
+$ANDROID_NDK/build/tools/make-standalone-toolchain.sh \
+    --toolchain=arm-linux-androideabi-4.8 \
+    --arch=arm \
+    --install-dir=$TOOLCHAIN \
+    --platform=android-18
+
+cd $SRC_DIR
+export PATH="$BASE_DIR/android-toolchain/bin/:$PATH"
+export SYS_ROOT="$BASE_DIR/android-toolchain/sysroot"
+export CC="arm-linux-androideabi-gcc --sysroot=$SYS_ROOT -mfloat-abi=softfp -mfpu=neon -O3"
+export LD="arm-linux-androideabi-ld"
+export AR="arm-linux-androideabi-ar"
+export RANLIB="arm-linux-androideabi-ranlib"
+export STRIP="arm-linux-androideabi-strip"
+
+mkdir -p $INSTALL_DIR
+
+./configure --host=arm-eabi --enable-float --enable-neon --enable-threads --enable-shared=yes --prefix=$INSTALL_DIR LIBS="-lc -lgcc"
+
+make -j 4
+
+make install

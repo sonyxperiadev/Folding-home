@@ -1,0 +1,82 @@
+<!--
+  Licensed under the LICENSE.
+  Copyright 2017, Sony Mobile Communications Inc.
+-->
+
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/summary_share"
+        android:orderInCategory="1"
+        android:title="@string/share"
+        app:showAsAction="ifRoom">
+        <menu>
+            <item
+                android:id="@+id/action_bar_facebook"
+                android:icon="@drawable/ic_facebook_share"
+                android:title="@string/facebook" />
+            <item
+                android:id="@+id/action_bar_twitter"
+                android:icon="@drawable/ic_twitter_share"
+                android:title="@string/twitter" />
+        </menu>
+    </item>
+
+    <item
+        android:id="@+id/action_leaderboards"
+        android:icon="@drawable/menu_leaderboard"
+        android:orderInCategory="2"
+        android:title="@string/action_leaderboards"
+        app:showAsAction="always" />
+
+    <item
+        android:id="@+id/action_achievements"
+        android:icon="@drawable/menu_achievement"
+        android:orderInCategory="3"
+        android:title="@string/action_achievements"
+        app:showAsAction="always" />
+
+    <item
+        android:id="@+id/summary_menu_active_research"
+        android:orderInCategory="4"
+        android:title="@string/active_research"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/summary_menu_wizard"
+        android:orderInCategory="5"
+        android:title="@string/setup_guide"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/summary_menu_about"
+        android:orderInCategory="6"
+        android:title="@string/legal"
+        app:showAsAction="never" />
+
+    <item
+    android:id="@+id/action_enable"
+    android:orderInCategory="7"
+    android:title="@string/action_enable"
+    app:showAsAction="never" />
+
+    <item
+        android:id="@+id/action_disable"
+        android:orderInCategory="7"
+        android:title="@string/action_disable"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/action_login"
+        android:orderInCategory="7"
+        android:title="@string/action_login"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/action_logout"
+        android:orderInCategory="8"
+        android:title="@string/action_logout"
+        app:showAsAction="never" />
+
+</menu>

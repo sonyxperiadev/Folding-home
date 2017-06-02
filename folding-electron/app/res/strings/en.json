@@ -1,0 +1,57 @@
+{
+	"home": "Home",
+	"achievements": "Achievements",
+	"leaderboards": "Leaderboards",
+	"contribution_time": "Contribution Time",
+	"legal": "Legal",
+	"setup_guide": "Setup Guide",
+	"read_more": "Read more",
+
+	"helping_out": "Helping Out",
+	"disabled": "Disabled",
+	"no_internet_connection": "No internet connection",
+
+
+	"time_string_weeks": "%sw %sd %sh",
+	"time_string_days": "%sd %sh %sm",
+	"time_string_hours": "%sh %sm",
+	"achievement_unlocked": "New achievement unlocked",
+	"notification_logged_in_title": "Logged in",
+	"notification_logged_in_text": "Welcome %s",
+	"sign_in_ggs": "Sign in Google Game Services",
+	"login_to_view_achievements": "Please login to view your achievements",
+	"login_to_view_leaderboards": "Please login to view the leaderboards",
+	"no_internet": "There is no internet connection",
+	"there_was_an_error": "There was an error, try again later",
+	"research_title": "Research title",
+	"people_helping_out": "People helping out",
+	"contributed_time": "Contributed time",
+
+
+	"welcome_to_folding": "Welcome to Folding@Home",
+	"do_you_want_to_help": "Do you want to help find the cure for Alzheimer’s, Parkinson’s and cancer?",
+	"your_computer_can_perform": "Your computer can perform scientific calculations while you sleep, and help Stanford University scientists find the cure for many diseases.",
+	"this_application_doesnt": "* This application doesn’t access your private data.",
+	"powered_by": "powered by",
+	"whats_new": "What’s new",
+	"new_power_button": "New power button",
+	"now_its_easier_to_enable": "Now it’s easier to enable or disable the app. You can also see the current status of Folding@Home.",
+	"you_can_login_and_upload": "You can login and upload your contributions.",
+	"prev": "Prev",
+	"next": "Next",
+
+
+	"secret": "Secret",
+	"keep_playing_to_learn_more": "Keep playing to learn more",
+
+	"login": "Login",
+
+	"share": "Share",
+	"fb_share_title": "Share",
+	"fb_share_message": "Successfully shared",
+	"fb_share_og_description": "I’m one of %s people helping out and I’ve contributed with %s of calculation time! \n \n%s",
+	"setup_read_more_line_1": "By signing up for Folding@Home, you help Stanford University scientists in their quest to find the cure for many of our most common diseases by donating your phone's processing power when you aren't using it yourself.",
+	"setup_read_more_line_2": "Folding refers to protein activities in our bodies. The research of protein folding requires so many calculations that Stanford University asks people to donate their phones' unused processing power to crunch some of the numbers. When you sleep, Stanford University will send a folding problem for your phone to solve. Once calculations are complete, the results are sent back to Stanford",
+	"setup_read_more_line_3": "You can find more information about Folding@Home on the homepage:",
+	"setup_read_more_line_title": "More Information"
+}

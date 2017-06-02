@@ -1,0 +1,15 @@
+#!/bin/bash
+
+cp -r deps/* node/deps/
+cp deps/x509/x509.js node/lib/
+cp deps/openmm/openmm.js node/lib/
+cp android-configure node/
+
+git apply --ignore-space-change \
+   patches/0001-hardened_mode.patch \
+   patches/0002-PIE_Executable_mode_for_android.patch \
+   patches/0003-V4MAPPED_Android_network_requests_fix.patch \
+   patches/0004-Adding_suport_to_build_openmm_and_x509.patch \
+   patches/0005-Build_support_for_macos_and_openmm.patch \
+   --directory=node
+

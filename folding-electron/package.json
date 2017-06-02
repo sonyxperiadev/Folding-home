@@ -1,0 +1,44 @@
+{
+  "scripts": {
+    "postinstall": "install-app-deps",
+    "start": "electron app print_logs write_logs",
+    "start-debug": "electron app print_logs write_logs",
+    "start-release": "electron app report_crashes report_analytics",
+    "jshint": "jshint app/ --reporter node_modules/jshint-html-reporter/reporter.js > jshint.html",
+    "pack": "build --dir",
+    "dist": "build"
+  },
+  "devDependencies": {
+    "electron-prebuilt": "^1.4.0",
+    "electron-builder": "^7.9.0",
+    "fs-extra": "^0.30.0",
+    "jshint": "^2.9.3",
+    "jshint-html-reporter": "^0.2.4"
+  },
+  "build": {
+    "appId": "Folding@Home",
+    "category": "Science",
+    "asar": true,
+    "extraFiles": [
+      "app/raw/*",
+      "app/libs/**"
+    ],
+    "win": {
+      "target": "nsis"
+    },
+    "nsis": {
+      "oneClick": false
+    },
+    "linux": {
+      "target": [
+        "rpm",
+        "deb"
+      ]
+    },
+    "rpm": {
+      "depends": [
+        "libXScrnSaver"
+      ]
+    }
+  }
+}

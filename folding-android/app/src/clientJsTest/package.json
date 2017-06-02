@@ -1,0 +1,8 @@
+{
+  "config": {
+    "blanket": {
+      "pattern": "assets",
+      "data-cover-never": "node_modules"
+    }
+  }
+}

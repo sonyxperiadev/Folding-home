@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  Licensed under the LICENSE.
+  Copyright 2017, Sony Mobile Communications Inc.
+-->
+<resources xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="no_cost_mobile_data_text">Mobilen måste vara ansluten till ett WLAN-nätverk.</string>
+    <string name="settings_auto_wifi_msg">Aktivera WLAN när appen körs</string>
+    <string name="connect_to_wifi">Mobilen måste vara ansluten till ett WLAN-nätverk</string>
+    <string name="data_usage_text">Enheten måste vara ansluten till ett trådlöst nätverk.\nOm du använder en avgiftsbelagd WLAN-anslutning kan du behöva betala för dataanvändningen.\n\nKontakta Internetleverantören om du vill ha mer information.</string>
+    <string name="whats_new_conditions_indicator">Visar att WLAN är anslutet, men att mobilen måste vara ansluten till en laddare och att batteriet måste vara fulladdat.</string>
+    <string name="no_wifi_tile">Inget WLAN</string>
+    <string name="no_wifi_text">Anslut till ett WLAN-nätverk för att starta bidraget.</string>
+</resources>

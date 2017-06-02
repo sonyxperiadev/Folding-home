@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  Licensed under the LICENSE.
+  Copyright 2017, Sony Mobile Communications Inc.
+-->
+<resources xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="no_cost_mobile_data_text">手机必须连接到WLAN网络。</string>
+    <string name="wifi">WLAN</string>
+    <string name="settings_auto_wifi_msg">做贡献期间启用WLAN</string>
+    <string name="connect_to_wifi">手机需要连接到WLAN网络</string>
+    <string name="data_usage_text">您的设备必须连接到WLAN网络。\n如果您使用计量或付费WLAN连接，可能会向您收取数据使用费。\n\n有关更多信息，请咨询互联网服务提供商。</string>
+    <string name="whats_new_conditions_indicator">表示WLAN已准备就绪，但手机必须连接充电器并充满电。</string>
+    <string name="no_wifi_tile">无WLAN</string>
+    <string name="no_wifi_text">连接WLAN网络以启动贡献。</string>
+</resources>

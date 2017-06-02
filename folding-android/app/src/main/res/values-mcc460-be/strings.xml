@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  Licensed under the LICENSE.
+  Copyright 2017, Sony Mobile Communications Inc.
+-->
+<resources xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="no_cost_mobile_data_text">Тэлефон павінны быць падлучаны да сеткі WLAN.</string>
+    <string name="settings_auto_wifi_msg">Уключыць WLAN падчас удзелу</string>
+    <string name="connect_to_wifi">Тэлефон трэба падлучыць да сеткі WLAN</string>
+    <string name="data_usage_text">Ваша прылада павінна быць падлучана да сеткі WLAN.\nКалі вы выкарыстоўваеце тарыфікаванае або платнае падлучэнне да WLAN, з вас можа спаганяцца плата за выкарыстанне дадзеных.\n\nДля атрымання дадатковай інфармацыі звяжыцеся з пастаўшчыком паслуг інтэрнэту.</string>
+    <string name="whats_new_conditions_indicator">Паказвае, што WLAN гатовы, але тэлефон павінны быць падлучаны да зараднай прылады, а акумулятар – зараджаны на 100%.</string>
+    <string name="no_wifi_tile">WLAN адсутнічае</string>
+    <string name="no_wifi_text">Каб пачаць, падлучыцеся да сеткі WLAN.</string>
+</resources>

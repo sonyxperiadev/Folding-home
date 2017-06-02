@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?><resources>
+    <string name="games_achievement_list_title">업적</string>
+    <string name="games_achievement_hidden_name">미공개</string>
+    <string name="games_achievement_hidden_desc">숨겨진 업적에 대해 알아보려면 계속 플레이하세요.</string>
+</resources>

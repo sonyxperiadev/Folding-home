@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  Licensed under the LICENSE.
+  Copyright 2017, Sony Mobile Communications Inc.
+-->
+<resources xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="notification_service_finished_job_executed">Ju keni kontribuar për shkencën</string>
+    <string name="notification_service_finished_failed">Nuk janë përmbushur të gjitha kushtet fillestare</string>
+    <string name="contributed_time">Koha e kontribuar</string>
+    <string name="people_helping">Njerëzit që po ndihmojnë</string>
+    <string name="research_type">Lloji i kërkimit</string>
+    <string name="research_type_unavailable">I padisponueshëm</string>
+    <string name="setup_guide">Udhëzuesi i konfigurimit</string>
+    <string name="legal">Ligjore</string>
+    <string name="share">Ndaj</string>
+    <string name="welcome">Mirë se vini në Folding@Home</string>
+    <string name="read_more">Lexoni më shumë</string>
+    <string name="more_info">Më shumë informacione</string>
+    <string name="finish">Përfundo</string>
+    <string name="wizard_welcome_to_folding_subtitle">Dëshironi të ndihmoni në gjetjen e kurës për sëmundjen e alzhaimerit, të parkinsonit dhe të kancerit?</string>
+    <string name="wizard_welcome_to_folding_text">Telefoni juaj mund të kryejë llogaritje shkencore kur jeni në gjumë dhe të ndihmojë shkencëtarët e universitetit Stanford që të gjejnë kurën për shumë sëmundje.</string>
+    <string-array name="help_find_cure">
+        <item>Duke u regjistruar për Folding@Home, ju ndihmoni shkencëtarët e universitetit Stanford në përpjekjet e tyre për të gjetur kurën e shumë nga sëmundjet tona më të zakonshme, duke dhuruar fuqinë e përpunimit të telefonit tuaj kur nuk e përdorni vetë.</item>
+        <item>Palosja (folding) i referohet aktiviteteve të proteinave në trupat tanë. Kërkimi mbi palosjen e proteinave kërkon kaq shumë llogaritje sa universiteti Stanford i kërkon njerëzve që të dhurojnë fuqinë e përpunimit të papërdorur të telefonave të tyre për të përpunuar disa nga numrat. Kur ju flini gjumë, universiteti Stanford do të dërgojë një problem të palosjes që ta zgjidhi telefoni juaj. Kur përfundojnë llogaritjet, rezultatet dërgohen përsëri te Stanford.</item>
+        <item>Mund të gjeni më shumë informacione mbi Folding@Home në faqen fillestare:\nfolding.stanford.edu</item>
+    </string-array>
+    <string name="powered_by">mundësuar nga</string>
+    <string name="private_date_safe_title">Të dhënat private janë të sigurta.</string>
+    <string name="private_date_safe_text">Ky aplikacion nuk qaset në të dhënat tuaja private.</string>
+    <string name="no_cost_mobile_data_title">S\'ka kosto për të dhënat celulare</string>
+    <string name="no_cost_mobile_data_text">Telefoni duhet të jetë i lidhur me një rrjet Wi-Fi.</string>
+    <string name="battery_not_drained_title">Bateria nuk do të shkarkohet</string>
+    <string name="battery_not_drained_text">Telefoni duhet të jetë i lidhur me një ngarkues dhe të jetë plotësisht i ngarkuar (100%)</string>
+    <string name="time_string_weeks">%1$dj %2$dd %3$dh</string>
+    <string name="share_facebook_success">U bashkënda me sukses në Facebook</string>
+    <string name="share_facebook_error">Nuk mund të bashkëndajë në Facebook</string>
+    <string name="waiting">Duke bashkëndarë...</string>
+    <string name="share_object_message">Unë jam një nga %1$d personat që po ndihmojnë dhe kam kontribuar me %2$s kohë llogaritjeje!</string>
+    <string name="notification_service_executing_job">Folding@Home është në ekzekutim.\nJu po kontribuoni për kërkimin shkencor.</string>
+    <string name="notification_service_not_executing">Folding@Home nuk është në ekzekutim.\nS\'janë përmb. të gjitha kushtet e nisjes.</string>
+    <string name="settings">Cilësimet</string>
+    <string name="start_contribute">Koha e nisjes</string>
+    <string name="start_contribute_text">Cilësoni kohën e nisjes për llogaritjen</string>
+    <string name="settings_auto_wifi_msg">Aktivizoni Wi-Fi gjatë kontributit</string>
+    <string name="notifications">Njoftimet</string>
+    <string name="settings_display_notification">Dërgoni njoftimet në fund të llogaritjes</string>
+    <string name="contribution_interval_time">Kohëzgjatja e kontributit</string>
+    <string name="wizard_step">Hapi %1$d/%2$d</string>
+    <string name="no_opencl">Kjo pajisje nuk e mbështet OpenCL. Kjo bibliotekë është thelbësore për ekzekutimin e punëve. Dëshironi që të vazhdoni?</string>
+    <string name="connect_to_wifi">Telefoni duhet të jetë i lidhur me një rrjet Wi-Fi</string>
+    <string name="processing_time_title">Koha e llogaritjes midis %1$s - %2$s</string>
+    <string name="processing_time_text">Mund ta ndryshoni kohën e nisjes te cilësimet.</string>
+    <string name="will_start_when">Kushtet e nisjes</string>
+    <string name="share_facebook_contribution">Bashkëndani në Facebook</string>
+    <string name="app_disabled_title">Aplikacioni u çaktivizua</string>
+    <string name="app_disabled_message">Ky aplikacion është i çaktivizuar dhe nuk mund të përdoret më.</string>
+    <string name="stand_by">Në gatishmëri</string>
+    <string name="helping_out">Duke siguruar ndihmë</string>
+    <string name="disabled">I çaktivizuar</string>
+    <string name="data_usage">Përdorimi i të dhënave</string>
+    <string name="data_usage_text">Pajisja juaj duhet të jetë e lidhur me një rrjet Wi-Fi.\nNëse përdorni një lidhje Wi-Fi me limit ose me pagesë, mund të tarifoheni për përdorimin e të dhënave.\n\nPër më shumë informacione, kontaktoni me ofruesin e shërbimit të internetit.</string>
+    <string name="whats_new">Ç\'të reja ka</string>
+    <string name="whats_new_contribution_status">Tani mund të shikoni statusin e kushteve të kërkuara për ekzekutimin e Folding@Home.</string>
+    <string name="whats_new_disable_indicator">Tregon se aplikacioni është i çaktivizuar.</string>
+    <string name="whats_new_conditions_indicator">Tregon se Wi-Fi është gati, por telefoni duhet të lidhet me një ngarkues dhe bateria duhet të jetë e ngarkuar në nivelin 100%.</string>
+    <string name="whats_new_enable_indicator">Tregon se të gjitha kërkesat janë gati.</string>
+    <string name="whats_new_power_button">Tani është më e lehtë të aktivizoni ose të çaktivizoni aplikacionin. Mund të shikoni po ashtu statusin aktual të Folding@Home.</string>
+    <string name="whats_new_login">Tani mund të hyni dhe të ngarkoni kontributet tuaja.</string>
+    <string name="whats_new_contribution_indicators">Ikona të përmirësuara për të monitoruar me lehtësi statusin e kontributit tuaj.</string>
+    <string name="whats_new_research_type">Tregon kërkimin për të cilin po jepni kontribut.</string>
+    <string name="whats_new_people_helping">Tregon numrin e peronave që përdorin Folding@Home.</string>
+    <string name="whats_new_contributed_time">Tregon kohën totale të kontributeve tuaja.</string>
+    <string name="skip">Kapërce</string>
+    <string name="turn_on">Aktivizo</string>
+    <string name="turn_off">Çaktivizo</string>
+    <string name="active_research">Kërkimi aktiv</string>
+    <string name="notification_contribution_time">Faleminderit. Kjo pajisje ka kontribuar me %1$s gjatë 24 orëve të fundit.</string>
+    <string name="action_login">Hyr</string>
+    <string name="action_logout">%1$s (dilni)</string>
+    <string name="action_leaderboards">Klasifikimet</string>
+    <string name="action_achievements">Arritjet</string>
+    <string name="action_invite_friends">Fto shokët</string>
+    <string name="notification_service_turn_on">Aktiv. për të vazhduar kontributin</string>
+    <string name="toast_logout">Keni dalë</string>
+    <string name="toast_network_unavailable">Rrjeti i padisponueshëm</string>
+    <string name="paused">U ndërpre</string>
+    <string name="action_enable">Aktivizo</string>
+    <string name="action_disable">Çaktivizo</string>
+    <string name="pause">Vër në pauzë</string>
+    <string name="new_indicators">Treguesit e rinj</string>
+    <string name="new_power_button">Butoni i ri i energjisë</string>
+    <string name="sign_in_google_game_service">Hyni në Shërb. e lojë. të Google Play™</string>
+    <string name="view_more">Shiko më sh.</string>
+    <string name="toast_achievements_disabled">Hyni për të parë arritjet!</string>
+    <string name="toast_leaderboards_disabled">Hyni për të parë tabelat e klasifikimit!</string>
+    <string name="contribution_details">Detajet e kontributit</string>
+    <string name="project_description">Përshkrimi i projektit</string>
+    <string name="week">Java</string>
+    <string name="month">Muaji</string>
+    <string name="all_time">Koha në total</string>
+    <string name="time_string_hours_only">%1$d orë</string>
+    <string name="chart_week_label">Java %1$d</string>
+    <string name="hours_contributed_label_plural">%1$d orë të kontribuara</string>
+    <string name="hours_contributed_label_singular">1 orë e kontribuar</string>
+    <string name="contributed_no_data">Nuk ka kontribut për periudhën e përzgjedhur</string>
+    <string name="no_charger_tile">Nuk ka ngarkues</string>
+    <string name="low_battery_tile">Niveli i baterisë i ulët</string>
+    <string name="no_wifi_tile">Nuk ka Wi-Fi</string>
+    <string name="no_charger_text">Pajisja duhet të lidhet me një ngarkues</string>
+    <string name="low_battery_text">Bateria duhet të jetë e ngarkuar të paktën 98% për të nisur kontributin</string>
+    <string name="no_wifi_text">Lidhuni me një rrjet Wi-Fi për të nisur kontributin.</string>
+</resources>

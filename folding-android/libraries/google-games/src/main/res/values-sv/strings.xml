@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?><resources>
+    <string name="games_achievement_list_title">Prestationer</string>
+    <string name="games_achievement_hidden_name">Hemlig</string>
+    <string name="games_achievement_hidden_desc">Fortsätt spela och lär dig mer.</string>
+</resources>

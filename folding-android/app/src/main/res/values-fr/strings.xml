@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  Licensed under the LICENSE.
+  Copyright 2017, Sony Mobile Communications Inc.
+-->
+<resources xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="notification_service_finished_job_executed">Vous avez aidé la science</string>
+    <string name="notification_service_finished_failed">Toutes les conditions de démarrage ne sont pas remplies</string>
+    <string name="contributed_time">Durée de la contribution</string>
+    <string name="people_helping">Contributeurs</string>
+    <string name="research_type">Type de recherche</string>
+    <string name="research_type_unavailable">Indisponible</string>
+    <string name="setup_guide">Guide de configuration</string>
+    <string name="legal">Mentions légales</string>
+    <string name="share">Partage</string>
+    <string name="welcome">Bienvenue sur Folding@Home</string>
+    <string name="read_more">En savoir plus</string>
+    <string name="more_info">Plus d\'informations</string>
+    <string name="finish">Finir</string>
+    <string name="wizard_welcome_to_folding_subtitle">Vous souhaitez contribuer à la recherche de traitements pour les maladies d\'Alzheimer, de Parkinson et le cancer ?</string>
+    <string name="wizard_welcome_to_folding_text">Votre téléphone peut réaliser des calculs scientifiques pendant votre sommeil et ainsi aider les chercheurs de l\'Université de Stanford à trouver le traitement approprié pour de nombreuses maladies.</string>
+    <string-array name="help_find_cure">
+        <item>En participant au projet Folding@Home et en faisant don de la puissance de calcul de votre appareil lorsque vous ne l\'utilisez pas, vous aidez les chercheurs de l\'Université de Stanford dans leur lutte contre les maladies les plus courantes.</item>
+        <item>Le terme \"Folding\" fait référence au repliement des protéines dans notre organisme. La recherche dans ce domaine nécessite tellement de calculs que l\'Université de Stanford demande à des volontaires de faire le don de la puissance de calcul non utilisée de leurs téléphones portables pour en réaliser une partie. Ainsi, pendant votre sommeil, l\'Université de Stanford enverra un problème à résoudre à votre téléphone. Ces calculs terminés, les résultats seront renvoyé à Stanford.</item>
+        <item>Pour plus d\'informations sur le projet Folding@Home, accédez à sa page d\'accueil :\nfolding.stanford.edu</item>
+    </string-array>
+    <string name="powered_by">Optimisé par</string>
+    <string name="private_date_safe_title">Vos données sont en sécurité.</string>
+    <string name="private_date_safe_text">Cette application n\'a pas accès à vos données personnelles.</string>
+    <string name="no_cost_mobile_data_title">Transfert des données sans frais</string>
+    <string name="no_cost_mobile_data_text">Le téléphonene doit être connecté au réseau Wi-Fi.</string>
+    <string name="battery_not_drained_title">Batterie pas déchargée</string>
+    <string name="battery_not_drained_text">Le téléphone doit être conecté à un chargeur et entièrement chargé (100 %)</string>
+    <string name="time_string_weeks">%1$ds %2$d j %3$d h</string>
+    <string name="time_string_days">%1$dj %2$dh %3$dm</string>
+    <string name="share_facebook_success">Partage réussi sur Facebook</string>
+    <string name="share_facebook_error">Impossible de partager sur Facebook</string>
+    <string name="waiting">Partage en cours…</string>
+    <string name="share_object_message">Je fais partie des %1$d personnes qui contribuent à ce projet et j\'ai donné %2$s de temps de calcul !</string>
+    <string name="notification_service_executing_job">Folding@Home est en cours d\'exécution.\nVous participez à un projet scientifique.</string>
+    <string name="notification_service_not_executing">Folding@Home n\'est pas ouvert.\nConditions de lancement pas réunies.</string>
+    <string name="settings">Réglages</string>
+    <string name="start_contribute">Heure de début</string>
+    <string name="start_contribute_text">Définir l\'heure de début des calculs</string>
+    <string name="settings_auto_wifi_msg">Activer le Wi-Fi pendant la contribution</string>
+    <string name="settings_display_notification">Envoyer des notifications à la fin des calculs</string>
+    <string name="contribution_interval_time">Durée de la contribution</string>
+    <string name="wizard_step">Étape %1$d/%2$d</string>
+    <string name="no_opencl">Cet appareil ne prend pas en charge OpenCL. Cette bibliothèque est essentielle pour exécuter des tâches. Voulez-vous continuer ?</string>
+    <string name="connect_to_wifi">Le téléphone doit être connecté à un réseau Wi-Fi</string>
+    <string name="processing_time_title">Temps de calcul entre %1$s et %2$s</string>
+    <string name="processing_time_text">Vous pouvez modifier l\'heure de début dans vos réglages.</string>
+    <string name="will_start_when">Conditions de démarrage</string>
+    <string name="share_facebook_contribution">Partager sur Facebook</string>
+    <string name="app_disabled_title">Application désactivée</string>
+    <string name="app_disabled_message">Cette application a été désactivée. Vous ne pouvez plus l\'utiliser.</string>
+    <string name="stand_by">En attente</string>
+    <string name="helping_out">Calculs en cours....</string>
+    <string name="disabled">Désactivée</string>
+    <string name="data_usage">Utilisation des données</string>
+    <string name="data_usage_text">Votre appareil doit être connecté à un réseau Wi-Fi.\nSi vous utilisez une connexion Wi-Fi payante ou limitée, vous serez peut-être facturé en fonction de l\'utilisation des données.\n\nPour en savoir plus, adressez-vous à votre FAI.</string>
+    <string name="whats_new">Nouveautés</string>
+    <string name="whats_new_contribution_status">Vous pouvez voir à présent les conditions requises pour lancer Folding@Home.</string>
+    <string name="whats_new_disable_indicator">Indique que l\'appli est désactivée.</string>
+    <string name="whats_new_conditions_indicator">Indique que la connexion Wi-Fi est prête, mais que le téléphone doit être connecté à un chargeur et que la batterie doit être complètement chargée.</string>
+    <string name="whats_new_enable_indicator">Indique que toutes les conditions sont remplies.</string>
+    <string name="whats_new_power_button">Il est maintenant plus facile d\'activer ou de désactiver l\'appli. Vous pouvez également voir l\'état actuel de Folding@Home.</string>
+    <string name="whats_new_login">Vous pouvez à présent vous connecter et transférer vos contributions.</string>
+    <string name="whats_new_contribution_indicators">Icônes améliorées pour suivre facilement l\'état de vos contributions.</string>
+    <string name="whats_new_research_type">Indique la recherche à laquelle vous contribuez.</string>
+    <string name="whats_new_people_helping">Indique le nombre d\'utilisateurs de Folding@Home.</string>
+    <string name="whats_new_contributed_time">Indique la durée totale de vos contributions.</string>
+    <string name="skip">Ignorer</string>
+    <string name="turn_on">Mettre en fonction</string>
+    <string name="turn_off">Mettre hors fonction</string>
+    <string name="active_research">Recherche active</string>
+    <string name="notification_contribution_time">Merci. La contribution de cet appareil s\'est élevée à %1$s au cours des dernières 24 h.</string>
+    <string name="action_login">Se connecter</string>
+    <string name="action_logout">%1$s (Se déconnecter)</string>
+    <string name="action_leaderboards">Tableaux des scores</string>
+    <string name="action_achievements">Réalisations</string>
+    <string name="action_invite_friends">Inviter des amis</string>
+    <string name="notification_service_turn_on">Mettez en fonction pour contribuer</string>
+    <string name="toast_logout">Déconnecté</string>
+    <string name="toast_network_unavailable">Réseau indisponible</string>
+    <string name="paused">Suspendue</string>
+    <string name="action_enable">Activer</string>
+    <string name="action_disable">Désactiver</string>
+    <string name="pause">Interrompre</string>
+    <string name="new_indicators">Nouveaux indicateurs</string>
+    <string name="new_power_button">Nouveau bouton de mise en marche</string>
+    <string name="sign_in_google_game_service">Se connecter aux services Google Play™</string>
+    <string name="view_more">Afficher plus</string>
+    <string name="toast_achievements_disabled">Connectez-vous pour afficher les résultats !</string>
+    <string name="toast_leaderboards_disabled">Connectez-vous pour afficher les tableaux des scores !</string>
+    <string name="contribution_details">Détails de la contribution</string>
+    <string name="project_description">Description du projet</string>
+    <string name="week">Semaine</string>
+    <string name="month">Mois</string>
+    <string name="all_time">Temps total</string>
+    <string name="chart_week_label">Semaine %1$d</string>
+    <string name="hours_contributed_label_plural">%1$d heures de contribution</string>
+    <string name="hours_contributed_label_singular">1 heure de contribution</string>
+    <string name="contributed_no_data">Aucune contribution pour la période sélectionnée</string>
+    <string name="no_charger_tile">Pas de chargeur</string>
+    <string name="low_battery_tile">Batterie faible</string>
+    <string name="no_wifi_tile">Pas de Wi-Fi</string>
+    <string name="no_charger_text">L\'appareil doit être connecté à un chargeur</string>
+    <string name="low_battery_text">La batterie doit être chargée à 98% minimum pour commencer la contribution</string>
+    <string name="no_wifi_text">Connectez-vous à un réseau Wi-Fi pour commencer la contribution.</string>
+</resources>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  Licensed under the LICENSE.
+  Copyright 2017, Sony Mobile Communications Inc.
+-->
+<resources xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="no_cost_mobile_data_text">फोनची WLAN नेटवर्कसह जोडणी करणे आवश्यक आहे.</string>
+    <string name="settings_auto_wifi_msg">योगदानाच्या दरम्यान WLAN सक्षम करा</string>
+    <string name="connect_to_wifi">फोनची WLAN नेटवर्कसह जोडणी करणे आवश्यक आहे</string>
+    <string name="data_usage_text">आपल्या उपकरणाची WLAN नेटवर्कशी जोडणी करणे आवश्यक आहे.\nजर आपण मीटर्ड किंवा सशुल्क जोडणी वापरत असाल तर आपणास डेटा वापरासाठी शुल्क आकारले जाईल.\n\nअधिक माहितीसाठी, आपल्या इंटरनेट सेवा प्रदात्यासह संपर्क साधा.</string>
+    <string name="whats_new_conditions_indicator">WLAN बरोबर जोडणी केली, पण फोनची चार्जरसह जोडणी होणे आणि बॅटरी 100% उर्जाभारीत असणे आवश्यक आहे.</string>
+    <string name="no_wifi_tile">WLAN जोडणी नाही</string>
+    <string name="no_wifi_text">योगदान देण्यासाठी WLAN नेटवर्कशी जोडणी करा.</string>
+</resources>
