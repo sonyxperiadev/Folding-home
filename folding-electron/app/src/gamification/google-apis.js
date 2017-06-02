@@ -13,7 +13,7 @@ const OAuth2 = google.auth.OAuth2;
 const plus = google.plus('v1');
 const games = google.games('v1');
 
-const REDIRECT_URL = 'http://foldingathome-project-redirect.com/oauth2redirect';
+const REDIRECT_URL = '<PLACE_YOUR_GOOGLE_REDIRECT_URL_HERE>';
 const CLIENT_SECRET = '<PLACE_YOUR_GOOGLE_CLIENT_SECRET_HERE>';
 
 const oauth2Client = new OAuth2(global.gameIds.CLIENT_ID, CLIENT_SECRET, REDIRECT_URL);

@@ -283,7 +283,10 @@ a SIGTERM to the job and gives it a [TBD] second timeout to finish any current t
 | `app/src/main/res/values/ids.xml`                       | `leaderboard_leaderboards`                                                         | 'All contributors' leaderboard id                                     |
 | `app/src/main/assets/environment.js`                    | `JOB_SERVER_ADDRESS`                                                               | Job server address                                                    |
 | `androidapp/gridcomputing/gamification/Scores.java`     | `ID_BREAST_CANCER_RESEARCH`                                                        | 'Open breast cancer details' achievement id                           |
-
+| `androidapp/gridcomputing/utils/FacebookUtils.java`     | `POST_OBJECT_PATH`                                                                 | Facebook open graph type used to share the contributed time           |
+| `androidapp/gridcomputing/utils/FacebookUtils.java`     | `GRAPH_OBJECT`                                                                     | Facebook open graph object                                            |
+| `androidapp/gridcomputing/utils/FacebookUtils.java`     | `POST_ACTION_PATH`                                                                 | Facebook open graph path                                              |
+| `androidapp/gridcomputing/utils/FacebookUtils.java`     | `POST_ACTION_IMAGE_URL`                                                            | Image url that will be used when posting to facebook                  |
 
 
 ## Electron app
@@ -291,8 +294,17 @@ a SIGTERM to the job and gives it a [TBD] second timeout to finish any current t
 | ------------------------------------------------------- | ---------------------------------------------------------------------------------- | --------------------------------------------------------------------- |
 | `app/src/social/facebook-share.js`                      | `APP_ID`                                                                           | Facebook app id                                                       |
 | `app/src/social/facebook-share.js`                      | `CLIENT_SECRET`                                                                    | Facebook client secret                                                |
+| `app/src/social/facebook-share.js`                      | `REDIRECT_SUCCESS`                                                                 | Facebook OAUTH redirect url                                           |
+| `app/src/social/facebook-share.js`                      | `FB_OG_TYPE`                                                                       | Facebook open graph type used to share the contributed time           |
+| `app/src/social/facebook-share.js`                      | `FB_OG_OBJECT`                                                                     | Facebook open graph object                                            |
+| `app/src/social/facebook-share.js`                      | `FB_OG_PATH`                                                                       | Facebook open graph path                                              |
+| `app/src/social/facebook-share.js`                      | `FB_OG_URL`                                                                        | Url that will be shared when posting to facebook                      |
+| `app/src/social/facebook-share.js`                      | `FB_OG_IMAGE`                                                                      | Image url that will be used when posting to facebook                  |
+| `app/src/social/facebook-share.js`                      | `FB_OG_TITLE`                                                                      | Title used to post on facebook                                        |
+| `app/src/social/facebook-share.js`                      | `FB_SHARE_URL`                                                                     | Url to be included in the message body when posting to facebook       |
 | `app/src/gamification/google-apis.js`                   | `transporters.prototype.USER_AGENT`                                                | Google games app id                                                   |
 | `app/src/gamification/google-apis.js`                   | `CLIENT_SECRET`                                                                    | Google client secret                                                  |
+| `app/src/gamification/google-apis.js`                   | `REDIRECT_URL`                                                                     | Google OAUTH redirect url when login                                  |
 | `app/src/utils/global-config.js`                        | `gameIds.CLIENT_ID`                                                                | 'Share on facebook' achievement id                                    |
 | `app/src/utils/global-config.js`                        | `gameIds.ACH_SHARE_ON_FACEBOOK`                                                    | 'Share on facebook' achievement id                                    |
 | `app/src/utils/global-config.js`                        | `gameIds.ACH_START_FOLDING`                                                        | 'Start folding' achievement id                                        |
@@ -317,3 +329,6 @@ a SIGTERM to the job and gives it a [TBD] second timeout to finish any current t
 | ------------------------------------------------------- | ---------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------- |
 | `scripts/monitor.js`                                    | `logglyConfig`                                                                     | Loggly JSON config file path                                                            |
 | `src/server.js`                                         | `defaultJobDesc`                                                                   | Path to a JSON file containing the config of a S3 bucket where the job files are stored |
+| `src/aws-credentials-analytics.json`                    | `accessKeyId`                                                                      | AWS analytics access key id                                                             |
+| `src/aws-credentials-analytics.json`                    | `secretAccessKey`                                                                  | AWS analytics secret access key                                                         |
+| `src/aws-credentials-analytics.json`                    | `region`                                                                           | AWS analytics region                                                                    |

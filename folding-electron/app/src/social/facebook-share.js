@@ -6,20 +6,18 @@
 const _ = require('lodash');
 const request = require('request');
 
-const REDIRECT_URL = 'http://foldingathome-project-redirect.com/oauth2redirect';
-
 const APP_ID = '<PLACE_YOUR_FACEBOOK_APP_ID_HERE>';
 const CLIENT_SECRET = '<PLACE_YOUR_FACEBOOK_CLIENT_SECRET_HERE>';
 
-const FB_OG_TYPE = 'gridcomputing:science';
-const FB_OG_OBJECT = 'science';
-const FB_OG_PATH = 'gridcomputing:Contribute_to';
-const FB_OG_URL = 'https://s3-eu-west-1.amazonaws.com/grid-bucket/redirect_to_stanford.html';
-const FB_OG_IMAGE = 'https://s3-eu-west-1.amazonaws.com/grid-bucket/fb_post_img.png';
-const FB_OG_TITLE = 'Folding@Home';
-const FB_SHARE_URL = 'https://play.google.com/store/apps/details?id=com.sonymobile.androidapp.gridcomputing';
+const FB_OG_TYPE = '<PLACE_YOUR_FACEBOOK_OPEN_GRAPH_TYPE_HERE>';
+const FB_OG_OBJECT = '<PLACE_YOUR_FACEBOOK_OPEN_GRAPH_OBJECT_HERE>';
+const FB_OG_PATH = '<PLACE_YOUR_FACEBOOK_OPEN_GRAPH_PATH_HERE>';
+const FB_OG_URL = '<PLACE_YOUR_FACEBOOK_OPEN_GRAPH_URL_HERE>';
+const FB_OG_IMAGE = '<PLACE_YOUR_POST_IMAGE_HERE>';
+const FB_OG_TITLE = '<PLACE_YOUR_POST_TITLE_HERE>';
+const FB_SHARE_URL = '<PLACE_YOUR_POST_URL_HERE>';
 
-const REDIRECT_SUCCESS = 'https://www.facebook.com/connect/login_success.html';
+const REDIRECT_SUCCESS = '<PLACE_YOUR_FACEBOOK_OAUTH_REDIRECT_URL_HERE>';
 const URI = 'https://www.facebook.com/dialog/oauth?client_id=' + APP_ID + '&redirect_uri=' + REDIRECT_SUCCESS + '&response_type=token' + '&display=popup' + '&scope=' + 'public_profile,publish_actions';
 
 let credentials = global.facebookCredentialsData.getAll() || {};

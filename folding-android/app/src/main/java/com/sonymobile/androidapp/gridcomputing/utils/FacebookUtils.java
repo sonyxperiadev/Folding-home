@@ -29,23 +29,23 @@ public final class FacebookUtils {
     /**
      * Facebook app namespace job.
      */
-    private static final String POST_OBJECT_PATH = "gridcomputing:science";
+    private static final String POST_OBJECT_PATH = "<PLACE_YOUR_FACEBOOK_OPEN_GRAPH_TYPE_HERE app:action>";
 
     /**
      * Facebook app namespace job.
      */
-    private static final String GRAPH_OBJECT = "science";
+    private static final String GRAPH_OBJECT = "<PLACE_YOUR_FACEBOOK_OPEN_GRAPH_TYPE_HERE>";
 
     /**
      * Facebook app namespace action.
      */
-    private static final String POST_ACTION_PATH = "gridcomputing:Contribute_to";
+    private static final String POST_ACTION_PATH = "<PLACE_YOUR_FACEBOOK_OPEN_GRAPH_TYPE_HERE app:actionPath>";
 
     /**
      * Icon image url.
      */
     private static final String POST_ACTION_IMAGE_URL =
-            "https://s3-eu-west-1.amazonaws.com/grid-bucket/fb_post_img.png";
+            "<PLACE_YOUR_IMAGE_URL_HERE>";
 
 
     /**
