@@ -1,6 +1,4 @@
 # Folding@Home
-![Folding logo](https://s3-eu-west-1.amazonaws.com/folding-page/imgs/ic_launcher.png)
-
 Folding@Home is a project that aims to harness the spare computing power of mobile devices to help with computing-intensive research.
 
 # Build and Run folding-android
